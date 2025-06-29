@@ -1,0 +1,563 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+*.test.js
+*.test.ts
+*.test.tsx
+
+# Production builds
+build/
+dist/
+.next/
+out/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# Next.js build output
+.next
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Gatsby files
+.cache/
+public
+
+# Storybook build outputs
+.out
+.storybook-out
+
+# Temporary folders
+tmp/
+temp/
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+
+# PostgreSQL data
+db/postgres_data/
+postgres_data/
+
+# Redis data
+redis_data/
+*.rdb
+*.aof
+
+# Docker
+.dockerignore
+
+# Python (for PoC)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pdm
+.pdm.toml
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# Go (for searchNotifier)
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+
+# Go workspace file
+go.work
+
+# Go build cache
+go-build/
+
+# Go test cache
+go-test/
+
+# Go module cache
+go-mod-cache/
+
+# Go coverage
+coverage.out
+coverage.html
+
+# Go profiling
+*.prof
+*.trace
+
+# Go vendor
+vendor/
+
+# Go binaries
+bin/
+pkg/
+
+# Go workspace
+go.work
+
+# Go module
+go.mod
+go.sum
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Lock files (keep package-lock.json and pnpm-lock.yaml for consistency)
+# yarn.lock
+# package-lock.json
+# pnpm-lock.yaml
+
+# Local development files
+.local/
+local/
+
+# Cache directories
+.cache/
+cache/
+
+# Backup files
+*.backup
+*.bak
+*.old
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Certificate files
+*.pem
+*.key
+*.crt
+*.csr
+
+# Documentation build
+docs/build/
+docs/_build/
+
+# Local configuration files
+config.local.*
+settings.local.*
+
+# Test results
+test-results/
+test-output/
+
+# Performance monitoring
+.perf/
+
+# Security
+.secrets
+secrets/
+
+# Local data files
+data/local/
+*.local.json
+*.local.yml
+*.local.yaml
+
+# Generated files
+generated/
+auto-generated/
+
+# Temporary uploads
+uploads/temp/
+temp-uploads/
+
+# Local database dumps
+*.dump
+*.sql.bak
+
+# Local logs
+logs/
+*.log.*
+
+# Local certificates
+certs/
+certificates/
+
+# Local SSL
+ssl/
+
+# Local nginx
+nginx/
+
+# Local apache
+apache/
+
+# Local configuration
+config/local/
+local-config/
+
+# Backup directories
+backup/
+backups/
+
+# Temporary directories
+tmp/
+temp/
+.tmp/
+.temp/
+
+# Local development environment
+dev/
+development/
+
+# Staging environment
+staging/
+
+# Production environment
+prod/
+production/
+
+# Local environment files
+.env.local
+.env.development
+.env.test
+.env.staging
+.env.production
+
+# Local database files
+*.db.local
+*.sqlite.local
+*.sqlite3.local
+
+# Local cache
+.cache.local
+cache.local/
+
+# Local build artifacts
+build.local/
+dist.local/
+
+# Local node modules (if any)
+node_modules.local/
+
+# Local Python virtual environments
+venv.local/
+env.local/
+
+# Local Go modules
+go.mod.local
+go.sum.local
+
+# Local Docker
+docker-compose.local.yml
+docker-compose.override.yml
+
+# Local Kubernetes
+k8s/local/
+kubernetes/local/
+
+# Local Terraform
+terraform/local/
+*.tfstate.local
+*.tfstate.backup.local
+
+# Local Ansible
+ansible/local/
+ansible/local.yml
+
+# Local scripts
+scripts/local/
+local-scripts/
+
+# Local documentation
+docs/local/
+local-docs/
+
+# Local tests
+tests/local/
+local-tests/
+
+# Local assets
+assets/local/
+local-assets/
+
+# Local media
+media/local/
+local-media/
+
+# Local static files
+static/local/
+local-static/
+
+# Local templates
+templates/local/
+local-templates/
+
+# Local views
+views/local/
+local-views/
+
+# Local controllers
+controllers/local/
+local-controllers/
+
+# Local models
+models/local/
+local-models/
+
+# Local routes
+routes/local/
+local-routes/
+
+# Local middleware
+middleware/local/
+local-middleware/
+
+# Local services
+services/local/
+local-services/
+
+# Local utilities
+utils/local/
+local-utils/
+
+# Local helpers
+helpers/local/
+local-helpers/
+
+# Local constants
+constants/local/
+local-constants/
+
+# Local types
+types/local/
+local-types/
+
+# Local interfaces
+interfaces/local/
+local-interfaces/
+
+# Local enums
+enums/local/
+local-enums/
+
