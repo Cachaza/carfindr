@@ -1,0 +1,506 @@
+[
+    {
+        "uuid": "RTE4d1UyZ2tuM1J5NEpnN2h2TWNRQT09",
+        "type": "make",
+        "text": "MERCEDES",
+        "count": 8520
+    },
+    {
+        "uuid": "MUY1TktUZHJVVVVhTXZzNW9ZbVBRQT09",
+        "type": "make",
+        "text": "PEUGEOT",
+        "count": 7654
+    },
+    {
+        "uuid": "Rmt1aVBPQ2tlZTh3UWo1Wlh4WDhodz09",
+        "type": "make",
+        "text": "VOLKSWAGEN",
+        "count": 6625
+    },
+    {
+        "uuid": "WmtTNmd6dm5FSjRoYmgzT0FvZExtUT09",
+        "type": "make",
+        "text": "CITROEN",
+        "count": 5968
+    },
+    {
+        "uuid": "WjFqUXZyWFN3TDVZSzdHeGZjaFllZz09",
+        "type": "make",
+        "text": "FORD",
+        "count": 4890
+    },
+    {
+        "uuid": "cGxsWUkzNnRsczVjWmJ0clVNa3J3UT09",
+        "type": "make",
+        "text": "RENAULT",
+        "count": 4681
+    },
+    {
+        "uuid": "WFp4MlJjK2xyKzJsdHFRaXlqK2M4dz09",
+        "type": "make",
+        "text": "AUDI",
+        "count": 4575
+    },
+    {
+        "uuid": "Q3JoYldqOVVWKzFnU0RTZzB3OWhQQT09",
+        "type": "make",
+        "text": "KIA",
+        "count": 4538
+    },
+    {
+        "uuid": "M1ZldjBpN2NXUW1JbzJIWVVYV0lPZz09",
+        "type": "make",
+        "text": "OPEL",
+        "count": 4445
+    },
+    {
+        "uuid": "Rm00dmdvZUYxZy9MbGhsWlJhKzllQT09",
+        "type": "make",
+        "text": "BMW",
+        "count": 4440
+    },
+    {
+        "uuid": "UXMza1hTZVMxMjRENWVFNzJvVEsvQT09",
+        "type": "make",
+        "text": "SEAT",
+        "count": 3730
+    },
+    {
+        "uuid": "cVJNcDFndlh3NGpGV3cxVlQyMVNRZz09",
+        "type": "make",
+        "text": "NISSAN",
+        "count": 3458
+    },
+    {
+        "uuid": "MHQ2ckFFSHQ0T09lcTFsQkNVQXNQZz09",
+        "type": "make",
+        "text": "HYUNDAI",
+        "count": 3191
+    },
+    {
+        "uuid": "RjBRWVpEeWkyK1NXSU9TdDRUejZrUT09",
+        "type": "make",
+        "text": "FIAT",
+        "count": 3162
+    },
+    {
+        "uuid": "cHE3cjZlTXZ0a2I1a0FtT08wK2Q1UT09",
+        "type": "make",
+        "text": "TOYOTA",
+        "count": 2839
+    },
+    {
+        "uuid": "ZWE0VEgvV0hBM3RoWmc2bEE4ME4vQT09",
+        "type": "make",
+        "text": "VOLVO",
+        "count": 1939
+    },
+    {
+        "uuid": "M3pIdHI5TTY0Um1vbWpmdGdRRU5zZz09",
+        "type": "make",
+        "text": "SKODA",
+        "count": 1506
+    },
+    {
+        "uuid": "TWlnOC85bDUwdFBlYkF0aTNxL0dmUT09",
+        "type": "make",
+        "text": "MAZDA",
+        "count": 1466
+    },
+    {
+        "uuid": "SEZTaHlSQlEzOGF3YlJQU3RteHJydz09",
+        "type": "make",
+        "text": "LAND ROVER",
+        "count": 1341
+    },
+    {
+        "uuid": "TXR1T3o1YWxudGxRTFNTVlRrQ1J4QT09",
+        "type": "make",
+        "text": "JEEP",
+        "count": 1145
+    },
+    {
+        "uuid": "d2wzc2V2UktReGgwMHVtNEVrUm0xdz09",
+        "type": "make",
+        "text": "MINI",
+        "count": 1044
+    },
+    {
+        "uuid": "WkxJTjR3eVFyMEw0NE1NdlVpdm1Rdz09",
+        "type": "make",
+        "text": "DACIA",
+        "count": 1040
+    },
+    {
+        "uuid": "OGJxMEZzZ3ZVbnJ1U3FPakovKzBZdz09",
+        "type": "make",
+        "text": "CUPRA",
+        "count": 943
+    },
+    {
+        "uuid": "NEJNZExaUXN0N0RUT0RUUVBpV0llZz09",
+        "type": "make",
+        "text": "DS",
+        "count": 832
+    },
+    {
+        "uuid": "UEtHRFJYbUtOZXZpOUp5NDltNUZJUT09",
+        "type": "make",
+        "text": "MG",
+        "count": 690
+    },
+    {
+        "uuid": "Q1o0OURsamJXQ2tYRlZLK3g2ME5uUT09",
+        "type": "make",
+        "text": "MITSUBISHI",
+        "count": 572
+    },
+    {
+        "uuid": "RCtSNWNwU0VSSmk3Rm5ESEl4K1ZUQT09",
+        "type": "make",
+        "text": "LEXUS",
+        "count": 530
+    },
+    {
+        "uuid": "R0RqMUROenlmNFVBSnpURm42bGhxZz09",
+        "type": "make",
+        "text": "HONDA",
+        "count": 499
+    },
+    {
+        "uuid": "OWgzb0QzSVlobVlxZTk4MzhxTkN1UT09",
+        "type": "make",
+        "text": "SUZUKI",
+        "count": 497
+    },
+    {
+        "uuid": "cG83QUFWWlpYVStPUlJLMlBQRW1JZz09",
+        "type": "make",
+        "text": "ALFA ROMEO",
+        "count": 482
+    },
+    {
+        "uuid": "MWRySXFSMFlOaFp6a0hzM2czaVRJUT09",
+        "type": "make",
+        "text": "JAGUAR",
+        "count": 476
+    },
+    {
+        "uuid": "SG8xLzJTcFQxNUE5anZpTHdlN2tsdz09",
+        "type": "make",
+        "text": "PORSCHE",
+        "count": 394
+    },
+    {
+        "uuid": "RGU3L2dRMlY2dWU1RTh3TEwrQ0pFZz09",
+        "type": "make",
+        "text": "LYNK & CO",
+        "count": 355
+    },
+    {
+        "uuid": "UFdaVDVROFZYVXRmdTArYnl2UHZMdz09",
+        "type": "make",
+        "text": "SSANGYONG KGM",
+        "count": 251
+    },
+    {
+        "uuid": "Ykp2aXFqd0Q0dXM5TTdmWjZCN29iQT09",
+        "type": "make",
+        "text": "SMART",
+        "count": 231
+    },
+    {
+        "uuid": "U1pUMzZBWnh2M0dlcmt4RUkyWFhmdz09",
+        "type": "make",
+        "text": "SUBARU",
+        "count": 177
+    },
+    {
+        "uuid": "aWtsVjV4aEpRM3B6UXZucDJJNE5Edz09",
+        "type": "make",
+        "text": "IVECO",
+        "count": 176
+    },
+    {
+        "uuid": "WFdNV1NtQndwNTF6d3J5TEgvZjJoUT09",
+        "type": "make",
+        "text": "ABARTH",
+        "count": 145
+    },
+    {
+        "uuid": "SlJEd0xhcmp6NE8raS9saUxTdzc2QT09",
+        "type": "make",
+        "text": "TESLA",
+        "count": 131
+    },
+    {
+        "uuid": "Y3pSeWFYc0JiMW96OVZ0WWZMMjRHUT09",
+        "type": "make",
+        "text": "CHEVROLET",
+        "count": 109
+    },
+    {
+        "uuid": "Q3ZrVUVsRzdkQVk0UUs3WWdTakcwdz09",
+        "type": "make",
+        "text": "INFINITI",
+        "count": 84
+    },
+    {
+        "uuid": "bURlM0NkcEtJSGk3emw1RXhxOTRuQT09",
+        "type": "make",
+        "text": "EVO",
+        "count": 81
+    },
+    {
+        "uuid": "Y1JocEEvekl4dW04WkhEcXB5WXhxdz09",
+        "type": "make",
+        "text": "DFSK",
+        "count": 77
+    },
+    {
+        "uuid": "dDRQWW1jU0p4K2NxVVpJUmNya2kzUT09",
+        "type": "make",
+        "text": "DR",
+        "count": 58
+    },
+    {
+        "uuid": "cW1oa1hWbHd1dHNBYUVLR1hiVWJJZz09",
+        "type": "make",
+        "text": "MASERATI",
+        "count": 48
+    },
+    {
+        "uuid": "NU41SDA2NUZQQVFyNmE5WC9wUWd2dz09",
+        "type": "make",
+        "text": "CHRYSLER",
+        "count": 44
+    },
+    {
+        "uuid": "cjhmTjRNWE1qNStkaXAxdE9idkNuQT09",
+        "type": "make",
+        "text": "BENTLEY",
+        "count": 34
+    },
+    {
+        "uuid": "VlU0VDgyYUlqYWIySVlrWjU2cURhZz09",
+        "type": "make",
+        "text": "OMODA",
+        "count": 30
+    },
+    {
+        "uuid": "Vmw0c3ZRcW1FSVhOU2xEZm4ydEZzdz09",
+        "type": "make",
+        "text": "FERRARI",
+        "count": 29
+    },
+    {
+        "uuid": "V0pia0JxRGpOSE1PaU00R0YrbDhnUT09",
+        "type": "make",
+        "text": "LANCIA",
+        "count": 29
+    },
+    {
+        "uuid": "anQ4SVVGMUs4eEN2ZXZFUXNjOGFSQT09",
+        "type": "make",
+        "text": "BYD",
+        "count": 25
+    },
+    {
+        "uuid": "cFpHdUQyZGFiclFkaGtsdGRHRG9IZz09",
+        "type": "make",
+        "text": "SWM",
+        "count": 25
+    },
+    {
+        "uuid": "SWs3dFgwYk5KUXJIVzErZmdYYUpxdz09",
+        "type": "make",
+        "text": "SAAB",
+        "count": 21
+    },
+    {
+        "uuid": "M3E0dEQ4d0RtbDZrM2V1ZDMyV0N5QT09",
+        "type": "make",
+        "text": "MAXUS",
+        "count": 18
+    },
+    {
+        "uuid": "Nk1UcklZYWFGY3B6U2kvSDd5blR1dz09",
+        "type": "make",
+        "text": "INVICTA",
+        "count": 16
+    },
+    {
+        "uuid": "Mzc0MnlSaW42U2lGRzBVSmk3K3RDUT09",
+        "type": "make",
+        "text": "DODGE",
+        "count": 13
+    },
+    {
+        "uuid": "OEUySUwyZzdoZlFkUGRDdHNLckNtZz09",
+        "type": "make",
+        "text": "ISUZU",
+        "count": 11
+    },
+    {
+        "uuid": "clhpOFhpTVJzenBNeVdQUTk3MmJrZz09",
+        "type": "make",
+        "text": "DAEWOO",
+        "count": 10
+    },
+    {
+        "uuid": "d011WWxXSnl0SWF6aWdYMUhIdEkyQT09",
+        "type": "make",
+        "text": "LAMBORGHINI",
+        "count": 9
+    },
+    {
+        "uuid": "WjJUQWJCOFVOZm5IV1dDQmdaSTBhUT09",
+        "type": "make",
+        "text": "MAN",
+        "count": 9
+    },
+    {
+        "uuid": "NE1VQkZybWpQRlY1aTJ1VEJ4dHVyUT09",
+        "type": "make",
+        "text": "SERES",
+        "count": 8
+    },
+    {
+        "uuid": "RE9pdnF4M1ExTTlsZmw4ZndMQ0xNQT09",
+        "type": "make",
+        "text": "YUDO",
+        "count": 7
+    },
+    {
+        "uuid": "WjZTamQySzFPUk9zT2hUbUtXZko2UT09",
+        "type": "make",
+        "text": "MAHINDRA",
+        "count": 6
+    },
+    {
+        "uuid": "eGFWTXdsSXhCU1llMzN2akdTeEhkZz09",
+        "type": "make",
+        "text": "ASTON MARTIN",
+        "count": 5
+    },
+    {
+        "uuid": "TFBZR0hYZmg0dzNTb2wrNC9ONTF1dz09",
+        "type": "make",
+        "text": "ROVER",
+        "count": 5
+    },
+    {
+        "uuid": "Y0pOWTQwMjdXekR4a3NSRU9Xcms4Zz09",
+        "type": "make",
+        "text": "ALPINE",
+        "count": 4
+    },
+    {
+        "uuid": "dzZTUW5DamNpVVU2RkVWUldOTkg1Zz09",
+        "type": "make",
+        "text": "CADILLAC",
+        "count": 4
+    },
+    {
+        "uuid": "aEFxK2g2K3NoRWhrTmdmck5jTlA4QT09",
+        "type": "make",
+        "text": "GALLOPER",
+        "count": 3
+    },
+    {
+        "uuid": "d1VHbnhEZk1KaWZUT2FaSzJ0MUI2Zz09",
+        "type": "make",
+        "text": "MORGAN",
+        "count": 3
+    },
+    {
+        "uuid": "OGpWaUFFQWFFb2taVXFUY2NoUWhtQT09",
+        "type": "make",
+        "text": "PIAGGIO",
+        "count": 3
+    },
+    {
+        "uuid": "Wkk2N2diTG5JRnpnK0RlbVNEUjhlQT09",
+        "type": "make",
+        "text": "AIWAYS",
+        "count": 2
+    },
+    {
+        "uuid": "NHRaL3pYdkZQNTlEUUJCL2FOcEJoQT09",
+        "type": "make",
+        "text": "LADA",
+        "count": 2
+    },
+    {
+        "uuid": "V0JKamhqcmI4U1J1NjZzeW9VVHgvZz09",
+        "type": "make",
+        "text": "LOTUS",
+        "count": 2
+    },
+    {
+        "uuid": "UFBaNjFwdUdmTGFyM2ptUnBEYkRxUT09",
+        "type": "make",
+        "text": "POLESTAR",
+        "count": 2
+    },
+    {
+        "uuid": "QlYyVTUvVmZpK3U2a3JKOXJGOVFrUT09",
+        "type": "make",
+        "text": "SANTANA",
+        "count": 2
+    },
+    {
+        "uuid": "R3g0V1ozTy9YME15ZFlCQ0p6Um5qUT09",
+        "type": "make",
+        "text": "DAIMLER",
+        "count": 1
+    },
+    {
+        "uuid": "NTRnT1UrMmp3NEl2bEppdTVQL01NUT09",
+        "type": "make",
+        "text": "HUMMER",
+        "count": 1
+    },
+    {
+        "uuid": "SVdZcVdJbEsvQTEzOGJwb3NPYWdEQT09",
+        "type": "make",
+        "text": "INEOS",
+        "count": 1
+    },
+    {
+        "uuid": "QnJzcHZFSUtyWWFtcG9WdTJQUGppUT09",
+        "type": "make",
+        "text": "JAECOO",
+        "count": 1
+    },
+    {
+        "uuid": "NC9TcFp4eUpTazVKc1hUTFQ1Q0lpQT09",
+        "type": "make",
+        "text": "LEVC",
+        "count": 1
+    },
+    {
+        "uuid": "SVo3eW9TdmlBZWs2ZGhGYVVTbDN6UT09",
+        "type": "make",
+        "text": "PONTIAC",
+        "count": 1
+    },
+    {
+        "uuid": "TzhaOVdLejB3STJDdVJkL0ZlQnVFdz09",
+        "type": "make",
+        "text": "ROLLS ROYCE",
+        "count": 1
+    },
+    {
+        "uuid": "UFdaVDVROFZYVXRmdTArYnl2UHZMdz09",
+        "type": "make",
+        "text": "SSANGYONG",
+        "count": 1
+    },
+    {
+        "uuid": "eG1zZzZsdVBqa2hyVWMvTTd3MjhFUT09",
+        "type": "make",
+        "text": "WARTBURG",
+        "count": 1
+    }
+]

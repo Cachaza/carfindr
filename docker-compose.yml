@@ -1,0 +1,27 @@
+services:
+  db:
+    env_file: .env
+    image: postgres:17.0
+    network_mode: host
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER
+      - POSTGRES_PASSWORD
+      - POSTGRES_DB
+    volumes:
+      - ./db/postgres_data:/var/lib/postgresql/data
+      - ./db/init-db:/docker-entrypoint-initdb.d
+      - ./db/csv-data:/csv-data
+
+  redis:
+    env_file: .env
+    image: redis:7.4.0
+    network_mode: host
+    ports:
+      - "6379:6379"
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    volumes:
+      - ./redis_data:/data
+

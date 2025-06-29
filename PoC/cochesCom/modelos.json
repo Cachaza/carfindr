@@ -1,0 +1,4102 @@
+[
+    {
+      "uuid": "VkFhcGhScll5YnlBRWJlRkhxVXorUT09",
+      "type": "",
+      "text": "MERCEDES Clase A"
+    },
+    {
+      "uuid": "QXp5dEc0Y0kzdVVMdGttUmtwWkFkZz09",
+      "type": "",
+      "text": "NISSAN Qashqai"
+    },
+    {
+      "uuid": "VkJENWpRb2JHYnNIWFpPeVZHallvQT09",
+      "type": "",
+      "text": "VOLKSWAGEN Golf"
+    },
+    {
+      "uuid": "Vlk2SktLaSswWHo5V2tIcjkwakhUZz09",
+      "type": "",
+      "text": "FIAT 500"
+    },
+    {
+      "uuid": "dFB5bVdXblVrZ1ZqdzJYVWRmdHRjZz09",
+      "type": "",
+      "text": "PEUGEOT 3008"
+    },
+    {
+      "uuid": "MmV2anhlRXhrcFo3VlZGSHhud1R1QT09",
+      "type": "",
+      "text": "CITROEN Berlingo"
+    },
+    {
+      "uuid": "VkhxRTUyWmVJNDZXWm1pTDVBVWN1dz09",
+      "type": "",
+      "text": "PEUGEOT 2008"
+    },
+    {
+      "uuid": "QzU5YzZKNytnb0NtU05YRHBvRTVOVWQzQ2xlTDdPTWRhRUlqbngyRG9qMD0=",
+      "type": "",
+      "text": "SEAT León"
+    },
+    {
+      "uuid": "Z1cya2dCUzNlWEVMV21NMkQ5YVprZz09",
+      "type": "",
+      "text": "KIA Sportage"
+    },
+    {
+      "uuid": "UUdmR3N2ZHgwWW5JaFA0RVEvcFpHdz09",
+      "type": "",
+      "text": "HYUNDAI Tucson"
+    },
+    {
+      "uuid": "SlRaMWY3UWhuOU8rck1vaXc0UHovQT09",
+      "type": "",
+      "text": "PEUGEOT 208"
+    },
+    {
+      "uuid": "aHZOTUtNWFZpYzBSOXpPbzNuSzNWZz09",
+      "type": "",
+      "text": "RENAULT Clio"
+    },
+    {
+      "uuid": "dVhSYVRxcjMweHFTMUNxMC9XME5SQT09",
+      "type": "",
+      "text": "CITROEN C4"
+    },
+    {
+      "uuid": "TlVEYVRQTmF4RkU5anFxbUVBTE0xQT09",
+      "type": "",
+      "text": "OPEL Corsa"
+    },
+    {
+      "uuid": "UTIwbUlldkh5UFg5RHdLbXN4SE14UT09",
+      "type": "",
+      "text": "PEUGEOT 308"
+    },
+    {
+      "uuid": "VWFoeTdHWGxOMW13NmVpZExrWVFoZz09",
+      "type": "",
+      "text": "FORD Focus"
+    },
+    {
+      "uuid": "TEpBUS8yRzJweDc1Z2NXcEJLTHh2QT09",
+      "type": "",
+      "text": "MERCEDES Clase C"
+    },
+    {
+      "uuid": "NTJEbm5rU1FkcnQwZmZlREE4RFowdz09",
+      "type": "",
+      "text": "FORD Kuga"
+    },
+    {
+      "uuid": "UXpaUCtyN0pqc2E1U1hLNlVOOUJJZz09",
+      "type": "",
+      "text": "AUDI A3"
+    },
+    {
+      "uuid": "WXRQVjFLaXdTaDhDQ21HVExHZEZsdz09",
+      "type": "",
+      "text": "SEAT Ibiza"
+    },
+    {
+      "uuid": "WmoyWHVJZGtscldWczFpbW0rcVNWdz09",
+      "type": "",
+      "text": "VOLKSWAGEN Polo"
+    },
+    {
+      "uuid": "bnFpQ0N2Y0t6dmxsMVM1V3R6ZG84UT09",
+      "type": "",
+      "text": "KIA Ceed"
+    },
+    {
+      "uuid": "ZFlpY0JzV1ZHdVh1NGE5c2YveUovUT09",
+      "type": "",
+      "text": "CITROEN C3"
+    },
+    {
+      "uuid": "VENsT01nR3k0OVNkZ1lsVE5JS2lxUT09",
+      "type": "",
+      "text": "BMW Serie 1"
+    },
+    {
+      "uuid": "QWQzdmMvekUzdURmck9PalpsM0M1Zz09",
+      "type": "",
+      "text": "SEAT Arona"
+    },
+    {
+      "uuid": "cTJHQ0dtRDhmOFBjQjQ2TWpqQXNBUT09",
+      "type": "",
+      "text": "MINI Mini"
+    },
+    {
+      "uuid": "aXdETmhBV29SZ1JqSi9DUmpyci9nUT09",
+      "type": "",
+      "text": "NISSAN Juke"
+    },
+    {
+      "uuid": "UlY2MDZvQzkwYmFIZldGa2k3Y0lvc0w5a2xUem5ML0tsUmRwRlkvQnMvdz0=",
+      "type": "",
+      "text": "RENAULT Mégane"
+    },
+    {
+      "uuid": "OXQxWS91eWliZUI1MEFPQmk4VVQ3UT09",
+      "type": "",
+      "text": "VOLKSWAGEN Tiguan"
+    },
+    {
+      "uuid": "UnA1TXR2elo0Y0VhakRNRmFhU2JlUT09",
+      "type": "",
+      "text": "OPEL Astra"
+    },
+    {
+      "uuid": "ZEFsMUZqdElrVHMyMUtkSEc0ODBZQT09",
+      "type": "",
+      "text": "TOYOTA C-HR"
+    },
+    {
+      "uuid": "WThPZ1J1K2dNZjd2WVJNMmttampJUT09",
+      "type": "",
+      "text": "BMW Serie 3"
+    },
+    {
+      "uuid": "ZFY2WTdpTmpiWGZEODlpVEdneGNmbjEwalNNU3M4T2k5WlJvNmhtb0tZZz0=",
+      "type": "",
+      "text": "MERCEDES Clase GLA"
+    },
+    {
+      "uuid": "bTEyUDRUbmVuSTEzYXo3TGJZU2VCUT09",
+      "type": "",
+      "text": "AUDI Q3"
+    },
+    {
+      "uuid": "QXA3UlVLbGJmMjgybi85UEVIaTNjV05VSmJsa04wZkRHV05OMHFBYy9qRT0=",
+      "type": "",
+      "text": "MERCEDES Clase GLC"
+    },
+    {
+      "uuid": "TlFMcFJKV2JqeVNQVnJHTUVEOUhScmN4MWpSdHJWby9UR1A2Umd3aXVicz0=",
+      "type": "",
+      "text": "MERCEDES Clase CLA"
+    },
+    {
+      "uuid": "WWlVaS9ERGQ2Lzh2Ynh4cU5ncGRUQT09",
+      "type": "",
+      "text": "VOLKSWAGEN T-Roc"
+    },
+    {
+      "uuid": "akd6N25LQWFhZ081YWJQWVB1Y0toZz09",
+      "type": "",
+      "text": "RENAULT Captur"
+    },
+    {
+      "uuid": "MHZTNDRDcFk2amJNeTJNSDRxcngwQT09",
+      "type": "",
+      "text": "TOYOTA Corolla"
+    },
+    {
+      "uuid": "cWxia09ZZTYyK3ZDVHlFUXl3ZHEvQT09",
+      "type": "",
+      "text": "VOLVO XC40"
+    },
+    {
+      "uuid": "SWxBTkIxejVVOFBDa252aWpZNkJRdz09",
+      "type": "",
+      "text": "FORD Puma"
+    },
+    {
+      "uuid": "VVVjNTJlNUJibjVRYngxRjlBQWZhQT09",
+      "type": "",
+      "text": "KIA Niro"
+    },
+    {
+      "uuid": "Szlkc2VZSXBWUVhrNll6eHVuN1F5Zz09",
+      "type": "",
+      "text": "AUDI A1"
+    },
+    {
+      "uuid": "bE1oSElvYjUwbkI5V2xrY3EzSDB6QT09",
+      "type": "",
+      "text": "RENAULT Kangoo"
+    },
+    {
+      "uuid": "aTZRT1V6cEZrNzgyRktFS0hUeXJjMm0wQlFDQ2lrUGwxUVIyNFlRZk5iUT0=",
+      "type": "",
+      "text": "CUPRA Formentor"
+    },
+    {
+      "uuid": "Ly9vVmxEMFk5RFRGMmdSRkJ5RENDQT09",
+      "type": "",
+      "text": "SEAT Ateca"
+    },
+    {
+      "uuid": "cFJ0ZkozWUhab0Nack5zTzFHZjczdz09",
+      "type": "",
+      "text": "VOLVO XC60"
+    },
+    {
+      "uuid": "Z3ArRzV6N0xocnB1aERSd0Q0VDdqQT09",
+      "type": "",
+      "text": "KIA XCeed"
+    },
+    {
+      "uuid": "bVQySmZ1Qk1EaVJmTUtCM1pxcytOdz09",
+      "type": "",
+      "text": "PEUGEOT 5008"
+    },
+    {
+      "uuid": "VlpCOTFBTmNoaThoY1ZwSFZoNnYzdz09",
+      "type": "",
+      "text": "HYUNDAI Kona"
+    },
+    {
+      "uuid": "bDk2S29CTDRYTllYQ0xGdWUrbXE4Zz09",
+      "type": "",
+      "text": "BMW X1"
+    },
+    {
+      "uuid": "elBEQTRvS091NXd0YURweEh5V09vUT09",
+      "type": "",
+      "text": "AUDI A4"
+    },
+    {
+      "uuid": "U0JuSVJxMjdaMnA4ZEZGRjNueXFWUGFvOEh5amcyL2NKR0p1ckdPeUR2OD0=",
+      "type": "",
+      "text": "CITROEN C5 Aircross"
+    },
+    {
+      "uuid": "VE1IekcySGF6TnNrdGZUbncrWUVkUT09",
+      "type": "",
+      "text": "MERCEDES Clase B"
+    },
+    {
+      "uuid": "MmJRYW1xV3ZrM200OVhIRzNOTGtaYVVSU1p4YXhocWRGTlUyY2VlQzYvQT0=",
+      "type": "",
+      "text": "CITROEN C3 Aircross"
+    },
+    {
+      "uuid": "aW1KQ0p2RGUrRzgxRnd6bDlUTEhRUT09",
+      "type": "",
+      "text": "KIA Stonic"
+    },
+    {
+      "uuid": "YzV3akNKWUt6OUtFQU1SU3U5VDNiUT09",
+      "type": "",
+      "text": "OPEL Mokka"
+    },
+    {
+      "uuid": "cFJESnI2bmpFR0tzRmZ5T21VT1k3QT09",
+      "type": "",
+      "text": "PEUGEOT 508"
+    },
+    {
+      "uuid": "ai9KcFRSMVdKNjRMMlVsWUg1S015bjloVWdnVFlJWXZjUXJ2NFdFOEVJMD0=",
+      "type": "",
+      "text": "OPEL Crossland"
+    },
+    {
+      "uuid": "aE0xQlNBVnkwNmJFVkR0bG40VzVaQT09",
+      "type": "",
+      "text": "PEUGEOT Rifter"
+    },
+    {
+      "uuid": "a2lXN1VOczBxY09NK3BIcUJOT0ZhUT09",
+      "type": "",
+      "text": "VOLKSWAGEN T-Cross"
+    },
+    {
+      "uuid": "VXk4SFRQcXd6MlY4U3JyRXJ6L3AvUT09",
+      "type": "",
+      "text": "BMW Serie 2"
+    },
+    {
+      "uuid": "R3gvQlVFMHAvVGgxL29MZmZDVTJxQT09",
+      "type": "",
+      "text": "FORD Fiesta"
+    },
+    {
+      "uuid": "U0xCaW52WDhSeUZ0eVJvOHJ2N21RUT09",
+      "type": "",
+      "text": "PEUGEOT Partner"
+    },
+    {
+      "uuid": "YlFaV3hFY3cxemhlakQycThCOXprUT09",
+      "type": "",
+      "text": "AUDI Q5"
+    },
+    {
+      "uuid": "YVRQODZUWExjN0h3ekpVT2NHWXU4dz09",
+      "type": "",
+      "text": "PEUGEOT Boxer"
+    },
+    {
+      "uuid": "K0JVY3BQa0RnaVVwWmtaT3laOS94QT09",
+      "type": "",
+      "text": "MERCEDES Vito"
+    },
+    {
+      "uuid": "Y0NRcUtxZ2N5emJJZ3VQcDlDbXFSZz09",
+      "type": "",
+      "text": "JEEP Compass"
+    },
+    {
+      "uuid": "Z25HWmdlRWJMNDVlc3pMcGZXV1BzRFQzZG5KdlFVdXJ5bmxwOVk5ZkdnOD0=",
+      "type": "",
+      "text": "LAND ROVER Range Rover Evoque"
+    },
+    {
+      "uuid": "cWxNdkQyMk1tOSs3WHJOOFhqNmJqZz09",
+      "type": "",
+      "text": "MERCEDES Clase E"
+    },
+    {
+      "uuid": "N1oxaHF2RlNWYXhwSW9OcFIxYTdLZz09",
+      "type": "",
+      "text": "VOLKSWAGEN Passat"
+    },
+    {
+      "uuid": "NVRyTXdGNzJ5NmdQdXhSU3lLUlgrdz09",
+      "type": "",
+      "text": "CITROEN Jumper"
+    },
+    {
+      "uuid": "OEMxcWpCNlR6ZGpXdnkvWGE5N1oydz09",
+      "type": "",
+      "text": "AUDI Q2"
+    },
+    {
+      "uuid": "b0RlTDNxaE96V1pyaXY3d0RSU2ZwUT09",
+      "type": "",
+      "text": "OPEL Combo"
+    },
+    {
+      "uuid": "Z1BxdUdvdWZNVWRKUS8xcThqMzJaQT09",
+      "type": "",
+      "text": "DACIA Sandero"
+    },
+    {
+      "uuid": "bEdjYXJYNERKNzcxZ2U4NjA4YnJpZz09",
+      "type": "",
+      "text": "HYUNDAI i30"
+    },
+    {
+      "uuid": "UlloUDRtL3RFUXVmeGptd2F3YzhhUT09",
+      "type": "",
+      "text": "TOYOTA Yaris"
+    },
+    {
+      "uuid": "QUlEU21kOE9ma00rVUh0SHhGdTBLQT09",
+      "type": "",
+      "text": "VOLKSWAGEN Caddy"
+    },
+    {
+      "uuid": "Q2E0U1MvQjBVd29mMVZ6QmZ6VzluQT09",
+      "type": "",
+      "text": "NISSAN Micra"
+    },
+    {
+      "uuid": "SHd4YmhuOFFmUllidE9BWWJlcGV4Zz09",
+      "type": "",
+      "text": "LYNK & CO 01"
+    },
+    {
+      "uuid": "NlVaS0d2ekFQRWlvcXZVdGRXS1VLUT09",
+      "type": "",
+      "text": "MAZDA CX-5"
+    },
+    {
+      "uuid": "UUljajZvRHVoTDRnaDFJTEs5ZTBOUT09",
+      "type": "",
+      "text": "JEEP Renegade"
+    },
+    {
+      "uuid": "Q24rTks1U2trZzMveEhkcWVyQkhEdz09",
+      "type": "",
+      "text": "HYUNDAI i20"
+    },
+    {
+      "uuid": "Z25HWmdlRWJMNDVlc3pMcGZXV1BzUElPSVB5bEQyWENxSDhvS0ZQb0ZMZz0=",
+      "type": "",
+      "text": "LAND ROVER Range Rover Sport"
+    },
+    {
+      "uuid": "YmYyaE1wRFZQcGNBei9pdmwxTFhobm54NFRvOGY3WGZWeVFyeWpuYlFhZz0=",
+      "type": "",
+      "text": "DS DS 7 Crossback"
+    },
+    {
+      "uuid": "cllObVBXRkVCbU5sS240TTIyZHhRZz09",
+      "type": "",
+      "text": "BMW X2"
+    },
+    {
+      "uuid": "V2pySmZpZWZzVUtUVC8wYXZic2hIQT09",
+      "type": "",
+      "text": "SKODA Fabia"
+    },
+    {
+      "uuid": "d0tEUjIxRnduQ0Z2dENSb2dCSm1aUT09",
+      "type": "",
+      "text": "AUDI A5"
+    },
+    {
+      "uuid": "dmhjWXY1YjhORGhLSHdLTzBRNVladz09",
+      "type": "",
+      "text": "BMW X3"
+    },
+    {
+      "uuid": "WGxHeCtTZlB2ZER5R3R2amNVdVpYdz09",
+      "type": "",
+      "text": "BMW Serie 5"
+    },
+    {
+      "uuid": "bEJBdEFGZ0NGRXNqMEdlRkZPK1JJWDFNWjB1ZXpkNGhsejc4THhpMnRvaz0=",
+      "type": "",
+      "text": "MINI Countryman"
+    },
+    {
+      "uuid": "U3ZJSEt3ckN4TkJhSTR4SHlOUGN5dz09",
+      "type": "",
+      "text": "CITROEN Jumpy"
+    },
+    {
+      "uuid": "YXFDRWd0Z1BhcnMyK25VdnF6QVVGdz09",
+      "type": "",
+      "text": "FIAT Tipo"
+    },
+    {
+      "uuid": "RnlzUDJ3a3JVaHltWDR6WWw4UjM0UT09",
+      "type": "",
+      "text": "MERCEDES Citan"
+    },
+    {
+      "uuid": "TG1KcnJIMmk3VDdHMEpJMzB3OVZiUT09",
+      "type": "",
+      "text": "MG ZS"
+    },
+    {
+      "uuid": "TDFicHd6blVHWDhvQjNEeEFPZ1ZqZz09",
+      "type": "",
+      "text": "DACIA Duster"
+    },
+    {
+      "uuid": "UEw3ODJkbkw4MEdZZ3c4SDJSUkpWZz09",
+      "type": "",
+      "text": "MG HS"
+    },
+    {
+      "uuid": "d3JYWktqQlJLZDFpMXRCbit0TE5wdz09",
+      "type": "",
+      "text": "OPEL Insignia"
+    },
+    {
+      "uuid": "L2x4VXlVL1lCZmRsY2tPeWMyVytLUT09",
+      "type": "",
+      "text": "MAZDA CX-30"
+    },
+    {
+      "uuid": "RTI0UXg2Mk9hTDZBV2tjU1FOTHRKQT09",
+      "type": "",
+      "text": "NISSAN X-Trail"
+    },
+    {
+      "uuid": "MlVsZnVTandZUyszZlZjMlNmTThGQT09",
+      "type": "",
+      "text": "RENAULT Scenic"
+    },
+    {
+      "uuid": "dTdqRUdFVUZidlFkQXZDUHhLWnBXQT09",
+      "type": "",
+      "text": "DS DS4"
+    },
+    {
+      "uuid": "Tk1uTzUwZ2lSdTA1YWtkNUVtSmlqUT09",
+      "type": "",
+      "text": "FIAT Panda"
+    },
+    {
+      "uuid": "MXIyZjZ1dUZjWlVVMHBmNTBjWGlZQT09",
+      "type": "",
+      "text": "SKODA Karoq"
+    },
+    {
+      "uuid": "TGhjeG9xMWtXNm1VZERnRndXeEVTdz09",
+      "type": "",
+      "text": "KIA Picanto"
+    },
+    {
+      "uuid": "MHA0bTdDaFc5T3VLUWJxdzR2OWp0Zz09",
+      "type": "",
+      "text": "CITROEN C4 Cactus"
+    },
+    {
+      "uuid": "Z0lJM2JYR0g1RXhVaFpxN2c5OWhadz09",
+      "type": "",
+      "text": "RENAULT Trafic"
+    },
+    {
+      "uuid": "ZXpDT0lWR3RIdTJrUUR0cGlwMjNWQT09",
+      "type": "",
+      "text": "ALFA ROMEO Stelvio"
+    },
+    {
+      "uuid": "UFNxWkJjR1NSSHYzUHVlVUUvZWV0UT09",
+      "type": "",
+      "text": "AUDI A6"
+    },
+    {
+      "uuid": "UzR1MFVzTmFjRHFhSVc4UDEwR2Y5dz09",
+      "type": "",
+      "text": "VOLKSWAGEN Taigo"
+    },
+    {
+      "uuid": "QTEzUHNNLzVJZkxHcDR4SUN5UElRZGtoMm4xQzBOMDAxbU9rbzZ5aWxvcz0=",
+      "type": "",
+      "text": "CUPRA León"
+    },
+    {
+      "uuid": "ZnMzSlViQzdQekp5T00vZ0RqcGkyQT09",
+      "type": "",
+      "text": "PEUGEOT Expert"
+    },
+    {
+      "uuid": "Rll4K2V0cHJXc3RCMlN1TGwxYzhBZz09",
+      "type": "",
+      "text": "BMW Serie 4"
+    },
+    {
+      "uuid": "SlUwRHZjaDVpTWVxQ29kOGJQWXdtdz09",
+      "type": "",
+      "text": "MERCEDES Sprinter"
+    },
+    {
+      "uuid": "UEdseHNKa0k3YnRKRE5jKzdwSGJLZz09",
+      "type": "",
+      "text": "FORD EcoSport"
+    },
+    {
+      "uuid": "czhWTnRER0J5a3Ayd1hJV08waUZOQT09",
+      "type": "",
+      "text": "SKODA Octavia"
+    },
+    {
+      "uuid": "c3dvQmo3S1pwaW9yZGNzaFRsMW9pL0RXTlFnZDZSZ240N0VSZm9GUzI3OD0=",
+      "type": "",
+      "text": "OPEL Grandland X"
+    },
+    {
+      "uuid": "bjREQzZiaUV2QWdxY1Q1SUNoNDFJZz09",
+      "type": "",
+      "text": "SKODA Kamiq"
+    },
+    {
+      "uuid": "K0JaMGN3RnpXZ3FsT1FOSW5rMzVqSmh1QjNnREZSNXc1RXZmWkFqWVlvZz0=",
+      "type": "",
+      "text": "OPEL Grandland"
+    },
+    {
+      "uuid": "UWd0bXRiUEVhWkNTcWdCb2J3cFJzdz09",
+      "type": "",
+      "text": "BMW X5"
+    },
+    {
+      "uuid": "YUFJNnNPRDVhZU41TW9QOGpoT2sxQT09",
+      "type": "",
+      "text": "LEXUS UX"
+    },
+    {
+      "uuid": "QlA3TCtaNXFabVl5TnR3L0xadUlwQT09",
+      "type": "",
+      "text": "MAZDA Mazda3"
+    },
+    {
+      "uuid": "YzV3NHdyRGlBNE9yUE9MR1VMVk54c0FlWXlkTDhpMkNqak90QVF5VVFpST0=",
+      "type": "",
+      "text": "FIAT Dobló"
+    },
+    {
+      "uuid": "THp1TGlYQmdzelZkOUNMTE5zdWRLdz09",
+      "type": "",
+      "text": "FIAT Ducato"
+    },
+    {
+      "uuid": "K1pBZzVLS2lmdit6cXl6UVJvK2NCUlRQZCtVcU91MndvVnJXdC9ZWHBvQT0=",
+      "type": "",
+      "text": "MERCEDES Clase GLE"
+    },
+    {
+      "uuid": "MHdMR3QxWnNqclNzWUhCaFdCZ0NVUT09",
+      "type": "",
+      "text": "MERCEDES EQA"
+    },
+    {
+      "uuid": "b0R2bERXTVZQWXhYM09JUm5SdW5EQT09",
+      "type": "",
+      "text": "RENAULT Kadjar"
+    },
+    {
+      "uuid": "Njh0OFdNL2VxQzRiQjg5QXp6bjFLQT09",
+      "type": "",
+      "text": "VOLVO XC90"
+    },
+    {
+      "uuid": "bXJsOFFTalJQVzFMU2xOZ0t5cENFZjUrbTFPNjlkdlpoTmZ0ZXY4clhnaz0=",
+      "type": "",
+      "text": "MERCEDES Clase GLB"
+    },
+    {
+      "uuid": "cWZFNG5pVk5ZQnlmVUlJWXRWWkkxUT09",
+      "type": "",
+      "text": "FIAT 500X"
+    },
+    {
+      "uuid": "UXRnTXBobk1yVFBLeEVvb0VSdmwwQT09",
+      "type": "",
+      "text": "OPEL Vivaro"
+    },
+    {
+      "uuid": "VkdKM3k5enFsQUNCbkZCUEVJaFdHUT09",
+      "type": "",
+      "text": "FORD Transit"
+    },
+    {
+      "uuid": "ZGdRb2ErdXpxWkNXTWVCWVUyZEEvUT09",
+      "type": "",
+      "text": "HYUNDAI Ioniq"
+    },
+    {
+      "uuid": "dzVOMWIrKzJ1ell0UlBkbXRhK1hDTGkxS0Y2RHFaR1R1VmRLeDhkWXl1Yz0=",
+      "type": "",
+      "text": "FORD Transit Custom"
+    },
+    {
+      "uuid": "SUdvOEYrZUQ2QmRlN1N4V3BhOStHUT09",
+      "type": "",
+      "text": "TOYOTA RAV-4"
+    },
+    {
+      "uuid": "Z25HWmdlRWJMNDVlc3pMcGZXV1BzUDBWcXNENWY0a0ErUVhYNmhBaXZncz0=",
+      "type": "",
+      "text": "LAND ROVER Range Rover Velar"
+    },
+    {
+      "uuid": "ZlFzdjhwWkVCcWhVaUZ2dHFzYk5aQT09",
+      "type": "",
+      "text": "MERCEDES Clase V"
+    },
+    {
+      "uuid": "UDJkR2toc25FL2w3anZrRncxQVE0QT09",
+      "type": "",
+      "text": "VOLKSWAGEN Crafter"
+    },
+    {
+      "uuid": "MmN2UVpkMWN3MkF3MTlIRlBudmFVdz09",
+      "type": "",
+      "text": "MAZDA CX-3"
+    },
+    {
+      "uuid": "YjJJN29ra3Fqdld0NHJRTGtwUytBaFA5N2s3dm5SaEY5MEVDWXVjOWJlaz0=",
+      "type": "",
+      "text": "LAND ROVER Discovery Sport"
+    },
+    {
+      "uuid": "MnpienlEd29rNFUrR2g5a1AzMGVTTFJzY2V2RXBQVnJ0SWZiYUJSUFFJMD0=",
+      "type": "",
+      "text": "VOLKSWAGEN Transporter"
+    },
+    {
+      "uuid": "TzdVNEYvWUIzbzhQaCtSaCsrMW50dz09",
+      "type": "",
+      "text": "IVECO Daily"
+    },
+    {
+      "uuid": "VzRmVmR3REw1d0JyODZVL2tLWU5xdz09",
+      "type": "",
+      "text": "MERCEDES EQB"
+    },
+    {
+      "uuid": "dS95R3NKcHc1OHIwM05QUk5ublp2dz09",
+      "type": "",
+      "text": "VOLKSWAGEN Touran"
+    },
+    {
+      "uuid": "a2N3di9vbjdTZllpT29RQTZKR09EUT09",
+      "type": "",
+      "text": "SKODA Scala"
+    },
+    {
+      "uuid": "QjVzbE1wUStkdW96dk1NUzJWZnFjZz09",
+      "type": "",
+      "text": "SUZUKI Vitara"
+    },
+    {
+      "uuid": "SW5OeFFTdTZmemJtQzI0V3A3YjNFZz09",
+      "type": "",
+      "text": "FIAT Talento"
+    },
+    {
+      "uuid": "eld0K2lMYlVlVmpxRU9DdjJudURXZz09",
+      "type": "",
+      "text": "TOYOTA Auris"
+    },
+    {
+      "uuid": "WTMwTUFNdllWZEllVU5Ma1Z0amkxZz09",
+      "type": "",
+      "text": "JEEP Avenger"
+    },
+    {
+      "uuid": "YlZNWE5GMEczOGZ3dkk2MnZicFRUUT09",
+      "type": "",
+      "text": "BMW X4"
+    },
+    {
+      "uuid": "ZUIyUnJDdG1DWWdwVXhFeXpMcEV2Zz09",
+      "type": "",
+      "text": "FORD Mondeo"
+    },
+    {
+      "uuid": "aTE0QkUydlNYbllldW1ERDlYNk45QT09",
+      "type": "",
+      "text": "RENAULT Arkana"
+    },
+    {
+      "uuid": "M3hOM0Q5MXJwRzZ6aGZTbWtjOG83Zz09",
+      "type": "",
+      "text": "HYUNDAI i10"
+    },
+    {
+      "uuid": "eU5GUTlZMWllOTFia0dOUTFzejA0a2hHYmJUbXF0bmc4Q2s4azBPblZaQT0=",
+      "type": "",
+      "text": "FORD Tourneo Courier"
+    },
+    {
+      "uuid": "V25IMi8zVC9tWmRsbWJxMnZkTE9EQT09",
+      "type": "",
+      "text": "HYUNDAI Bayon"
+    },
+    {
+      "uuid": "Y3lPS3M2VnZGaDBEeFo2ak9xMzFsQT09",
+      "type": "",
+      "text": "JAGUAR F-Pace"
+    },
+    {
+      "uuid": "RHFLbzhMZWxXdkF1NVRnZHJrUHhQdz09",
+      "type": "",
+      "text": "VOLKSWAGEN Touareg"
+    },
+    {
+      "uuid": "OEJKVXNsRmNpOGV2NjRRSG9ISzlTQT09",
+      "type": "",
+      "text": "VOLKSWAGEN Multivan"
+    },
+    {
+      "uuid": "Vm5ObUlobElGempiTGE1Q1Q4M1JWUT09",
+      "type": "",
+      "text": "MITSUBISHI ASX"
+    },
+    {
+      "uuid": "YzlPbnNacVpDaWgvK0lBTE9GRGNKR2s0RzFyV0ZkYVZEVTRqTVE2a0x5UT0=",
+      "type": "",
+      "text": "DS DS3 Crossback"
+    },
+    {
+      "uuid": "bkRtUUF5T2t3RVJqMXdIN0VaL1BDQT09",
+      "type": "",
+      "text": "FORD C-Max"
+    },
+    {
+      "uuid": "dS8vd0V4aGNsWWp5ZFl0N1FaaUs5UT09",
+      "type": "",
+      "text": "KIA Rio"
+    },
+    {
+      "uuid": "dDFSVDI4SWhHVUpJMDd5Rk84L0VXUT09",
+      "type": "",
+      "text": "RENAULT Master"
+    },
+    {
+      "uuid": "b1M4d2cxVzZXY3ZxL1UzbVYxdXk5UT09",
+      "type": "",
+      "text": "TOYOTA Aygo"
+    },
+    {
+      "uuid": "d0RmbW5ZU3JHUEczTVdURUZvaWRNUT09",
+      "type": "",
+      "text": "MAZDA Mazda2"
+    },
+    {
+      "uuid": "QytHSUNTYVpSOTZzQjF4dysxSVR1UT09",
+      "type": "",
+      "text": "DACIA Dokker"
+    },
+    {
+      "uuid": "SkF3RE0wN3Q3Y1ZCZHdFVWpQemJkVE9YNXJja1J4UGtBUXJpYmg3d2dUbz0=",
+      "type": "",
+      "text": "FORD Transit Courier"
+    },
+    {
+      "uuid": "YnRGSTZtc2FLRklPM3cvMnpXc1BVZz09",
+      "type": "",
+      "text": "SEAT Tarraco"
+    },
+    {
+      "uuid": "dlN5L21ERmxEVGU3anY1TFBXR05Udz09",
+      "type": "",
+      "text": "PORSCHE Cayenne"
+    },
+    {
+      "uuid": "NnZrQkpaM3FkN0pLd1FEeDVlSkJlUT09",
+      "type": "",
+      "text": "CITROEN C5 X"
+    },
+    {
+      "uuid": "MW12elRuQnpMUUVYMi8xUXlUMi96UT09",
+      "type": "",
+      "text": "HONDA Civic"
+    },
+    {
+      "uuid": "R2M4UXBJM2E1ZmR2cGhvRUUzT1lQQT09",
+      "type": "",
+      "text": "NISSAN Leaf"
+    },
+    {
+      "uuid": "UGFJbnpTSlJVZmlVcnU4a1F3ejVVQT09",
+      "type": "",
+      "text": "KIA EV6"
+    },
+    {
+      "uuid": "YmFHZ2diNmxCU1pwdU84SGwzQzZXUT09",
+      "type": "",
+      "text": "CITROEN C4 X"
+    },
+    {
+      "uuid": "SExJbjVTY2puSkVJNFRmSFFLakpKZz09",
+      "type": "",
+      "text": "SKODA Kodiaq"
+    },
+    {
+      "uuid": "RHFCZjNURkZ3K2Zpd1BEcCtPMW5iZz09",
+      "type": "",
+      "text": "AUDI Q7"
+    },
+    {
+      "uuid": "RjNRZVFDMzNpM3gyaDcwMytlYVhMWlovaTlxQWJSY3JuTS92aHBlbTd2ST0=",
+      "type": "",
+      "text": "MITSUBISHI Eclipse Cross"
+    },
+    {
+      "uuid": "T0N6bzV5ZFMzaXFtWDc0SlNVTDY2UT09",
+      "type": "",
+      "text": "VOLKSWAGEN Arteon"
+    },
+    {
+      "uuid": "SGhYWnFOOFhsZE5RR2g3TTJKNnpSZz09",
+      "type": "",
+      "text": "HONDA CR-V"
+    },
+    {
+      "uuid": "MnNvSTlyTER1L0RrWU00VklKTk1ISitzUWhJY1d6ZDFoTURiZ3p1ckZGST0=",
+      "type": "",
+      "text": "CITROEN C-Elysée"
+    },
+    {
+      "uuid": "aEhyWTQvSlFYY1pPMjB2eG1nWEdaQT09",
+      "type": "",
+      "text": "OPEL Zafira"
+    },
+    {
+      "uuid": "OWs3bXBPS2swcGRhYmZjLzkxSmNQUT09",
+      "type": "",
+      "text": "JAGUAR E-Pace"
+    },
+    {
+      "uuid": "WUN5Qk9mUEZCd3VhMHhuQmVUbVZ2QT09",
+      "type": "",
+      "text": "KIA Sorento"
+    },
+    {
+      "uuid": "TXk1UkRtSEUvS0djTXRpUUJyVnd2QT09",
+      "type": "",
+      "text": "MERCEDES Clase S"
+    },
+    {
+      "uuid": "TGoraVpzdDBaOTJaaEE1RjRwbVZzZz09",
+      "type": "",
+      "text": "BMW X6"
+    },
+    {
+      "uuid": "QWQ3NnRjcjhwNEdoTTIyV1J4YzR0QT09",
+      "type": "",
+      "text": "FIAT 500L"
+    },
+    {
+      "uuid": "V24vMXN3Tm1FTlh5emNOSkhoVWxMZz09",
+      "type": "",
+      "text": "LAND ROVER Defender"
+    },
+    {
+      "uuid": "Qndaa3pjdTZpb0VBclI4OEdwcEZrUT09",
+      "type": "",
+      "text": "ABARTH 595"
+    },
+    {
+      "uuid": "OUJZeDlBRWdsMEV1UWpRdEpOMjFmUT09",
+      "type": "",
+      "text": "ALFA ROMEO Tonale"
+    },
+    {
+      "uuid": "Z3Mzdk5iQW5lS1NMbUtBZkZDWW5JQT09",
+      "type": "",
+      "text": "LEXUS NX"
+    },
+    {
+      "uuid": "VDBucDFheURWcWVCRDFqeTIyK3kyZz09",
+      "type": "",
+      "text": "MERCEDES EQE"
+    },
+    {
+      "uuid": "a29OSExsMCsxL2xMUjJrUEhtVGVEOHUyRDgwS2lkQlNINFZQUm16L2FKVT0=",
+      "type": "",
+      "text": "MITSUBISHI Outlander"
+    },
+    {
+      "uuid": "V2tOd0JGRCtKWDk1RHNhaERmZFJnZz09",
+      "type": "",
+      "text": "HYUNDAI Santa Fe"
+    },
+    {
+      "uuid": "ZytJR0ZQcEt1dm5EUXNMOXRzK0JuZnVYQUZ5aDVWNmNJNHU5bWNKcTZlZz0=",
+      "type": "",
+      "text": "FORD Transit Connect"
+    },
+    {
+      "uuid": "MjR2RkwrdVpUZThDeVIyWDVzalEwQT09",
+      "type": "",
+      "text": "RENAULT Talisman"
+    },
+    {
+      "uuid": "UDdmTjBlR040VjBSZzdvUkRCc0lVUT09",
+      "type": "",
+      "text": "FORD Ranger"
+    },
+    {
+      "uuid": "QjVFa1A2cTQ2d3JFN25wbXB1SUU2dz09",
+      "type": "",
+      "text": "PEUGEOT 207"
+    },
+    {
+      "uuid": "VzZsS1pVTFEyeVBUTENJdS9KV0ZxcXJQUnZHNi9oSTZveEFjOUJPSzl1QT0=",
+      "type": "",
+      "text": "VOLKSWAGEN Caravelle"
+    },
+    {
+      "uuid": "eXhBb2RPdVo0cElZSFVGRTVBTjBodz09",
+      "type": "",
+      "text": "VOLVO V60"
+    },
+    {
+      "uuid": "bTVUaURtSXJuUHlqQyt2dURtcHNwQT09",
+      "type": "",
+      "text": "HONDA HR-V"
+    },
+    {
+      "uuid": "ckk5OG5WQlpJcy9WNjg3SUhscTg4WE1GR1hwWWJ4dW82bXJod3JrdmphOD0=",
+      "type": "",
+      "text": "TOYOTA Land Cruiser"
+    },
+    {
+      "uuid": "UmlNVVIxU2dxcEFiTXBhUVk5SXRHUT09",
+      "type": "",
+      "text": "SUZUKI Swift"
+    },
+    {
+      "uuid": "VCtpY1hOS2hsckRoNjdxdVE5SlAxcGlUYkRlWTlDbEIzbG0xckZpaG42az0=",
+      "type": "",
+      "text": "CITROEN Grand C4 Spacetourer"
+    },
+    {
+      "uuid": "aDd2NHRWMnNjTG90c2UrSzA0UXlQdz09",
+      "type": "",
+      "text": "OPEL Movano"
+    },
+    {
+      "uuid": "RlRsTm5QUkR2NVdHV2k3THZtVVVKUT09",
+      "type": "",
+      "text": "JEEP Wrangler"
+    },
+    {
+      "uuid": "SmdCT2dqdGUyMW1pcVhtaDRWTmJ2Zz09",
+      "type": "",
+      "text": "SMART Fortwo"
+    },
+    {
+      "uuid": "S1l5UjB4cGU1d2RYNjZUUmNoUGdtS2dKV3J2b2VVdUI1SkxLLy8xQ21WQT0=",
+      "type": "",
+      "text": "FORD Mustang Mach-E"
+    },
+    {
+      "uuid": "MDIxKzhINWs2a0M1OHdBaUhoT0NGdz09",
+      "type": "",
+      "text": "SMART Forfour"
+    },
+    {
+      "uuid": "VDJFNGR2Nktjb3VWaE0xNlhhaUQ4UT09",
+      "type": "",
+      "text": "DACIA Lodgy"
+    },
+    {
+      "uuid": "a1BHR3lCTFY1RktPV3RZcVNHcEJpT0pvTEV3Qkg5UjdxaGxvTkh1WFEzWT0=",
+      "type": "",
+      "text": "MERCEDES Clase CLS"
+    },
+    {
+      "uuid": "ZEk5dWdEZXArT0ZFYytEbEhjcXp0UT09",
+      "type": "",
+      "text": "MERCEDES Clase T"
+    },
+    {
+      "uuid": "MWVTQ1BMeEt3dkQzV1JLNHVpZUltUT09",
+      "type": "",
+      "text": "PEUGEOT 408"
+    },
+    {
+      "uuid": "WDJWL3dLUVE4eFVHUTB2UFk4ZlpZZz09",
+      "type": "",
+      "text": "FORD Ka"
+    },
+    {
+      "uuid": "eTB0MEhYdnd4WDJlWnVrWFpwOTFvdz09",
+      "type": "",
+      "text": "NISSAN Townstar"
+    },
+    {
+      "uuid": "VG9HbmdwVXVXK0J4Q2R1Ylc1YXY1UT09",
+      "type": "",
+      "text": "BMW i3"
+    },
+    {
+      "uuid": "TS9OczhXWER5MHNSUTN1Snc1cjFzUT09",
+      "type": "",
+      "text": "RENAULT Espace"
+    },
+    {
+      "uuid": "SVdYcWU5ems1Z2lmUzZqNUxDN2RCZz09",
+      "type": "",
+      "text": "FORD S-Max"
+    },
+    {
+      "uuid": "S0lHV1hSNVk5c3ovTDNncHlzWGkwTGNtQU92UlFSL0tndGdGclU5eDVVQT0=",
+      "type": "",
+      "text": "MERCEDES Clase CLE"
+    },
+    {
+      "uuid": "YmorQTZLUG9ETzdaOGtHNUpPeGZ0Zz09",
+      "type": "",
+      "text": "VOLVO V40"
+    },
+    {
+      "uuid": "bXJvZ1ZoM2prK2FPTW1NbnphWFp5Zz09",
+      "type": "",
+      "text": "SSANGYONG KGM Tivoli"
+    },
+    {
+      "uuid": "ajUrcmZDc2w1NFloOTNYUGhzek05WW1tMyt1eCtDMW80dGVRK3hLMUVuWT0=",
+      "type": "",
+      "text": "TOYOTA Proace City"
+    },
+    {
+      "uuid": "QnJKcGF0c0lJMFJJaG9MUW9VTWhOVktwMVpzaE5IRGY0L3VhZWNHdE5zMD0=",
+      "type": "",
+      "text": "VOLKSWAGEN California"
+    },
+    {
+      "uuid": "ZHN5YTBtdFZtZVNmOHpQUmgxUGpVQT09",
+      "type": "",
+      "text": "MAZDA CX-60"
+    },
+    {
+      "uuid": "L2hNSi95OGdYOWJzUDMydHFqR2diT0p2VGxRTmEyVEVlOGdRdjZCWFVTZz0=",
+      "type": "",
+      "text": "PEUGEOT Traveller"
+    },
+    {
+      "uuid": "djNLVmtBdkdaU2VLNFhRY04ySmg1Zz09",
+      "type": "",
+      "text": "RENAULT Zoe"
+    },
+    {
+      "uuid": "cTcvWjhybDIxejNtT3VRZjlta0RSQT09",
+      "type": "",
+      "text": "BMW Serie 7"
+    },
+    {
+      "uuid": "WW9ncXZwbFZsczZkcEFKTHlUemkxamo4bk4wKzhrSlVVY3F5b1NNVXhqOD0=",
+      "type": "",
+      "text": "CITROEN SpaceTourer"
+    },
+    {
+      "uuid": "QkozVFlub2lHQmZtWk1LMVV3aFV0dz09",
+      "type": "",
+      "text": "FIAT 600"
+    },
+    {
+      "uuid": "ZmxVUEdrUWRuUy94UXpZT1RudGtFSWJYa2QwdnhqSnZTQ2U1SHZERW41bz0=",
+      "type": "",
+      "text": "JEEP Grand Cherokee"
+    },
+    {
+      "uuid": "bXZSNEcyaW5qdFVscEYyTXdkc0JEQT09",
+      "type": "",
+      "text": "MAZDA Mazda6"
+    },
+    {
+      "uuid": "SmNFWkR0ZHl3TkR3RGh5Q08yZEQ4Zz09",
+      "type": "",
+      "text": "SEAT Altea"
+    },
+    {
+      "uuid": "ZERuMGM5QncrcE9TM2QxdXJRck9TUT09",
+      "type": "",
+      "text": "SKODA Superb"
+    },
+    {
+      "uuid": "b2RvRkdjYmJRVmpGUndVNkZwU3R1UT09",
+      "type": "",
+      "text": "TESLA Model 3"
+    },
+    {
+      "uuid": "d0Y4cEF1OVpiNjhmYlR6cTgzVzJNdz09",
+      "type": "",
+      "text": "TOYOTA Proace"
+    },
+    {
+      "uuid": "dTFYY00xNnFwVmpGSEV2M1ZnaGFIdz09",
+      "type": "",
+      "text": "MAZDA MX-30"
+    },
+    {
+      "uuid": "UDRiNVlBdTNLZnVmUzIzNkZhZ3MyQT09",
+      "type": "",
+      "text": "KIA Carens"
+    },
+    {
+      "uuid": "YmpKZmtta0VYMXFkbjIvaTBSL3pZZz09",
+      "type": "",
+      "text": "PORSCHE Macan"
+    },
+    {
+      "uuid": "d2svaXlWR2pWdElZWHJMNDY5SDdNQT09",
+      "type": "",
+      "text": "AUDI Q8"
+    },
+    {
+      "uuid": "TVM0Z2czSE9YRUhhZHBSWVNRNW9qdz09",
+      "type": "",
+      "text": "FIAT Fiorino"
+    },
+    {
+      "uuid": "U0Z1cm85MTg2Tmo1ZVJBamNzTENGQT09",
+      "type": "",
+      "text": "VOLKSWAGEN Scirocco"
+    },
+    {
+      "uuid": "bmxZZDVuNVNSQkUrbTRsNDZqdEx1dz09",
+      "type": "",
+      "text": "MG 4"
+    },
+    {
+      "uuid": "cjZrS0ZjRVNkdDM2MGxNbDNVM0RyZz09",
+      "type": "",
+      "text": "MERCEDES EQE SUV"
+    },
+    {
+      "uuid": "ak84NnAxd2tvVFZMYlhGL083SkxBdz09",
+      "type": "",
+      "text": "PORSCHE Panamera"
+    },
+    {
+      "uuid": "MDlyK0s4MUxJMlRNeXV4V2Eza3dUdz09",
+      "type": "",
+      "text": "RENAULT Austral"
+    },
+    {
+      "uuid": "SWc5YWlELzhEajlNUmV0blVvTnJIZz09",
+      "type": "",
+      "text": "SSANGYONG KGM Korando"
+    },
+    {
+      "uuid": "cnErbkhtOWs5UlhBeFV6NkFyMjhQQT09",
+      "type": "",
+      "text": "CITROEN C5"
+    },
+    {
+      "uuid": "Mm9hVnVTU0phdWdNdGJKY3lLc1hudz09",
+      "type": "",
+      "text": "CITROEN Xsara"
+    },
+    {
+      "uuid": "SnZ6c3d4dk5kYnpGazB6UWRjK0pxMi80enhMbGlWZzVRcWhsNnNaUloxST0=",
+      "type": "",
+      "text": "LAND ROVER Discovery"
+    },
+    {
+      "uuid": "dVoyVmdOWnE0ZEI0eEVWV3dKaDR0QT09",
+      "type": "",
+      "text": "PEUGEOT 407"
+    },
+    {
+      "uuid": "TUNpcDdWMXdkSVpSSFgrb1REZ29jdz09",
+      "type": "",
+      "text": "AUDI A7"
+    },
+    {
+      "uuid": "ZGFDTk9OdUdicDdoTCtBT2pEYXZYNm8wS0VSbHZYZ2laWW5YTmRpeFZRZz0=",
+      "type": "",
+      "text": "FORD Tourneo Connect"
+    },
+    {
+      "uuid": "aHBac0NQd2VrTkFSMFVrNWtDMTJObVVrNWk3Q1BWbDlidUNrNDUrK20rST0=",
+      "type": "",
+      "text": "CITROEN C4 Spacetourer"
+    },
+    {
+      "uuid": "emluNFQzMlQ1TG5LVnhKVHE3S0pndz09",
+      "type": "",
+      "text": "CUPRA Ateca"
+    },
+    {
+      "uuid": "L2FMbEZTTHhBMXl5QmdYMFdibEdYdz09",
+      "type": "",
+      "text": "NISSAN NV200"
+    },
+    {
+      "uuid": "a2hMUkZOeFRyRWU4bTBueDF4MVA1dz09",
+      "type": "",
+      "text": "VOLKSWAGEN ID3"
+    },
+    {
+      "uuid": "WHRsWnBMaUJWWXZLMUZsUHQwSFdkdz09",
+      "type": "",
+      "text": "SUZUKI S-Cross"
+    },
+    {
+      "uuid": "YkZmQ1ZUSW93d2xVWlhzeGNwemdMZz09",
+      "type": "",
+      "text": "CITROEN C1"
+    },
+    {
+      "uuid": "N3NFaG81K2JJVkg2aFBSRWR4anE1UT09",
+      "type": "",
+      "text": "FIAT Punto"
+    },
+    {
+      "uuid": "Vk5GdmNqbGpzcTFDUm1ZOTZaUm1pQT09",
+      "type": "",
+      "text": "HONDA Jazz"
+    },
+    {
+      "uuid": "VUlrTVlQKzA2dkd1Z1pVOTBvTFl0UT09",
+      "type": "",
+      "text": "MERCEDES Clase M"
+    },
+    {
+      "uuid": "Z25HWmdlRWJMNDVlc3pMcGZXV1BzRDN1UGNnYU5tN25XVU43TFNpRS85UT0=",
+      "type": "",
+      "text": "LAND ROVER Range Rover"
+    },
+    {
+      "uuid": "Q21oSEwrY214RkgxSHBsc3ZZTW40QT09",
+      "type": "",
+      "text": "PEUGEOT 307"
+    },
+    {
+      "uuid": "YnFRZm5aWDRmMEVQOU81QmwrdzlNdz09",
+      "type": "",
+      "text": "RENAULT Express"
+    },
+    {
+      "uuid": "cmlpallGY29oUG81ck5oNTlOd2ZDVTZCdTF0eDBQWlZ2NVlVdS9iQkVaMD0=",
+      "type": "",
+      "text": "MITSUBISHI Space Star"
+    },
+    {
+      "uuid": "WEZad3NnSzIxVjNIRDlVL2dLVUIxdz09",
+      "type": "",
+      "text": "SUBARU XV"
+    },
+    {
+      "uuid": "SHhXRHpaUDN5M3lmdFZkZGVUOURyQT09",
+      "type": "",
+      "text": "AUDI TT"
+    },
+    {
+      "uuid": "bUIzckFUeWttQnZveXI2bE91b3lGQT09",
+      "type": "",
+      "text": "SEAT Alhambra"
+    },
+    {
+      "uuid": "WmF1S1pzK2ZwMGJYeW44aEFxN0Ywdz09",
+      "type": "",
+      "text": "JAGUAR XF"
+    },
+    {
+      "uuid": "bE5RYUoxdnBCTG1ZTkxMQ2xNbFMyUT09",
+      "type": "",
+      "text": "MERCEDES EQS"
+    },
+    {
+      "uuid": "Y2JzVnpqVHpPalBKV2ZiTW93UGtZQT09",
+      "type": "",
+      "text": "DACIA Logan"
+    },
+    {
+      "uuid": "T2s5WkUvenJZelVnOTgza2NrK1Q2Zz09",
+      "type": "",
+      "text": "MITSUBISHI L200"
+    },
+    {
+      "uuid": "Y3lhK3F1SzFOcmJQWFFGdXhTOCtVdz09",
+      "type": "",
+      "text": "PORSCHE 911"
+    },
+    {
+      "uuid": "MWJIdmcrRjFvZzIrKzNYdjYwc0ZwZz09",
+      "type": "",
+      "text": "DACIA Jogger"
+    },
+    {
+      "uuid": "RStZaFM2cXJxN0J3Z2tYNnovcGlYQT09",
+      "type": "",
+      "text": "TOYOTA Avensis"
+    },
+    {
+      "uuid": "eTRnMjM5cHIxY2daV0xWaEwvY01nZz09",
+      "type": "",
+      "text": "VOLVO C40"
+    },
+    {
+      "uuid": "eVp4UnZ5dlRkaFJSVkpHb0VDSWI4QT09",
+      "type": "",
+      "text": "BMW Serie 6"
+    },
+    {
+      "uuid": "Mk16QWF1SHNtN05BSVVtQ2ZyV0toL0FkYmJNeU1JNnd0TG5uRk50bFpJdz0=",
+      "type": "",
+      "text": "FIAT Fiorino Comercial"
+    },
+    {
+      "uuid": "MUxwT2xXYXoxd1ZBMm5pOThTRUhUQT09",
+      "type": "",
+      "text": "OPEL Adam"
+    },
+    {
+      "uuid": "SWQ4V0tnS0MrSlV2QzZZR0FBcVl0QT09",
+      "type": "",
+      "text": "KIA EV9"
+    },
+    {
+      "uuid": "eWdSZy9LUitSdzl2NkxxTjhSMDViQT09",
+      "type": "",
+      "text": "RENAULT Twingo"
+    },
+    {
+      "uuid": "ZGVLeGNnelNCZlhUV2ZLL3lTK2hZQT09",
+      "type": "",
+      "text": "TOYOTA Hilux"
+    },
+    {
+      "uuid": "bjZPN3kvWjRsOXNMdVdFd0hicVR5UT09",
+      "type": "",
+      "text": "VOLVO S60"
+    },
+    {
+      "uuid": "UE04ZlFZVFQ4enNWalVBZkZxVjk5QT09",
+      "type": "",
+      "text": "LEXUS CT"
+    },
+    {
+      "uuid": "cXp4VXUzUDRmZlByRko2aElicHpldz09",
+      "type": "",
+      "text": "MAZDA MX-5"
+    },
+    {
+      "uuid": "TGU5cVNwbURQMnAvbjZ5L09HNW1CUT09",
+      "type": "",
+      "text": "FORD Mustang"
+    },
+    {
+      "uuid": "NHpFSmtxUHdKVGlqeW1VL1dvYlRPdz09",
+      "type": "",
+      "text": "JEEP Cherokee"
+    },
+    {
+      "uuid": "L1NZVWtYeWMzb2VuNzdMZUxxdmxBdz09",
+      "type": "",
+      "text": "MITSUBISHI Colt"
+    },
+    {
+      "uuid": "a2VmNy9zNU9adkpuV0IwZ0hUQkg5dz09",
+      "type": "",
+      "text": "SUBARU Forester"
+    },
+    {
+      "uuid": "NVRHUXF3dUwyZ09jM2ZST2hRTHhEdz09",
+      "type": "",
+      "text": "VOLKSWAGEN Beetle"
+    },
+    {
+      "uuid": "MlRQb0pFMmZiMWJGNU40NTVUdHZJQT09",
+      "type": "",
+      "text": "ALFA ROMEO Giulia"
+    },
+    {
+      "uuid": "dXJyVEIxOWxySHAyV2Q1OG5YdlROQT09",
+      "type": "",
+      "text": "JAGUAR XE"
+    },
+    {
+      "uuid": "ZGErVWwrY3Q3MFluNnY4amhNM3RvQT09",
+      "type": "",
+      "text": "AUDI A8"
+    },
+    {
+      "uuid": "N1RDUWoydEdtVUIxaHhkdGNDOFJOdz09",
+      "type": "",
+      "text": "SUZUKI Ignis"
+    },
+    {
+      "uuid": "NXVnckV3Wlk4Y0lVQjlZMno1ZWMvUT09",
+      "type": "",
+      "text": "DACIA Spring"
+    },
+    {
+      "uuid": "YWhlSVB1MzQ4MzBUa1crS1JKVnNwZz09",
+      "type": "",
+      "text": "SEAT Mii"
+    },
+    {
+      "uuid": "NkszeHh1MFJyNENhY3RxSDBPMzZndz09",
+      "type": "",
+      "text": "TOYOTA Verso"
+    },
+    {
+      "uuid": "NGFibnhlZHEwRzYxMHFPdXA5MGZvZz09",
+      "type": "",
+      "text": "CUPRA Born"
+    },
+    {
+      "uuid": "NzFEWDRSeW9mcFFiMEpmOURzQlVXZz09",
+      "type": "",
+      "text": "HYUNDAI ix35"
+    },
+    {
+      "uuid": "NHNxQklYS20vMW04d3p2TnhVemdoZz09",
+      "type": "",
+      "text": "PEUGEOT 206"
+    },
+    {
+      "uuid": "NldjWWFVS1AvdGRXMUN1OEtyNjYvdz09",
+      "type": "",
+      "text": "FIAT Scudo"
+    },
+    {
+      "uuid": "WmZrMmlkbnQ5WVc4VjQwWG1ZNWsxQT09",
+      "type": "",
+      "text": "HONDA ZR-V"
+    },
+    {
+      "uuid": "MmcwMmVTbGRON1FpMWJvL1I1b2ZwZz09",
+      "type": "",
+      "text": "VOLKSWAGEN Sharan"
+    },
+    {
+      "uuid": "L3BieFkyQ01qclROYTNOZGg1Zk16QT09",
+      "type": "",
+      "text": "VOLVO S90"
+    },
+    {
+      "uuid": "RWJkYzFUUVlhZUVqQkcrdEdYMUJ0UT09",
+      "type": "",
+      "text": "VOLKSWAGEN ID4"
+    },
+    {
+      "uuid": "VjR1aDFqUzZURnFUYjY1Y0VCRmNoQT09",
+      "type": "",
+      "text": "LEXUS RX"
+    },
+    {
+      "uuid": "SnFEL3M0ZVBUUEF6QjBjM04vNDRudz09",
+      "type": "",
+      "text": "RENAULT Laguna"
+    },
+    {
+      "uuid": "RnNkTnpmY0UzWHNFN3d2NksrOE00Zz09",
+      "type": "",
+      "text": "SSANGYONG KGM Rodius"
+    },
+    {
+      "uuid": "ZElVbURiK1c0YVo2MEw2OHZtOGV1QT09",
+      "type": "",
+      "text": "ALFA ROMEO Giulietta"
+    },
+    {
+      "uuid": "MW1PSjZ5UEJhLzZGcWdFVFErY1BHQT09",
+      "type": "",
+      "text": "HYUNDAI Ioniq 5"
+    },
+    {
+      "uuid": "Wnd3MjFiQmc5OWVZU3ZVVFlPZTRiVjB2YXJCZXlkQXRMSEdRY2VaWjBQWT0=",
+      "type": "",
+      "text": "MERCEDES Clase CLK"
+    },
+    {
+      "uuid": "MzU4SUFoekpVN2l5S1F1Z3A5bk5yTHlTZ20zcnVaTlhCY0lia0lLUFhvWT0=",
+      "type": "",
+      "text": "MERCEDES Clase SLK"
+    },
+    {
+      "uuid": "bnQxWjBPNHZFQlpyY0poV2U3QzZiUT09",
+      "type": "",
+      "text": "TOYOTA Prius"
+    },
+    {
+      "uuid": "dm9xYi9jaW8wYTRObHBqV3p1bjBhdz09",
+      "type": "",
+      "text": "DR DR 4"
+    },
+    {
+      "uuid": "bUVNSDBEVlVzaHJraDNHYTdIMzdiclU3NW84NTZtWitZRENxY0gwK3BmND0=",
+      "type": "",
+      "text": "TOYOTA Proace Verso"
+    },
+    {
+      "uuid": "NkVFNmtVNlZTdFlHRlJGV3d2TTVFZ3duS2Q0OFR0NWQ4NGdISVhhOGlvTT0=",
+      "type": "",
+      "text": "AUDI A4 Allroad"
+    },
+    {
+      "uuid": "eE5JVXZwQUNuVTJmR2h1SnRHM3Y1dz09",
+      "type": "",
+      "text": "KIA Soul"
+    },
+    {
+      "uuid": "d0lJaXFsTjhZUDY4Wm0zVVBEV0tFQT09",
+      "type": "",
+      "text": "LEXUS IS"
+    },
+    {
+      "uuid": "cTR0NFVPeHR2RWRYSG9GYUcvaHN1UT09",
+      "type": "",
+      "text": "SEAT Toledo"
+    },
+    {
+      "uuid": "c1c2SzJmb2RJanh5dlhOd2VyS0RSQT09",
+      "type": "",
+      "text": "INFINITI Q30"
+    },
+    {
+      "uuid": "dFhURkk4U3VpMTVDTnNRNHNodHFMQT09",
+      "type": "",
+      "text": "MG 3"
+    },
+    {
+      "uuid": "emIxNkNOVmlmUUhDN3hJNHlLbVBHZz09",
+      "type": "",
+      "text": "SUBARU Outback"
+    },
+    {
+      "uuid": "TlF3U0FvN0Zzay9vaUZhZFEvcDl3SnZpazZ3RVZJWkk4R3h0dy9lVnc3bz0=",
+      "type": "",
+      "text": "TOYOTA Yaris Cross"
+    },
+    {
+      "uuid": "dlF1N1kvcFNEOVRVM09VZGsreHZHdz09",
+      "type": "",
+      "text": "VOLVO EX30"
+    },
+    {
+      "uuid": "amJuR3RsNTl1SXl5WlNXNmpVODZUU1JSTlQ0RGxVNVFQL2NzYjZ5TUc4TT0=",
+      "type": "",
+      "text": "VOLVO V60 Cross Country"
+    },
+    {
+      "uuid": "VFR5K2xpK2tzMWd1dmdTTHRGV2N5dz09",
+      "type": "",
+      "text": "NISSAN Note"
+    },
+    {
+      "uuid": "MVk1Vk5jeWpvSi9XNTFSL0tHekgxMDZmMGFiUURVZ01QK2QrSTBtekt5VT0=",
+      "type": "",
+      "text": "NISSAN Primastar"
+    },
+    {
+      "uuid": "SFdqbDF0a2dxeVVMb0d2bTFESlYxUT09",
+      "type": "",
+      "text": "RENAULT Koleos"
+    },
+    {
+      "uuid": "WnhsZ1B5UmR5bjJRc0FEb3pXMXphZz09",
+      "type": "",
+      "text": "VOLKSWAGEN ID5"
+    },
+    {
+      "uuid": "bVJ2TG4xS0o5cFpjaXZ0V2FLRnhsZz09",
+      "type": "",
+      "text": "AUDI e-tron"
+    },
+    {
+      "uuid": "OVliamgzaHJlNS9wRmdCWU85cUo3Zz09",
+      "type": "",
+      "text": "SMART 1"
+    },
+    {
+      "uuid": "WXAycXpkY2pwZ0NucXNySHpUbFNFUT09",
+      "type": "",
+      "text": "NISSAN Pulsar"
+    },
+    {
+      "uuid": "VExsL0lvLysrTDk5L3Vna3RCanB6Zz09",
+      "type": "",
+      "text": "PORSCHE Boxster"
+    },
+    {
+      "uuid": "cGpDNVhjZjA4aWhnYXRaQ2pOUjRFQT09",
+      "type": "",
+      "text": "SKODA Rapid"
+    },
+    {
+      "uuid": "Mzk0UmVhSU5TeDRRNThLQVZVaENjdz09",
+      "type": "",
+      "text": "ABARTH 500"
+    },
+    {
+      "uuid": "NHhIUUsvay9nWHRYWWt6SVRMT3JFZz09",
+      "type": "",
+      "text": "DS DS3"
+    },
+    {
+      "uuid": "QkRDSjdmbVlJVVZGRGhGd1RnTG9qQT09",
+      "type": "",
+      "text": "KIA Optima"
+    },
+    {
+      "uuid": "RjJDbXRBTi82VjF4MjM0UW0ra2lyQT09",
+      "type": "",
+      "text": "NISSAN Navara"
+    },
+    {
+      "uuid": "dk1jeWpmSGg5aEhqV2hEQXppODlGUT09",
+      "type": "",
+      "text": "OPEL Meriva"
+    },
+    {
+      "uuid": "OUpCZTFzdEFTbHVMeUNSVHZaSWhxZz09",
+      "type": "",
+      "text": "PEUGEOT 108"
+    },
+    {
+      "uuid": "dTZUZGlQR2VkaWZYS2hwbkpTM0x6UT09",
+      "type": "",
+      "text": "DS DS9"
+    },
+    {
+      "uuid": "cE5hZHVIWUo4b0IvcVpRK1piVUJoSStWeThEWWs3c3IrSkJ6RjBtMnhaUT0=",
+      "type": "",
+      "text": "FORD Tourneo Custom"
+    },
+    {
+      "uuid": "bVVFcGY0eHc1empTZkQ1UjVkeGRIdz09",
+      "type": "",
+      "text": "MERCEDES Viano"
+    },
+    {
+      "uuid": "WTR2MllQNHNZYVh2TVhRWUlLRSs2UT09",
+      "type": "",
+      "text": "PEUGEOT 3008 SUV"
+    },
+    {
+      "uuid": "UzczNTJjNU13NXpQV0hJVlkyWS83Zz09",
+      "type": "",
+      "text": "EVO EVO 5"
+    },
+    {
+      "uuid": "YnZnZ21DQmUxNUVTakE4N2F0V3M4QT09",
+      "type": "",
+      "text": "OMODA 5"
+    },
+    {
+      "uuid": "cHVnY2VjUUdnK2NWMForRklSMVpRdz09",
+      "type": "",
+      "text": "JAGUAR I-Pace"
+    },
+    {
+      "uuid": "Tk1EU0F0WmMvV2VPUzl1Ris0aWRtdz09",
+      "type": "",
+      "text": "AUDI Q4 e-tron"
+    },
+    {
+      "uuid": "VjRXTVFtVlFUbTM5VGxMQ0ZnRXlhUT09",
+      "type": "",
+      "text": "TESLA Model S"
+    },
+    {
+      "uuid": "cWNvako0eHZDM29xTW1rQzhFS0hlUT09",
+      "type": "",
+      "text": "VOLVO V90"
+    },
+    {
+      "uuid": "Rk5zV3RWb0xNVkVVMEFBN3A2ZDk4dz09",
+      "type": "",
+      "text": "MERCEDES Clase G"
+    },
+    {
+      "uuid": "Y2V1Q2dKcllURkZsdHpJTzcrRVAxQT09",
+      "type": "",
+      "text": "MERCEDES EQC"
+    },
+    {
+      "uuid": "a01zVzlMS21iTklhSDk3c0taaFVRQT09",
+      "type": "",
+      "text": "MITSUBISHI Montero"
+    },
+    {
+      "uuid": "UUxwVEU2ellraGE0TG1mcHgySWE2Zz09",
+      "type": "",
+      "text": "VOLKSWAGEN Up"
+    },
+    {
+      "uuid": "dVRwVlEvUHo5M3IwM2M0cm1xOWsxdz09",
+      "type": "",
+      "text": "BMW X7"
+    },
+    {
+      "uuid": "d3luSGxBRWRUY3ZFVXlaaW5LNzhzUT09",
+      "type": "",
+      "text": "BMW Z4"
+    },
+    {
+      "uuid": "cjNDbnp2TjJZNzVPOXVCc1pGUzdSQT09",
+      "type": "",
+      "text": "CHEVROLET Captiva"
+    },
+    {
+      "uuid": "eDk1UVpleTlwVkJqMDVla0xnM3pOZ2xmakcwOVZmNjVXZ1BnWWNNUFVZZz0=",
+      "type": "",
+      "text": "DFSK Glory 580"
+    },
+    {
+      "uuid": "dUNSa25tT0dWTzVjL2pFMmMzTWZpZz09",
+      "type": "",
+      "text": "KIA Pro Ceed"
+    },
+    {
+      "uuid": "bWlob3JmdlhwcUZzVnBrc1lVUkhKOVc4cDlWZVNsR1g2Vkp1SVlIenE0Yz0=",
+      "type": "",
+      "text": "LAND ROVER Freelander"
+    },
+    {
+      "uuid": "b014Q0Y4bytQSFdWZTJBUkxrY2tTZz09",
+      "type": "",
+      "text": "LEXUS ES"
+    },
+    {
+      "uuid": "eDNQMUFoZVdkRDhRU3MxZjlLRFJMUT09",
+      "type": "",
+      "text": "MERCEDES AMG GT"
+    },
+    {
+      "uuid": "a052SGVsZXFqMlBUalNqbUN0bGkvZz09",
+      "type": "",
+      "text": "NISSAN Ariya"
+    },
+    {
+      "uuid": "aW1UMjNCdCtqcnRxNFhkZGI4czE1T3FmeHhMSHE2TW0zdXRBQzduWnlMbz0=",
+      "type": "",
+      "text": "RENAULT Espace SUV"
+    },
+    {
+      "uuid": "alNxWG9zRGhuQ2h0cXlxbjhDRkwyZz09",
+      "type": "",
+      "text": "SUZUKI Jimny"
+    },
+    {
+      "uuid": "YWxIdjlPbFdXMy9YaXBnOU4zYTJHQT09",
+      "type": "",
+      "text": "TOYOTA Camry"
+    },
+    {
+      "uuid": "TWh2T0F4ZEx3K01ickhOZWdFQ2R1UT09",
+      "type": "",
+      "text": "DS DS5"
+    },
+    {
+      "uuid": "K2lBdjV2aGRJNFBBc0RFZSttblpOZz09",
+      "type": "",
+      "text": "MASERATI Levante"
+    },
+    {
+      "uuid": "T0ovc1V2b3UzWVFIV2xZek5mbVhOdz09",
+      "type": "",
+      "text": "MG Marvel R"
+    },
+    {
+      "uuid": "N3lJWmJEZ0xQVWYvT3hUaVdCWUt3Zz09",
+      "type": "",
+      "text": "SSANGYONG KGM Rexton"
+    },
+    {
+      "uuid": "eGNCdysvUHhXM1lkTHl3Sm4rRzI1SVNXMGx5V1hnelJOdjZFZzFqTUs5ND0=",
+      "type": "",
+      "text": "VOLVO V90 Cross Country"
+    },
+    {
+      "uuid": "VU5SQklRY3Q5dHBhakVMNHV3ZE5lUT09",
+      "type": "",
+      "text": "BMW Serie 8"
+    },
+    {
+      "uuid": "SUxpK0pLMnRYRWVyMFlMWXIrZjNVdz09",
+      "type": "",
+      "text": "CHEVROLET Cruze"
+    },
+    {
+      "uuid": "b3dnQUhUbythcHRjRSt2UEpUaytFQT09",
+      "type": "",
+      "text": "CHRYSLER Voyager"
+    },
+    {
+      "uuid": "eXB3OGNEemxIYmY2Z1V0MFNFc0xFdz09",
+      "type": "",
+      "text": "CITROEN C2"
+    },
+    {
+      "uuid": "N1FzRG8zaEhEMyt5L1UveElQV09kUT09",
+      "type": "",
+      "text": "FORD Connect"
+    },
+    {
+      "uuid": "a3VrQmhSZWtCWTl6YkJtb0hmSHdxdz09",
+      "type": "",
+      "text": "FIAT Qubo"
+    },
+    {
+      "uuid": "SkJ4SERWbjJFQnlhVlg5ZGdKMUpySWt6YmRFaXZVQkYzS2VXVlEvdk1YTT0=",
+      "type": "",
+      "text": "SEAT Córdoba"
+    },
+    {
+      "uuid": "WFNvdzB0RUZWc1FWb29ha3JHWGI4ZWxvcDg5UmtaejFlV1MrNlNnOUFGaz0=",
+      "type": "",
+      "text": "SUZUKI Grand Vitara"
+    },
+    {
+      "uuid": "ZDF5WHhPbURNcmxoeDZBSDhXeFNJcXhaUkllWUUySlBnUDRCQlZwZ1BuYz0=",
+      "type": "",
+      "text": "BENTLEY Continental"
+    },
+    {
+      "uuid": "VEFwUGVnMW9jRFZoSFFneUJjUU1DUT09",
+      "type": "",
+      "text": "HYUNDAI i40"
+    },
+    {
+      "uuid": "RkVmVU00RVE0RFNnZGNSd2ZQNlYrQT09",
+      "type": "",
+      "text": "OPEL Vectra"
+    },
+    {
+      "uuid": "eisxaCs4TnNWUGNyRUlqVVFqSEhPQT09",
+      "type": "",
+      "text": "CHEVROLET Aveo"
+    },
+    {
+      "uuid": "THliSisybHNkc1NrR1Bqa1cySjdRUT09",
+      "type": "",
+      "text": "FORD Explorer"
+    },
+    {
+      "uuid": "NlJWcW93blhxMm1sc05LL3JRQzJrUT09",
+      "type": "",
+      "text": "MERCEDES Clase SL"
+    },
+    {
+      "uuid": "UDdhQW5wVVZKcTV0WERLb1JqWXp0QT09",
+      "type": "",
+      "text": "MERCEDES EQV"
+    },
+    {
+      "uuid": "RmsvOWJYSEpOc1B1RWZoY1pUcEhmZz09",
+      "type": "",
+      "text": "VOLKSWAGEN Eos"
+    },
+    {
+      "uuid": "ZnZFWlFXTHdaK0kxRitwVWI1Mm5Ob095dVhJbEg0aXhiUEthTVUvemg3dz0=",
+      "type": "",
+      "text": "VOLKSWAGEN Passat Alltrack"
+    },
+    {
+      "uuid": "VGNlWWxsWWV4V25Nb1BxMUs4T1ltUml0Q2JKVmdvTk1ha1ZoMkdmS0lQRT0=",
+      "type": "",
+      "text": "AUDI A6 Allroad"
+    },
+    {
+      "uuid": "cDhnUWlJbzZYYmVGOFFrcEJXbm1HQT09",
+      "type": "",
+      "text": "DR DR 5"
+    },
+    {
+      "uuid": "ZGwxMmZ6czc2eEdIMFlGZkthKzQ0Zz09",
+      "type": "",
+      "text": "EVO EVO 3"
+    },
+    {
+      "uuid": "emZDVUhTZ2t4TXlSUFNQSkpGZERldz09",
+      "type": "",
+      "text": "HONDA Accord"
+    },
+    {
+      "uuid": "Y3QvRGFodFFJRkdDTk9IQXhvUUFIQT09",
+      "type": "",
+      "text": "SAAB 9-3"
+    },
+    {
+      "uuid": "aDA4dDNiWHR3VXpJRzNUNlNsN1JWUT09",
+      "type": "",
+      "text": "SKODA Yeti"
+    },
+    {
+      "uuid": "Y3d0NzZwdExVd3lKWXd5QkFQd3ViNXk5dDZUcnpkSzZmM3VsODJtNEdnWT0=",
+      "type": "",
+      "text": "DS DS4 Crossback"
+    },
+    {
+      "uuid": "TkF4Y05md0JjZ0RjM3hGRUFxbTRLdz09",
+      "type": "",
+      "text": "JAGUAR F-Type"
+    },
+    {
+      "uuid": "L2RtYlMrRHBEaEpCeWdYMUdvVTFtQT09",
+      "type": "",
+      "text": "KIA Carnival"
+    },
+    {
+      "uuid": "aGszS1VFeUlGUkh3eEUvMzJlNmZ5Z3piY3N0aE1UNUd1RnQzT3IxM0trMD0=",
+      "type": "",
+      "text": "MERCEDES Clase GLS"
+    },
+    {
+      "uuid": "QTVIbXpDKzJyajB3eHF3ZG1wM0FNdz09",
+      "type": "",
+      "text": "NISSAN NV300"
+    },
+    {
+      "uuid": "VitNZURpQ3B1VlNnNVhta3NyN3RoZz09",
+      "type": "",
+      "text": "SEAT Exeo"
+    },
+    {
+      "uuid": "Q1NvaWVac01SaUEyVjZDNGRlbjFqVFEwTW1HdjB5eHg1eXh0ZnBZbU9NND0=",
+      "type": "",
+      "text": "VOLVO V40 Cross Country"
+    },
+    {
+      "uuid": "ZFluMXcwSHYzdDFRQzRNWDE2Yi9KQT09",
+      "type": "",
+      "text": "DFSK F5"
+    },
+    {
+      "uuid": "bno4ZEVpU2ZtYnhWaXVRQXpaWFFsZz09",
+      "type": "",
+      "text": "MASERATI Ghibli"
+    },
+    {
+      "uuid": "Unl3bTZJOEFlcm5pNnM2OXRHbWlnUT09",
+      "type": "",
+      "text": "MERCEDES EQS SUV"
+    },
+    {
+      "uuid": "MnQyQVptVGcxQXpUNlc2Yy9XZi9Kdz09",
+      "type": "",
+      "text": "NISSAN NV400"
+    },
+    {
+      "uuid": "RHJXLzhjWWxLZWU4SkVBSWh2b2d1Zz09",
+      "type": "",
+      "text": "OPEL Cabrio"
+    },
+    {
+      "uuid": "aEk0bUhRekpXRzY4M0ZxWlMxaytBUT09",
+      "type": "",
+      "text": "TESLA Model X"
+    },
+    {
+      "uuid": "WXZkTFlVUUlnL1hNNkJtbHpHYWk2Zz09",
+      "type": "",
+      "text": "VOLKSWAGEN CC"
+    },
+    {
+      "uuid": "V1ZuaFdFYy9DNXlaOG04VjFUV01ENTVWZlJTWkdnenlwNnpLd1JuMHMzcz0=",
+      "type": "",
+      "text": "CITROEN C4 Aircross"
+    },
+    {
+      "uuid": "MkFTZ1BqQTZ2N3hJQ3ZuOUJid3pRUT09",
+      "type": "",
+      "text": "INFINITI Q50"
+    },
+    {
+      "uuid": "Y0F5QjBnUVNqWU1vVklhVVN0MTRpUT09",
+      "type": "",
+      "text": "JAGUAR XJ"
+    },
+    {
+      "uuid": "MVRJOWt3WkVsTG0vLzdmVnZNSGYxdz09",
+      "type": "",
+      "text": "JAGUAR XK"
+    },
+    {
+      "uuid": "UlprSXR2NmUyaWxiTXRGakVkcWZPdz09",
+      "type": "",
+      "text": "MAZDA CX-7"
+    },
+    {
+      "uuid": "aVB0Y0VNVVVab241ZVd0a245VTRYUT09",
+      "type": "",
+      "text": "NISSAN Patrol"
+    },
+    {
+      "uuid": "cXl4a2h2RWhGL0c5VVNKVHdTcjNzRFp6SlZPK2VRQ1YxaGh6SFU1eExxUT0=",
+      "type": "",
+      "text": "PEUGEOT Bipper Comercial"
+    },
+    {
+      "uuid": "bWNzNmVPb0JONnRibXVTNkJaWE1lUT09",
+      "type": "",
+      "text": "SKODA Citigo"
+    },
+    {
+      "uuid": "aU5nZzdSemxJc2FMSE5xd3cyN28xdz09",
+      "type": "",
+      "text": "CITROEN DS3"
+    },
+    {
+      "uuid": "anhWTVhpVlcvSVMvZUNXallUNHJOQT09",
+      "type": "",
+      "text": "DFSK SERES 3"
+    },
+    {
+      "uuid": "U3ovTFdZR2V3MVZ6SThQK3ZUTjRxZz09",
+      "type": "",
+      "text": "HYUNDAI ix20"
+    },
+    {
+      "uuid": "c2hUb2N5L2tURTQ3eCtqRXZ0MzNMZz09",
+      "type": "",
+      "text": "MERCEDES AMG SL"
+    },
+    {
+      "uuid": "MXdTY1JudVhocCswUzFDRVc2SkRiZz09",
+      "type": "",
+      "text": "PORSCHE Cayman"
+    },
+    {
+      "uuid": "b0RFTHhTOUIwdTllNmxjcWJ2aUhxQT09",
+      "type": "",
+      "text": "SKODA Enyaq iV"
+    },
+    {
+      "uuid": "N0VHTmwyR0R4OC9TbXU3QkZSMUYzT3I3ZWlqaFg5MDZPbWNtb2dRSHZFdz0=",
+      "type": "",
+      "text": "SKODA Spaceback"
+    },
+    {
+      "uuid": "alR1MDVlaXlQU3lkZlBEUEhPTU1VZz09",
+      "type": "",
+      "text": "SUZUKI Swace"
+    },
+    {
+      "uuid": "MXM3WlRTSVYyUjVjOWVsZDJGN2NhUT09",
+      "type": "",
+      "text": "SWM G01"
+    },
+    {
+      "uuid": "YTlSRTc0SExRS1RZWmIvTkRLTDRTd09TbjlyV29DSXFFWDdQLzFVR2lCaz0=",
+      "type": "",
+      "text": "TOYOTA Aygo X Cross"
+    },
+    {
+      "uuid": "SXZOQnl2NktaN3RET1Y2eU5qM05kUT09",
+      "type": "",
+      "text": "BMW Z3"
+    },
+    {
+      "uuid": "VEhvTExISmVodGUzbmJ3d1pJV2toZz09",
+      "type": "",
+      "text": "CITROEN Nemo"
+    },
+    {
+      "uuid": "eHVybG8rdnVsSkJ1NGFTNjQvS3RCZz09",
+      "type": "",
+      "text": "EVO Cross 4"
+    },
+    {
+      "uuid": "R3hTdjV0bnRwTVVVdmtSUnBOaktTQT09",
+      "type": "",
+      "text": "MERCEDES 190"
+    },
+    {
+      "uuid": "aWkrQ2x4TkVNUDZtMGs4TmpML2ttQT09",
+      "type": "",
+      "text": "MERCEDES EQT"
+    },
+    {
+      "uuid": "QmF5V3dLT21qN3N2ckFRRjZYR0Z0SENqU05WeEpsMHFSWEtoU05acDU4bz0=",
+      "type": "",
+      "text": "MINI Mini Clubman"
+    },
+    {
+      "uuid": "cmgwL2prWnlDVnhTRlM2MjRmc08vQT09",
+      "type": "",
+      "text": "OPEL Antara"
+    },
+    {
+      "uuid": "ZjNFZGZvWXdqSkJ6RXhBMlhGL3NHZz09",
+      "type": "",
+      "text": "RENAULT Twizy"
+    },
+    {
+      "uuid": "Qk42Qkt0eE1EYWIyd25rdkc0d1o1Zz09",
+      "type": "",
+      "text": "SSANGYONG KGM Torres"
+    },
+    {
+      "uuid": "UDZTOWNNVmdhRWg2aEFIdlhrL0xYeUtGV0oyMTBXTmdwZGd2NXRVZ011VT0=",
+      "type": "",
+      "text": "SUZUKI SX4 S-Cross"
+    },
+    {
+      "uuid": "djY0TDI4QmVOQ245VTlmclo5Wk45UT09",
+      "type": "",
+      "text": "TESLA Model Y"
+    },
+    {
+      "uuid": "bDRXSFZ1UEcrc2JsMVpldytLYkRlQT09",
+      "type": "",
+      "text": "ALFA ROMEO MiTo"
+    },
+    {
+      "uuid": "OFcyMkw1YXRjQW90aWpySWM5MDZIUT09",
+      "type": "",
+      "text": "CITROEN DS4"
+    },
+    {
+      "uuid": "UUxqc2ZpS0g1K01lL2RGa1NvU2ZBUT09",
+      "type": "",
+      "text": "DFSK 500"
+    },
+    {
+      "uuid": "UW1BeDR5N1k0R09qQ2tscVg5di9nUT09",
+      "type": "",
+      "text": "FIAT Freemont"
+    },
+    {
+      "uuid": "OHFrU0g0RmptcDZhQ2xhYUJFVmpRdz09",
+      "type": "",
+      "text": "FORD B-Max"
+    },
+    {
+      "uuid": "QUQ2ZnduYnJObUxINTdINnNNdHFKdz09",
+      "type": "",
+      "text": "FORD Bronco"
+    },
+    {
+      "uuid": "aTc1L3RxSXhBSVB5ekUrRFVZQlI1QT09",
+      "type": "",
+      "text": "FORD Edge"
+    },
+    {
+      "uuid": "YU1qNFFwL2l0STMwemI2YS9lSkZQUT09",
+      "type": "",
+      "text": "HYUNDAI Elantra"
+    },
+    {
+      "uuid": "djZFb3B3NGJ5WTIwanJiUno5NXB2Zz09",
+      "type": "",
+      "text": "INFINITI QX30"
+    },
+    {
+      "uuid": "cFBqeVZ1NXZLSGxtVE9YNXI1d1ZzUT09",
+      "type": "",
+      "text": "LEXUS LBX"
+    },
+    {
+      "uuid": "S3Q1T0tvTDdHSEk2c2RENE1JL1ZrdmtYRzRtMjRXQ1hTekZvTitmRVhIRT0=",
+      "type": "",
+      "text": "MERCEDES Clase CLC"
+    },
+    {
+      "uuid": "WjZsNWVWZ0J0OHAvVWVMeGdzUW9FQT09",
+      "type": "",
+      "text": "NISSAN NT400"
+    },
+    {
+      "uuid": "ZFdSVjk1REdMNHFSdjlYeWRKSVdpdz09",
+      "type": "",
+      "text": "OPEL Combo N1"
+    },
+    {
+      "uuid": "ZXYza0RVb0d3TkJrOCs3cEZJVzdwUT09",
+      "type": "",
+      "text": "PORSCHE Taycan"
+    },
+    {
+      "uuid": "K1lhQmFvNVFMSkQ2VEhiL3E2YktNZz09",
+      "type": "",
+      "text": "RENAULT Rafale"
+    },
+    {
+      "uuid": "N04vM2RDNE5wU05CeVJJSStXbitzZz09",
+      "type": "",
+      "text": "RENAULT Symbioz"
+    },
+    {
+      "uuid": "TTUrbzRCSWZEUXVLQXNkVmgvTkhRUT09",
+      "type": "",
+      "text": "SUZUKI Across"
+    },
+    {
+      "uuid": "UEtZeEdRVTNmVEVpb2c1SDlzaFhQdz09",
+      "type": "",
+      "text": "VOLKSWAGEN Amarok"
+    },
+    {
+      "uuid": "cUp3SWxMZmoxQUg5QU9uUjZibkJKQT09",
+      "type": "",
+      "text": "VOLVO S40"
+    },
+    {
+      "uuid": "TEVnVmxjcXNpbDBOQ25NZjBFYUlEQT09",
+      "type": "",
+      "text": "HYUNDAI Getz"
+    },
+    {
+      "uuid": "RmdtK0ZoWDVwRFl5d2hWZkVEYlRPdz09",
+      "type": "",
+      "text": "LANCIA Ypsilon"
+    },
+    {
+      "uuid": "UkxWRDJJMlR0alVaM2NBM0FKTFZ3dz09",
+      "type": "",
+      "text": "LEXUS LS"
+    },
+    {
+      "uuid": "UFU0THJkRkFxeDBETjR1OHZ4NTFMZz09",
+      "type": "",
+      "text": "NISSAN Evalia"
+    },
+    {
+      "uuid": "dnErY3VkVCtTUG1TTFYxK1NVOFhjdz09",
+      "type": "",
+      "text": "NISSAN Murano"
+    },
+    {
+      "uuid": "TGxVeFJnNHUzanlrcy9tK2p1VmdHdz09",
+      "type": "",
+      "text": "NISSAN NV250"
+    },
+    {
+      "uuid": "a0lFdTA5cVhYMElWRUJEbUZUZVFpUT09",
+      "type": "",
+      "text": "NISSAN Terrano"
+    },
+    {
+      "uuid": "Tnc2QW9wYUI2eUpBU2lNM21jWk5hUT09",
+      "type": "",
+      "text": "OPEL Frontera"
+    },
+    {
+      "uuid": "YUtFTVlqY3cydTRUckxHSWJTRE05QT09",
+      "type": "",
+      "text": "SUBARU Impreza"
+    },
+    {
+      "uuid": "S25yanRmeVFxSjkyUzRBeFZ6V0xxdz09",
+      "type": "",
+      "text": "TOYOTA bZ4X"
+    },
+    {
+      "uuid": "WmNocHk3K0M2V1ZoTjdOalUrN2xtUT09",
+      "type": "",
+      "text": "BMW i4"
+    },
+    {
+      "uuid": "UmtIcnRTbkt1QU1OT1VQQkFRMExLMnhFL2w5Vmt0T3JOVUQyb0daemRvYz0=",
+      "type": "",
+      "text": "HYUNDAI i20 Active"
+    },
+    {
+      "uuid": "ZDd6cG95WHc1ZDNCbWhPbjBGV1R5dz09",
+      "type": "",
+      "text": "JAGUAR X-Type"
+    },
+    {
+      "uuid": "REsybmxaYjc3TkJWUkRLL0txUTVwdz09",
+      "type": "",
+      "text": "LEXUS RZ"
+    },
+    {
+      "uuid": "Zmw5Yy84cGxTTkJtelI2dmJEd2EyUT09",
+      "type": "",
+      "text": "MAZDA CX-80"
+    },
+    {
+      "uuid": "Z3dOZUgxSjVPNkc2MkwxNS9oTTRmdz09",
+      "type": "",
+      "text": "SMART 3"
+    },
+    {
+      "uuid": "eksxNnJiRW5oNS9pWndIVWlKc0tMZz09",
+      "type": "",
+      "text": "VOLVO V50"
+    },
+    {
+      "uuid": "QS8wa2hqNEVkaWFKODdXMWhWU2JDZz09",
+      "type": "",
+      "text": "CITROEN DS5"
+    },
+    {
+      "uuid": "ZVcyeVVYK3JMWUxaZXFSWklSWExpQT09",
+      "type": "",
+      "text": "EVO EVO 7"
+    },
+    {
+      "uuid": "TTI0czFUTE1xUDN4NVpEVEpoSElHQT09",
+      "type": "",
+      "text": "FORD Galaxy"
+    },
+    {
+      "uuid": "dEZDajRkcnptNUozMWVYWE5TR0hoUT09",
+      "type": "",
+      "text": "ISUZU D-Max"
+    },
+    {
+      "uuid": "NTZ0c2JTN2E3L1FhWVYyUWVLbEJBUT09",
+      "type": "",
+      "text": "LANCIA Voyager"
+    },
+    {
+      "uuid": "NzV4b2lZR0xPUndmWnlDNHlMZ1gvUT09",
+      "type": "",
+      "text": "LEXUS RC"
+    },
+    {
+      "uuid": "QlN0aWJLaldUTkFsWUJ2MnVkdFpqdz09",
+      "type": "",
+      "text": "MAZDA Mazda5"
+    },
+    {
+      "uuid": "ZkNsQ3IvUzNRbGVsWGEyR3R3cnE3UT09",
+      "type": "",
+      "text": "MERCEDES Clase X"
+    },
+    {
+      "uuid": "RjhYVnU0ZFkwOWcyaDAyNVBNYjlXUT09",
+      "type": "",
+      "text": "NISSAN Cabstar"
+    },
+    {
+      "uuid": "ekJSb0F2YlVUUlE1YW5wVVY1UC82YXE0UXljQTVGMDlBSHdZVzhhZEltOD0=",
+      "type": "",
+      "text": "OPEL Corsa Van"
+    },
+    {
+      "uuid": "S0MyTHgrb09LbTYrbmN3REN3VmJOUT09",
+      "type": "",
+      "text": "OPEL Karl"
+    },
+    {
+      "uuid": "U2pML0YvdmxueWMvcVhUNFJNSmNNUT09",
+      "type": "",
+      "text": "PEUGEOT 406"
+    },
+    {
+      "uuid": "c21nRVFHU0gxanpBRVR2NUpwdTRXaXVPSUN6OUV2Vjc4cWR6eW1DSWtCaz0=",
+      "type": "",
+      "text": "RENAULT Clio Societé"
+    },
+    {
+      "uuid": "elJnbDg1M1BTYVd0eFczTGpkbG8yRzJLRjhFdUJaWnFVVjgvdmt5am80RT0=",
+      "type": "",
+      "text": "SEAT León X-perience"
+    },
+    {
+      "uuid": "NWdiM1V1ejJzN2Z4bHFNTzhNRG9hUT09",
+      "type": "",
+      "text": "SWM G01F"
+    },
+    {
+      "uuid": "QVRsaFVhbitwNVlZWVM1MThZaGxEQT09",
+      "type": "",
+      "text": "CHEVROLET Kalos"
+    },
+    {
+      "uuid": "S1VaL21pMWkvOW5ZTE9NSm83RFAxUT09",
+      "type": "",
+      "text": "FIAT Bravo"
+    },
+    {
+      "uuid": "cnlZTVlxd3RNYmNiMXlERGc2azY3Zz09",
+      "type": "",
+      "text": "FORD Fusion"
+    },
+    {
+      "uuid": "YUNOKzJLSXhJZmwxdVRwaFRueGlRUT09",
+      "type": "",
+      "text": "KIA Stinger"
+    },
+    {
+      "uuid": "RUpLaStFNVd6QW9VamVaWVNoTTBuQT09",
+      "type": "",
+      "text": "MAN TGE"
+    },
+    {
+      "uuid": "bHNWL1dORXFDcE8ycUlxU1NvZCtMdz09",
+      "type": "",
+      "text": "MERCEDES Clase R"
+    },
+    {
+      "uuid": "dUtSNlEvaGs5QjZpK01oL05IWGxudz09",
+      "type": "",
+      "text": "NISSAN Almera"
+    },
+    {
+      "uuid": "MnlVaXRlYUVxK2lSeFlUSWJmc3gwbVUzdy9ndVAzcUEyc3BxM1FSZ0Yxcz0=",
+      "type": "",
+      "text": "NISSAN Pathfinder"
+    },
+    {
+      "uuid": "Wm5MU05WOVJOSXJwV090NEZpZjhLQT09",
+      "type": "",
+      "text": "OPEL Tigra"
+    },
+    {
+      "uuid": "Q0prMStwc1NWVlgvMC91N1ZVU2ZNQT09",
+      "type": "",
+      "text": "PEUGEOT 508 RXH"
+    },
+    {
+      "uuid": "NGV3bEt2UFFQRHp0Uk5KQU5lazFBUT09",
+      "type": "",
+      "text": "PEUGEOT 807"
+    },
+    {
+      "uuid": "Z2dYRHZCWjJzQTFYN2dHTjljVlhkdz09",
+      "type": "",
+      "text": "SSANGYONG KGM Kyron"
+    },
+    {
+      "uuid": "aFIwYmtTcXhkTWpCL2RvQlkxNW1veVJuNEExbEpxUTQ2Qm8xNEY5U2NNQT0=",
+      "type": "",
+      "text": "SSANGYONG KGM Musso Sports"
+    },
+    {
+      "uuid": "TkFucXNuNFpqVDRDQnFnTW9BOWVldz09",
+      "type": "",
+      "text": "SUBARU Solterra"
+    },
+    {
+      "uuid": "eHlOY1RKSStJSkx5SmM3MURKNTgrUT09",
+      "type": "",
+      "text": "SUZUKI SX4"
+    },
+    {
+      "uuid": "MFBtVGlRZ09zZmdVYVdmRWIwTGhNUT09",
+      "type": "",
+      "text": "VOLKSWAGEN Jetta"
+    },
+    {
+      "uuid": "bUI1U1ZCL0pmMkZOVlZ0UGZJUWk2dz09",
+      "type": "",
+      "text": "VOLVO C30"
+    },
+    {
+      "uuid": "Rkd3RnhLcFpNZXhGNW4vK1lWODZuUT09",
+      "type": "",
+      "text": "BYD Atto 3"
+    },
+    {
+      "uuid": "OEZvblhmUGZNRjBkU3lSVDhDaEIzUT09",
+      "type": "",
+      "text": "DAEWOO Kalos"
+    },
+    {
+      "uuid": "dWUxVFRwNEJCdnFkQ0VHN0xIcml5UT09",
+      "type": "",
+      "text": "EVO EVO 4"
+    },
+    {
+      "uuid": "OHpYMldPMEhiQmg0Zi9xTndzekV5M05sYkNBazlOZnd0U1JaNjBjZjFWQT0=",
+      "type": "",
+      "text": "FIAT Punto Evo"
+    },
+    {
+      "uuid": "VW91dHdINUVrTnc2NzNXQUp1R2h4cTVMWEc4azdsQzFNWk11d3cxSEFGND0=",
+      "type": "",
+      "text": "FORD Focus C-Max"
+    },
+    {
+      "uuid": "VnNFQ25iWjRnOXkyOW9tTEcxeTRyZz09",
+      "type": "",
+      "text": "HONDA HR-V SUV"
+    },
+    {
+      "uuid": "WlV0QzhHa3B3UXlqdjNaTEtPeEE2dz09",
+      "type": "",
+      "text": "HYUNDAI Ioniq 6"
+    },
+    {
+      "uuid": "bFVIOXk1NnZZeVRLN0VCS01vUng1Zz09",
+      "type": "",
+      "text": "JAGUAR S-Type"
+    },
+    {
+      "uuid": "STdVcStBendRaGg1ZjdMSGF5SlNCaEhybE9xeHZnQW1SV3Q4V2VuQ2ROOD0=",
+      "type": "",
+      "text": "MERCEDES Clase GLK"
+    },
+    {
+      "uuid": "ZnFaN3k1UjdrSTh6T3BjRVhJT1AxZz09",
+      "type": "",
+      "text": "PEUGEOT 107"
+    },
+    {
+      "uuid": "SFRKQXpJcDRjdlJXdkJBc2V1QkI1Zz09",
+      "type": "",
+      "text": "PEUGEOT RCZ"
+    },
+    {
+      "uuid": "eWVWR2FLUjRycGRyeEwxNlpTWStSQT09",
+      "type": "",
+      "text": "RENAULT Fluence"
+    },
+    {
+      "uuid": "QXZpQjNqN0FaQnlqZ0Z5bVBhdVB3RFBpNld2aFMyOE5vNTI2NEFJTEIwZz0=",
+      "type": "",
+      "text": "SUBARU Crosstrek"
+    },
+    {
+      "uuid": "SjE4eVZUQzBwMnJnL0U5UzlwYU1kUT09",
+      "type": "",
+      "text": "SUZUKI Samurai"
+    },
+    {
+      "uuid": "b1VzbHNrcGhqeVhLaEZMZlczaHoxZz09",
+      "type": "",
+      "text": "VOLKSWAGEN ID7"
+    },
+    {
+      "uuid": "eXpwOVRwZzEwUEJlTlNhOFFZS20zZz09",
+      "type": "",
+      "text": "ALFA ROMEO 147"
+    },
+    {
+      "uuid": "WjNhenNDOElrWHh5NFZwNUN2Q25oZz09",
+      "type": "",
+      "text": "BENTLEY Bentayga"
+    },
+    {
+      "uuid": "M2F0RXJmN1JoRkd5Q2ZNU3pPZWJaZz09",
+      "type": "",
+      "text": "BMW iX"
+    },
+    {
+      "uuid": "OFQ2VXprSmdwcm82RnM1d21kTXNnZz09",
+      "type": "",
+      "text": "BYD Dolphin"
+    },
+    {
+      "uuid": "Y1lmYWJnZkg0Q0V4RHNwc2lVMmtBUT09",
+      "type": "",
+      "text": "CHEVROLET Orlando"
+    },
+    {
+      "uuid": "ODdHblJrclBsZzBqNzI5cEdrTXJNZz09",
+      "type": "",
+      "text": "FIAT Fullback"
+    },
+    {
+      "uuid": "TnYrSDNJakx4OVY3Vi9saGdPNzVIL1Y1cVBENFV3MDlybzRtRG03WmxVdz0=",
+      "type": "",
+      "text": "FIAT Grande Punto"
+    },
+    {
+      "uuid": "T1puUzc4S0oxdDFwOUpXUnJ6cmtHZz09",
+      "type": "",
+      "text": "FIAT Stilo"
+    },
+    {
+      "uuid": "MWp0R3gvcTVrQ1k4WmUrR1NBOUplZz09",
+      "type": "",
+      "text": "HONDA e NY1"
+    },
+    {
+      "uuid": "TmJ6em5ERWlqY1Fpc0NmbUJnUHNHUT09",
+      "type": "",
+      "text": "HYUNDAI Atos"
+    },
+    {
+      "uuid": "RmVGR04rMUFlbXJCd2lCTTZaM29aUT09",
+      "type": "",
+      "text": "KIA Venga"
+    },
+    {
+      "uuid": "dzRVTGpwNVhDcVdCS3RlTXpPa3RwQT09",
+      "type": "",
+      "text": "LEXUS GS"
+    },
+    {
+      "uuid": "L0UwNzdVZGZxcDZLM0wyK2JGSi8xQT09",
+      "type": "",
+      "text": "MAXUS Euniq 5"
+    },
+    {
+      "uuid": "MTZ3ejkzZHAzRFd3MGZQNGVER0Jjdz09",
+      "type": "",
+      "text": "MERCEDES Clase GL"
+    },
+    {
+      "uuid": "RGFSY1d1SjRXSWdDVXhBVDV4SzFUdz09",
+      "type": "",
+      "text": "PEUGEOT 1007"
+    },
+    {
+      "uuid": "bFozbi9KWUVXRGZEMklhdmVUdi90QT09",
+      "type": "",
+      "text": "PEUGEOT iOn"
+    },
+    {
+      "uuid": "VGZRbTNsTlNUR2djOXArdGZCSDY3NVluWVk0RnEyZFo0dllRdkRTK200bz0=",
+      "type": "",
+      "text": "TOYOTA Corolla Cross"
+    },
+    {
+      "uuid": "VWdaTzRKZytTRmRZdjc5bmpGWDJ3QT09",
+      "type": "",
+      "text": "VOLKSWAGEN IDBuzz"
+    },
+    {
+      "uuid": "OThDY1dKUWxmdUdOb3ZZQXZXQS90VHhiRmVkV2VuUDJsa3NVeC9SLzU2QT0=",
+      "type": "",
+      "text": "VOLKSWAGEN Passat CC"
+    },
+    {
+      "uuid": "cmp3b3dpZjE0cFBNb0JNbEdxN2VyUT09",
+      "type": "",
+      "text": "VOLVO S80"
+    },
+    {
+      "uuid": "aXBJb3lWdGloZEIxK2IxRitVTXdDQT09",
+      "type": "",
+      "text": "YUDO K3"
+    },
+    {
+      "uuid": "UWFQajFmTTFPT284NENrSXY1RWRtdz09",
+      "type": "",
+      "text": "CHEVROLET Matiz"
+    },
+    {
+      "uuid": "WVYwM0h6Z29xNGo0bzQwZ05uNVlSdz09",
+      "type": "",
+      "text": "CITROEN C-Zero"
+    },
+    {
+      "uuid": "UVBoUTVEMFRoeUxKcTZXUmpWMEw5UT09",
+      "type": "",
+      "text": "CITROEN Saxo"
+    },
+    {
+      "uuid": "ZmNYbWlMU0NiZUllVTBiZERHMjh3azBuc09yTFF6V1lhT1JwbkZaNkkraz0=",
+      "type": "",
+      "text": "HYUNDAI Coupé"
+    },
+    {
+      "uuid": "cUxIcEd3NEdyYy8vUFdXQUxDZmFVZz09",
+      "type": "",
+      "text": "HYUNDAI Terracan"
+    },
+    {
+      "uuid": "V1lkUEZubGdoT3UrQU1yajdyMlJ1cDJIR1RoNmFZaE1QRmJ5elZ6QzNQYz0=",
+      "type": "",
+      "text": "MAXUS e Deliver 3"
+    },
+    {
+      "uuid": "YmFzbmh0WHJwYWk1ZnRnTEdLcURDdz09",
+      "type": "",
+      "text": "MERCEDES Clase CL"
+    },
+    {
+      "uuid": "SUNYTHkvVXlXTGI4RFkzdmlUTUZIdz09",
+      "type": "",
+      "text": "NISSAN Primera"
+    },
+    {
+      "uuid": "ejNsRldibjl3NFZXVU5ZUy9pTU5aQT09",
+      "type": "",
+      "text": "PEUGEOT 205"
+    },
+    {
+      "uuid": "cjRtMjA5WW1PREJ2cEZvZWN5MWU3QT09",
+      "type": "",
+      "text": "SSANGYONG KGM Actyon"
+    },
+    {
+      "uuid": "QU00NnlQVW02cmo2bXlIZDQ0Rnd2dz09",
+      "type": "",
+      "text": "AUDI R8"
+    },
+    {
+      "uuid": "b2JhUjR4VHFpTVFQL0ZLMkdiZnhRUT09",
+      "type": "",
+      "text": "BYD Seal U"
+    },
+    {
+      "uuid": "R2twbW10ZG9wZXJZZjBKdHFoTThQdz09",
+      "type": "",
+      "text": "CHRYSLER 300C"
+    },
+    {
+      "uuid": "K2xBMHZDa2VpK0E3b09RRGlRend2MWZhVnlObWhBSFJyZFluWEtWWWlsST0=",
+      "type": "",
+      "text": "CHRYSLER PT Cruiser"
+    },
+    {
+      "uuid": "cWxPVDVsU0FlMTdBL2YwQ2ZTMzNGZz09",
+      "type": "",
+      "text": "CHRYSLER Sebring"
+    },
+    {
+      "uuid": "Y2dsZUgwTkpBNmtxOGxyUEtybzROUT09",
+      "type": "",
+      "text": "CITROEN C8"
+    },
+    {
+      "uuid": "UzdGelRzcFFEcnhSTjhDSkliS29MN1M3NU5ONUxqYXhBZEJjQUViT213TT0=",
+      "type": "",
+      "text": "FERRARI Portofino"
+    },
+    {
+      "uuid": "eXF0RmlqbXVsYmVuOUoycWlSSytuZz09",
+      "type": "",
+      "text": "HYUNDAI Staria"
+    },
+    {
+      "uuid": "L0FmL1p3aEhLQVMycFBubUZTeXFyZz09",
+      "type": "",
+      "text": "INFINITI FX"
+    },
+    {
+      "uuid": "eU5mQURkTEZhQURtRGVBMG5taG00UT09",
+      "type": "",
+      "text": "INVICTA D2S"
+    },
+    {
+      "uuid": "Wk9QclBCVlowbVQ2TDd3T0ZNcXhCdUxNaEpwRXhEc2FmSnF4eVZMcCt4cz0=",
+      "type": "",
+      "text": "LAMBORGHINI Huracán"
+    },
+    {
+      "uuid": "Wnhsai9nckZtdDRpRDROR29hVVVWZz09",
+      "type": "",
+      "text": "MAHINDRA XUV500"
+    },
+    {
+      "uuid": "dmorclRUN1NPS3hvNVJEUm56Y2t3UT09",
+      "type": "",
+      "text": "SERES 3"
+    },
+    {
+      "uuid": "cjNPRElQRmVCci9BMTJta2l0VWpLQ1k4TEFTaXNmampSdkF3RS9hWTRCcz0=",
+      "type": "",
+      "text": "VOLKSWAGEN Sportsvan"
+    },
+    {
+      "uuid": "ZXY2cXN1MmRyRTFoUVJJTnhLTVZBZz09",
+      "type": "",
+      "text": "VOLVO C70"
+    },
+    {
+      "uuid": "L3NORlk5ckQwNmpRbWRHVFRBM1Fudz09",
+      "type": "",
+      "text": "VOLVO XC70"
+    },
+    {
+      "uuid": "Q1RQRHBlMDU4Mk9EakdKekN5L29QZz09",
+      "type": "",
+      "text": "ALFA ROMEO 159"
+    },
+    {
+      "uuid": "UHNUaEJZb0hla0hkTmNaMTBzN3QwQT09",
+      "type": "",
+      "text": "ALPINE A110"
+    },
+    {
+      "uuid": "ejN5aGdhSmZ5M1BjNlFwOFdJdGF3Wm1PQ1ZTL1NycnJJcGlBMnF0aFJxTT0=",
+      "type": "",
+      "text": "AUDI A1 Citycarver"
+    },
+    {
+      "uuid": "bkFqTGw1cHpwZlVvNnNUUEhOOWxpQT09",
+      "type": "",
+      "text": "CHEVROLET Trax"
+    },
+    {
+      "uuid": "S0FYcEFFdTlrUWtJcG5lbVdlYjRCZz09",
+      "type": "",
+      "text": "DFSK Serie K"
+    },
+    {
+      "uuid": "OTR0TFpCQ0lpeHpROVlTVmtEVW1xaTlhWXRMaDRiOUU3MzNLSm9xYmFlOD0=",
+      "type": "",
+      "text": "DODGE Challenger"
+    },
+    {
+      "uuid": "bHRHa0Z3THlrUHZpbGpia083V3A2UT09",
+      "type": "",
+      "text": "DODGE Journey"
+    },
+    {
+      "uuid": "ZmJLM0FZVTFMMURORktqNUtNMkVRUT09",
+      "type": "",
+      "text": "FERRARI 458"
+    },
+    {
+      "uuid": "Qi9jK1VkMUZwRHc4M1QraWM1UHN6c2NsVDdkTnFOQlRpZktQOXpWR1RBcz0=",
+      "type": "",
+      "text": "FERRARI California"
+    },
+    {
+      "uuid": "cmlhVjgzZEI3UjlIWHJub1VIbGROdz09",
+      "type": "",
+      "text": "FORD Escort"
+    },
+    {
+      "uuid": "a2hNelUrYS9YZFZ6RzhoS2o5RlN3QT09",
+      "type": "",
+      "text": "HYUNDAI H-1"
+    },
+    {
+      "uuid": "Uyt5VXJwSHdPMng5UWNYcUFBQ2tqUT09",
+      "type": "",
+      "text": "HYUNDAI Matrix"
+    },
+    {
+      "uuid": "R1BkOFBqL2Roc3VmZXdQT2l1QXN5dz09",
+      "type": "",
+      "text": "HYUNDAI Sonata"
+    },
+    {
+      "uuid": "NERlQWljOGVGdmg4WDRmaG1aRDdNUT09",
+      "type": "",
+      "text": "INVICTA Metro"
+    },
+    {
+      "uuid": "Z3dCeFMzMDdFRjd6Q2I4NU81K2MzUHFkNys0cmk4akx2Y0NqUmVEM1JVbz0=",
+      "type": "",
+      "text": "JEEP Commander"
+    },
+    {
+      "uuid": "dC9UcVRESEk1eTIzWDJsdEwwMzVSdz09",
+      "type": "",
+      "text": "MERCEDES 200-500"
+    },
+    {
+      "uuid": "YmU5RnhPMUxzNWdwdG00V3NXbFZ3Zz09",
+      "type": "",
+      "text": "MG 5"
+    },
+    {
+      "uuid": "Y3NVaUtsVE5wQXVLZTZ4QTg1aGhURWFiN0plQk85SnB6UjJtY24wYWdpUT0=",
+      "type": "",
+      "text": "NISSAN Interstar"
+    },
+    {
+      "uuid": "MUxWdXRjNnFoWkZQei9LYkZRb0pjQT09",
+      "type": "",
+      "text": "PEUGEOT 208 XAD"
+    },
+    {
+      "uuid": "S1BTUmp5RWFlam1KVDhZODhwNGx6Zz09",
+      "type": "",
+      "text": "PEUGEOT 607"
+    },
+    {
+      "uuid": "TlZvQ3dJSnAxdUVLOVcxQklONTJaUT09",
+      "type": "",
+      "text": "SSANGYONG KGM XLV"
+    },
+    {
+      "uuid": "blVZUkMyRUEvd1RjaFJ0RmdzU2REZz09",
+      "type": "",
+      "text": "SUZUKI Baleno"
+    },
+    {
+      "uuid": "REs5Z3ZvdmluNFcydUNLWkoxeVNSeG9Vb1M3eVFxOU9LWWE0bmZ6OGNHRT0=",
+      "type": "",
+      "text": "SUZUKI Jimny Pro"
+    },
+    {
+      "uuid": "UW9hc1FCaTRrNjNOaVg1RXV4UUVkUT09",
+      "type": "",
+      "text": "TOYOTA Celica"
+    },
+    {
+      "uuid": "MlNDa1BqVXdPcldRWWdvaXhVbXgwOS95RjNGVVUwaC96ZHJiaXc3WmFZRT0=",
+      "type": "",
+      "text": "TOYOTA Highlander"
+    },
+    {
+      "uuid": "R0hMMFJLYWhTdjFtdmhqZ25qME96OU01cmV2RkJJcjlhRUlFdkZNN2l6VT0=",
+      "type": "",
+      "text": "TOYOTA Prius Plus"
+    },
+    {
+      "uuid": "ajUrcmZDc2w1NFloOTNYUGhzek05Vk9kOUZ0c1VBaDFxNXVRMG8ybTBRcz0=",
+      "type": "",
+      "text": "TOYOTA Proace City Verso"
+    },
+    {
+      "uuid": "Ylc5ZVljQTdnQ0ZEYVhOWC8wNGxlUT09",
+      "type": "",
+      "text": "VOLKSWAGEN Bora"
+    },
+    {
+      "uuid": "aFBxb1hoZWlPK05YNFEzRFRuTGt6SDNSM2EweVFRWFFBUGFRN2hiUHhwcz0=",
+      "type": "",
+      "text": "VOLKSWAGEN IDBuzz Cargo"
+    },
+    {
+      "uuid": "ZjZ2cFU0cmJpM1lKVWhKTUVENUpTTVFjUEFZejVVeXM1N2YvNDBYVFRYTT0=",
+      "type": "",
+      "text": "ABARTH 124 Spider"
+    },
+    {
+      "uuid": "TXRZZEF5bnZOZWZtV2JnWTFHRVIwZz09",
+      "type": "",
+      "text": "ALFA ROMEO Junior"
+    },
+    {
+      "uuid": "Qy9XQXNTNEJyTTRpNDVnUG9QSFM5QT09",
+      "type": "",
+      "text": "AUDI Q8 e-tron"
+    },
+    {
+      "uuid": "cHhGOW95ekVWaGZlRU4yc2JkY2RkbUdGaHVvZzFXNHFWY3R2N2lFSklMaz0=",
+      "type": "",
+      "text": "BENTLEY Flying Spur"
+    },
+    {
+      "uuid": "bHB5b1NWeXRPZkNhdGoycXVUenFvUT09",
+      "type": "",
+      "text": "BYD Seal"
+    },
+    {
+      "uuid": "ajd6WUJETEU4aytBUWJxV3EwNS9mZz09",
+      "type": "",
+      "text": "CHEVROLET Spark"
+    },
+    {
+      "uuid": "QXVVamhVQm42TUs1MDJFbHNEL1Rjdz09",
+      "type": "",
+      "text": "CHRYSLER 300M"
+    },
+    {
+      "uuid": "dzdPMzROTE45by9nNW4yYVB1YUFTUT09",
+      "type": "",
+      "text": "CHRYSLER Crossfire"
+    },
+    {
+      "uuid": "dlF4cEN6ZUZ0ZHFDSmZULzdJaHBvZz09",
+      "type": "",
+      "text": "CITROEN C6"
+    },
+    {
+      "uuid": "VFFWa1pFQ29UbkpSOW5jNCtEb0VXTDlOY2JWSEJRQmZ2T2xyT2lMK0xKND0=",
+      "type": "",
+      "text": "DACIA Dokker Comercial"
+    },
+    {
+      "uuid": "cTJGRXd1YnRpOXdZUkdDSk5iSnZWUT09",
+      "type": "",
+      "text": "DODGE Caliber"
+    },
+    {
+      "uuid": "MG5uSW1YOGt3LzBvYlhpVzQxWG0ydz09",
+      "type": "",
+      "text": "FERRARI 296 GTB"
+    },
+    {
+      "uuid": "MmlJVUFlU3F5ajY5Rm12UW9pM0U0QT09",
+      "type": "",
+      "text": "FERRARI 488"
+    },
+    {
+      "uuid": "V0JFTXRTMGIyWTBvVVVXaGNZa1hNZz09",
+      "type": "",
+      "text": "FERRARI Roma"
+    },
+    {
+      "uuid": "ejU2WEl1YXd6alUwWUJHRUk1NmdMYTJtMitqZUVqczNQczFEUVp1cU9obz0=",
+      "type": "",
+      "text": "FIAT Línea"
+    },
+    {
+      "uuid": "MXJRTlZab1FhVnQwZXJjQ1pPUTRTQT09",
+      "type": "",
+      "text": "GALLOPER Exceed"
+    },
+    {
+      "uuid": "bmsxaWhURE54a1l2VEVZTThNMUU2Zz09",
+      "type": "",
+      "text": "HONDA Honda e"
+    },
+    {
+      "uuid": "OWtDUTNDdzQvakkvUS95UzNBRmNlQT09",
+      "type": "",
+      "text": "HYUNDAI Accent"
+    },
+    {
+      "uuid": "dU43MmpmcnVJdFVHeUphWFlFY20rUT09",
+      "type": "",
+      "text": "INFINITI G"
+    },
+    {
+      "uuid": "Q2ZCRnVSSEh5VnoyQ1lEUyt3Q2h6QT09",
+      "type": "",
+      "text": "INFINITI M"
+    },
+    {
+      "uuid": "MG1TZ1NvdjcyaWJaVnVWbmJ5cC9OZz09",
+      "type": "",
+      "text": "INFINITI Q70"
+    },
+    {
+      "uuid": "Y1ZmSC93eW1WbE5MQUNXTXBNLzlQUT09",
+      "type": "",
+      "text": "INFINITI QX70"
+    },
+    {
+      "uuid": "bEJqNXM1T0ZST0tSZDY0aHNHdE03RnZQTXZsQnN4MEJROHR4OUQ0SWJPND0=",
+      "type": "",
+      "text": "INVICTA Cenntro Logistar"
+    },
+    {
+      "uuid": "SDRrdmpSU0RROGRuQVJ4b3d1RFZ1dz09",
+      "type": "",
+      "text": "INVICTA Orca I"
+    },
+    {
+      "uuid": "dC9yNGJybDlPeTJZbTJ6OFZTWklhUT09",
+      "type": "",
+      "text": "LANCIA Delta"
+    },
+    {
+      "uuid": "QUtDcWZiMzRENzA5TTVXWnVQSUEyOEFZSVN4NU4zSmwyVE1PN2h4dWloND0=",
+      "type": "",
+      "text": "MASERATI Quattroporte"
+    },
+    {
+      "uuid": "Ujd4b2VJT3psNm1hTkhmSzR4UE5iZz09",
+      "type": "",
+      "text": "MG TF"
+    },
+    {
+      "uuid": "U3Z1NXV0eFVHQjExNXpyUndNUmYzUT09",
+      "type": "",
+      "text": "PEUGEOT 106"
+    },
+    {
+      "uuid": "NEFZMURiWUNEejJSMi9SVmF0SGswdz09",
+      "type": "",
+      "text": "PIAGGIO Porter"
+    },
+    {
+      "uuid": "b0JtekMyYW1BRlJ0Y09IM1NNZDNNdz09",
+      "type": "",
+      "text": "PORSCHE 944"
+    },
+    {
+      "uuid": "UGdiNnlWYVhtdGlPSTRYcitrTlptdz09",
+      "type": "",
+      "text": "RENAULT Latitude"
+    },
+    {
+      "uuid": "M0lJZGh5dDRoejllMjVOMmd5bWJjQT09",
+      "type": "",
+      "text": "RENAULT Modus"
+    },
+    {
+      "uuid": "UlY2MDZvQzkwYmFIZldGa2k3Y0lvc1pLSmRGN2dVUDFnbTRKK0tOUCtGST0=",
+      "type": "",
+      "text": "RENAULT Mégane Scénic"
+    },
+    {
+      "uuid": "MmU3TE10Q2VkWWVGSVBPZURwZldtSTFEMVFHazU2dEk3dHBUVGkrWlJUaz0=",
+      "type": "",
+      "text": "SEAT Ibiza Comercial"
+    },
+    {
+      "uuid": "Unc4cWtseDYvdjhuU1dreC9GTDVEQT09",
+      "type": "",
+      "text": "SERES 5"
+    },
+    {
+      "uuid": "eC84RmpRbTdPaWJvNHdkWUVqdVlDQT09",
+      "type": "",
+      "text": "SUZUKI Alto"
+    },
+    {
+      "uuid": "YzZVaHJRNTFhbjYzaTBkN0RTOGlqQT09",
+      "type": "",
+      "text": "SUZUKI Celerio"
+    },
+    {
+      "uuid": "MEpES1BKeFBLdlFqYi92SVZLL1I0Zz09",
+      "type": "",
+      "text": "AIWAYS U5"
+    },
+    {
+      "uuid": "ZGR3bFVTM1ZFZ2oxRWhEdENPV1hkZz09",
+      "type": "",
+      "text": "ASTON MARTIN DB9"
+    },
+    {
+      "uuid": "cWlscDM5OElwR1k1bXRPZFVmUDVoOHV5OERFa0pIOW90dUxGOTFhQ0J0bz0=",
+      "type": "",
+      "text": "AUDI A1 Allstreet"
+    },
+    {
+      "uuid": "cDdTUXJ2d2QreDdaRjZKV2x0bE5oQT09",
+      "type": "",
+      "text": "AUDI Allroad"
+    },
+    {
+      "uuid": "bU03OFArd2ZPSGNYMi9PY3NrdzZwUT09",
+      "type": "",
+      "text": "AUDI Cabrio"
+    },
+    {
+      "uuid": "aEpyUDZCby9UYkJ1Yk51K1hncWV2dz09",
+      "type": "",
+      "text": "AUDI e-tron GT"
+    },
+    {
+      "uuid": "U0JJRk9NVk42TndRTHJoTG05WC9XUT09",
+      "type": "",
+      "text": "BYD Han"
+    },
+    {
+      "uuid": "ZS9hK1FjMDYwR0NWdWdJc084VzlKQT09",
+      "type": "",
+      "text": "CHEVROLET Camaro"
+    },
+    {
+      "uuid": "SUg3dytpUTQwVm9zR2NTSjk4Y0psUT09",
+      "type": "",
+      "text": "CHEVROLET Epica"
+    },
+    {
+      "uuid": "elpPYTFjM0J2U2xwZFRWdTk0TDZBUT09",
+      "type": "",
+      "text": "CHEVROLET Lacetti"
+    },
+    {
+      "uuid": "WlZ2RXdwTzZyQU1GR2JHQjZDcFI2QT09",
+      "type": "",
+      "text": "CHEVROLET Malibu"
+    },
+    {
+      "uuid": "TkR5b0I3YlY5M0loRCtDS0ZYUzk0UT09",
+      "type": "",
+      "text": "CHEVROLET Tacuma"
+    },
+    {
+      "uuid": "QVlhYmdPbEhRZUhKWjRncWhqMVFmdz09",
+      "type": "",
+      "text": "CITROEN C-Crosser"
+    },
+    {
+      "uuid": "ZzRVOUE4ek1LbXV5SlptWGpidWpHSm5Bb1ZuZ3NsNVNnSVdIVnBWZml3WT0=",
+      "type": "",
+      "text": "CITROEN C3 Comercial"
+    },
+    {
+      "uuid": "UFV4QXNQQ0VTTXo2emtJNkFTRHJZZXJ6L0FnT2JkUmlpVXZHNnRlZVdLRT0=",
+      "type": "",
+      "text": "CITROEN Nemo Comercial"
+    },
+    {
+      "uuid": "bStnVnhsdzgxYmpRKzN4T3o3b0ovdz09",
+      "type": "",
+      "text": "DAEWOO Lanos"
+    },
+    {
+      "uuid": "Yml6VnpDaE5xN01aa211VVFFZitWQT09",
+      "type": "",
+      "text": "DFSK Serie C"
+    },
+    {
+      "uuid": "dkFLQVpMQWxSNHdPcXpHeTBDOGJOQT09",
+      "type": "",
+      "text": "FERRARI F430"
+    },
+    {
+      "uuid": "Ny9QZGFZK1pLcXZDM2QwcmlKZ01FdjY2UnFhYnk4YXZuNFJWQTc3NUEvVT0=",
+      "type": "",
+      "text": "FIAT 124 Spider"
+    },
+    {
+      "uuid": "V3dRY3hjcElENDdyRENwNjJWZEcwQT09",
+      "type": "",
+      "text": "HONDA CRX"
+    },
+    {
+      "uuid": "aVF6cXdZMHJZUG10Y0dmWnRjMFAwdz09",
+      "type": "",
+      "text": "HYUNDAI Veloster"
+    },
+    {
+      "uuid": "eW1LdTAxY2VqZ3o5dml1UFBpMFpEZz09",
+      "type": "",
+      "text": "INFINITI Q60"
+    },
+    {
+      "uuid": "UzBqVUdYcXZaVUI3bnFuOHFTd3lTZz09",
+      "type": "",
+      "text": "LADA Niva"
+    },
+    {
+      "uuid": "cllJc043V0cxdnNmYWlSdGZQWmF4U2VSckIycmFDNFJvc1FQZERIOTV3VT0=",
+      "type": "",
+      "text": "LAMBORGHINI Gallardo"
+    },
+    {
+      "uuid": "N1FmMkRmQjA2My9KeU8yVTAwSHEvdz09",
+      "type": "",
+      "text": "LANCIA Phedra"
+    },
+    {
+      "uuid": "RjZHUGdUdjdnamFXcVhEWE9IVHJUN0lTMy83bGRSNDllYlVzZVEwT1RZST0=",
+      "type": "",
+      "text": "MASERATI GranTurismo"
+    },
+    {
+      "uuid": "dHF2VUFtRW0zL3E5K1BENkxmN1pOdz09",
+      "type": "",
+      "text": "MASERATI Grecale"
+    },
+    {
+      "uuid": "dmpJWUlkd3VmcS9EY0dLY1dqbkJEZz09",
+      "type": "",
+      "text": "MAXUS T90"
+    },
+    {
+      "uuid": "TEdscktvdkk4TEFPV1ZGVW9iTURDRURic2ZkbytwbDRWSmgxK0dHdmRRMD0=",
+      "type": "",
+      "text": "MAXUS e Deliver 9"
+    },
+    {
+      "uuid": "M0IvU1pabDRBNVlERGMxWVR5L1pSUT09",
+      "type": "",
+      "text": "MAZDA CX-9"
+    },
+    {
+      "uuid": "R3plMDBra2IvNGlWNklRK0g5UDR2dz09",
+      "type": "",
+      "text": "MITSUBISHI Lancer"
+    },
+    {
+      "uuid": "a3ZZU2owZFN3OHV0YmFHSHBrYkUzQT09",
+      "type": "",
+      "text": "NISSAN 350Z"
+    },
+    {
+      "uuid": "YmhnT0RUTThQTzZNTm1UZHVpdjgvZz09",
+      "type": "",
+      "text": "NISSAN 370Z"
+    },
+    {
+      "uuid": "aVJPenpqWC9NZ01BME9hbHdhdWk0Zz09",
+      "type": "",
+      "text": "NISSAN Pick Up"
+    },
+    {
+      "uuid": "TnloMVJsUmZOdFIrRzBFK216cFhrUT09",
+      "type": "",
+      "text": "NISSAN Pixo"
+    },
+    {
+      "uuid": "V2h5cmVLOUhDV1pBU3lrUTV3ZjdJZz09",
+      "type": "",
+      "text": "OPEL Signum"
+    },
+    {
+      "uuid": "eFUvejJ6bkxrLzMzaXZkdlBGZmxSK1d4WStGbXJMMGY0VTV4MEFPMXF0ST0=",
+      "type": "",
+      "text": "OPEL Zafira Life"
+    },
+    {
+      "uuid": "RHV0TDdNUlk2N0FhWkFUVjRjS004UT09",
+      "type": "",
+      "text": "PEUGEOT 5008 SUV"
+    },
+    {
+      "uuid": "OWFwakVzV2Y4dlJrdGREY0ZZWkF0QT09",
+      "type": "",
+      "text": "POLESTAR 02"
+    },
+    {
+      "uuid": "dytiYmRxa3ZhZmdVeUkyYTMyTDc2dz09",
+      "type": "",
+      "text": "RENAULT Maxity"
+    },
+    {
+      "uuid": "NDhVMzh1LzhiSThEUFNBYkxwc0tFdz09",
+      "type": "",
+      "text": "RENAULT Wind"
+    },
+    {
+      "uuid": "ZmlIS0dqK29MMVZCbzFuZFY4bGlZQT09",
+      "type": "",
+      "text": "ROVER 75"
+    },
+    {
+      "uuid": "cldFbEh1VTFVdVRTeHdET3Z6STV4Zz09",
+      "type": "",
+      "text": "SEAT Marbella"
+    },
+    {
+      "uuid": "SHVqdiszSVloRi9hd1VJOEliU1ZJdz09",
+      "type": "",
+      "text": "SKODA Scout"
+    },
+    {
+      "uuid": "Y0lEZWRJN2ZjRm5DZVRvSmZBblJvUT09",
+      "type": "",
+      "text": "SMART Smart"
+    },
+    {
+      "uuid": "MytxZkdXaU95QkJtM3VhOVFxeWNVdz09",
+      "type": "",
+      "text": "SUBARU BRZ"
+    },
+    {
+      "uuid": "OTZ5ZjBNSVE3UlVYS1ZvNmNIb2w3dz09",
+      "type": "",
+      "text": "SUBARU Levorg"
+    },
+    {
+      "uuid": "c2M1RU95cFFvaEIwc2FnTG80VlNKQT09",
+      "type": "",
+      "text": "SUBARU WRX STI"
+    },
+    {
+      "uuid": "WEFzWXoxOHBFb3pSV2dzN0RSMStXZz09",
+      "type": "",
+      "text": "TOYOTA MR2"
+    },
+    {
+      "uuid": "cWdmY3ZxWGxzVVFxM0JUMFR2Y3NNQT09",
+      "type": "",
+      "text": "TOYOTA Supra"
+    },
+    {
+      "uuid": "ZmgrdUVteTN5dW5KTHJoSjdVUkxLdlJNMGkwUEUrUFlJOUtRR3hUMEtOdz0=",
+      "type": "",
+      "text": "TOYOTA Urban Cruiser"
+    },
+    {
+      "uuid": "VTdvSHdJbXhYQS9lbCtHUkZsQlR2Zz09",
+      "type": "",
+      "text": "TOYOTA iQ"
+    },
+    {
+      "uuid": "U2tjcWxDV0xjNStoaCtiOUVjU24wOFhMNVdFblNpcVFVaEU4aEMvQmhVcz0=",
+      "type": "",
+      "text": "VOLKSWAGEN Grand California"
+    },
+    {
+      "uuid": "aUM0UGxwYW9DbHhIVG9ZMXlvaU50dz09",
+      "type": "",
+      "text": "VOLKSWAGEN LT"
+    },
+    {
+      "uuid": "OGMyemZPV1FGa0dnUVJjRHdxQXludz09",
+      "type": "",
+      "text": "VOLKSWAGEN Phaeton"
+    },
+    {
+      "uuid": "cGZ3RC9iSzBEQTkwNlZZcTcyc09WQS9VOWdCMFBXaGx6cFpLeVVDMFdKTT0=",
+      "type": "",
+      "text": "ALFA ROMEO 156 Crosswagon"
+    },
+    {
+      "uuid": "NDdQZmw2dGhjTUZud1NZYzJ4R1ExZz09",
+      "type": "",
+      "text": "ALFA ROMEO 166"
+    },
+    {
+      "uuid": "UXQwYmtZSlRPZTdGQzJ6WUNmc2gxQT09",
+      "type": "",
+      "text": "ALFA ROMEO GT"
+    },
+    {
+      "uuid": "K0xiWHEvZDNqcWxGSWRGM3VUYkpTQT09",
+      "type": "",
+      "text": "ALFA ROMEO GTV"
+    },
+    {
+      "uuid": "U01kekZMR2g4NFFlMTlWRGJiY0tYdz09",
+      "type": "",
+      "text": "ALFA ROMEO Spider"
+    },
+    {
+      "uuid": "RHpFN1o0SXNUL0lOV2JNMFVHemt6dz09",
+      "type": "",
+      "text": "ASTON MARTIN DBX"
+    },
+    {
+      "uuid": "RkVyQzNqSU1BNlpZbE1pSDd4a1pEdz09",
+      "type": "",
+      "text": "ASTON MARTIN Vanquish"
+    },
+    {
+      "uuid": "VjBySW81YzRHVUZWMnVJcWdBancyZz09",
+      "type": "",
+      "text": "ASTON MARTIN Vantage"
+    },
+    {
+      "uuid": "akNlNVQ0OWZ6SUFQcFBZczkwdWdNZz09",
+      "type": "",
+      "text": "AUDI 100"
+    },
+    {
+      "uuid": "MmJtZHRmTWY2MGFydk9Fd3o2a0Fldz09",
+      "type": "",
+      "text": "AUDI 80"
+    },
+    {
+      "uuid": "eDRkdGZGTlNMcTZFM3Z6dk9VNEhBdz09",
+      "type": "",
+      "text": "AUDI A2"
+    },
+    {
+      "uuid": "R1g2MHRuS20vdzJhbnJGWVZDZmFwNVp1c3NIa1lTQSt3akhWZGlvTVY0QT0=",
+      "type": "",
+      "text": "AUDI A3 Allstreet"
+    },
+    {
+      "uuid": "ZHM5OHJzKzZhUWlnQ3o5aTR0MVdkZ2FGSGY0RGhCSnFlU2J2STBHa0F4Yz0=",
+      "type": "",
+      "text": "AUDI Coupé"
+    },
+    {
+      "uuid": "VU1WWDZ1UmRtb0M1RHRVV2xqZ1VrZz09",
+      "type": "",
+      "text": "BENTLEY Arnage"
+    },
+    {
+      "uuid": "Z3FZckJqZS9yeVkreEFjWnhQUXBDUnpMSVpZMnlXNWpJOUN1NVQxK3g1UT0=",
+      "type": "",
+      "text": "BENTLEY Brooklands"
+    },
+    {
+      "uuid": "MVN2OCtiaTN6L3VrQjBseGVWamJMQT09",
+      "type": "",
+      "text": "BENTLEY Mulsanne"
+    },
+    {
+      "uuid": "UWJLZ2EwWW9rQVJIQ3hGMkRDUWR6Zz09",
+      "type": "",
+      "text": "BMW XM"
+    },
+    {
+      "uuid": "RmRIalFTcnVjamJVVGRsdW5LUk5mdz09",
+      "type": "",
+      "text": "BMW i8"
+    },
+    {
+      "uuid": "ckZQeEhsaDBVTHNhdVFGME90SytxUT09",
+      "type": "",
+      "text": "CADILLAC CTS"
+    },
+    {
+      "uuid": "L1UyS0d1WVorRmhsRWNwODVmdkpuZz09",
+      "type": "",
+      "text": "CADILLAC Escalade"
+    },
+    {
+      "uuid": "c3JVcFEyTGRadU5lUnRuMnRSOWREUT09",
+      "type": "",
+      "text": "CADILLAC Seville"
+    },
+    {
+      "uuid": "WkFYLzFUTGZ6bmw5NThWOUR0MjdyUT09",
+      "type": "",
+      "text": "CADILLAC XLR"
+    },
+    {
+      "uuid": "YWlxTFdteEVadjRzTDhQOXN1bVhjUT09",
+      "type": "",
+      "text": "CHEVROLET Corvette"
+    },
+    {
+      "uuid": "YWdvSVhUSjM0WHg3OVNiUnZsbWU4QT09",
+      "type": "",
+      "text": "CHEVROLET Tahoe"
+    },
+    {
+      "uuid": "aHZablVVVHdWdjdEL2RwVm5Db01tUT09",
+      "type": "",
+      "text": "CITROEN 2CV"
+    },
+    {
+      "uuid": "N2ZFMy9BZzdpYlJXZ0ZKZ2gxM1c3UT09",
+      "type": "",
+      "text": "CITROEN AX"
+    },
+    {
+      "uuid": "bWZ4VUZjRFF5dElySFpBVlZIUTNhZz09",
+      "type": "",
+      "text": "CITROEN C15"
+    },
+    {
+      "uuid": "RFlrVGZvdHJvaWJRUHM2eUJXcFNmdStRbGpMN3d1ZTR6NDBMOStkNTJxcz0=",
+      "type": "",
+      "text": "CITROEN C5 Cross Tourer"
+    },
+    {
+      "uuid": "bG51T0NGU2tMZkRYU1JVR1VtWU56QT09",
+      "type": "",
+      "text": "CITROEN E-Mehari"
+    },
+    {
+      "uuid": "Z1dpUTRrOUVsZVdDV2NhMjZzYXB1QT09",
+      "type": "",
+      "text": "CUPRA Tavascan"
+    },
+    {
+      "uuid": "TjEzNjRKQ1JsODRtRUtsM3pIRVMyZz09",
+      "type": "",
+      "text": "DAIMLER XJ"
+    },
+    {
+      "uuid": "b1krYWViSkJtSHJtcDZjY2cxanF3UT09",
+      "type": "",
+      "text": "DFSK Serie EC"
+    },
+    {
+      "uuid": "UVlZa3hQUU9xY2tEblkyaHdab0dDQT09",
+      "type": "",
+      "text": "DODGE Avenger"
+    },
+    {
+      "uuid": "ek5uOExJODRWbDgwcGZyQTNhYkg5QT09",
+      "type": "",
+      "text": "DODGE Nitro"
+    },
+    {
+      "uuid": "TVRnekZjc2diRkl0VHFaY0U0RGhldz09",
+      "type": "",
+      "text": "DR DR 6"
+    },
+    {
+      "uuid": "QVB2ZzdjWEtpMXZUWlZmZ25HSFMwUkNLbER2Nmk5Y1NncC9VOTlHTjFpbz0=",
+      "type": "",
+      "text": "FERRARI 612 Scaglietti"
+    },
+    {
+      "uuid": "eVA5WDFGeGNZbzNMd0RXK0tsYlZIWkxlWklEOVZzOHcweWFhUTZKRWNYdz0=",
+      "type": "",
+      "text": "FERRARI F8 Tributo"
+    },
+    {
+      "uuid": "aVErR1hObHIxWk5JU0VqM1g4OXJaVUFBcmVGaTNEZHo1WldsTzFpbmVsOD0=",
+      "type": "",
+      "text": "FERRARI Maranello"
+    },
+    {
+      "uuid": "eWE5d3UydUsrTU8raFNOTDdtaCs0dz09",
+      "type": "",
+      "text": "FERRARI Mondial"
+    },
+    {
+      "uuid": "UjVqVEN5M1gzSXVWMythb1hhdUJLUT09",
+      "type": "",
+      "text": "FERRARI SF90"
+    },
+    {
+      "uuid": "Z214TW15WHZoRVc1ZTRUdlorWk9MRlluRmJ6aVovY21RcU5qQkRIbk5XVT0=",
+      "type": "",
+      "text": "FIAT Barchetta"
+    },
+    {
+      "uuid": "cUYyd1VOZU5IL3ZoNXBVTHZRb3pIQT09",
+      "type": "",
+      "text": "FIAT Brava"
+    },
+    {
+      "uuid": "KzI1L2NIUnhKZDFFSjdsWGdsZlVQUT09",
+      "type": "",
+      "text": "FIAT Sedici"
+    },
+    {
+      "uuid": "VGpqZjdrOGViakRKa0xjOE1tQk5lQT09",
+      "type": "",
+      "text": "FIAT Seicento"
+    },
+    {
+      "uuid": "OVdTSGdhQWRKSEFteUh6UzBFT2FxUT09",
+      "type": "",
+      "text": "FIAT Ulysse"
+    },
+    {
+      "uuid": "YmJhNVVmWW1nQldGQjdVMkJZaXhwQT09",
+      "type": "",
+      "text": "HONDA CR-Z"
+    },
+    {
+      "uuid": "eitWWE9Halc1cGhOS0NpWjhPaThtZz09",
+      "type": "",
+      "text": "HONDA FR-V"
+    },
+    {
+      "uuid": "N2cyRUZ4czhuRmFZUGs5VnFobTd0QT09",
+      "type": "",
+      "text": "HONDA Insight"
+    },
+    {
+      "uuid": "MTI3dCtUNEhpdmFjQnhHOVdmbjEvUT09",
+      "type": "",
+      "text": "HONDA Prelude"
+    },
+    {
+      "uuid": "OTY4U3hWMnluelM0OFhVQ2c0VVh2dz09",
+      "type": "",
+      "text": "HUMMER H3"
+    },
+    {
+      "uuid": "ZVdHWFc1cVlyaWZ6ZHgxOVFYU2pGQT09",
+      "type": "",
+      "text": "HYUNDAI H350"
+    },
+    {
+      "uuid": "ckJ4NDNjR2VhVXBwMzd1U2ZqRVRNdz09",
+      "type": "",
+      "text": "HYUNDAI ix55"
+    },
+    {
+      "uuid": "QzJlWG4xMG5iaGMzN0J5cWRTMGNTcVVtYWE0NVZCWW90Q0NoNFk4aGVEdz0=",
+      "type": "",
+      "text": "INEOS Grenadier"
+    },
+    {
+      "uuid": "SHR5L1ZhYWc0b3JzUE5vbWN3aG52UT09",
+      "type": "",
+      "text": "INVICTA Evum"
+    },
+    {
+      "uuid": "T0licHRYeHU0YzRvYVhuclFBU0k2UT09",
+      "type": "",
+      "text": "ISUZU Serie N"
+    },
+    {
+      "uuid": "RFlHdk5wd2FSTEhGRFB2eVdYaXN3QT09",
+      "type": "",
+      "text": "JAECOO 7"
+    },
+    {
+      "uuid": "MXN6SE5nNlFnZmtSaXdnaXE3azFLMXRXY0VINjVmNndnRCtYS1E2TDdGYz0=",
+      "type": "",
+      "text": "JAGUAR F-Type Convertible"
+    },
+    {
+      "uuid": "RmwxY3pyRlRuTFh1cmlENjlxazkyaTVRdkY2K2xaMVFzd1JuV0J4dXMvcz0=",
+      "type": "",
+      "text": "JEEP Gladiator"
+    },
+    {
+      "uuid": "UEtyZkg4Y2hrajB6OTlRQ3M5ZGZHQT09",
+      "type": "",
+      "text": "JEEP Patriot"
+    },
+    {
+      "uuid": "NGpRRW05cjhvdHZZVWFVVjJwdHlmdz09",
+      "type": "",
+      "text": "KIA Cerato"
+    },
+    {
+      "uuid": "UGk5czB2WkVHUU9FMWQycGU3bUNZQT09",
+      "type": "",
+      "text": "KIA Magentis"
+    },
+    {
+      "uuid": "aVg0Z0tQNVBNeTMxZ2tpTlhGY3hwZjBpSUhGZ0lCVFlFcmZLcEt6VGVYMD0=",
+      "type": "",
+      "text": "LAMBORGHINI Aventador"
+    },
+    {
+      "uuid": "VGZpa1V6RXJIZXFDUFZyVHA5QlN3dz09",
+      "type": "",
+      "text": "LAMBORGHINI Urus"
+    },
+    {
+      "uuid": "MzdDKzAyR2xVNlN5TEdrMzBwYTBIUT09",
+      "type": "",
+      "text": "LANCIA Dedra"
+    },
+    {
+      "uuid": "S3lSbjc4eDVyNERYd2ljRTAvM0pEQT09",
+      "type": "",
+      "text": "LANCIA Musa"
+    },
+    {
+      "uuid": "WGE0MWpMeTFoWDg1Y3ZuR2o0b3V2dz09",
+      "type": "",
+      "text": "LEVC VN5"
+    },
+    {
+      "uuid": "UThPS0hXc01xcjdHMEJJYUZwVVpVdz09",
+      "type": "",
+      "text": "LOTUS Evora"
+    },
+    {
+      "uuid": "bWVxZkRqWXBRNlpwbXYyb1BiMkY1dz09",
+      "type": "",
+      "text": "LOTUS Exige"
+    },
+    {
+      "uuid": "d01xd1E2THVpOHVEOHFsYzlmK1BjZz09",
+      "type": "",
+      "text": "MAHINDRA Goa"
+    },
+    {
+      "uuid": "NjlTVlhpUVhRUDVIdEg0c3QvdzBCdz09",
+      "type": "",
+      "text": "MAXUS V80"
+    },
+    {
+      "uuid": "NUlNREVROVZLZWxsSDJIWjE1OWNnZz09",
+      "type": "",
+      "text": "MAZDA 626"
+    },
+    {
+      "uuid": "VjBHNms0Ri9UTjI2Wi9kL3VNY1F3Zz09",
+      "type": "",
+      "text": "MAZDA RX-7"
+    },
+    {
+      "uuid": "dzdzUGVHd0EyMzBlOVl4dFNXZk4wUT09",
+      "type": "",
+      "text": "MAZDA RX-8"
+    },
+    {
+      "uuid": "dWVTWGtIenhxbHV0b3Q3WHBrSVliNTV3K2FtQWVHbFpFdFBYUXNJcGJiMD0=",
+      "type": "",
+      "text": "MERCEDES 124 Spider"
+    },
+    {
+      "uuid": "VlBXcTdGOXhybENCbGlyTHFPUm56NTVMWEgvUGx2bFZwV2o0T3l3SGdEND0=",
+      "type": "",
+      "text": "MERCEDES Clase E Chasis"
+    },
+    {
+      "uuid": "SVcrdzEzNGdzSm9nSUhvMlIvdXFJbTBYUjZxZDBLeG9FYzl5ZmRLSitHMD0=",
+      "type": "",
+      "text": "MERCEDES Clase SLC"
+    },
+    {
+      "uuid": "dE9RRDd3bFkvaWZLVXNhQTRkMUswdz09",
+      "type": "",
+      "text": "MERCEDES SLR"
+    },
+    {
+      "uuid": "Vk43dmkzWUhSZE5zWUsrQVVvN3Fvdz09",
+      "type": "",
+      "text": "MERCEDES Vaneo"
+    },
+    {
+      "uuid": "Mm0zVDNkbXJrNU5uWEhGVEpkT1dvdz09",
+      "type": "",
+      "text": "MITSUBISHI Canter"
+    },
+    {
+      "uuid": "TXhjbXM0eklDbGgxWHZoL2pBNVNEQT09",
+      "type": "",
+      "text": "MITSUBISHI Grandis"
+    },
+    {
+      "uuid": "cVhCUTFaNUFmU3RkOTArR0FpZXhUbzkwTTdITUxraEZXMTJHOGF5V2JHaz0=",
+      "type": "",
+      "text": "MITSUBISHI Space Wagon"
+    },
+    {
+      "uuid": "L3pGdzhReXB1aXE0amRrZnlJMFJnQT09",
+      "type": "",
+      "text": "MORGAN 4-4"
+    },
+    {
+      "uuid": "eDdXeVRKTHJPdldNdmttQmsvc0NZdz09",
+      "type": "",
+      "text": "MORGAN Plus 6"
+    },
+    {
+      "uuid": "cVlZWjJsdm9IeWZWdk9kQkx2UFdvQT09",
+      "type": "",
+      "text": "MORGAN Roadster"
+    },
+    {
+      "uuid": "cUNOSlRVZDJHdkhUOTNmM29USmNSZz09",
+      "type": "",
+      "text": "NISSAN Cube"
+    },
+    {
+      "uuid": "UzlrRkkxYXZJak8wV3RqQTdaVnBhQT09",
+      "type": "",
+      "text": "NISSAN Kubistar"
+    },
+    {
+      "uuid": "d2lqb1pSa3dRakY1S2wzRURCVGZFQT09",
+      "type": "",
+      "text": "OPEL Agila"
+    },
+    {
+      "uuid": "YkM3ZnJ3eGVMK2Eyck1GOWdBZXZlZz09",
+      "type": "",
+      "text": "OPEL Ampera"
+    },
+    {
+      "uuid": "U294emE3M09jOUdsQWExbElLN0M4Zz09",
+      "type": "",
+      "text": "OPEL GT"
+    },
+    {
+      "uuid": "Wm1XUmpkU1RLOHRUdWtYcTFUMzlvZUhJUlBMa3RXTTNVOGFQRjBVdWhkUT0=",
+      "type": "",
+      "text": "OPEL Insignia Country Tourer"
+    },
+    {
+      "uuid": "bFY3Wmo4QklZdmt3YzZmNTdDY3JNZz09",
+      "type": "",
+      "text": "OPEL Monza"
+    },
+    {
+      "uuid": "bEpyOTVUc1FBWXVVdmhudmtUcjllUT09",
+      "type": "",
+      "text": "PEUGEOT 306"
+    },
+    {
+      "uuid": "U2tKamJTOU12ZzhWakpLT0FmbUV3Zz09",
+      "type": "",
+      "text": "PEUGEOT 4007"
+    },
+    {
+      "uuid": "aXBIY2FtbTJ4UEhrQ2ZkR0V3azN3QT09",
+      "type": "",
+      "text": "PEUGEOT 4008"
+    },
+    {
+      "uuid": "dzZTRUdIci9hN1l4RGgyVWNtNis4QT09",
+      "type": "",
+      "text": "PEUGEOT J5"
+    },
+    {
+      "uuid": "VnlCcWloc2MzTkZoL3lSbitQTGZNdz09",
+      "type": "",
+      "text": "PONTIAC Firebird"
+    },
+    {
+      "uuid": "OGhnT2JuOHl6Rlc4aThqQkVQelJIQT09",
+      "type": "",
+      "text": "PORSCHE 928"
+    },
+    {
+      "uuid": "YmpkZjQ4RTFBWThLT2tnRjMvTjFLUT09",
+      "type": "",
+      "text": "PORSCHE 968"
+    },
+    {
+      "uuid": "MC9vQ1lkOXdyQ3dQc2tud1BqTnV4QT09",
+      "type": "",
+      "text": "RENAULT R18"
+    },
+    {
+      "uuid": "aTlleUdEaGNSWTd0OFc1UGVXRXFVZz09",
+      "type": "",
+      "text": "RENAULT R4"
+    },
+    {
+      "uuid": "eUhTME94bm5BV1dQOW1Ga1gwZERJbkxmb0R6K0hsTlJUWkNLcUY0MXc1dz0=",
+      "type": "",
+      "text": "RENAULT Vel Satis"
+    },
+    {
+      "uuid": "UE5rRnhGQ1Vyak1jSTJXSnE2Mitjdz09",
+      "type": "",
+      "text": "ROLLS ROYCE Wraith"
+    },
+    {
+      "uuid": "KzhSNDVFRThtWEtMYnlKWFZHWEpDdz09",
+      "type": "",
+      "text": "ROVER 25"
+    },
+    {
+      "uuid": "bHZTTUVzY2gzYnVDN1Uwb1ZJQTNzUT09",
+      "type": "",
+      "text": "ROVER 45"
+    },
+    {
+      "uuid": "anJsZ2w5dlAvamdxZXkzbjBXaVpTUT09",
+      "type": "",
+      "text": "ROVER 600"
+    },
+    {
+      "uuid": "NVFMUG5WSHRIZnU3Yms4NEcydHF6QT09",
+      "type": "",
+      "text": "SAAB 9-5"
+    },
+    {
+      "uuid": "YmJZYURnYkgvblZPdXBJbGozM2VyQT09",
+      "type": "",
+      "text": "SAAB 900"
+    },
+    {
+      "uuid": "Q3J4V0ZMQWtweWRzckd1azFlaUdzdz09",
+      "type": "",
+      "text": "SANTANA 2500"
+    },
+    {
+      "uuid": "OFJSdlNkVFFTWkg3YURFbktVdGw3UT09",
+      "type": "",
+      "text": "SANTANA 300"
+    },
+    {
+      "uuid": "UzVPc3Vxdm9sU3pIWGd0cHlJUjdUdz09",
+      "type": "",
+      "text": "SEAT Arosa"
+    },
+    {
+      "uuid": "YWRmVVVaeG4rZGNrbkhjUGYydWZwUT09",
+      "type": "",
+      "text": "SEAT Inca"
+    },
+    {
+      "uuid": "eFJIYzJZU2ZJK1krSjNjaUtVSVFyL21yOVhDeHFBQkw5UGl6Y0FTY3VuYz0=",
+      "type": "",
+      "text": "SEAT Málaga"
+    },
+    {
+      "uuid": "b1VYU0NoVmFtdHpmMVIyU2IyZ3FvQT09",
+      "type": "",
+      "text": "SEAT Terra"
+    },
+    {
+      "uuid": "b3NtYmdwTzJ4cEgrcTYraEZnRlhEQT09",
+      "type": "",
+      "text": "SKODA Roomster"
+    },
+    {
+      "uuid": "clV4cGlsMEFVQVVmVTJpbEZWQ3FhdmlGVTZ3R3hEaDZPL3g3YVA0eFZTMD0=",
+      "type": "",
+      "text": "SSANGYONG KGM Rodius Mixto Adaptable"
+    },
+    {
+      "uuid": "SWc5YWlELzhEajlNUmV0blVvTnJIZz09",
+      "type": "",
+      "text": "SSANGYONG Korando"
+    },
+    {
+      "uuid": "bkNkaDFvaEoxcTNzMEczSk9Mc2pnUT09",
+      "type": "",
+      "text": "SUBARU Justy"
+    },
+    {
+      "uuid": "eWtVOElIQ1Q4UThMWVpLSE96NDZpdz09",
+      "type": "",
+      "text": "SUBARU Legacy"
+    },
+    {
+      "uuid": "ODJueXBxcUZjUno1WlNOZ1BxU2NPUT09",
+      "type": "",
+      "text": "SUZUKI Kizashi"
+    },
+    {
+      "uuid": "MEExdW1ZZVU4NE9aUHFZeVRialAvUT09",
+      "type": "",
+      "text": "SUZUKI Splash"
+    },
+    {
+      "uuid": "ZklSYVRWaFJldXNvTUV4Q0hxc2doUT09",
+      "type": "",
+      "text": "TOYOTA GR86"
+    },
+    {
+      "uuid": "UGQzVjhDbVVzY3lZTlFwdnVSQjNlQT09",
+      "type": "",
+      "text": "TOYOTA GT86"
+    },
+    {
+      "uuid": "ckk5OG5WQlpJcy9WNjg3SUhscTg4U2djeEIyVi9tWE9wNVNaa29KVXBWQT0=",
+      "type": "",
+      "text": "TOYOTA Land Cruiser Comercial"
+    },
+    {
+      "uuid": "cHR2SFJJcVQ4bmdqN2IzMnV0VjBDdXQ0TDQyMG5LUzQvd1hxSFJKV2p5dz0=",
+      "type": "",
+      "text": "TOYOTA Yaris Van"
+    },
+    {
+      "uuid": "VUwzU1NUdGRldDJrdFpJTjBkQlkyVFJscDAvdWNLQW9aaUx2WjIrdGZNRT0=",
+      "type": "",
+      "text": "VOLKSWAGEN Caravelle Comercial"
+    },
+    {
+      "uuid": "U1Y4NGlqNGc1MWw3U1FVSVZuWDZJUT09",
+      "type": "",
+      "text": "VOLKSWAGEN Fox"
+    },
+    {
+      "uuid": "Ry9oSTlJVXl0OUZJL0NKdjNxcmMxRzFaRVJRRDUwdDRHT1JKZmIxclZQZz0=",
+      "type": "",
+      "text": "VOLKSWAGEN Golf Alltrack"
+    },
+    {
+      "uuid": "M1RiVWhsQThIc0tsamJSeDY5dVBUZz09",
+      "type": "",
+      "text": "VOLKSWAGEN Lupo"
+    },
+    {
+      "uuid": "TUxQMndpbDFiOHZqeEJ4Q0xNU1NoQT09",
+      "type": "",
+      "text": "VOLKSWAGEN Santana"
+    },
+    {
+      "uuid": "Y3NPWWV6MjlKZ3lPeXR6K09qMHdwZz09",
+      "type": "",
+      "text": "VOLVO EX90"
+    },
+    {
+      "uuid": "MTdKRW4wNG4xc2M3M09URHBlU21Ddz09",
+      "type": "",
+      "text": "VOLVO S70"
+    },
+    {
+      "uuid": "VUtqVzVSdmlBb0pYYkF0QlZsVzVEUT09",
+      "type": "",
+      "text": "VOLVO V70"
+    },
+    {
+      "uuid": "Szk2S0pBZExwTnQvNk9BK3VrU0tQUT09",
+      "type": "",
+      "text": "WARTBURG 353"
+    }
+  ]

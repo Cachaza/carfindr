@@ -1,0 +1,5448 @@
+{
+    "log": {
+      "version": "1.2",
+      "creator": {
+        "name": "Zen",
+        "version": "1.7.2b"
+      },
+      "browser": {
+        "name": "Zen",
+        "version": "1.7.2b"
+      },
+      "pages": [
+        {
+          "id": "page_1",
+          "pageTimings": {
+            "onContentLoad": -159725,
+            "onLoad": -159359
+          },
+          "startedDateTime": "2025-04-03T18:08:27.596+02:00",
+          "title": "https://es.wallapop.com/app/search?filters_source=side_bar_filters&category_ids=100&longitude=-3.69196&latitude=40.41956&max_sale_price=23000&brand=Porsche&model=911&min_sale_price=16000"
+        }
+      ],
+      "entries": [
+        {
+          "startedDateTime": "2025-04-03T18:08:27.596+02:00",
+          "request": {
+            "bodySize": 0,
+            "method": "GET",
+            "url": "https://es.wallapop.com/assets/icons/carousel/arrow-left.svg",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Host",
+                "value": "es.wallapop.com"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0"
+              },
+              {
+                "name": "Accept",
+                "value": "image/avif,image/jxl,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US,en;q=0.5"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Referer",
+                "value": "https://es.wallapop.com/app/styles.4163097e7a438533.css"
+              }
+            ],
+            "cookies": [],
+            "queryString": [],
+            "headersSize": 0
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "headers": [],
+            "cookies": [],
+            "content": {
+              "mimeType": "image/svg+xml",
+              "size": 47088,
+              "text": ""
+            },
+            "redirectURL": "",
+            "headersSize": 0,
+            "bodySize": 0
+          },
+          "cache": {},
+          "timings": {},
+          "time": 0,
+          "pageref": "page_1"
+        },
+        {
+          "startedDateTime": "2025-04-03T18:08:27.812+02:00",
+          "request": {
+            "bodySize": 0,
+            "method": "GET",
+            "url": "https://es.wallapop.com/assets/images/logo-wallapop-home-v3.svg",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Host",
+                "value": "es.wallapop.com"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0"
+              },
+              {
+                "name": "Accept",
+                "value": "image/avif,image/jxl,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US,en;q=0.5"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Referer",
+                "value": "https://es.wallapop.com/app/search?filters_source=recent_searches&keywords=911&category_ids=100"
+              }
+            ],
+            "cookies": [],
+            "queryString": [],
+            "headersSize": 0
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "headers": [],
+            "cookies": [],
+            "content": {
+              "mimeType": "image/svg+xml",
+              "size": 77008,
+              "text": ""
+            },
+            "redirectURL": "",
+            "headersSize": 0,
+            "bodySize": 0
+          },
+          "cache": {},
+          "timings": {},
+          "time": 0,
+          "pageref": "page_1"
+        },
+        {
+          "startedDateTime": "2025-04-03T18:08:33.210+02:00",
+          "request": {
+            "bodySize": 0,
+            "method": "POST",
+            "url": "https://o608018.ingest.sentry.io/api/5839391/envelope/?sentry_key=1d0e1781157041509326a1072f4ad490&sentry_version=7&sentry_client=sentry.javascript.angular%2F7.73.0",
+            "httpVersion": "",
+            "headers": [
+              {
+                "name": "Host",
+                "value": "o608018.ingest.sentry.io"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0"
+              },
+              {
+                "name": "Accept",
+                "value": "*/*"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US,en;q=0.5"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Referer",
+                "value": "https://es.wallapop.com/"
+              },
+              {
+                "name": "Content-Type",
+                "value": "text/plain;charset=UTF-8"
+              },
+              {
+                "name": "Content-Length",
+                "value": "417"
+              },
+              {
+                "name": "Origin",
+                "value": "https://es.wallapop.com"
+              },
+              {
+                "name": "DNT",
+                "value": "1"
+              },
+              {
+                "name": "Sec-GPC",
+                "value": "1"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              }
+            ],
+            "cookies": [],
+            "queryString": [
+              {
+                "name": "sentry_key",
+                "value": "1d0e1781157041509326a1072f4ad490"
+              },
+              {
+                "name": "sentry_version",
+                "value": "7"
+              },
+              {
+                "name": "sentry_client",
+                "value": "sentry.javascript.angular/7.73.0"
+              }
+            ],
+            "headersSize": 0
+          },
+          "response": {
+            "status": 0,
+            "statusText": "",
+            "httpVersion": "",
+            "headers": [],
+            "cookies": [],
+            "content": {},
+            "redirectURL": "",
+            "headersSize": 0,
+            "bodySize": -1
+          },
+          "cache": {},
+          "timings": {},
+          "time": 0,
+          "pageref": "page_1"
+        },
+        {
+          "startedDateTime": "2025-04-03T18:08:33.211+02:00",
+          "request": {
+            "bodySize": 0,
+            "method": "POST",
+            "url": "https://o608018.ingest.sentry.io/api/5839391/envelope/?sentry_key=1d0e1781157041509326a1072f4ad490&sentry_version=7&sentry_client=sentry.javascript.angular%2F7.73.0",
+            "httpVersion": "",
+            "headers": [
+              {
+                "name": "Host",
+                "value": "o608018.ingest.sentry.io"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0"
+              },
+              {
+                "name": "Accept",
+                "value": "*/*"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US,en;q=0.5"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Referer",
+                "value": "https://es.wallapop.com/"
+              },
+              {
+                "name": "Content-Type",
+                "value": "text/plain;charset=UTF-8"
+              },
+              {
+                "name": "Content-Length",
+                "value": "412"
+              },
+              {
+                "name": "Origin",
+                "value": "https://es.wallapop.com"
+              },
+              {
+                "name": "DNT",
+                "value": "1"
+              },
+              {
+                "name": "Sec-GPC",
+                "value": "1"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              }
+            ],
+            "cookies": [],
+            "queryString": [
+              {
+                "name": "sentry_key",
+                "value": "1d0e1781157041509326a1072f4ad490"
+              },
+              {
+                "name": "sentry_version",
+                "value": "7"
+              },
+              {
+                "name": "sentry_client",
+                "value": "sentry.javascript.angular/7.73.0"
+              }
+            ],
+            "headersSize": 0
+          },
+          "response": {
+            "status": 0,
+            "statusText": "",
+            "httpVersion": "",
+            "headers": [],
+            "cookies": [],
+            "content": {},
+            "redirectURL": "",
+            "headersSize": 0,
+            "bodySize": -1
+          },
+          "cache": {},
+          "timings": {},
+          "time": 0,
+          "pageref": "page_1"
+        },
+        {
+          "startedDateTime": "2025-04-03T18:08:33.212+02:00",
+          "request": {
+            "bodySize": 0,
+            "method": "GET",
+            "url": "https://api.wallapop.com/api/v3/cars/search?filters_source=side_bar_filters&category_ids=100&longitude=-3.69196&latitude=40.41956&max_sale_price=21000&brand=Porsche&model=911&min_sale_price=16000",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Host",
+                "value": "api.wallapop.com"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0"
+              },
+              {
+                "name": "Accept",
+                "value": "application/json, text/plain, */*"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "es,en-US;q=0.9,en;q=0.8"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "DeviceOS",
+                "value": "0"
+              },
+              {
+                "name": "X-DeviceOS",
+                "value": "0"
+              },
+              {
+                "name": "X-DeviceID",
+                "value": "2eb91a88-2bf8-4ebb-a905-e5d06f00a76d"
+              },
+              {
+                "name": "MPID",
+                "value": "-1142872387716636433"
+              },
+              {
+                "name": "X-AppVersion",
+                "value": "84770"
+              },
+              {
+                "name": "Origin",
+                "value": "https://es.wallapop.com"
+              },
+              {
+                "name": "DNT",
+                "value": "1"
+              },
+              {
+                "name": "Sec-GPC",
+                "value": "1"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Referer",
+                "value": "https://es.wallapop.com/"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-site"
+              },
+              {
+                "name": "Pragma",
+                "value": "no-cache"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache"
+              }
+            ],
+            "cookies": [],
+            "queryString": [
+              {
+                "name": "filters_source",
+                "value": "side_bar_filters"
+              },
+              {
+                "name": "category_ids",
+                "value": "100"
+              },
+              {
+                "name": "longitude",
+                "value": "-3.69196"
+              },
+              {
+                "name": "latitude",
+                "value": "40.41956"
+              },
+              {
+                "name": "max_sale_price",
+                "value": "21000"
+              },
+              {
+                "name": "brand",
+                "value": "Porsche"
+              },
+              {
+                "name": "model",
+                "value": "911"
+              },
+              {
+                "name": "min_sale_price",
+                "value": "16000"
+              }
+            ],
+            "headersSize": 777
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "name": "Transfer-Encoding",
+                "value": "chunked"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 03 Apr 2025 16:08:33 GMT"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache, no-store, must-revalidate"
+              },
+              {
+                "name": "content-encoding",
+                "value": "gzip"
+              },
+              {
+                "name": "Vary",
+                "value": "Origin"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Method"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Headers"
+              },
+              {
+                "name": "Access-Control-Allow-Origin",
+                "value": "*"
+              },
+              {
+                "name": "Access-Control-Expose-Headers",
+                "value": "X-NextPage, x-wallapop-search-id, X-Wallapop-Request-Country-Code"
+              },
+              {
+                "name": "x-wallapop-search-id",
+                "value": "1c0b40f4-0942-4a55-9d0d-6795c91b5e59"
+              },
+              {
+                "name": "X-Wallapop-Request-Country-Code",
+                "value": "ES"
+              },
+              {
+                "name": "X-NextPage",
+                "value": "min_sale_price=16000&offset=0&latitude=40.41956&start=0&search_id=1c0b40f4-0942-4a55-9d0d-6795c91b5e59&experiment=not_logged_experiment&filters_source=side_bar_filters&max_sale_price=21000&order_by=most_relevance&model=911&step=1&category_ids=100&brand=Porsche&longitude=-3.69196"
+              },
+              {
+                "name": "X-Cache",
+                "value": "Miss from cloudfront"
+              },
+              {
+                "name": "Via",
+                "value": "1.1 2930f20ca11cde7e5f2d83d9ea84806e.cloudfront.net (CloudFront)"
+              },
+              {
+                "name": "X-Amz-Cf-Pop",
+                "value": "LHR50-P2"
+              },
+              {
+                "name": "X-Amz-Cf-Id",
+                "value": "XAa7tULzQ2RSjNwWHi-k9vStatOmcW46OCpzIaMm6IEv9Yk5IyHrXA=="
+              },
+              {
+                "name": "Server-Timing",
+                "value": "cdn-upstream-layer;desc=\"EDGE\",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=22,cdn-cache-miss,cdn-pop;desc=\"LHR50-P2\",cdn-rid;desc=\"XAa7tULzQ2RSjNwWHi-k9vStatOmcW46OCpzIaMm6IEv9Yk5IyHrXA==\",cdn-downstream-fbl;dur=24"
+              }
+            ],
+            "cookies": [],
+            "content": {
+              "mimeType": "application/json",
+              "size": 158,
+              "text": "{\"search_objects\":[],\"from\":0,\"to\":15,\"distance_ordered\":false,\"experiment\":\"not_logged_experiment\",\"search_point\":{\"latitude\":40.41956,\"longitude\":-3.69196}}"
+            },
+            "redirectURL": "",
+            "headersSize": 1268,
+            "bodySize": 1415
+          },
+          "cache": {},
+          "timings": {
+            "blocked": -1,
+            "dns": 0,
+            "connect": 0,
+            "ssl": 0,
+            "send": 0,
+            "wait": 64,
+            "receive": 0
+          },
+          "time": 64,
+          "_securityState": "secure",
+          "serverIPAddress": "108.156.46.57",
+          "connection": "443",
+          "pageref": "page_1"
+        },
+        {
+          "startedDateTime": "2025-04-03T18:08:33.225+02:00",
+          "request": {
+            "bodySize": 0,
+            "method": "OPTIONS",
+            "url": "https://api.wallapop.com/api/v3/cars/search?filters_source=side_bar_filters&category_ids=100&longitude=-3.69196&latitude=40.41956&max_sale_price=21000&brand=Porsche&model=911&min_sale_price=16000",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Host",
+                "value": "api.wallapop.com"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0"
+              },
+              {
+                "name": "Accept",
+                "value": "*/*"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US,en;q=0.5"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Access-Control-Request-Method",
+                "value": "GET"
+              },
+              {
+                "name": "Access-Control-Request-Headers",
+                "value": "deviceos,mpid,x-appversion,x-deviceid,x-deviceos"
+              },
+              {
+                "name": "Referer",
+                "value": "https://es.wallapop.com/"
+              },
+              {
+                "name": "Origin",
+                "value": "https://es.wallapop.com"
+              },
+              {
+                "name": "DNT",
+                "value": "1"
+              },
+              {
+                "name": "Sec-GPC",
+                "value": "1"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-site"
+              },
+              {
+                "name": "Priority",
+                "value": "u=4"
+              },
+              {
+                "name": "Pragma",
+                "value": "no-cache"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache"
+              }
+            ],
+            "cookies": [],
+            "queryString": [
+              {
+                "name": "filters_source",
+                "value": "side_bar_filters"
+              },
+              {
+                "name": "category_ids",
+                "value": "100"
+              },
+              {
+                "name": "longitude",
+                "value": "-3.69196"
+              },
+              {
+                "name": "latitude",
+                "value": "40.41956"
+              },
+              {
+                "name": "max_sale_price",
+                "value": "21000"
+              },
+              {
+                "name": "brand",
+                "value": "Porsche"
+              },
+              {
+                "name": "model",
+                "value": "911"
+              },
+              {
+                "name": "min_sale_price",
+                "value": "16000"
+              }
+            ],
+            "headersSize": 748
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Content-Length",
+                "value": "0"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 03 Apr 2025 16:08:33 GMT"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache, no-store, must-revalidate"
+              },
+              {
+                "name": "Vary",
+                "value": "Origin"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Method"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Headers"
+              },
+              {
+                "name": "Access-Control-Allow-Origin",
+                "value": "*"
+              },
+              {
+                "name": "Access-Control-Allow-Methods",
+                "value": "GET,HEAD,POST"
+              },
+              {
+                "name": "Access-Control-Allow-Headers",
+                "value": "deviceos, mpid, x-appversion, x-deviceid, x-deviceos"
+              },
+              {
+                "name": "Access-Control-Expose-Headers",
+                "value": "X-NextPage, x-wallapop-search-id, X-Wallapop-Request-Country-Code"
+              },
+              {
+                "name": "Access-Control-Max-Age",
+                "value": "1800"
+              },
+              {
+                "name": "Allow",
+                "value": "GET, HEAD, POST, PUT, DELETE, OPTIONS, PATCH"
+              },
+              {
+                "name": "X-Cache",
+                "value": "Miss from cloudfront"
+              },
+              {
+                "name": "Via",
+                "value": "1.1 2930f20ca11cde7e5f2d83d9ea84806e.cloudfront.net (CloudFront)"
+              },
+              {
+                "name": "X-Amz-Cf-Pop",
+                "value": "LHR50-P2"
+              },
+              {
+                "name": "X-Amz-Cf-Id",
+                "value": "2RJzWVpzb1HPwmF8IkZgCbnBV-j3njzhYsAjV6GH8cJCOQyzSz6phw=="
+              },
+              {
+                "name": "Server-Timing",
+                "value": "cdn-upstream-layer;desc=\"EDGE\",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=13,cdn-cache-miss,cdn-pop;desc=\"LHR50-P2\",cdn-rid;desc=\"2RJzWVpzb1HPwmF8IkZgCbnBV-j3njzhYsAjV6GH8cJCOQyzSz6phw==\",cdn-downstream-fbl;dur=16"
+              }
+            ],
+            "cookies": [],
+            "content": {
+              "mimeType": "text/plain",
+              "size": 0,
+              "text": ""
+            },
+            "redirectURL": "",
+            "headersSize": 1025,
+            "bodySize": 1025
+          },
+          "cache": {},
+          "timings": {
+            "blocked": -1,
+            "dns": 0,
+            "connect": 0,
+            "ssl": 0,
+            "send": 0,
+            "wait": 53,
+            "receive": 0
+          },
+          "time": 53,
+          "_securityState": "secure",
+          "serverIPAddress": "108.156.46.57",
+          "connection": "443",
+          "pageref": "page_1"
+        },
+        {
+          "startedDateTime": "2025-04-03T18:08:33.309+02:00",
+          "request": {
+            "bodySize": 0,
+            "method": "GET",
+            "url": "https://api.wallapop.com/api/v3/cars/keys/bodytype",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Host",
+                "value": "api.wallapop.com"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0"
+              },
+              {
+                "name": "Accept",
+                "value": "application/json, text/plain, */*"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "es,en-US;q=0.9,en;q=0.8"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache"
+              },
+              {
+                "name": "DeviceOS",
+                "value": "0"
+              },
+              {
+                "name": "X-DeviceOS",
+                "value": "0"
+              },
+              {
+                "name": "X-DeviceID",
+                "value": "2eb91a88-2bf8-4ebb-a905-e5d06f00a76d"
+              },
+              {
+                "name": "MPID",
+                "value": "-1142872387716636433"
+              },
+              {
+                "name": "X-AppVersion",
+                "value": "84770"
+              },
+              {
+                "name": "Origin",
+                "value": "https://es.wallapop.com"
+              },
+              {
+                "name": "DNT",
+                "value": "1"
+              },
+              {
+                "name": "Sec-GPC",
+                "value": "1"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Referer",
+                "value": "https://es.wallapop.com/"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-site"
+              },
+              {
+                "name": "Pragma",
+                "value": "no-cache"
+              }
+            ],
+            "cookies": [],
+            "queryString": [],
+            "headersSize": 632
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "name": "Content-Length",
+                "value": "188"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 03 Apr 2025 16:08:33 GMT"
+              },
+              {
+                "name": "Server",
+                "value": "Wallapop API Server"
+              },
+              {
+                "name": "Access-Control-Allow-Origin",
+                "value": "*"
+              },
+              {
+                "name": "Access-Control-Allow-Methods",
+                "value": "GET, POST, DELETE, PUT, HEAD"
+              },
+              {
+                "name": "Access-Control-Allow-Headers",
+                "value": "*"
+              },
+              {
+                "name": "Access-Control-Expose-Headers",
+                "value": "X-NextPage, x-wallapop-search-id"
+              },
+              {
+                "name": "Content-Encoding",
+                "value": "gzip"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "max-age= 14400"
+              },
+              {
+                "name": "X-Cache",
+                "value": "Miss from cloudfront"
+              },
+              {
+                "name": "Via",
+                "value": "1.1 da75aba073a4674b4acba0f7682b0446.cloudfront.net (CloudFront)"
+              },
+              {
+                "name": "X-Amz-Cf-Pop",
+                "value": "LHR50-P2"
+              },
+              {
+                "name": "X-Amz-Cf-Id",
+                "value": "F6y8HsHkf_uZEHCf62gybQ-r-Ah-fEhXF9-esEuF-JGBDN0zbXQIIg=="
+              },
+              {
+                "name": "Server-Timing",
+                "value": "cdn-upstream-layer;desc=\"EDGE\",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=14,cdn-cache-miss,cdn-pop;desc=\"LHR50-P2\",cdn-rid;desc=\"F6y8HsHkf_uZEHCf62gybQ-r-Ah-fEhXF9-esEuF-JGBDN0zbXQIIg==\",cdn-downstream-fbl;dur=17"
+              }
+            ],
+            "cookies": [],
+            "content": {
+              "mimeType": "application/json",
+              "size": 431,
+              "text": "[{\"id\":\"small_car\",\"icon_id\":\"small_car\",\"text\":\"Pequeño\"},{\"id\":\"coupe_cabrio\",\"icon_id\":\"coupe_cabrio\",\"text\":\"Coupe\"},{\"id\":\"sedan\",\"icon_id\":\"sedan\",\"text\":\"Sedan\"},{\"id\":\"family_car\",\"icon_id\":\"family_car\",\"text\":\"Familiar\"},{\"id\":\"mini_van\",\"icon_id\":\"mini_van\",\"text\":\"Monovolumen\"},{\"id\":\"4X4\",\"icon_id\":\"4X4\",\"text\":\"4X4\"},{\"id\":\"van\",\"icon_id\":\"van\",\"text\":\"Furgoneta\"},{\"id\":\"others\",\"icon_id\":\"others\",\"text\":\"Otros\"}]"
+            },
+            "redirectURL": "",
+            "headersSize": 862,
+            "bodySize": 1050
+          },
+          "cache": {},
+          "timings": {
+            "blocked": -1,
+            "dns": 0,
+            "connect": 0,
+            "ssl": 0,
+            "send": 0,
+            "wait": 48,
+            "receive": 0
+          },
+          "time": 48,
+          "_securityState": "secure",
+          "serverIPAddress": "108.156.46.57",
+          "connection": "443",
+          "pageref": "page_1"
+        },
+        {
+          "startedDateTime": "2025-04-03T18:08:33.310+02:00",
+          "request": {
+            "bodySize": 0,
+            "method": "GET",
+            "url": "https://api.wallapop.com/api/v3/cars/keys/engine",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Host",
+                "value": "api.wallapop.com"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0"
+              },
+              {
+                "name": "Accept",
+                "value": "application/json, text/plain, */*"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "es,en-US;q=0.9,en;q=0.8"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache"
+              },
+              {
+                "name": "DeviceOS",
+                "value": "0"
+              },
+              {
+                "name": "X-DeviceOS",
+                "value": "0"
+              },
+              {
+                "name": "X-DeviceID",
+                "value": "2eb91a88-2bf8-4ebb-a905-e5d06f00a76d"
+              },
+              {
+                "name": "MPID",
+                "value": "-1142872387716636433"
+              },
+              {
+                "name": "X-AppVersion",
+                "value": "84770"
+              },
+              {
+                "name": "Origin",
+                "value": "https://es.wallapop.com"
+              },
+              {
+                "name": "DNT",
+                "value": "1"
+              },
+              {
+                "name": "Sec-GPC",
+                "value": "1"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Referer",
+                "value": "https://es.wallapop.com/"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-site"
+              },
+              {
+                "name": "Pragma",
+                "value": "no-cache"
+              }
+            ],
+            "cookies": [],
+            "queryString": [],
+            "headersSize": 630
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "name": "Content-Length",
+                "value": "128"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 03 Apr 2025 16:08:33 GMT"
+              },
+              {
+                "name": "Server",
+                "value": "Wallapop API Server"
+              },
+              {
+                "name": "Access-Control-Allow-Origin",
+                "value": "*"
+              },
+              {
+                "name": "Access-Control-Allow-Methods",
+                "value": "GET, POST, DELETE, PUT, HEAD"
+              },
+              {
+                "name": "Access-Control-Allow-Headers",
+                "value": "*"
+              },
+              {
+                "name": "Access-Control-Expose-Headers",
+                "value": "X-NextPage, x-wallapop-search-id"
+              },
+              {
+                "name": "Content-Encoding",
+                "value": "gzip"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "max-age= 14400"
+              },
+              {
+                "name": "X-Cache",
+                "value": "Miss from cloudfront"
+              },
+              {
+                "name": "Via",
+                "value": "1.1 2930f20ca11cde7e5f2d83d9ea84806e.cloudfront.net (CloudFront)"
+              },
+              {
+                "name": "X-Amz-Cf-Pop",
+                "value": "LHR50-P2"
+              },
+              {
+                "name": "X-Amz-Cf-Id",
+                "value": "y7YVCoFvOTaHDjVH76cRSfGgWF0WThCqOmmQKdl2fbNQ0rhYDpladA=="
+              },
+              {
+                "name": "Server-Timing",
+                "value": "cdn-upstream-layer;desc=\"EDGE\",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=14,cdn-cache-miss,cdn-pop;desc=\"LHR50-P2\",cdn-rid;desc=\"y7YVCoFvOTaHDjVH76cRSfGgWF0WThCqOmmQKdl2fbNQ0rhYDpladA==\",cdn-downstream-fbl;dur=17"
+              }
+            ],
+            "cookies": [],
+            "content": {
+              "mimeType": "application/json",
+              "size": 233,
+              "text": "[{\"id\":\"gasoil\",\"icon_id\":\"gasoil\",\"text\":\"Diésel\"},{\"id\":\"gasoline\",\"icon_id\":\"gasoline\",\"text\":\"Gasolina\"},{\"id\":\"electric-hybrid\",\"icon_id\":\"electric-hybrid\",\"text\":\"Eléctrico\"},{\"id\":\"others\",\"icon_id\":\"others\",\"text\":\"Otros\"}]"
+            },
+            "redirectURL": "",
+            "headersSize": 862,
+            "bodySize": 990
+          },
+          "cache": {},
+          "timings": {
+            "blocked": -1,
+            "dns": 0,
+            "connect": 0,
+            "ssl": 0,
+            "send": 0,
+            "wait": 55,
+            "receive": 0
+          },
+          "time": 55,
+          "_securityState": "secure",
+          "serverIPAddress": "108.156.46.57",
+          "connection": "443",
+          "pageref": "page_1"
+        },
+        {
+          "startedDateTime": "2025-04-03T18:08:33.311+02:00",
+          "request": {
+            "bodySize": 0,
+            "method": "GET",
+            "url": "https://api.wallapop.com/api/v3/cars/keys/gearbox",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Host",
+                "value": "api.wallapop.com"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0"
+              },
+              {
+                "name": "Accept",
+                "value": "application/json, text/plain, */*"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "es,en-US;q=0.9,en;q=0.8"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache"
+              },
+              {
+                "name": "DeviceOS",
+                "value": "0"
+              },
+              {
+                "name": "X-DeviceOS",
+                "value": "0"
+              },
+              {
+                "name": "X-DeviceID",
+                "value": "2eb91a88-2bf8-4ebb-a905-e5d06f00a76d"
+              },
+              {
+                "name": "MPID",
+                "value": "-1142872387716636433"
+              },
+              {
+                "name": "X-AppVersion",
+                "value": "84770"
+              },
+              {
+                "name": "Origin",
+                "value": "https://es.wallapop.com"
+              },
+              {
+                "name": "DNT",
+                "value": "1"
+              },
+              {
+                "name": "Sec-GPC",
+                "value": "1"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Referer",
+                "value": "https://es.wallapop.com/"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-site"
+              },
+              {
+                "name": "Pragma",
+                "value": "no-cache"
+              }
+            ],
+            "cookies": [],
+            "queryString": [],
+            "headersSize": 631
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "name": "Content-Length",
+                "value": "82"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 03 Apr 2025 16:08:33 GMT"
+              },
+              {
+                "name": "Server",
+                "value": "Wallapop API Server"
+              },
+              {
+                "name": "Access-Control-Allow-Origin",
+                "value": "*"
+              },
+              {
+                "name": "Access-Control-Allow-Methods",
+                "value": "GET, POST, DELETE, PUT, HEAD"
+              },
+              {
+                "name": "Access-Control-Allow-Headers",
+                "value": "*"
+              },
+              {
+                "name": "Access-Control-Expose-Headers",
+                "value": "X-NextPage, x-wallapop-search-id"
+              },
+              {
+                "name": "Content-Encoding",
+                "value": "gzip"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "max-age= 14400"
+              },
+              {
+                "name": "X-Cache",
+                "value": "Miss from cloudfront"
+              },
+              {
+                "name": "Via",
+                "value": "1.1 e9f4c7fe4166f606f6376c2953bbf2b2.cloudfront.net (CloudFront)"
+              },
+              {
+                "name": "X-Amz-Cf-Pop",
+                "value": "LHR50-P2"
+              },
+              {
+                "name": "X-Amz-Cf-Id",
+                "value": "zuFiCKvSLJ-8gu4A5ail4rniNqW1cFz61RTmRPEBXPuqfUvlS9uZew=="
+              },
+              {
+                "name": "Server-Timing",
+                "value": "cdn-upstream-layer;desc=\"EDGE\",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=14,cdn-cache-miss,cdn-pop;desc=\"LHR50-P2\",cdn-rid;desc=\"zuFiCKvSLJ-8gu4A5ail4rniNqW1cFz61RTmRPEBXPuqfUvlS9uZew==\",cdn-downstream-fbl;dur=18"
+              }
+            ],
+            "cookies": [],
+            "content": {
+              "mimeType": "application/json",
+              "size": 114,
+              "text": "[{\"id\":\"manual\",\"icon_id\":\"manual\",\"text\":\"Manual\"},{\"id\":\"automatic\",\"icon_id\":\"automatic\",\"text\":\"Automático\"}]"
+            },
+            "redirectURL": "",
+            "headersSize": 861,
+            "bodySize": 943
+          },
+          "cache": {},
+          "timings": {
+            "blocked": -1,
+            "dns": 0,
+            "connect": 0,
+            "ssl": 0,
+            "send": 0,
+            "wait": 46,
+            "receive": 0
+          },
+          "time": 46,
+          "_securityState": "secure",
+          "serverIPAddress": "108.156.46.57",
+          "connection": "443",
+          "pageref": "page_1"
+        },
+        {
+          "startedDateTime": "2025-04-03T18:08:33.340+02:00",
+          "request": {
+            "bodySize": 0,
+            "method": "OPTIONS",
+            "url": "https://api.wallapop.com/api/v3/cars/keys/bodytype",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Host",
+                "value": "api.wallapop.com"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0"
+              },
+              {
+                "name": "Accept",
+                "value": "*/*"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US,en;q=0.5"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Access-Control-Request-Method",
+                "value": "GET"
+              },
+              {
+                "name": "Access-Control-Request-Headers",
+                "value": "cache-control,deviceos,mpid,x-appversion,x-deviceid,x-deviceos"
+              },
+              {
+                "name": "Referer",
+                "value": "https://es.wallapop.com/"
+              },
+              {
+                "name": "Origin",
+                "value": "https://es.wallapop.com"
+              },
+              {
+                "name": "DNT",
+                "value": "1"
+              },
+              {
+                "name": "Sec-GPC",
+                "value": "1"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-site"
+              },
+              {
+                "name": "Priority",
+                "value": "u=4"
+              },
+              {
+                "name": "Pragma",
+                "value": "no-cache"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache"
+              }
+            ],
+            "cookies": [],
+            "queryString": [],
+            "headersSize": 617
+          },
+          "response": {
+            "status": 202,
+            "statusText": "Accepted",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Content-Length",
+                "value": "0"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 03 Apr 2025 16:08:33 GMT"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache, no-store, must-revalidate"
+              },
+              {
+                "name": "Access-Control-Allow-Origin",
+                "value": "*"
+              },
+              {
+                "name": "Access-Control-Allow-Methods",
+                "value": "GET, POST, DELETE, PUT, HEAD"
+              },
+              {
+                "name": "Access-Control-Allow-Headers",
+                "value": "*"
+              },
+              {
+                "name": "Access-Control-Expose-Headers",
+                "value": "X-NextPage, x-wallapop-search-id"
+              },
+              {
+                "name": "Server",
+                "value": "Wallapop API Server"
+              },
+              {
+                "name": "X-Cache",
+                "value": "Miss from cloudfront"
+              },
+              {
+                "name": "Via",
+                "value": "1.1 da75aba073a4674b4acba0f7682b0446.cloudfront.net (CloudFront)"
+              },
+              {
+                "name": "X-Amz-Cf-Pop",
+                "value": "LHR50-P2"
+              },
+              {
+                "name": "X-Amz-Cf-Id",
+                "value": "o0o3t0rZwqyTDENCSKATjTGtcUv9y6jRBiN0dKycXjc79CakkDJDyw=="
+              },
+              {
+                "name": "Server-Timing",
+                "value": "cdn-upstream-layer;desc=\"EDGE\",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=13,cdn-cache-miss,cdn-pop;desc=\"LHR50-P2\",cdn-rid;desc=\"o0o3t0rZwqyTDENCSKATjTGtcUv9y6jRBiN0dKycXjc79CakkDJDyw==\",cdn-downstream-fbl;dur=16"
+              }
+            ],
+            "cookies": [],
+            "content": {
+              "mimeType": "text/plain",
+              "size": 0,
+              "text": ""
+            },
+            "redirectURL": "",
+            "headersSize": 831,
+            "bodySize": 831
+          },
+          "cache": {},
+          "timings": {
+            "blocked": -1,
+            "dns": 0,
+            "connect": 0,
+            "ssl": 0,
+            "send": 0,
+            "wait": 46,
+            "receive": 0
+          },
+          "time": 46,
+          "_securityState": "secure",
+          "serverIPAddress": "108.156.46.57",
+          "connection": "443",
+          "pageref": "page_1"
+        },
+        {
+          "startedDateTime": "2025-04-03T18:08:33.341+02:00",
+          "request": {
+            "bodySize": 0,
+            "method": "OPTIONS",
+            "url": "https://api.wallapop.com/api/v3/cars/keys/engine",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Host",
+                "value": "api.wallapop.com"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0"
+              },
+              {
+                "name": "Accept",
+                "value": "*/*"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US,en;q=0.5"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Access-Control-Request-Method",
+                "value": "GET"
+              },
+              {
+                "name": "Access-Control-Request-Headers",
+                "value": "cache-control,deviceos,mpid,x-appversion,x-deviceid,x-deviceos"
+              },
+              {
+                "name": "Referer",
+                "value": "https://es.wallapop.com/"
+              },
+              {
+                "name": "Origin",
+                "value": "https://es.wallapop.com"
+              },
+              {
+                "name": "DNT",
+                "value": "1"
+              },
+              {
+                "name": "Sec-GPC",
+                "value": "1"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-site"
+              },
+              {
+                "name": "Priority",
+                "value": "u=4"
+              },
+              {
+                "name": "Pragma",
+                "value": "no-cache"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache"
+              }
+            ],
+            "cookies": [],
+            "queryString": [],
+            "headersSize": 615
+          },
+          "response": {
+            "status": 202,
+            "statusText": "Accepted",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Content-Length",
+                "value": "0"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 03 Apr 2025 16:08:33 GMT"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache, no-store, must-revalidate"
+              },
+              {
+                "name": "Access-Control-Allow-Origin",
+                "value": "*"
+              },
+              {
+                "name": "Access-Control-Allow-Methods",
+                "value": "GET, POST, DELETE, PUT, HEAD"
+              },
+              {
+                "name": "Access-Control-Allow-Headers",
+                "value": "*"
+              },
+              {
+                "name": "Access-Control-Expose-Headers",
+                "value": "X-NextPage, x-wallapop-search-id"
+              },
+              {
+                "name": "Server",
+                "value": "Wallapop API Server"
+              },
+              {
+                "name": "X-Cache",
+                "value": "Miss from cloudfront"
+              },
+              {
+                "name": "Via",
+                "value": "1.1 e9f4c7fe4166f606f6376c2953bbf2b2.cloudfront.net (CloudFront)"
+              },
+              {
+                "name": "X-Amz-Cf-Pop",
+                "value": "LHR50-P2"
+              },
+              {
+                "name": "X-Amz-Cf-Id",
+                "value": "Qrm1fJOiKPg0t2islFZNKmeHm_GP55jUylZeDDZa93cydrAe7uHb7Q=="
+              },
+              {
+                "name": "Server-Timing",
+                "value": "cdn-upstream-layer;desc=\"EDGE\",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=13,cdn-cache-miss,cdn-pop;desc=\"LHR50-P2\",cdn-rid;desc=\"Qrm1fJOiKPg0t2islFZNKmeHm_GP55jUylZeDDZa93cydrAe7uHb7Q==\",cdn-downstream-fbl;dur=16"
+              }
+            ],
+            "cookies": [],
+            "content": {
+              "mimeType": "text/plain",
+              "size": 0,
+              "text": ""
+            },
+            "redirectURL": "",
+            "headersSize": 831,
+            "bodySize": 831
+          },
+          "cache": {},
+          "timings": {
+            "blocked": -1,
+            "dns": 0,
+            "connect": 0,
+            "ssl": 0,
+            "send": 0,
+            "wait": 45,
+            "receive": 0
+          },
+          "time": 45,
+          "_securityState": "secure",
+          "serverIPAddress": "108.156.46.57",
+          "connection": "443",
+          "pageref": "page_1"
+        },
+        {
+          "startedDateTime": "2025-04-03T18:08:33.342+02:00",
+          "request": {
+            "bodySize": 0,
+            "method": "OPTIONS",
+            "url": "https://api.wallapop.com/api/v3/cars/keys/gearbox",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Host",
+                "value": "api.wallapop.com"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0"
+              },
+              {
+                "name": "Accept",
+                "value": "*/*"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US,en;q=0.5"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Access-Control-Request-Method",
+                "value": "GET"
+              },
+              {
+                "name": "Access-Control-Request-Headers",
+                "value": "cache-control,deviceos,mpid,x-appversion,x-deviceid,x-deviceos"
+              },
+              {
+                "name": "Referer",
+                "value": "https://es.wallapop.com/"
+              },
+              {
+                "name": "Origin",
+                "value": "https://es.wallapop.com"
+              },
+              {
+                "name": "DNT",
+                "value": "1"
+              },
+              {
+                "name": "Sec-GPC",
+                "value": "1"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-site"
+              },
+              {
+                "name": "Priority",
+                "value": "u=4"
+              },
+              {
+                "name": "Pragma",
+                "value": "no-cache"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache"
+              }
+            ],
+            "cookies": [],
+            "queryString": [],
+            "headersSize": 616
+          },
+          "response": {
+            "status": 202,
+            "statusText": "Accepted",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Content-Length",
+                "value": "0"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 03 Apr 2025 16:08:33 GMT"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache, no-store, must-revalidate"
+              },
+              {
+                "name": "Access-Control-Allow-Origin",
+                "value": "*"
+              },
+              {
+                "name": "Access-Control-Allow-Methods",
+                "value": "GET, POST, DELETE, PUT, HEAD"
+              },
+              {
+                "name": "Access-Control-Allow-Headers",
+                "value": "*"
+              },
+              {
+                "name": "Access-Control-Expose-Headers",
+                "value": "X-NextPage, x-wallapop-search-id"
+              },
+              {
+                "name": "Server",
+                "value": "Wallapop API Server"
+              },
+              {
+                "name": "X-Cache",
+                "value": "Miss from cloudfront"
+              },
+              {
+                "name": "Via",
+                "value": "1.1 f6df19a0012ccc1089c56521d502bfec.cloudfront.net (CloudFront)"
+              },
+              {
+                "name": "X-Amz-Cf-Pop",
+                "value": "LHR50-P2"
+              },
+              {
+                "name": "X-Amz-Cf-Id",
+                "value": "jzrNvzv-V6TkbKdEYTNmEjRqwgGCUt1zWoOdcSZDoau_hPRd1hjRDA=="
+              },
+              {
+                "name": "Server-Timing",
+                "value": "cdn-upstream-layer;desc=\"EDGE\",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=14,cdn-cache-miss,cdn-pop;desc=\"LHR50-P2\",cdn-rid;desc=\"jzrNvzv-V6TkbKdEYTNmEjRqwgGCUt1zWoOdcSZDoau_hPRd1hjRDA==\",cdn-downstream-fbl;dur=17"
+              }
+            ],
+            "cookies": [],
+            "content": {
+              "mimeType": "text/plain",
+              "size": 0,
+              "text": ""
+            },
+            "redirectURL": "",
+            "headersSize": 831,
+            "bodySize": 831
+          },
+          "cache": {},
+          "timings": {
+            "blocked": -1,
+            "dns": 0,
+            "connect": 0,
+            "ssl": 0,
+            "send": 0,
+            "wait": 48,
+            "receive": 0
+          },
+          "time": 48,
+          "_securityState": "secure",
+          "serverIPAddress": "108.156.46.57",
+          "connection": "443",
+          "pageref": "page_1"
+        },
+        {
+          "startedDateTime": "2025-04-03T18:08:33.436+02:00",
+          "request": {
+            "bodySize": 0,
+            "method": "GET",
+            "url": "https://api.wallapop.com/api/v3/cars/search?min_sale_price=16000&offset=0&latitude=40.41956&start=0&search_id=1c0b40f4-0942-4a55-9d0d-6795c91b5e59&experiment=not_logged_experiment&filters_source=side_bar_filters&max_sale_price=21000&order_by=most_relevance&model=911&step=1&category_ids=100&brand=Porsche&longitude=-3.69196",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Host",
+                "value": "api.wallapop.com"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0"
+              },
+              {
+                "name": "Accept",
+                "value": "application/json, text/plain, */*"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "es,en-US;q=0.9,en;q=0.8"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "DeviceOS",
+                "value": "0"
+              },
+              {
+                "name": "X-DeviceOS",
+                "value": "0"
+              },
+              {
+                "name": "X-DeviceID",
+                "value": "2eb91a88-2bf8-4ebb-a905-e5d06f00a76d"
+              },
+              {
+                "name": "MPID",
+                "value": "-1142872387716636433"
+              },
+              {
+                "name": "X-AppVersion",
+                "value": "84770"
+              },
+              {
+                "name": "Origin",
+                "value": "https://es.wallapop.com"
+              },
+              {
+                "name": "DNT",
+                "value": "1"
+              },
+              {
+                "name": "Sec-GPC",
+                "value": "1"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Referer",
+                "value": "https://es.wallapop.com/"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-site"
+              },
+              {
+                "name": "Pragma",
+                "value": "no-cache"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache"
+              }
+            ],
+            "cookies": [],
+            "queryString": [
+              {
+                "name": "min_sale_price",
+                "value": "16000"
+              },
+              {
+                "name": "offset",
+                "value": "0"
+              },
+              {
+                "name": "latitude",
+                "value": "40.41956"
+              },
+              {
+                "name": "start",
+                "value": "0"
+              },
+              {
+                "name": "search_id",
+                "value": "1c0b40f4-0942-4a55-9d0d-6795c91b5e59"
+              },
+              {
+                "name": "experiment",
+                "value": "not_logged_experiment"
+              },
+              {
+                "name": "filters_source",
+                "value": "side_bar_filters"
+              },
+              {
+                "name": "max_sale_price",
+                "value": "21000"
+              },
+              {
+                "name": "order_by",
+                "value": "most_relevance"
+              },
+              {
+                "name": "model",
+                "value": "911"
+              },
+              {
+                "name": "step",
+                "value": "1"
+              },
+              {
+                "name": "category_ids",
+                "value": "100"
+              },
+              {
+                "name": "brand",
+                "value": "Porsche"
+              },
+              {
+                "name": "longitude",
+                "value": "-3.69196"
+              }
+            ],
+            "headersSize": 905
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "name": "Transfer-Encoding",
+                "value": "chunked"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 03 Apr 2025 16:08:33 GMT"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache, no-store, must-revalidate"
+              },
+              {
+                "name": "content-encoding",
+                "value": "gzip"
+              },
+              {
+                "name": "Vary",
+                "value": "Origin"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Method"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Headers"
+              },
+              {
+                "name": "Access-Control-Allow-Origin",
+                "value": "*"
+              },
+              {
+                "name": "Access-Control-Expose-Headers",
+                "value": "X-NextPage, x-wallapop-search-id, X-Wallapop-Request-Country-Code"
+              },
+              {
+                "name": "x-wallapop-search-id",
+                "value": "1c0b40f4-0942-4a55-9d0d-6795c91b5e59"
+              },
+              {
+                "name": "X-Wallapop-Request-Country-Code",
+                "value": "ES"
+              },
+              {
+                "name": "X-NextPage",
+                "value": "min_sale_price=16000&offset=0&latitude=40.41956&start=0&search_id=1c0b40f4-0942-4a55-9d0d-6795c91b5e59&experiment=not_logged_experiment&filters_source=side_bar_filters&max_sale_price=21000&order_by=most_relevance&model=911&step=2&category_ids=100&brand=Porsche&longitude=-3.69196"
+              },
+              {
+                "name": "X-Cache",
+                "value": "Miss from cloudfront"
+              },
+              {
+                "name": "Via",
+                "value": "1.1 2930f20ca11cde7e5f2d83d9ea84806e.cloudfront.net (CloudFront)"
+              },
+              {
+                "name": "X-Amz-Cf-Pop",
+                "value": "LHR50-P2"
+              },
+              {
+                "name": "X-Amz-Cf-Id",
+                "value": "E4pel91HOCv8nsWWWHhA5xAkCQmQC8uVh_se1mckAfBcXxk5eB7F4w=="
+              },
+              {
+                "name": "Server-Timing",
+                "value": "cdn-upstream-layer;desc=\"EDGE\",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=18,cdn-cache-miss,cdn-pop;desc=\"LHR50-P2\",cdn-rid;desc=\"E4pel91HOCv8nsWWWHhA5xAkCQmQC8uVh_se1mckAfBcXxk5eB7F4w==\",cdn-downstream-fbl;dur=21"
+              }
+            ],
+            "cookies": [],
+            "content": {
+              "mimeType": "application/json",
+              "size": 159,
+              "text": "{\"search_objects\":[],\"from\":15,\"to\":25,\"distance_ordered\":false,\"experiment\":\"not_logged_experiment\",\"search_point\":{\"latitude\":40.41956,\"longitude\":-3.69196}}"
+            },
+            "redirectURL": "",
+            "headersSize": 1268,
+            "bodySize": 1416
+          },
+          "cache": {},
+          "timings": {
+            "blocked": -1,
+            "dns": 0,
+            "connect": 0,
+            "ssl": 0,
+            "send": 0,
+            "wait": 59,
+            "receive": 0
+          },
+          "time": 59,
+          "_securityState": "secure",
+          "serverIPAddress": "108.156.46.57",
+          "connection": "443",
+          "pageref": "page_1"
+        },
+        {
+          "startedDateTime": "2025-04-03T18:08:33.457+02:00",
+          "request": {
+            "bodySize": 0,
+            "method": "OPTIONS",
+            "url": "https://api.wallapop.com/api/v3/cars/search?min_sale_price=16000&offset=0&latitude=40.41956&start=0&search_id=1c0b40f4-0942-4a55-9d0d-6795c91b5e59&experiment=not_logged_experiment&filters_source=side_bar_filters&max_sale_price=21000&order_by=most_relevance&model=911&step=1&category_ids=100&brand=Porsche&longitude=-3.69196",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Host",
+                "value": "api.wallapop.com"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0"
+              },
+              {
+                "name": "Accept",
+                "value": "*/*"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US,en;q=0.5"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Access-Control-Request-Method",
+                "value": "GET"
+              },
+              {
+                "name": "Access-Control-Request-Headers",
+                "value": "deviceos,mpid,x-appversion,x-deviceid,x-deviceos"
+              },
+              {
+                "name": "Referer",
+                "value": "https://es.wallapop.com/"
+              },
+              {
+                "name": "Origin",
+                "value": "https://es.wallapop.com"
+              },
+              {
+                "name": "DNT",
+                "value": "1"
+              },
+              {
+                "name": "Sec-GPC",
+                "value": "1"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-site"
+              },
+              {
+                "name": "Priority",
+                "value": "u=4"
+              },
+              {
+                "name": "Pragma",
+                "value": "no-cache"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache"
+              }
+            ],
+            "cookies": [],
+            "queryString": [
+              {
+                "name": "min_sale_price",
+                "value": "16000"
+              },
+              {
+                "name": "offset",
+                "value": "0"
+              },
+              {
+                "name": "latitude",
+                "value": "40.41956"
+              },
+              {
+                "name": "start",
+                "value": "0"
+              },
+              {
+                "name": "search_id",
+                "value": "1c0b40f4-0942-4a55-9d0d-6795c91b5e59"
+              },
+              {
+                "name": "experiment",
+                "value": "not_logged_experiment"
+              },
+              {
+                "name": "filters_source",
+                "value": "side_bar_filters"
+              },
+              {
+                "name": "max_sale_price",
+                "value": "21000"
+              },
+              {
+                "name": "order_by",
+                "value": "most_relevance"
+              },
+              {
+                "name": "model",
+                "value": "911"
+              },
+              {
+                "name": "step",
+                "value": "1"
+              },
+              {
+                "name": "category_ids",
+                "value": "100"
+              },
+              {
+                "name": "brand",
+                "value": "Porsche"
+              },
+              {
+                "name": "longitude",
+                "value": "-3.69196"
+              }
+            ],
+            "headersSize": 876
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Content-Length",
+                "value": "0"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 03 Apr 2025 16:08:33 GMT"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache, no-store, must-revalidate"
+              },
+              {
+                "name": "Vary",
+                "value": "Origin"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Method"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Headers"
+              },
+              {
+                "name": "Access-Control-Allow-Origin",
+                "value": "*"
+              },
+              {
+                "name": "Access-Control-Allow-Methods",
+                "value": "GET,HEAD,POST"
+              },
+              {
+                "name": "Access-Control-Allow-Headers",
+                "value": "deviceos, mpid, x-appversion, x-deviceid, x-deviceos"
+              },
+              {
+                "name": "Access-Control-Expose-Headers",
+                "value": "X-NextPage, x-wallapop-search-id, X-Wallapop-Request-Country-Code"
+              },
+              {
+                "name": "Access-Control-Max-Age",
+                "value": "1800"
+              },
+              {
+                "name": "Allow",
+                "value": "GET, HEAD, POST, PUT, DELETE, OPTIONS, PATCH"
+              },
+              {
+                "name": "X-Cache",
+                "value": "Miss from cloudfront"
+              },
+              {
+                "name": "Via",
+                "value": "1.1 f6df19a0012ccc1089c56521d502bfec.cloudfront.net (CloudFront)"
+              },
+              {
+                "name": "X-Amz-Cf-Pop",
+                "value": "LHR50-P2"
+              },
+              {
+                "name": "X-Amz-Cf-Id",
+                "value": "iHPliHWNGIcNUxldBAgiD3G2YXolOcwghPpSCArDNY_nqMEPOa5JsA=="
+              },
+              {
+                "name": "Server-Timing",
+                "value": "cdn-upstream-layer;desc=\"EDGE\",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=16,cdn-cache-miss,cdn-pop;desc=\"LHR50-P2\",cdn-rid;desc=\"iHPliHWNGIcNUxldBAgiD3G2YXolOcwghPpSCArDNY_nqMEPOa5JsA==\",cdn-downstream-fbl;dur=21"
+              }
+            ],
+            "cookies": [],
+            "content": {
+              "mimeType": "text/plain",
+              "size": 0,
+              "text": ""
+            },
+            "redirectURL": "",
+            "headersSize": 1025,
+            "bodySize": 1025
+          },
+          "cache": {},
+          "timings": {
+            "blocked": 0,
+            "dns": 0,
+            "connect": 0,
+            "ssl": 0,
+            "send": 0,
+            "wait": 53,
+            "receive": 0
+          },
+          "time": 53,
+          "_securityState": "secure",
+          "serverIPAddress": "108.156.46.57",
+          "connection": "443",
+          "pageref": "page_1"
+        },
+        {
+          "startedDateTime": "2025-04-03T18:08:33.617+02:00",
+          "request": {
+            "bodySize": 0,
+            "method": "GET",
+            "url": "https://api.wallapop.com/api/v3/cars/search?min_sale_price=16000&offset=0&latitude=40.41956&start=0&search_id=1c0b40f4-0942-4a55-9d0d-6795c91b5e59&experiment=not_logged_experiment&filters_source=side_bar_filters&max_sale_price=21000&order_by=most_relevance&model=911&step=2&category_ids=100&brand=Porsche&longitude=-3.69196",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Host",
+                "value": "api.wallapop.com"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0"
+              },
+              {
+                "name": "Accept",
+                "value": "application/json, text/plain, */*"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "es,en-US;q=0.9,en;q=0.8"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "DeviceOS",
+                "value": "0"
+              },
+              {
+                "name": "X-DeviceOS",
+                "value": "0"
+              },
+              {
+                "name": "X-DeviceID",
+                "value": "2eb91a88-2bf8-4ebb-a905-e5d06f00a76d"
+              },
+              {
+                "name": "MPID",
+                "value": "-1142872387716636433"
+              },
+              {
+                "name": "X-AppVersion",
+                "value": "84770"
+              },
+              {
+                "name": "Origin",
+                "value": "https://es.wallapop.com"
+              },
+              {
+                "name": "DNT",
+                "value": "1"
+              },
+              {
+                "name": "Sec-GPC",
+                "value": "1"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Referer",
+                "value": "https://es.wallapop.com/"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-site"
+              },
+              {
+                "name": "Pragma",
+                "value": "no-cache"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache"
+              }
+            ],
+            "cookies": [],
+            "queryString": [
+              {
+                "name": "min_sale_price",
+                "value": "16000"
+              },
+              {
+                "name": "offset",
+                "value": "0"
+              },
+              {
+                "name": "latitude",
+                "value": "40.41956"
+              },
+              {
+                "name": "start",
+                "value": "0"
+              },
+              {
+                "name": "search_id",
+                "value": "1c0b40f4-0942-4a55-9d0d-6795c91b5e59"
+              },
+              {
+                "name": "experiment",
+                "value": "not_logged_experiment"
+              },
+              {
+                "name": "filters_source",
+                "value": "side_bar_filters"
+              },
+              {
+                "name": "max_sale_price",
+                "value": "21000"
+              },
+              {
+                "name": "order_by",
+                "value": "most_relevance"
+              },
+              {
+                "name": "model",
+                "value": "911"
+              },
+              {
+                "name": "step",
+                "value": "2"
+              },
+              {
+                "name": "category_ids",
+                "value": "100"
+              },
+              {
+                "name": "brand",
+                "value": "Porsche"
+              },
+              {
+                "name": "longitude",
+                "value": "-3.69196"
+              }
+            ],
+            "headersSize": 905
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "name": "Transfer-Encoding",
+                "value": "chunked"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 03 Apr 2025 16:08:33 GMT"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache, no-store, must-revalidate"
+              },
+              {
+                "name": "content-encoding",
+                "value": "gzip"
+              },
+              {
+                "name": "Vary",
+                "value": "Origin"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Method"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Headers"
+              },
+              {
+                "name": "Access-Control-Allow-Origin",
+                "value": "*"
+              },
+              {
+                "name": "Access-Control-Expose-Headers",
+                "value": "X-NextPage, x-wallapop-search-id, X-Wallapop-Request-Country-Code"
+              },
+              {
+                "name": "x-wallapop-search-id",
+                "value": "1c0b40f4-0942-4a55-9d0d-6795c91b5e59"
+              },
+              {
+                "name": "X-Wallapop-Request-Country-Code",
+                "value": "ES"
+              },
+              {
+                "name": "X-NextPage",
+                "value": "min_sale_price=16000&offset=0&latitude=40.41956&start=0&search_id=1c0b40f4-0942-4a55-9d0d-6795c91b5e59&experiment=not_logged_experiment&filters_source=side_bar_filters&max_sale_price=21000&order_by=most_relevance&model=911&step=3&category_ids=100&brand=Porsche&longitude=-3.69196"
+              },
+              {
+                "name": "X-Cache",
+                "value": "Miss from cloudfront"
+              },
+              {
+                "name": "Via",
+                "value": "1.1 2930f20ca11cde7e5f2d83d9ea84806e.cloudfront.net (CloudFront)"
+              },
+              {
+                "name": "X-Amz-Cf-Pop",
+                "value": "LHR50-P2"
+              },
+              {
+                "name": "X-Amz-Cf-Id",
+                "value": "emuBGK0bI2Uw_PPHlV5wcslvreeTRoJ5BnukEPIjJX5N2viUKUqSVQ=="
+              },
+              {
+                "name": "Server-Timing",
+                "value": "cdn-upstream-layer;desc=\"EDGE\",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=17,cdn-cache-miss,cdn-pop;desc=\"LHR50-P2\",cdn-rid;desc=\"emuBGK0bI2Uw_PPHlV5wcslvreeTRoJ5BnukEPIjJX5N2viUKUqSVQ==\",cdn-downstream-fbl;dur=20"
+              }
+            ],
+            "cookies": [],
+            "content": {
+              "mimeType": "application/json",
+              "size": 159,
+              "text": "{\"search_objects\":[],\"from\":25,\"to\":50,\"distance_ordered\":false,\"experiment\":\"not_logged_experiment\",\"search_point\":{\"latitude\":40.41956,\"longitude\":-3.69196}}"
+            },
+            "redirectURL": "",
+            "headersSize": 1268,
+            "bodySize": 1417
+          },
+          "cache": {},
+          "timings": {
+            "blocked": -1,
+            "dns": 0,
+            "connect": 0,
+            "ssl": 0,
+            "send": 0,
+            "wait": 57,
+            "receive": 1
+          },
+          "time": 58,
+          "_securityState": "secure",
+          "serverIPAddress": "108.156.46.57",
+          "connection": "443",
+          "pageref": "page_1"
+        },
+        {
+          "startedDateTime": "2025-04-03T18:08:33.620+02:00",
+          "request": {
+            "bodySize": 0,
+            "method": "OPTIONS",
+            "url": "https://api.wallapop.com/api/v3/cars/search?min_sale_price=16000&offset=0&latitude=40.41956&start=0&search_id=1c0b40f4-0942-4a55-9d0d-6795c91b5e59&experiment=not_logged_experiment&filters_source=side_bar_filters&max_sale_price=21000&order_by=most_relevance&model=911&step=2&category_ids=100&brand=Porsche&longitude=-3.69196",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Host",
+                "value": "api.wallapop.com"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0"
+              },
+              {
+                "name": "Accept",
+                "value": "*/*"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US,en;q=0.5"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Access-Control-Request-Method",
+                "value": "GET"
+              },
+              {
+                "name": "Access-Control-Request-Headers",
+                "value": "deviceos,mpid,x-appversion,x-deviceid,x-deviceos"
+              },
+              {
+                "name": "Referer",
+                "value": "https://es.wallapop.com/"
+              },
+              {
+                "name": "Origin",
+                "value": "https://es.wallapop.com"
+              },
+              {
+                "name": "DNT",
+                "value": "1"
+              },
+              {
+                "name": "Sec-GPC",
+                "value": "1"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-site"
+              },
+              {
+                "name": "Priority",
+                "value": "u=4"
+              },
+              {
+                "name": "Pragma",
+                "value": "no-cache"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache"
+              }
+            ],
+            "cookies": [],
+            "queryString": [
+              {
+                "name": "min_sale_price",
+                "value": "16000"
+              },
+              {
+                "name": "offset",
+                "value": "0"
+              },
+              {
+                "name": "latitude",
+                "value": "40.41956"
+              },
+              {
+                "name": "start",
+                "value": "0"
+              },
+              {
+                "name": "search_id",
+                "value": "1c0b40f4-0942-4a55-9d0d-6795c91b5e59"
+              },
+              {
+                "name": "experiment",
+                "value": "not_logged_experiment"
+              },
+              {
+                "name": "filters_source",
+                "value": "side_bar_filters"
+              },
+              {
+                "name": "max_sale_price",
+                "value": "21000"
+              },
+              {
+                "name": "order_by",
+                "value": "most_relevance"
+              },
+              {
+                "name": "model",
+                "value": "911"
+              },
+              {
+                "name": "step",
+                "value": "2"
+              },
+              {
+                "name": "category_ids",
+                "value": "100"
+              },
+              {
+                "name": "brand",
+                "value": "Porsche"
+              },
+              {
+                "name": "longitude",
+                "value": "-3.69196"
+              }
+            ],
+            "headersSize": 876
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Content-Length",
+                "value": "0"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 03 Apr 2025 16:08:33 GMT"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache, no-store, must-revalidate"
+              },
+              {
+                "name": "Vary",
+                "value": "Origin"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Method"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Headers"
+              },
+              {
+                "name": "Access-Control-Allow-Origin",
+                "value": "*"
+              },
+              {
+                "name": "Access-Control-Allow-Methods",
+                "value": "GET,HEAD,POST"
+              },
+              {
+                "name": "Access-Control-Allow-Headers",
+                "value": "deviceos, mpid, x-appversion, x-deviceid, x-deviceos"
+              },
+              {
+                "name": "Access-Control-Expose-Headers",
+                "value": "X-NextPage, x-wallapop-search-id, X-Wallapop-Request-Country-Code"
+              },
+              {
+                "name": "Access-Control-Max-Age",
+                "value": "1800"
+              },
+              {
+                "name": "Allow",
+                "value": "GET, HEAD, POST, PUT, DELETE, OPTIONS, PATCH"
+              },
+              {
+                "name": "X-Cache",
+                "value": "Miss from cloudfront"
+              },
+              {
+                "name": "Via",
+                "value": "1.1 2930f20ca11cde7e5f2d83d9ea84806e.cloudfront.net (CloudFront)"
+              },
+              {
+                "name": "X-Amz-Cf-Pop",
+                "value": "LHR50-P2"
+              },
+              {
+                "name": "X-Amz-Cf-Id",
+                "value": "p1leZiUdM-_HHACDu2XAsYM4Di7wSeo60Ou1tKY6hnMGX5-Xao3cRg=="
+              },
+              {
+                "name": "Server-Timing",
+                "value": "cdn-upstream-layer;desc=\"EDGE\",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=16,cdn-cache-miss,cdn-pop;desc=\"LHR50-P2\",cdn-rid;desc=\"p1leZiUdM-_HHACDu2XAsYM4Di7wSeo60Ou1tKY6hnMGX5-Xao3cRg==\",cdn-downstream-fbl;dur=19"
+              }
+            ],
+            "cookies": [],
+            "content": {
+              "mimeType": "text/plain",
+              "size": 0,
+              "text": ""
+            },
+            "redirectURL": "",
+            "headersSize": 1025,
+            "bodySize": 1025
+          },
+          "cache": {},
+          "timings": {
+            "blocked": 0,
+            "dns": 0,
+            "connect": 0,
+            "ssl": 0,
+            "send": 0,
+            "wait": 56,
+            "receive": 0
+          },
+          "time": 56,
+          "_securityState": "secure",
+          "serverIPAddress": "108.156.46.57",
+          "connection": "443",
+          "pageref": "page_1"
+        },
+        {
+          "startedDateTime": "2025-04-03T18:08:33.772+02:00",
+          "request": {
+            "bodySize": 0,
+            "method": "GET",
+            "url": "https://api.wallapop.com/api/v3/cars/search?min_sale_price=16000&offset=0&latitude=40.41956&start=0&search_id=1c0b40f4-0942-4a55-9d0d-6795c91b5e59&experiment=not_logged_experiment&filters_source=side_bar_filters&max_sale_price=21000&order_by=most_relevance&model=911&step=3&category_ids=100&brand=Porsche&longitude=-3.69196",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Host",
+                "value": "api.wallapop.com"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0"
+              },
+              {
+                "name": "Accept",
+                "value": "application/json, text/plain, */*"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "es,en-US;q=0.9,en;q=0.8"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "DeviceOS",
+                "value": "0"
+              },
+              {
+                "name": "X-DeviceOS",
+                "value": "0"
+              },
+              {
+                "name": "X-DeviceID",
+                "value": "2eb91a88-2bf8-4ebb-a905-e5d06f00a76d"
+              },
+              {
+                "name": "MPID",
+                "value": "-1142872387716636433"
+              },
+              {
+                "name": "X-AppVersion",
+                "value": "84770"
+              },
+              {
+                "name": "Origin",
+                "value": "https://es.wallapop.com"
+              },
+              {
+                "name": "DNT",
+                "value": "1"
+              },
+              {
+                "name": "Sec-GPC",
+                "value": "1"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Referer",
+                "value": "https://es.wallapop.com/"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-site"
+              },
+              {
+                "name": "Pragma",
+                "value": "no-cache"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache"
+              }
+            ],
+            "cookies": [],
+            "queryString": [
+              {
+                "name": "min_sale_price",
+                "value": "16000"
+              },
+              {
+                "name": "offset",
+                "value": "0"
+              },
+              {
+                "name": "latitude",
+                "value": "40.41956"
+              },
+              {
+                "name": "start",
+                "value": "0"
+              },
+              {
+                "name": "search_id",
+                "value": "1c0b40f4-0942-4a55-9d0d-6795c91b5e59"
+              },
+              {
+                "name": "experiment",
+                "value": "not_logged_experiment"
+              },
+              {
+                "name": "filters_source",
+                "value": "side_bar_filters"
+              },
+              {
+                "name": "max_sale_price",
+                "value": "21000"
+              },
+              {
+                "name": "order_by",
+                "value": "most_relevance"
+              },
+              {
+                "name": "model",
+                "value": "911"
+              },
+              {
+                "name": "step",
+                "value": "3"
+              },
+              {
+                "name": "category_ids",
+                "value": "100"
+              },
+              {
+                "name": "brand",
+                "value": "Porsche"
+              },
+              {
+                "name": "longitude",
+                "value": "-3.69196"
+              }
+            ],
+            "headersSize": 905
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "name": "Transfer-Encoding",
+                "value": "chunked"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 03 Apr 2025 16:08:33 GMT"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache, no-store, must-revalidate"
+              },
+              {
+                "name": "content-encoding",
+                "value": "gzip"
+              },
+              {
+                "name": "Vary",
+                "value": "Origin"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Method"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Headers"
+              },
+              {
+                "name": "Access-Control-Allow-Origin",
+                "value": "*"
+              },
+              {
+                "name": "Access-Control-Expose-Headers",
+                "value": "X-NextPage, x-wallapop-search-id, X-Wallapop-Request-Country-Code"
+              },
+              {
+                "name": "x-wallapop-search-id",
+                "value": "1c0b40f4-0942-4a55-9d0d-6795c91b5e59"
+              },
+              {
+                "name": "X-Wallapop-Request-Country-Code",
+                "value": "ES"
+              },
+              {
+                "name": "X-NextPage",
+                "value": "min_sale_price=16000&offset=0&latitude=40.41956&start=0&search_id=1c0b40f4-0942-4a55-9d0d-6795c91b5e59&experiment=not_logged_experiment&filters_source=side_bar_filters&max_sale_price=21000&order_by=most_relevance&model=911&step=4&category_ids=100&brand=Porsche&longitude=-3.69196"
+              },
+              {
+                "name": "X-Cache",
+                "value": "Miss from cloudfront"
+              },
+              {
+                "name": "Via",
+                "value": "1.1 2930f20ca11cde7e5f2d83d9ea84806e.cloudfront.net (CloudFront)"
+              },
+              {
+                "name": "X-Amz-Cf-Pop",
+                "value": "LHR50-P2"
+              },
+              {
+                "name": "X-Amz-Cf-Id",
+                "value": "1hxu78C-UbSRENEe7S9RpfqKj2X_KI4KVaomuR3LzDY80w5mFcKESA=="
+              },
+              {
+                "name": "Server-Timing",
+                "value": "cdn-upstream-layer;desc=\"EDGE\",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=16,cdn-cache-miss,cdn-pop;desc=\"LHR50-P2\",cdn-rid;desc=\"1hxu78C-UbSRENEe7S9RpfqKj2X_KI4KVaomuR3LzDY80w5mFcKESA==\",cdn-downstream-fbl;dur=19"
+              }
+            ],
+            "cookies": [],
+            "content": {
+              "mimeType": "application/json",
+              "size": 160,
+              "text": "{\"search_objects\":[],\"from\":50,\"to\":250,\"distance_ordered\":false,\"experiment\":\"not_logged_experiment\",\"search_point\":{\"latitude\":40.41956,\"longitude\":-3.69196}}"
+            },
+            "redirectURL": "",
+            "headersSize": 1268,
+            "bodySize": 1416
+          },
+          "cache": {},
+          "timings": {
+            "blocked": -1,
+            "dns": 0,
+            "connect": 0,
+            "ssl": 0,
+            "send": 0,
+            "wait": 57,
+            "receive": 1
+          },
+          "time": 58,
+          "_securityState": "secure",
+          "serverIPAddress": "108.156.46.57",
+          "connection": "443",
+          "pageref": "page_1"
+        },
+        {
+          "startedDateTime": "2025-04-03T18:08:33.777+02:00",
+          "request": {
+            "bodySize": 0,
+            "method": "OPTIONS",
+            "url": "https://api.wallapop.com/api/v3/cars/search?min_sale_price=16000&offset=0&latitude=40.41956&start=0&search_id=1c0b40f4-0942-4a55-9d0d-6795c91b5e59&experiment=not_logged_experiment&filters_source=side_bar_filters&max_sale_price=21000&order_by=most_relevance&model=911&step=3&category_ids=100&brand=Porsche&longitude=-3.69196",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Host",
+                "value": "api.wallapop.com"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0"
+              },
+              {
+                "name": "Accept",
+                "value": "*/*"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US,en;q=0.5"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Access-Control-Request-Method",
+                "value": "GET"
+              },
+              {
+                "name": "Access-Control-Request-Headers",
+                "value": "deviceos,mpid,x-appversion,x-deviceid,x-deviceos"
+              },
+              {
+                "name": "Referer",
+                "value": "https://es.wallapop.com/"
+              },
+              {
+                "name": "Origin",
+                "value": "https://es.wallapop.com"
+              },
+              {
+                "name": "DNT",
+                "value": "1"
+              },
+              {
+                "name": "Sec-GPC",
+                "value": "1"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-site"
+              },
+              {
+                "name": "Priority",
+                "value": "u=4"
+              },
+              {
+                "name": "Pragma",
+                "value": "no-cache"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache"
+              }
+            ],
+            "cookies": [],
+            "queryString": [
+              {
+                "name": "min_sale_price",
+                "value": "16000"
+              },
+              {
+                "name": "offset",
+                "value": "0"
+              },
+              {
+                "name": "latitude",
+                "value": "40.41956"
+              },
+              {
+                "name": "start",
+                "value": "0"
+              },
+              {
+                "name": "search_id",
+                "value": "1c0b40f4-0942-4a55-9d0d-6795c91b5e59"
+              },
+              {
+                "name": "experiment",
+                "value": "not_logged_experiment"
+              },
+              {
+                "name": "filters_source",
+                "value": "side_bar_filters"
+              },
+              {
+                "name": "max_sale_price",
+                "value": "21000"
+              },
+              {
+                "name": "order_by",
+                "value": "most_relevance"
+              },
+              {
+                "name": "model",
+                "value": "911"
+              },
+              {
+                "name": "step",
+                "value": "3"
+              },
+              {
+                "name": "category_ids",
+                "value": "100"
+              },
+              {
+                "name": "brand",
+                "value": "Porsche"
+              },
+              {
+                "name": "longitude",
+                "value": "-3.69196"
+              }
+            ],
+            "headersSize": 876
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Content-Length",
+                "value": "0"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 03 Apr 2025 16:08:33 GMT"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache, no-store, must-revalidate"
+              },
+              {
+                "name": "Vary",
+                "value": "Origin"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Method"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Headers"
+              },
+              {
+                "name": "Access-Control-Allow-Origin",
+                "value": "*"
+              },
+              {
+                "name": "Access-Control-Allow-Methods",
+                "value": "GET,HEAD,POST"
+              },
+              {
+                "name": "Access-Control-Allow-Headers",
+                "value": "deviceos, mpid, x-appversion, x-deviceid, x-deviceos"
+              },
+              {
+                "name": "Access-Control-Expose-Headers",
+                "value": "X-NextPage, x-wallapop-search-id, X-Wallapop-Request-Country-Code"
+              },
+              {
+                "name": "Access-Control-Max-Age",
+                "value": "1800"
+              },
+              {
+                "name": "Allow",
+                "value": "GET, HEAD, POST, PUT, DELETE, OPTIONS, PATCH"
+              },
+              {
+                "name": "X-Cache",
+                "value": "Miss from cloudfront"
+              },
+              {
+                "name": "Via",
+                "value": "1.1 2930f20ca11cde7e5f2d83d9ea84806e.cloudfront.net (CloudFront)"
+              },
+              {
+                "name": "X-Amz-Cf-Pop",
+                "value": "LHR50-P2"
+              },
+              {
+                "name": "X-Amz-Cf-Id",
+                "value": "-gcDKT1VBw21Dd7HHVvFCtzh7bUWYlsa3yxHVhWMmDFHHYSD3-1KNw=="
+              },
+              {
+                "name": "Server-Timing",
+                "value": "cdn-upstream-layer;desc=\"EDGE\",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=15,cdn-cache-miss,cdn-pop;desc=\"LHR50-P2\",cdn-rid;desc=\"-gcDKT1VBw21Dd7HHVvFCtzh7bUWYlsa3yxHVhWMmDFHHYSD3-1KNw==\",cdn-downstream-fbl;dur=18"
+              }
+            ],
+            "cookies": [],
+            "content": {
+              "mimeType": "text/plain",
+              "size": 0,
+              "text": ""
+            },
+            "redirectURL": "",
+            "headersSize": 1025,
+            "bodySize": 1025
+          },
+          "cache": {},
+          "timings": {
+            "blocked": 0,
+            "dns": 0,
+            "connect": 0,
+            "ssl": 0,
+            "send": 0,
+            "wait": 57,
+            "receive": 0
+          },
+          "time": 57,
+          "_securityState": "secure",
+          "serverIPAddress": "108.156.46.57",
+          "connection": "443",
+          "pageref": "page_1"
+        },
+        {
+          "startedDateTime": "2025-04-03T18:08:33.954+02:00",
+          "request": {
+            "bodySize": 0,
+            "method": "GET",
+            "url": "https://api.wallapop.com/api/v3/cars/search?min_sale_price=16000&offset=0&latitude=40.41956&start=0&search_id=1c0b40f4-0942-4a55-9d0d-6795c91b5e59&experiment=not_logged_experiment&filters_source=side_bar_filters&max_sale_price=21000&order_by=most_relevance&model=911&step=4&category_ids=100&brand=Porsche&longitude=-3.69196",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Host",
+                "value": "api.wallapop.com"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0"
+              },
+              {
+                "name": "Accept",
+                "value": "application/json, text/plain, */*"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "es,en-US;q=0.9,en;q=0.8"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "DeviceOS",
+                "value": "0"
+              },
+              {
+                "name": "X-DeviceOS",
+                "value": "0"
+              },
+              {
+                "name": "X-DeviceID",
+                "value": "2eb91a88-2bf8-4ebb-a905-e5d06f00a76d"
+              },
+              {
+                "name": "MPID",
+                "value": "-1142872387716636433"
+              },
+              {
+                "name": "X-AppVersion",
+                "value": "84770"
+              },
+              {
+                "name": "Origin",
+                "value": "https://es.wallapop.com"
+              },
+              {
+                "name": "DNT",
+                "value": "1"
+              },
+              {
+                "name": "Sec-GPC",
+                "value": "1"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Referer",
+                "value": "https://es.wallapop.com/"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-site"
+              },
+              {
+                "name": "Pragma",
+                "value": "no-cache"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache"
+              }
+            ],
+            "cookies": [],
+            "queryString": [
+              {
+                "name": "min_sale_price",
+                "value": "16000"
+              },
+              {
+                "name": "offset",
+                "value": "0"
+              },
+              {
+                "name": "latitude",
+                "value": "40.41956"
+              },
+              {
+                "name": "start",
+                "value": "0"
+              },
+              {
+                "name": "search_id",
+                "value": "1c0b40f4-0942-4a55-9d0d-6795c91b5e59"
+              },
+              {
+                "name": "experiment",
+                "value": "not_logged_experiment"
+              },
+              {
+                "name": "filters_source",
+                "value": "side_bar_filters"
+              },
+              {
+                "name": "max_sale_price",
+                "value": "21000"
+              },
+              {
+                "name": "order_by",
+                "value": "most_relevance"
+              },
+              {
+                "name": "model",
+                "value": "911"
+              },
+              {
+                "name": "step",
+                "value": "4"
+              },
+              {
+                "name": "category_ids",
+                "value": "100"
+              },
+              {
+                "name": "brand",
+                "value": "Porsche"
+              },
+              {
+                "name": "longitude",
+                "value": "-3.69196"
+              }
+            ],
+            "headersSize": 905
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "name": "Transfer-Encoding",
+                "value": "chunked"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 03 Apr 2025 16:08:34 GMT"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache, no-store, must-revalidate"
+              },
+              {
+                "name": "content-encoding",
+                "value": "gzip"
+              },
+              {
+                "name": "Vary",
+                "value": "Origin"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Method"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Headers"
+              },
+              {
+                "name": "Access-Control-Allow-Origin",
+                "value": "*"
+              },
+              {
+                "name": "Access-Control-Expose-Headers",
+                "value": "X-NextPage, x-wallapop-search-id, X-Wallapop-Request-Country-Code"
+              },
+              {
+                "name": "x-wallapop-search-id",
+                "value": "1c0b40f4-0942-4a55-9d0d-6795c91b5e59"
+              },
+              {
+                "name": "X-Wallapop-Request-Country-Code",
+                "value": "ES"
+              },
+              {
+                "name": "X-NextPage",
+                "value": "min_sale_price=16000&offset=0&latitude=40.41956&start=0&search_id=1c0b40f4-0942-4a55-9d0d-6795c91b5e59&experiment=not_logged_experiment&filters_source=side_bar_filters&max_sale_price=21000&order_by=most_relevance&model=911&step=5&category_ids=100&brand=Porsche&longitude=-3.69196"
+              },
+              {
+                "name": "X-Cache",
+                "value": "Miss from cloudfront"
+              },
+              {
+                "name": "Via",
+                "value": "1.1 2930f20ca11cde7e5f2d83d9ea84806e.cloudfront.net (CloudFront)"
+              },
+              {
+                "name": "X-Amz-Cf-Pop",
+                "value": "LHR50-P2"
+              },
+              {
+                "name": "X-Amz-Cf-Id",
+                "value": "5_UNpZ6vX_BYjcZbncTuHhG_JK16bEG5iuslVG0E48deJJJkoyIW3w=="
+              },
+              {
+                "name": "Server-Timing",
+                "value": "cdn-upstream-layer;desc=\"EDGE\",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=23,cdn-cache-miss,cdn-pop;desc=\"LHR50-P2\",cdn-rid;desc=\"5_UNpZ6vX_BYjcZbncTuHhG_JK16bEG5iuslVG0E48deJJJkoyIW3w==\",cdn-downstream-fbl;dur=25"
+              }
+            ],
+            "cookies": [],
+            "content": {
+              "mimeType": "application/json",
+              "size": 6321,
+              "text": "{\"search_objects\":[{\"id\":\"pzp2pw5e2kj3\",\"type\":\"cars_search_cars\",\"content\":{\"id\":\"pzp2pw5e2kj3\",\"title\":\"Porsche 911 1999\",\"storytelling\":\"Porsche 911. Itv al día. Arranca y funciona perfectamente. De vez en cuando sale fallo motor.\\nSe vende por no usar. De ahí su precio. NO MAREAR\",\"distance\":359.0,\"images\":[{\"original\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526454986.jpg?pictureSize=W800\",\"xsmall\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526454986.jpg?pictureSize=W320\",\"small\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526454986.jpg?pictureSize=W320\",\"large\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526454986.jpg?pictureSize=W800\",\"medium\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526454986.jpg?pictureSize=W640\",\"xlarge\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526454986.jpg?pictureSize=W800\",\"original_width\":0,\"original_height\":0},{\"original\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455056.jpg?pictureSize=W800\",\"xsmall\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455056.jpg?pictureSize=W320\",\"small\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455056.jpg?pictureSize=W320\",\"large\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455056.jpg?pictureSize=W800\",\"medium\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455056.jpg?pictureSize=W640\",\"xlarge\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455056.jpg?pictureSize=W800\",\"original_width\":0,\"original_height\":0},{\"original\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455108.jpg?pictureSize=W800\",\"xsmall\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455108.jpg?pictureSize=W320\",\"small\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455108.jpg?pictureSize=W320\",\"large\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455108.jpg?pictureSize=W800\",\"medium\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455108.jpg?pictureSize=W640\",\"xlarge\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455108.jpg?pictureSize=W800\",\"original_width\":0,\"original_height\":0},{\"original\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455064.jpg?pictureSize=W800\",\"xsmall\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455064.jpg?pictureSize=W320\",\"small\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455064.jpg?pictureSize=W320\",\"large\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455064.jpg?pictureSize=W800\",\"medium\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455064.jpg?pictureSize=W640\",\"xlarge\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455064.jpg?pictureSize=W800\",\"original_width\":0,\"original_height\":0},{\"original\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455104.jpg?pictureSize=W800\",\"xsmall\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455104.jpg?pictureSize=W320\",\"small\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455104.jpg?pictureSize=W320\",\"large\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455104.jpg?pictureSize=W800\",\"medium\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455104.jpg?pictureSize=W640\",\"xlarge\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455104.jpg?pictureSize=W800\",\"original_width\":0,\"original_height\":0},{\"original\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455086.jpg?pictureSize=W800\",\"xsmall\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455086.jpg?pictureSize=W320\",\"small\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455086.jpg?pictureSize=W320\",\"large\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455086.jpg?pictureSize=W800\",\"medium\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455086.jpg?pictureSize=W640\",\"xlarge\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455086.jpg?pictureSize=W800\",\"original_width\":0,\"original_height\":0},{\"original\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455075.jpg?pictureSize=W800\",\"xsmall\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455075.jpg?pictureSize=W320\",\"small\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455075.jpg?pictureSize=W320\",\"large\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455075.jpg?pictureSize=W800\",\"medium\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455075.jpg?pictureSize=W640\",\"xlarge\":\"https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526455075.jpg?pictureSize=W800\",\"original_width\":0,\"original_height\":0}],\"user\":{\"id\":\"8j3y5qqmvl69\",\"micro_name\":\"\",\"image\":{\"original\":\"\",\"xsmall\":\"\",\"small\":\"\",\"large\":\"\",\"medium\":\"\",\"xlarge\":\"\",\"original_width\":0,\"original_height\":0},\"online\":false,\"kind\":\"normal\"},\"flags\":{\"pending\":false,\"sold\":false,\"reserved\":false,\"banned\":false,\"expired\":false,\"onhold\":false},\"visibility_flags\":{\"bumped\":false,\"highlighted\":false,\"urgent\":false,\"country_bumped\":false,\"boosted\":false},\"price\":19500.0,\"currency\":\"EUR\",\"web_slug\":\"porsche-911-1999-1117901502\",\"category_id\":100,\"location\":{\"postal_code\":\"03169\",\"city\":\"El Bañet\",\"country_code\":\"ES\"},\"shipping\":{\"item_is_shippable\":false,\"user_allows_shipping\":false,\"cost_configuration_id\":null},\"supports_shipping\":false,\"brand\":\"Porsche\",\"model\":\"911\",\"year\":1999,\"version\":\"996 Carrera 4 Coupé 3.4 300 2p\",\"km\":190000,\"engine\":\"Gasolina\",\"gearbox\":\"manual\",\"horsepower\":300.0,\"favorited\":false,\"creation_date\":\"2025-04-01T10:19:09.995+00:00\",\"modification_date\":\"2025-04-01T10:52:27.883+00:00\",\"is_top_profile\":false}}],\"from\":250,\"to\":500,\"distance_ordered\":false,\"experiment\":\"not_logged_experiment\",\"search_point\":{\"latitude\":40.41956,\"longitude\":-3.69196}}"
+            },
+            "redirectURL": "",
+            "headersSize": 1268,
+            "bodySize": 2377
+          },
+          "cache": {},
+          "timings": {
+            "blocked": -1,
+            "dns": 0,
+            "connect": 0,
+            "ssl": 0,
+            "send": 0,
+            "wait": 64,
+            "receive": 0
+          },
+          "time": 64,
+          "_securityState": "secure",
+          "serverIPAddress": "108.156.46.57",
+          "connection": "443",
+          "pageref": "page_1"
+        },
+        {
+          "startedDateTime": "2025-04-03T18:08:34.043+02:00",
+          "request": {
+            "bodySize": 0,
+            "method": "OPTIONS",
+            "url": "https://api.wallapop.com/api/v3/cars/search?min_sale_price=16000&offset=0&latitude=40.41956&start=0&search_id=1c0b40f4-0942-4a55-9d0d-6795c91b5e59&experiment=not_logged_experiment&filters_source=side_bar_filters&max_sale_price=21000&order_by=most_relevance&model=911&step=4&category_ids=100&brand=Porsche&longitude=-3.69196",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Host",
+                "value": "api.wallapop.com"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0"
+              },
+              {
+                "name": "Accept",
+                "value": "*/*"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US,en;q=0.5"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Access-Control-Request-Method",
+                "value": "GET"
+              },
+              {
+                "name": "Access-Control-Request-Headers",
+                "value": "deviceos,mpid,x-appversion,x-deviceid,x-deviceos"
+              },
+              {
+                "name": "Referer",
+                "value": "https://es.wallapop.com/"
+              },
+              {
+                "name": "Origin",
+                "value": "https://es.wallapop.com"
+              },
+              {
+                "name": "DNT",
+                "value": "1"
+              },
+              {
+                "name": "Sec-GPC",
+                "value": "1"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-site"
+              },
+              {
+                "name": "Priority",
+                "value": "u=4"
+              },
+              {
+                "name": "Pragma",
+                "value": "no-cache"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache"
+              }
+            ],
+            "cookies": [],
+            "queryString": [
+              {
+                "name": "min_sale_price",
+                "value": "16000"
+              },
+              {
+                "name": "offset",
+                "value": "0"
+              },
+              {
+                "name": "latitude",
+                "value": "40.41956"
+              },
+              {
+                "name": "start",
+                "value": "0"
+              },
+              {
+                "name": "search_id",
+                "value": "1c0b40f4-0942-4a55-9d0d-6795c91b5e59"
+              },
+              {
+                "name": "experiment",
+                "value": "not_logged_experiment"
+              },
+              {
+                "name": "filters_source",
+                "value": "side_bar_filters"
+              },
+              {
+                "name": "max_sale_price",
+                "value": "21000"
+              },
+              {
+                "name": "order_by",
+                "value": "most_relevance"
+              },
+              {
+                "name": "model",
+                "value": "911"
+              },
+              {
+                "name": "step",
+                "value": "4"
+              },
+              {
+                "name": "category_ids",
+                "value": "100"
+              },
+              {
+                "name": "brand",
+                "value": "Porsche"
+              },
+              {
+                "name": "longitude",
+                "value": "-3.69196"
+              }
+            ],
+            "headersSize": 876
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Content-Length",
+                "value": "0"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 03 Apr 2025 16:08:34 GMT"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache, no-store, must-revalidate"
+              },
+              {
+                "name": "Vary",
+                "value": "Origin"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Method"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Headers"
+              },
+              {
+                "name": "Access-Control-Allow-Origin",
+                "value": "*"
+              },
+              {
+                "name": "Access-Control-Allow-Methods",
+                "value": "GET,HEAD,POST"
+              },
+              {
+                "name": "Access-Control-Allow-Headers",
+                "value": "deviceos, mpid, x-appversion, x-deviceid, x-deviceos"
+              },
+              {
+                "name": "Access-Control-Expose-Headers",
+                "value": "X-NextPage, x-wallapop-search-id, X-Wallapop-Request-Country-Code"
+              },
+              {
+                "name": "Access-Control-Max-Age",
+                "value": "1800"
+              },
+              {
+                "name": "Allow",
+                "value": "GET, HEAD, POST, PUT, DELETE, OPTIONS, PATCH"
+              },
+              {
+                "name": "X-Cache",
+                "value": "Miss from cloudfront"
+              },
+              {
+                "name": "Via",
+                "value": "1.1 2930f20ca11cde7e5f2d83d9ea84806e.cloudfront.net (CloudFront)"
+              },
+              {
+                "name": "X-Amz-Cf-Pop",
+                "value": "LHR50-P2"
+              },
+              {
+                "name": "X-Amz-Cf-Id",
+                "value": "9fK-Ka4LwxiYE2LfYoZj0C1h0IHxIb64uBSQ1JvZ4p43wIHDRiavRA=="
+              },
+              {
+                "name": "Server-Timing",
+                "value": "cdn-upstream-layer;desc=\"EDGE\",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=14,cdn-cache-miss,cdn-pop;desc=\"LHR50-P2\",cdn-rid;desc=\"9fK-Ka4LwxiYE2LfYoZj0C1h0IHxIb64uBSQ1JvZ4p43wIHDRiavRA==\",cdn-downstream-fbl;dur=16"
+              }
+            ],
+            "cookies": [],
+            "content": {
+              "mimeType": "text/plain",
+              "size": 0,
+              "text": ""
+            },
+            "redirectURL": "",
+            "headersSize": 1025,
+            "bodySize": 1025
+          },
+          "cache": {},
+          "timings": {
+            "blocked": -1,
+            "dns": 0,
+            "connect": 0,
+            "ssl": 0,
+            "send": 0,
+            "wait": 55,
+            "receive": 0
+          },
+          "time": 55,
+          "_securityState": "secure",
+          "serverIPAddress": "108.156.46.57",
+          "connection": "443",
+          "pageref": "page_1"
+        },
+        {
+          "startedDateTime": "2025-04-03T18:08:34.265+02:00",
+          "request": {
+            "bodySize": 0,
+            "method": "GET",
+            "url": "https://api.wallapop.com/api/v3/cars/search?min_sale_price=16000&offset=0&latitude=40.41956&start=0&search_id=1c0b40f4-0942-4a55-9d0d-6795c91b5e59&experiment=not_logged_experiment&filters_source=side_bar_filters&max_sale_price=21000&order_by=most_relevance&model=911&step=5&category_ids=100&brand=Porsche&longitude=-3.69196",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Host",
+                "value": "api.wallapop.com"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0"
+              },
+              {
+                "name": "Accept",
+                "value": "application/json, text/plain, */*"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "es,en-US;q=0.9,en;q=0.8"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "DeviceOS",
+                "value": "0"
+              },
+              {
+                "name": "X-DeviceOS",
+                "value": "0"
+              },
+              {
+                "name": "X-DeviceID",
+                "value": "2eb91a88-2bf8-4ebb-a905-e5d06f00a76d"
+              },
+              {
+                "name": "MPID",
+                "value": "-1142872387716636433"
+              },
+              {
+                "name": "X-AppVersion",
+                "value": "84770"
+              },
+              {
+                "name": "Origin",
+                "value": "https://es.wallapop.com"
+              },
+              {
+                "name": "DNT",
+                "value": "1"
+              },
+              {
+                "name": "Sec-GPC",
+                "value": "1"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Referer",
+                "value": "https://es.wallapop.com/"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-site"
+              },
+              {
+                "name": "Pragma",
+                "value": "no-cache"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache"
+              }
+            ],
+            "cookies": [],
+            "queryString": [
+              {
+                "name": "min_sale_price",
+                "value": "16000"
+              },
+              {
+                "name": "offset",
+                "value": "0"
+              },
+              {
+                "name": "latitude",
+                "value": "40.41956"
+              },
+              {
+                "name": "start",
+                "value": "0"
+              },
+              {
+                "name": "search_id",
+                "value": "1c0b40f4-0942-4a55-9d0d-6795c91b5e59"
+              },
+              {
+                "name": "experiment",
+                "value": "not_logged_experiment"
+              },
+              {
+                "name": "filters_source",
+                "value": "side_bar_filters"
+              },
+              {
+                "name": "max_sale_price",
+                "value": "21000"
+              },
+              {
+                "name": "order_by",
+                "value": "most_relevance"
+              },
+              {
+                "name": "model",
+                "value": "911"
+              },
+              {
+                "name": "step",
+                "value": "5"
+              },
+              {
+                "name": "category_ids",
+                "value": "100"
+              },
+              {
+                "name": "brand",
+                "value": "Porsche"
+              },
+              {
+                "name": "longitude",
+                "value": "-3.69196"
+              }
+            ],
+            "headersSize": 905
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "name": "Transfer-Encoding",
+                "value": "chunked"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 03 Apr 2025 16:08:34 GMT"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache, no-store, must-revalidate"
+              },
+              {
+                "name": "content-encoding",
+                "value": "gzip"
+              },
+              {
+                "name": "Vary",
+                "value": "Origin"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Method"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Headers"
+              },
+              {
+                "name": "Access-Control-Allow-Origin",
+                "value": "*"
+              },
+              {
+                "name": "Access-Control-Expose-Headers",
+                "value": "X-NextPage, x-wallapop-search-id, X-Wallapop-Request-Country-Code"
+              },
+              {
+                "name": "x-wallapop-search-id",
+                "value": "1c0b40f4-0942-4a55-9d0d-6795c91b5e59"
+              },
+              {
+                "name": "X-Wallapop-Request-Country-Code",
+                "value": "ES"
+              },
+              {
+                "name": "X-NextPage",
+                "value": "min_sale_price=16000&offset=0&latitude=40.41956&start=0&search_id=1c0b40f4-0942-4a55-9d0d-6795c91b5e59&experiment=not_logged_experiment&filters_source=side_bar_filters&max_sale_price=21000&order_by=most_relevance&model=911&step=6&category_ids=100&brand=Porsche&longitude=-3.69196"
+              },
+              {
+                "name": "X-Cache",
+                "value": "Miss from cloudfront"
+              },
+              {
+                "name": "Via",
+                "value": "1.1 2930f20ca11cde7e5f2d83d9ea84806e.cloudfront.net (CloudFront)"
+              },
+              {
+                "name": "X-Amz-Cf-Pop",
+                "value": "LHR50-P2"
+              },
+              {
+                "name": "X-Amz-Cf-Id",
+                "value": "e2TS6wsk8XgV1d7Q_TJGf67JuK4dZJYur4cuqb_9TI2aikvsNZGXGw=="
+              },
+              {
+                "name": "Server-Timing",
+                "value": "cdn-upstream-layer;desc=\"EDGE\",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=17,cdn-cache-miss,cdn-pop;desc=\"LHR50-P2\",cdn-rid;desc=\"e2TS6wsk8XgV1d7Q_TJGf67JuK4dZJYur4cuqb_9TI2aikvsNZGXGw==\",cdn-downstream-fbl;dur=19"
+              }
+            ],
+            "cookies": [],
+            "content": {
+              "mimeType": "application/json",
+              "size": 162,
+              "text": "{\"search_objects\":[],\"from\":500,\"to\":1000,\"distance_ordered\":false,\"experiment\":\"not_logged_experiment\",\"search_point\":{\"latitude\":40.41956,\"longitude\":-3.69196}}"
+            },
+            "redirectURL": "",
+            "headersSize": 1268,
+            "bodySize": 1417
+          },
+          "cache": {},
+          "timings": {
+            "blocked": 0,
+            "dns": 0,
+            "connect": 0,
+            "ssl": 0,
+            "send": 0,
+            "wait": 56,
+            "receive": 1
+          },
+          "time": 57,
+          "_securityState": "secure",
+          "serverIPAddress": "108.156.46.57",
+          "connection": "443",
+          "pageref": "page_1"
+        },
+        {
+          "startedDateTime": "2025-04-03T18:08:34.276+02:00",
+          "request": {
+            "bodySize": 0,
+            "method": "OPTIONS",
+            "url": "https://api.wallapop.com/api/v3/cars/search?min_sale_price=16000&offset=0&latitude=40.41956&start=0&search_id=1c0b40f4-0942-4a55-9d0d-6795c91b5e59&experiment=not_logged_experiment&filters_source=side_bar_filters&max_sale_price=21000&order_by=most_relevance&model=911&step=5&category_ids=100&brand=Porsche&longitude=-3.69196",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Host",
+                "value": "api.wallapop.com"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0"
+              },
+              {
+                "name": "Accept",
+                "value": "*/*"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US,en;q=0.5"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Access-Control-Request-Method",
+                "value": "GET"
+              },
+              {
+                "name": "Access-Control-Request-Headers",
+                "value": "deviceos,mpid,x-appversion,x-deviceid,x-deviceos"
+              },
+              {
+                "name": "Referer",
+                "value": "https://es.wallapop.com/"
+              },
+              {
+                "name": "Origin",
+                "value": "https://es.wallapop.com"
+              },
+              {
+                "name": "DNT",
+                "value": "1"
+              },
+              {
+                "name": "Sec-GPC",
+                "value": "1"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-site"
+              },
+              {
+                "name": "Priority",
+                "value": "u=4"
+              },
+              {
+                "name": "Pragma",
+                "value": "no-cache"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache"
+              }
+            ],
+            "cookies": [],
+            "queryString": [
+              {
+                "name": "min_sale_price",
+                "value": "16000"
+              },
+              {
+                "name": "offset",
+                "value": "0"
+              },
+              {
+                "name": "latitude",
+                "value": "40.41956"
+              },
+              {
+                "name": "start",
+                "value": "0"
+              },
+              {
+                "name": "search_id",
+                "value": "1c0b40f4-0942-4a55-9d0d-6795c91b5e59"
+              },
+              {
+                "name": "experiment",
+                "value": "not_logged_experiment"
+              },
+              {
+                "name": "filters_source",
+                "value": "side_bar_filters"
+              },
+              {
+                "name": "max_sale_price",
+                "value": "21000"
+              },
+              {
+                "name": "order_by",
+                "value": "most_relevance"
+              },
+              {
+                "name": "model",
+                "value": "911"
+              },
+              {
+                "name": "step",
+                "value": "5"
+              },
+              {
+                "name": "category_ids",
+                "value": "100"
+              },
+              {
+                "name": "brand",
+                "value": "Porsche"
+              },
+              {
+                "name": "longitude",
+                "value": "-3.69196"
+              }
+            ],
+            "headersSize": 876
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Content-Length",
+                "value": "0"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 03 Apr 2025 16:08:34 GMT"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache, no-store, must-revalidate"
+              },
+              {
+                "name": "Vary",
+                "value": "Origin"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Method"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Headers"
+              },
+              {
+                "name": "Access-Control-Allow-Origin",
+                "value": "*"
+              },
+              {
+                "name": "Access-Control-Allow-Methods",
+                "value": "GET,HEAD,POST"
+              },
+              {
+                "name": "Access-Control-Allow-Headers",
+                "value": "deviceos, mpid, x-appversion, x-deviceid, x-deviceos"
+              },
+              {
+                "name": "Access-Control-Expose-Headers",
+                "value": "X-NextPage, x-wallapop-search-id, X-Wallapop-Request-Country-Code"
+              },
+              {
+                "name": "Access-Control-Max-Age",
+                "value": "1800"
+              },
+              {
+                "name": "Allow",
+                "value": "GET, HEAD, POST, PUT, DELETE, OPTIONS, PATCH"
+              },
+              {
+                "name": "X-Cache",
+                "value": "Miss from cloudfront"
+              },
+              {
+                "name": "Via",
+                "value": "1.1 2930f20ca11cde7e5f2d83d9ea84806e.cloudfront.net (CloudFront)"
+              },
+              {
+                "name": "X-Amz-Cf-Pop",
+                "value": "LHR50-P2"
+              },
+              {
+                "name": "X-Amz-Cf-Id",
+                "value": "ecwT01Ny0Z_c1j6j7DlyCxt8DvQipHe3jtAu1t1TCcAzCDQHQzWxYQ=="
+              },
+              {
+                "name": "Server-Timing",
+                "value": "cdn-upstream-layer;desc=\"EDGE\",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=11,cdn-upstream-fbl;dur=38,cdn-cache-miss,cdn-pop;desc=\"LHR50-P2\",cdn-rid;desc=\"ecwT01Ny0Z_c1j6j7DlyCxt8DvQipHe3jtAu1t1TCcAzCDQHQzWxYQ==\",cdn-downstream-fbl;dur=41"
+              }
+            ],
+            "cookies": [],
+            "content": {
+              "mimeType": "text/plain",
+              "size": 0,
+              "text": ""
+            },
+            "redirectURL": "",
+            "headersSize": 1026,
+            "bodySize": 1026
+          },
+          "cache": {},
+          "timings": {
+            "blocked": 0,
+            "dns": 0,
+            "connect": 0,
+            "ssl": 0,
+            "send": 0,
+            "wait": 78,
+            "receive": 0
+          },
+          "time": 78,
+          "_securityState": "secure",
+          "serverIPAddress": "108.156.46.57",
+          "connection": "443",
+          "pageref": "page_1"
+        },
+        {
+          "startedDateTime": "2025-04-03T18:08:34.448+02:00",
+          "request": {
+            "bodySize": 0,
+            "method": "GET",
+            "url": "https://api.wallapop.com/api/v3/cars/search?min_sale_price=16000&offset=0&latitude=40.41956&start=0&search_id=1c0b40f4-0942-4a55-9d0d-6795c91b5e59&experiment=not_logged_experiment&filters_source=side_bar_filters&max_sale_price=21000&order_by=most_relevance&model=911&step=6&category_ids=100&brand=Porsche&longitude=-3.69196",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Host",
+                "value": "api.wallapop.com"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0"
+              },
+              {
+                "name": "Accept",
+                "value": "application/json, text/plain, */*"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "es,en-US;q=0.9,en;q=0.8"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "DeviceOS",
+                "value": "0"
+              },
+              {
+                "name": "X-DeviceOS",
+                "value": "0"
+              },
+              {
+                "name": "X-DeviceID",
+                "value": "2eb91a88-2bf8-4ebb-a905-e5d06f00a76d"
+              },
+              {
+                "name": "MPID",
+                "value": "-1142872387716636433"
+              },
+              {
+                "name": "X-AppVersion",
+                "value": "84770"
+              },
+              {
+                "name": "Origin",
+                "value": "https://es.wallapop.com"
+              },
+              {
+                "name": "DNT",
+                "value": "1"
+              },
+              {
+                "name": "Sec-GPC",
+                "value": "1"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Referer",
+                "value": "https://es.wallapop.com/"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-site"
+              },
+              {
+                "name": "Pragma",
+                "value": "no-cache"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache"
+              }
+            ],
+            "cookies": [],
+            "queryString": [
+              {
+                "name": "min_sale_price",
+                "value": "16000"
+              },
+              {
+                "name": "offset",
+                "value": "0"
+              },
+              {
+                "name": "latitude",
+                "value": "40.41956"
+              },
+              {
+                "name": "start",
+                "value": "0"
+              },
+              {
+                "name": "search_id",
+                "value": "1c0b40f4-0942-4a55-9d0d-6795c91b5e59"
+              },
+              {
+                "name": "experiment",
+                "value": "not_logged_experiment"
+              },
+              {
+                "name": "filters_source",
+                "value": "side_bar_filters"
+              },
+              {
+                "name": "max_sale_price",
+                "value": "21000"
+              },
+              {
+                "name": "order_by",
+                "value": "most_relevance"
+              },
+              {
+                "name": "model",
+                "value": "911"
+              },
+              {
+                "name": "step",
+                "value": "6"
+              },
+              {
+                "name": "category_ids",
+                "value": "100"
+              },
+              {
+                "name": "brand",
+                "value": "Porsche"
+              },
+              {
+                "name": "longitude",
+                "value": "-3.69196"
+              }
+            ],
+            "headersSize": 905
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "name": "Transfer-Encoding",
+                "value": "chunked"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 03 Apr 2025 16:08:34 GMT"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache, no-store, must-revalidate"
+              },
+              {
+                "name": "content-encoding",
+                "value": "gzip"
+              },
+              {
+                "name": "Vary",
+                "value": "Origin"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Method"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Headers"
+              },
+              {
+                "name": "Access-Control-Allow-Origin",
+                "value": "*"
+              },
+              {
+                "name": "Access-Control-Expose-Headers",
+                "value": "X-NextPage, x-wallapop-search-id, X-Wallapop-Request-Country-Code"
+              },
+              {
+                "name": "x-wallapop-search-id",
+                "value": "1c0b40f4-0942-4a55-9d0d-6795c91b5e59"
+              },
+              {
+                "name": "X-Wallapop-Request-Country-Code",
+                "value": "ES"
+              },
+              {
+                "name": "X-NextPage",
+                "value": "min_sale_price=16000&offset=0&latitude=40.41956&start=0&search_id=1c0b40f4-0942-4a55-9d0d-6795c91b5e59&experiment=not_logged_experiment&filters_source=side_bar_filters&max_sale_price=21000&order_by=most_relevance&model=911&step=7&category_ids=100&brand=Porsche&longitude=-3.69196"
+              },
+              {
+                "name": "X-Cache",
+                "value": "Miss from cloudfront"
+              },
+              {
+                "name": "Via",
+                "value": "1.1 2930f20ca11cde7e5f2d83d9ea84806e.cloudfront.net (CloudFront)"
+              },
+              {
+                "name": "X-Amz-Cf-Pop",
+                "value": "LHR50-P2"
+              },
+              {
+                "name": "X-Amz-Cf-Id",
+                "value": "Dmu4VLXkBy5jJrz7s5HOqQySvrN55cy30RoJUzvnnRPNQP4MdIvjdA=="
+              },
+              {
+                "name": "Server-Timing",
+                "value": "cdn-upstream-layer;desc=\"EDGE\",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=29,cdn-cache-miss,cdn-pop;desc=\"LHR50-P2\",cdn-rid;desc=\"Dmu4VLXkBy5jJrz7s5HOqQySvrN55cy30RoJUzvnnRPNQP4MdIvjdA==\",cdn-downstream-fbl;dur=31"
+              }
+            ],
+            "cookies": [],
+            "content": {
+              "mimeType": "application/json",
+              "size": 163,
+              "text": "{\"search_objects\":[],\"from\":1000,\"to\":2000,\"distance_ordered\":false,\"experiment\":\"not_logged_experiment\",\"search_point\":{\"latitude\":40.41956,\"longitude\":-3.69196}}"
+            },
+            "redirectURL": "",
+            "headersSize": 1268,
+            "bodySize": 1418
+          },
+          "cache": {},
+          "timings": {
+            "blocked": -1,
+            "dns": 0,
+            "connect": 0,
+            "ssl": 0,
+            "send": 0,
+            "wait": 69,
+            "receive": 1
+          },
+          "time": 70,
+          "_securityState": "secure",
+          "serverIPAddress": "108.156.46.57",
+          "connection": "443",
+          "pageref": "page_1"
+        },
+        {
+          "startedDateTime": "2025-04-03T18:08:34.453+02:00",
+          "request": {
+            "bodySize": 0,
+            "method": "OPTIONS",
+            "url": "https://api.wallapop.com/api/v3/cars/search?min_sale_price=16000&offset=0&latitude=40.41956&start=0&search_id=1c0b40f4-0942-4a55-9d0d-6795c91b5e59&experiment=not_logged_experiment&filters_source=side_bar_filters&max_sale_price=21000&order_by=most_relevance&model=911&step=6&category_ids=100&brand=Porsche&longitude=-3.69196",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Host",
+                "value": "api.wallapop.com"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0"
+              },
+              {
+                "name": "Accept",
+                "value": "*/*"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US,en;q=0.5"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Access-Control-Request-Method",
+                "value": "GET"
+              },
+              {
+                "name": "Access-Control-Request-Headers",
+                "value": "deviceos,mpid,x-appversion,x-deviceid,x-deviceos"
+              },
+              {
+                "name": "Referer",
+                "value": "https://es.wallapop.com/"
+              },
+              {
+                "name": "Origin",
+                "value": "https://es.wallapop.com"
+              },
+              {
+                "name": "DNT",
+                "value": "1"
+              },
+              {
+                "name": "Sec-GPC",
+                "value": "1"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-site"
+              },
+              {
+                "name": "Priority",
+                "value": "u=4"
+              },
+              {
+                "name": "Pragma",
+                "value": "no-cache"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache"
+              }
+            ],
+            "cookies": [],
+            "queryString": [
+              {
+                "name": "min_sale_price",
+                "value": "16000"
+              },
+              {
+                "name": "offset",
+                "value": "0"
+              },
+              {
+                "name": "latitude",
+                "value": "40.41956"
+              },
+              {
+                "name": "start",
+                "value": "0"
+              },
+              {
+                "name": "search_id",
+                "value": "1c0b40f4-0942-4a55-9d0d-6795c91b5e59"
+              },
+              {
+                "name": "experiment",
+                "value": "not_logged_experiment"
+              },
+              {
+                "name": "filters_source",
+                "value": "side_bar_filters"
+              },
+              {
+                "name": "max_sale_price",
+                "value": "21000"
+              },
+              {
+                "name": "order_by",
+                "value": "most_relevance"
+              },
+              {
+                "name": "model",
+                "value": "911"
+              },
+              {
+                "name": "step",
+                "value": "6"
+              },
+              {
+                "name": "category_ids",
+                "value": "100"
+              },
+              {
+                "name": "brand",
+                "value": "Porsche"
+              },
+              {
+                "name": "longitude",
+                "value": "-3.69196"
+              }
+            ],
+            "headersSize": 876
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Content-Length",
+                "value": "0"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 03 Apr 2025 16:08:34 GMT"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache, no-store, must-revalidate"
+              },
+              {
+                "name": "Vary",
+                "value": "Origin"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Method"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Headers"
+              },
+              {
+                "name": "Access-Control-Allow-Origin",
+                "value": "*"
+              },
+              {
+                "name": "Access-Control-Allow-Methods",
+                "value": "GET,HEAD,POST"
+              },
+              {
+                "name": "Access-Control-Allow-Headers",
+                "value": "deviceos, mpid, x-appversion, x-deviceid, x-deviceos"
+              },
+              {
+                "name": "Access-Control-Expose-Headers",
+                "value": "X-NextPage, x-wallapop-search-id, X-Wallapop-Request-Country-Code"
+              },
+              {
+                "name": "Access-Control-Max-Age",
+                "value": "1800"
+              },
+              {
+                "name": "Allow",
+                "value": "GET, HEAD, POST, PUT, DELETE, OPTIONS, PATCH"
+              },
+              {
+                "name": "X-Cache",
+                "value": "Miss from cloudfront"
+              },
+              {
+                "name": "Via",
+                "value": "1.1 2930f20ca11cde7e5f2d83d9ea84806e.cloudfront.net (CloudFront)"
+              },
+              {
+                "name": "X-Amz-Cf-Pop",
+                "value": "LHR50-P2"
+              },
+              {
+                "name": "X-Amz-Cf-Id",
+                "value": "7muChrVinS7U2NtjGkvUO8mPoX-1iE0wTH3wwqcss35j-N9DWD1r7Q=="
+              },
+              {
+                "name": "Server-Timing",
+                "value": "cdn-upstream-layer;desc=\"EDGE\",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=18,cdn-cache-miss,cdn-pop;desc=\"LHR50-P2\",cdn-rid;desc=\"7muChrVinS7U2NtjGkvUO8mPoX-1iE0wTH3wwqcss35j-N9DWD1r7Q==\",cdn-downstream-fbl;dur=21"
+              }
+            ],
+            "cookies": [],
+            "content": {
+              "mimeType": "text/plain",
+              "size": 0,
+              "text": ""
+            },
+            "redirectURL": "",
+            "headersSize": 1025,
+            "bodySize": 1025
+          },
+          "cache": {},
+          "timings": {
+            "blocked": -1,
+            "dns": 0,
+            "connect": 0,
+            "ssl": 0,
+            "send": 0,
+            "wait": 60,
+            "receive": 0
+          },
+          "time": 60,
+          "_securityState": "secure",
+          "serverIPAddress": "108.156.46.57",
+          "connection": "443",
+          "pageref": "page_1"
+        },
+        {
+          "startedDateTime": "2025-04-03T18:08:34.605+02:00",
+          "request": {
+            "bodySize": 0,
+            "method": "GET",
+            "url": "https://api.wallapop.com/api/v3/cars/search?min_sale_price=16000&offset=0&latitude=40.41956&start=0&search_id=1c0b40f4-0942-4a55-9d0d-6795c91b5e59&experiment=not_logged_experiment&filters_source=side_bar_filters&max_sale_price=21000&order_by=most_relevance&model=911&step=7&category_ids=100&brand=Porsche&longitude=-3.69196",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Host",
+                "value": "api.wallapop.com"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0"
+              },
+              {
+                "name": "Accept",
+                "value": "application/json, text/plain, */*"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "es,en-US;q=0.9,en;q=0.8"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "DeviceOS",
+                "value": "0"
+              },
+              {
+                "name": "X-DeviceOS",
+                "value": "0"
+              },
+              {
+                "name": "X-DeviceID",
+                "value": "2eb91a88-2bf8-4ebb-a905-e5d06f00a76d"
+              },
+              {
+                "name": "MPID",
+                "value": "-1142872387716636433"
+              },
+              {
+                "name": "X-AppVersion",
+                "value": "84770"
+              },
+              {
+                "name": "Origin",
+                "value": "https://es.wallapop.com"
+              },
+              {
+                "name": "DNT",
+                "value": "1"
+              },
+              {
+                "name": "Sec-GPC",
+                "value": "1"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Referer",
+                "value": "https://es.wallapop.com/"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-site"
+              },
+              {
+                "name": "Pragma",
+                "value": "no-cache"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache"
+              }
+            ],
+            "cookies": [],
+            "queryString": [
+              {
+                "name": "min_sale_price",
+                "value": "16000"
+              },
+              {
+                "name": "offset",
+                "value": "0"
+              },
+              {
+                "name": "latitude",
+                "value": "40.41956"
+              },
+              {
+                "name": "start",
+                "value": "0"
+              },
+              {
+                "name": "search_id",
+                "value": "1c0b40f4-0942-4a55-9d0d-6795c91b5e59"
+              },
+              {
+                "name": "experiment",
+                "value": "not_logged_experiment"
+              },
+              {
+                "name": "filters_source",
+                "value": "side_bar_filters"
+              },
+              {
+                "name": "max_sale_price",
+                "value": "21000"
+              },
+              {
+                "name": "order_by",
+                "value": "most_relevance"
+              },
+              {
+                "name": "model",
+                "value": "911"
+              },
+              {
+                "name": "step",
+                "value": "7"
+              },
+              {
+                "name": "category_ids",
+                "value": "100"
+              },
+              {
+                "name": "brand",
+                "value": "Porsche"
+              },
+              {
+                "name": "longitude",
+                "value": "-3.69196"
+              }
+            ],
+            "headersSize": 905
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "name": "Transfer-Encoding",
+                "value": "chunked"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 03 Apr 2025 16:08:34 GMT"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache, no-store, must-revalidate"
+              },
+              {
+                "name": "content-encoding",
+                "value": "gzip"
+              },
+              {
+                "name": "Vary",
+                "value": "Origin"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Method"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Headers"
+              },
+              {
+                "name": "Access-Control-Allow-Origin",
+                "value": "*"
+              },
+              {
+                "name": "Access-Control-Expose-Headers",
+                "value": "X-NextPage, x-wallapop-search-id, X-Wallapop-Request-Country-Code"
+              },
+              {
+                "name": "x-wallapop-search-id",
+                "value": "1c0b40f4-0942-4a55-9d0d-6795c91b5e59"
+              },
+              {
+                "name": "X-Wallapop-Request-Country-Code",
+                "value": "ES"
+              },
+              {
+                "name": "X-Cache",
+                "value": "Miss from cloudfront"
+              },
+              {
+                "name": "Via",
+                "value": "1.1 2930f20ca11cde7e5f2d83d9ea84806e.cloudfront.net (CloudFront)"
+              },
+              {
+                "name": "X-Amz-Cf-Pop",
+                "value": "LHR50-P2"
+              },
+              {
+                "name": "X-Amz-Cf-Id",
+                "value": "1ArZY77-gHAxfPeoBVS6TZsqODX4poJaydGN5mCf4pB5z63mEAVGZQ=="
+              },
+              {
+                "name": "Server-Timing",
+                "value": "cdn-upstream-layer;desc=\"EDGE\",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=18,cdn-cache-miss,cdn-pop;desc=\"LHR50-P2\",cdn-rid;desc=\"1ArZY77-gHAxfPeoBVS6TZsqODX4poJaydGN5mCf4pB5z63mEAVGZQ==\",cdn-downstream-fbl;dur=21"
+              }
+            ],
+            "cookies": [],
+            "content": {
+              "mimeType": "application/json",
+              "size": 163,
+              "text": "{\"search_objects\":[],\"from\":2000,\"to\":4000,\"distance_ordered\":false,\"experiment\":\"not_logged_experiment\",\"search_point\":{\"latitude\":40.41956,\"longitude\":-3.69196}}"
+            },
+            "redirectURL": "",
+            "headersSize": 975,
+            "bodySize": 1125
+          },
+          "cache": {},
+          "timings": {
+            "blocked": -1,
+            "dns": 0,
+            "connect": 0,
+            "ssl": 0,
+            "send": 0,
+            "wait": 59,
+            "receive": 0
+          },
+          "time": 59,
+          "_securityState": "secure",
+          "serverIPAddress": "108.156.46.57",
+          "connection": "443",
+          "pageref": "page_1"
+        },
+        {
+          "startedDateTime": "2025-04-03T18:08:34.610+02:00",
+          "request": {
+            "bodySize": 0,
+            "method": "OPTIONS",
+            "url": "https://api.wallapop.com/api/v3/cars/search?min_sale_price=16000&offset=0&latitude=40.41956&start=0&search_id=1c0b40f4-0942-4a55-9d0d-6795c91b5e59&experiment=not_logged_experiment&filters_source=side_bar_filters&max_sale_price=21000&order_by=most_relevance&model=911&step=7&category_ids=100&brand=Porsche&longitude=-3.69196",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Host",
+                "value": "api.wallapop.com"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0"
+              },
+              {
+                "name": "Accept",
+                "value": "*/*"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US,en;q=0.5"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Access-Control-Request-Method",
+                "value": "GET"
+              },
+              {
+                "name": "Access-Control-Request-Headers",
+                "value": "deviceos,mpid,x-appversion,x-deviceid,x-deviceos"
+              },
+              {
+                "name": "Referer",
+                "value": "https://es.wallapop.com/"
+              },
+              {
+                "name": "Origin",
+                "value": "https://es.wallapop.com"
+              },
+              {
+                "name": "DNT",
+                "value": "1"
+              },
+              {
+                "name": "Sec-GPC",
+                "value": "1"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "same-site"
+              },
+              {
+                "name": "Priority",
+                "value": "u=4"
+              },
+              {
+                "name": "Pragma",
+                "value": "no-cache"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache"
+              }
+            ],
+            "cookies": [],
+            "queryString": [
+              {
+                "name": "min_sale_price",
+                "value": "16000"
+              },
+              {
+                "name": "offset",
+                "value": "0"
+              },
+              {
+                "name": "latitude",
+                "value": "40.41956"
+              },
+              {
+                "name": "start",
+                "value": "0"
+              },
+              {
+                "name": "search_id",
+                "value": "1c0b40f4-0942-4a55-9d0d-6795c91b5e59"
+              },
+              {
+                "name": "experiment",
+                "value": "not_logged_experiment"
+              },
+              {
+                "name": "filters_source",
+                "value": "side_bar_filters"
+              },
+              {
+                "name": "max_sale_price",
+                "value": "21000"
+              },
+              {
+                "name": "order_by",
+                "value": "most_relevance"
+              },
+              {
+                "name": "model",
+                "value": "911"
+              },
+              {
+                "name": "step",
+                "value": "7"
+              },
+              {
+                "name": "category_ids",
+                "value": "100"
+              },
+              {
+                "name": "brand",
+                "value": "Porsche"
+              },
+              {
+                "name": "longitude",
+                "value": "-3.69196"
+              }
+            ],
+            "headersSize": 876
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Content-Length",
+                "value": "0"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Date",
+                "value": "Thu, 03 Apr 2025 16:08:34 GMT"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "no-cache, no-store, must-revalidate"
+              },
+              {
+                "name": "Vary",
+                "value": "Origin"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Method"
+              },
+              {
+                "name": "Vary",
+                "value": "Access-Control-Request-Headers"
+              },
+              {
+                "name": "Access-Control-Allow-Origin",
+                "value": "*"
+              },
+              {
+                "name": "Access-Control-Allow-Methods",
+                "value": "GET,HEAD,POST"
+              },
+              {
+                "name": "Access-Control-Allow-Headers",
+                "value": "deviceos, mpid, x-appversion, x-deviceid, x-deviceos"
+              },
+              {
+                "name": "Access-Control-Expose-Headers",
+                "value": "X-NextPage, x-wallapop-search-id, X-Wallapop-Request-Country-Code"
+              },
+              {
+                "name": "Access-Control-Max-Age",
+                "value": "1800"
+              },
+              {
+                "name": "Allow",
+                "value": "GET, HEAD, POST, PUT, DELETE, OPTIONS, PATCH"
+              },
+              {
+                "name": "X-Cache",
+                "value": "Miss from cloudfront"
+              },
+              {
+                "name": "Via",
+                "value": "1.1 2930f20ca11cde7e5f2d83d9ea84806e.cloudfront.net (CloudFront)"
+              },
+              {
+                "name": "X-Amz-Cf-Pop",
+                "value": "LHR50-P2"
+              },
+              {
+                "name": "X-Amz-Cf-Id",
+                "value": "WQywjOAtTzCUApm9yfsjxSK1teWaC5A65UZQjDbS93vB2S5YKG4VYQ=="
+              },
+              {
+                "name": "Server-Timing",
+                "value": "cdn-upstream-layer;desc=\"EDGE\",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=16,cdn-cache-miss,cdn-pop;desc=\"LHR50-P2\",cdn-rid;desc=\"WQywjOAtTzCUApm9yfsjxSK1teWaC5A65UZQjDbS93vB2S5YKG4VYQ==\",cdn-downstream-fbl;dur=18"
+              }
+            ],
+            "cookies": [],
+            "content": {
+              "mimeType": "text/plain",
+              "size": 0,
+              "text": ""
+            },
+            "redirectURL": "",
+            "headersSize": 1025,
+            "bodySize": 1025
+          },
+          "cache": {},
+          "timings": {
+            "blocked": 0,
+            "dns": 0,
+            "connect": 0,
+            "ssl": 0,
+            "send": 0,
+            "wait": 56,
+            "receive": 0
+          },
+          "time": 56,
+          "_securityState": "secure",
+          "serverIPAddress": "108.156.46.57",
+          "connection": "443",
+          "pageref": "page_1"
+        },
+        {
+          "startedDateTime": "2025-04-03T18:08:34.784+02:00",
+          "request": {
+            "bodySize": 0,
+            "method": "GET",
+            "url": "https://cdn.wallapop.com/images/10420/ih/ki/__/c10420p1117901502/i5526454986.jpg?pictureSize=W640",
+            "httpVersion": "HTTP/1.1",
+            "headers": [
+              {
+                "name": "Host",
+                "value": "cdn.wallapop.com"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0"
+              },
+              {
+                "name": "Accept",
+                "value": "image/avif,image/jxl,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US,en;q=0.5"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Referer",
+                "value": "https://es.wallapop.com/"
+              }
+            ],
+            "cookies": [],
+            "queryString": [
+              {
+                "name": "pictureSize",
+                "value": "W640"
+              }
+            ],
+            "headersSize": 0
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/1.1",
+            "headers": [],
+            "cookies": [],
+            "content": {
+              "mimeType": "image/webp",
+              "size": 53360,
+              "text": ""
+            },
+            "redirectURL": "",
+            "headersSize": 0,
+            "bodySize": 0
+          },
+          "cache": {},
+          "timings": {},
+          "time": 0,
+          "pageref": "page_1"
+        }
+      ]
+    }
+  }

@@ -1,0 +1,49 @@
+version: '3'
+
+services:
+  encuentra-tu-coche:
+    image: git.cachaza.cc/cachaza/carfindr:latest
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+    ports:
+      - "3000:3000"
+    environment:
+      REDIS_URL: "redis://redis:6379"
+      DATABASE_URL: "postgresql://postgres:passwordkjfhnlkjfaskjfnwpifnewipufnwijnbsdljnsafkljsf@db:5432/carfindr"
+      NEXTAUTH_URL: "https://carfindr.cachaza.cc"
+      AUTH_TRUST_HOST: "https://carfindr.cachaza.cc"
+    networks:
+      - app-network
+    restart: always
+
+  db:
+    image: postgres:17.0
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+    volumes:
+      - ./db/postgres_data:/var/lib/postgresql/data
+      - ./db/init-db:/docker-entrypoint-initdb.d
+      - ./db/csv-data:/csv-data
+    networks:
+      - app-network
+    restart: always
+
+  redis:
+    image: redis:7.4.0
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    volumes:
+      - redis_data:/data
+    networks:
+      - app-network
+    restart: always
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  redis_data:
