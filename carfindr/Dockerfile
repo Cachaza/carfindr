@@ -1,6 +1,6 @@
 # syntax=docker.io/docker/dockerfile:1
 
-FROM node:18-alpine AS base
+FROM node:20-alpine AS base
 
 # Install dependencies only when needed
 FROM base AS deps
@@ -67,5 +67,4 @@ ENV HOSTNAME="0.0.0.0"
 # Healthcheck for Traefik/Compose readiness checks
 #HEALTHCHECK --interval=30s --timeout=10s --start-period=15s --retries=3 
 CMD ["node", "server.js"]
-
 
