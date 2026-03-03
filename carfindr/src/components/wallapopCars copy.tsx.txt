@@ -1,0 +1,206 @@
+"use client";
+
+import WallapopCard from "./wallapopCard";
+import { Button } from "@/components/ui/button";
+import { useState, useEffect } from "react";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible";
+import { TriangleDownIcon, TriangleUpIcon } from "@radix-ui/react-icons";
+import { wallapopSearch } from "@/app/actions/wallapop";
+interface wallapopCar {
+  id: string;
+  type: string;
+  content: {
+    id: string;
+    title: string;
+    storytelling: string;
+    distance: number;
+    images: wallapopImage[];
+    user: {
+      micro_name: string;
+      id: string;
+      image: wallapopImage;
+      online: boolean;
+      kind: string;
+    };
+    flags: {
+      pending: boolean;
+      sold: boolean;
+      reserved: boolean;
+      banned: boolean;
+      expired: boolean;
+      onhold: boolean;
+    };
+    visibility_flags: {
+      bumped: boolean;
+      highlighted: boolean;
+      urgent: boolean;
+      country_bumped: boolean;
+      boosted: boolean;
+    };
+    price: number;
+    currency: string;
+    web_slug: string;
+    category_id: number;
+    brand: string;
+    model: string;
+    year: number;
+    version: string;
+    km: number;
+    engine: string;
+    gearbox: string;
+    horsepower: number;
+    favorited: boolean;
+    creation_date: number;
+    modification_date: number;
+    location: {
+      postal_code: string;
+      country_code: string;
+      city: string;
+    };
+    shipping: {
+      item_is_shippable: boolean;
+      user_allows_shipping: boolean;
+      cost_configuration_id: string | null;
+    };
+    supports_shipping: boolean;
+  };
+}
+
+interface wallapopImage {
+  original: string;
+  xsmall: string;
+  small: string;
+  large: string;
+  medium: string;
+  xlarge: string;
+  original_width: number;
+  original_height: number;
+}
+interface SearchParams {
+  yearFrom: string | null;
+  yearTo: string | null;
+  priceFrom: string | null;
+  priceTo: string | null;
+  kmFrom: string | null;
+  kmTo: string | null;
+  searchTextProp: string | undefined;
+  model: string | null;
+  brand: string | null;
+}
+
+export default function WallapopCars({
+  yearFrom,
+  yearTo,
+  priceFrom,
+  priceTo,
+  kmFrom,
+  kmTo,
+  searchTextProp,
+  model,
+  brand,
+}: SearchParams) {
+  const [cursor, setCursor] = useState(0);
+  const [wallapopCars, setWallapopCars] = useState<wallapopCar[]>([]);
+  const [noMore, setNoMore] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
+
+  const fetchCars = async () => {
+    setIsLoading(true);
+    try {
+      const result = await wallapopSearch({
+        brand: brand,
+        model: model,
+        latitude: "40.41956",
+        longitude: "-3.69196",
+        orderBy: "most_relevance",
+        minSalePrice: priceFrom,
+        maxSalePrice: priceTo,
+        minKm: kmFrom,
+        maxKm: kmTo,
+        minYear: yearFrom,
+        maxYear: yearTo,
+        keywords: searchTextProp,
+        cursor: cursor,
+      });
+
+      if (result.length === 0) {
+        setNoMore(true);
+      } else {
+        if (wallapopCars.length === 0) {
+          setWallapopCars(result);
+        } else {
+          setWallapopCars((prevCars) => [...prevCars, ...result]);
+        }
+        //setCursor((prevCursor) => prevCursor + result.length);
+      }
+    } catch (error) {
+      console.error("Error fetching cars:", error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    setCursor(0);
+    setWallapopCars([]);
+    setNoMore(false);
+    void fetchCars();
+  }, [
+    brand,
+    model,
+    priceFrom,
+    priceTo,
+    kmFrom,
+    kmTo,
+    yearFrom,
+    yearTo,
+    searchTextProp,
+  ]);
+
+  const handleShowMore = () => {
+    setCursor((prevCursor) => prevCursor + 30);
+    void fetchCars();
+  };
+
+  return (
+    <Collapsible
+      open={isOpen}
+      onOpenChange={setIsOpen}
+      className="md:w-[700px]"
+    >
+      <div className="flex flex-row justify-between">
+        <h1 className="text-2xl font-bold ">Wallapop</h1>
+        <CollapsibleTrigger asChild>
+          <Button variant="ghost" size="sm">
+            {isOpen ? (
+              <TriangleUpIcon className="h-6 w-6" />
+            ) : (
+              <TriangleDownIcon className="h-6 w-6" />
+            )}
+            <span className="sr-only">Toggle</span>
+          </Button>
+        </CollapsibleTrigger>
+      </div>
+      <CollapsibleContent>
+        <p>Resultados totales: {wallapopCars.length}</p>
+        {wallapopCars.map((car) => (
+          <WallapopCard car={car} key={car.id} />
+        ))}
+        <div className="text-black">
+          <Button
+            variant="outline"
+            onClick={handleShowMore}
+            disabled={noMore || isLoading}
+          >
+            {isLoading ? "Cargando..." : "Mostrar más"}
+          </Button>
+        </div>
+      </CollapsibleContent>
+    </Collapsible>
+  );
+}

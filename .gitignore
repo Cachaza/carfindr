@@ -561,3 +561,9 @@ local-interfaces/
 enums/local/
 local-enums/
 
+# Keep deploy-critical files versioned in monorepo
+!carfindr/public/
+!carfindr/public/**
+!searchNotifier/go.mod
+!searchNotifier/go.sum
+!searchNotifier/.dockerignore
