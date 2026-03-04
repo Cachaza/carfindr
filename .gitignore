@@ -567,3 +567,5 @@ local-enums/
 !searchNotifier/go.mod
 !searchNotifier/go.sum
 !searchNotifier/.dockerignore
+!carfindr/src/lib/
+!carfindr/src/lib/**
