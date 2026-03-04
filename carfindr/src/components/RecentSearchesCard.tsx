@@ -3,6 +3,7 @@
 import { authClient } from "@/lib/auth-client";
 import { useRouter } from "next/navigation";
 import { api } from "@/trpc/react";
+import posthog from "posthog-js";
 import {
   Table,
   TableBody,
@@ -26,13 +27,16 @@ export function RecentSearchesCard() {
   const { data: session, isPending } = authClient.useSession();
   const router = useRouter();
 
-  const { data: recentSearches, isLoading, error } =
-    api.savedSearch.getMySearches.useQuery(
-      { limit: 5 }, // Fetch top 5
-      {
-        enabled: !!session?.user,
-      }
-    );
+  const {
+    data: recentSearches,
+    isLoading,
+    error,
+  } = api.savedSearch.getMySearches.useQuery(
+    { limit: 5 }, // Fetch top 5
+    {
+      enabled: !!session?.user,
+    },
+  );
 
   if (isPending) {
     return null;
@@ -47,9 +51,7 @@ export function RecentSearchesCard() {
       <Card className="panel-glass mt-8 border-white/70">
         <CardHeader>
           <CardTitle>Búsquedas guardadas recientes</CardTitle>
-          <CardDescription>
-            Tus últimas 5 búsquedas guardadas.
-          </CardDescription>
+          <CardDescription>Tus últimas 5 búsquedas guardadas.</CardDescription>
         </CardHeader>
         <CardContent>
           <p>Cargando búsquedas recientes...</p>
@@ -75,6 +77,13 @@ export function RecentSearchesCard() {
   }
 
   const handleSearchClick = (search: SavedSearch) => {
+    posthog.capture("saved_search_clicked", {
+      search_id: search.id,
+      search_name: search.name || null,
+      brand: search.brandParam || null,
+      model: search.modelParam || null,
+      source: "recent_searches_card",
+    });
     const params = new URLSearchParams();
     if (search.brandId) params.append("brandId", search.brandId);
     if (search.modelId) params.append("modelId", search.modelId);
@@ -85,8 +94,7 @@ export function RecentSearchesCard() {
     if (search.priceTo) params.append("priceTo", search.priceTo.toString());
     if (search.kmFrom) params.append("kmFrom", search.kmFrom.toString());
     if (search.kmTo) params.append("kmTo", search.kmTo.toString());
-    if (search.transmission)
-      params.append("transmision", search.transmission);
+    if (search.transmission) params.append("transmision", search.transmission);
     if (search.searchText) params.append("searchText", search.searchText);
     if (search.brandParam) params.append("brand", search.brandParam);
     if (search.modelParam) params.append("model", search.modelParam);
@@ -96,7 +104,9 @@ export function RecentSearchesCard() {
   return (
     <Card className="panel-glass mt-8 border-white/70">
       <CardHeader>
-        <CardTitle className="text-2xl text-slate-900">Busquedas guardadas recientes</CardTitle>
+        <CardTitle className="text-2xl text-slate-900">
+          Busquedas guardadas recientes
+        </CardTitle>
         <CardDescription>
           Tus últimas 5 búsquedas guardadas. Haz clic en una fila para cargar la
           búsqueda.

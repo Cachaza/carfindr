@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { authClient } from "@/lib/auth-client";
 import { toast } from "sonner";
+import posthog from "posthog-js";
 import {
   Card,
   CardContent,
@@ -34,8 +35,11 @@ export function LoginForm({
     setConfirmPassword("");
   };
 
-  const handleSignIn = async (provider: "discord" | "google"): Promise<void> => {
+  const handleSignIn = async (
+    provider: "discord" | "google",
+  ): Promise<void> => {
     setIsLoading(true);
+    posthog.capture("user_logged_in", { method: provider });
     try {
       await authClient.signIn.social({
         provider,
@@ -46,7 +50,9 @@ export function LoginForm({
     }
   };
 
-  const handleCredentialsSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  const handleCredentialsSubmit = async (
+    event: React.FormEvent<HTMLFormElement>,
+  ) => {
     event.preventDefault();
     setFormError(null);
 
@@ -76,9 +82,13 @@ export function LoginForm({
         if (error) {
           setFormError(error.message || "No se pudo crear la cuenta.");
           toast.error(error.message || "No se pudo crear la cuenta.");
+          posthog.captureException(
+            new Error(error.message ?? "Sign up failed"),
+          );
           return;
         }
 
+        posthog.capture("user_signed_up", { method: "email" });
         setUsername("");
         setEmail("");
         setPassword("");
@@ -96,6 +106,9 @@ export function LoginForm({
       if (error) {
         setFormError(error.message || "Credenciales no válidas.");
         toast.error(error.message || "Credenciales no validas.");
+        posthog.captureException(new Error(error.message ?? "Sign in failed"));
+      } else {
+        posthog.capture("user_logged_in", { method: "email" });
       }
     } finally {
       setIsLoading(false);
@@ -198,7 +211,11 @@ export function LoginForm({
               )}
 
               <Button type="submit" disabled={isLoading}>
-                {isLoading ? "Procesando..." : mode === "register" ? "Crear cuenta" : "Entrar"}
+                {isLoading
+                  ? "Procesando..."
+                  : mode === "register"
+                    ? "Crear cuenta"
+                    : "Entrar"}
               </Button>
 
               <div className="relative py-1 text-center text-xs uppercase text-muted-foreground">
@@ -233,9 +250,10 @@ export function LoginForm({
           </form>
         </CardContent>
       </Card>
-      <div className="text-muted-foreground [&_a]:hover:text-primary text-balance text-center text-xs [&_a]:underline [&_a]:underline-offset-4">
-        Al hacer clic en continuar, aceptas nuestros <a href="#">Términos de Servicio</a>{" "}
-        y <a href="#">Política de Privacidad</a>.
+      <div className="text-balance text-center text-xs text-muted-foreground [&_a]:underline [&_a]:underline-offset-4 [&_a]:hover:text-primary">
+        Al hacer clic en continuar, aceptas nuestros{" "}
+        <a href="#">Términos de Servicio</a> y{" "}
+        <a href="#">Política de Privacidad</a>.
       </div>
     </div>
   );

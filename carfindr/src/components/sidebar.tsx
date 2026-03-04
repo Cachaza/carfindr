@@ -3,6 +3,7 @@
 // Keep existing imports like React, lucide-react, next/navigation, cn, ui components, types etc.
 import { Filter, Save } from "lucide-react"; // Added Save icon
 import { useState, useEffect, useCallback } from "react";
+import posthog from "posthog-js";
 import { authClient } from "@/lib/auth-client";
 import { useRouter } from "next/navigation";
 import { api } from "@/trpc/react"; // Import tRPC API client
@@ -48,7 +49,6 @@ type Modelo = {
   cochesComModeloId: string | null;
 };
 
-
 type Props = {
   // getBrands: () => Promise<Marca[]>; // Included via initialBrands
   getModels: (brandId: string) => Promise<Modelo[]>; // Prop for fetching models remains
@@ -76,27 +76,36 @@ const kmRange = [
 ];
 
 const currentYear = new Date().getFullYear();
-const yearOptions: FilterOption[] = Array.from({ length: currentYear - 1949 + 1 }, (_, i) => {
-  const year = currentYear - i;
-  return { value: year.toString(), label: year.toString() };
-});
+const yearOptions: FilterOption[] = Array.from(
+  { length: currentYear - 1949 + 1 },
+  (_, i) => {
+    const year = currentYear - i;
+    return { value: year.toString(), label: year.toString() };
+  },
+);
 
 // Simplified Price Range (adjust as needed)
 const priceRange = [
   ...Array.from({ length: 4 }, (_, i) => (i + 1) * 250), // 250, 500, 750, 1000
   ...Array.from({ length: 9 }, (_, i) => (i + 1) * 1000 + 1000), // 2k -> 10k
   ...Array.from({ length: 9 }, (_, i) => (i + 1) * 10000 + 10000), // 20k -> 100k
-  150000, 200000 // Add higher values if needed
+  150000,
+  200000, // Add higher values if needed
 ];
-const priceOptions: FilterOption[] = priceRange.map(p => ({ value: p.toString(), label: p.toLocaleString() + ' €' }));
+const priceOptions: FilterOption[] = priceRange.map((p) => ({
+  value: p.toString(),
+  label: p.toLocaleString() + " €",
+}));
 
-const kmOptions: FilterOption[] = kmRange.map(km => ({ value: km.toString(), label: km.toLocaleString() + ' km' }));
+const kmOptions: FilterOption[] = kmRange.map((km) => ({
+  value: km.toString(),
+  label: km.toLocaleString() + " km",
+}));
 
 const transmissionOptions: FilterOption[] = [
-    { value: "manual", label: "Manual" },
-    { value: "automatic", label: "Automático" },
+  { value: "manual", label: "Manual" },
+  { value: "automatic", label: "Automático" },
 ];
-
 
 export default function Sidebar({
   // getBrands, // No longer needed as prop if initialBrands covers it
@@ -124,15 +133,27 @@ export default function Sidebar({
   const [isSaveSearchDialogOpen, setIsSaveSearchDialogOpen] = useState(false);
   const [saveSearchName, setSaveSearchName] = useState("");
   // Keep state directly related to selected *values*
-  const [selectedBrandId, setSelectedBrandId] = useState<string | null>(brandIdProp);
-  const [selectedModelId, setSelectedModelId] = useState<string | null>(modelIdProp);
-  const [selectedYearFrom, setSelectedYearFrom] = useState<string | null>(yearFrom);
+  const [selectedBrandId, setSelectedBrandId] = useState<string | null>(
+    brandIdProp,
+  );
+  const [selectedModelId, setSelectedModelId] = useState<string | null>(
+    modelIdProp,
+  );
+  const [selectedYearFrom, setSelectedYearFrom] = useState<string | null>(
+    yearFrom,
+  );
   const [selectedYearTo, setSelectedYearTo] = useState<string | null>(yearTo);
-  const [selectedPriceFrom, setSelectedPriceFrom] = useState<string | null>(priceFrom);
-  const [selectedPriceTo, setSelectedPriceTo] = useState<string | null>(priceTo);
+  const [selectedPriceFrom, setSelectedPriceFrom] = useState<string | null>(
+    priceFrom,
+  );
+  const [selectedPriceTo, setSelectedPriceTo] = useState<string | null>(
+    priceTo,
+  );
   const [selectedKmFrom, setSelectedKmFrom] = useState<string | null>(kmFrom);
   const [selectedKmTo, setSelectedKmTo] = useState<string | null>(kmTo);
-  const [selectedTransmission, setSelectedTransmission] = useState<string | null>(transmission);
+  const [selectedTransmission, setSelectedTransmission] = useState<
+    string | null
+  >(transmission);
   const [searchText, setSearchText] = useState(searchTextProp ?? "");
 
   // State for fetched/dependent data
@@ -142,9 +163,12 @@ export default function Sidebar({
 
   // State needed specifically for URL params (if different from IDs)
   // These might be derivable, but keeping for simplicity matching original params
-  const [selectedBrandParam, setSelectedBrandParam] = useState<string | null>(brandProp);
-  const [selectedModelParam, setSelectedModelParam] = useState<string | null>(modelProp);
-
+  const [selectedBrandParam, setSelectedBrandParam] = useState<string | null>(
+    brandProp,
+  );
+  const [selectedModelParam, setSelectedModelParam] = useState<string | null>(
+    modelProp,
+  );
 
   // --- Effects ---
   // Effect 1: Initialize or update local 'models' state when initialModels (from props) changes.
@@ -152,9 +176,13 @@ export default function Sidebar({
   useEffect(() => {
     setIsLoadingModels(true);
     if (initialModels && initialModels.length > 0) {
-      const modelsWithLabels = initialModels.map(m => ({
+      const modelsWithLabels = initialModels.map((m) => ({
         ...m,
-        label: m.wallapopModeloId ?? (m.cochesNetModeloId ? `Model ${m.cochesNetModeloId}` : 'Unknown Model')
+        label:
+          m.wallapopModeloId ??
+          (m.cochesNetModeloId
+            ? `Model ${m.cochesNetModeloId}`
+            : "Unknown Model"),
       }));
       setModels(modelsWithLabels);
     } else {
@@ -163,29 +191,35 @@ export default function Sidebar({
     setIsLoadingModels(false);
   }, [initialModels]); // Dependency: re-run if the initialModels prop from parent changes.
 
-
   // Effect 2: Load models when the user changes the brand *within the sidebar*.
-  const loadModelsForSelectedBrand = useCallback(async (currentBrandId: string) => {
-    if (!currentBrandId || currentBrandId === 'All') {
-      setModels([]); // Clear models if brand is "All" or null
-      setIsLoadingModels(false);
-      return;
-    }
-    setIsLoadingModels(true);
-    try {
-      const fetchedModels = await getModels(currentBrandId); // Use the getModels prop
-      const modelsWithLabels = fetchedModels.map(m => ({
-        ...m,
-        label: m.wallapopModeloId ?? (m.cochesNetModeloId ? `Model ${m.cochesNetModeloId}` : 'Unknown Model')
-      }));
-      setModels(modelsWithLabels);
-    } catch (error) {
-      console.error("Failed to fetch models:", error);
-      setModels([]); // Clear on error
-    } finally {
-      setIsLoadingModels(false);
-    }
-  }, [getModels]);
+  const loadModelsForSelectedBrand = useCallback(
+    async (currentBrandId: string) => {
+      if (!currentBrandId || currentBrandId === "All") {
+        setModels([]); // Clear models if brand is "All" or null
+        setIsLoadingModels(false);
+        return;
+      }
+      setIsLoadingModels(true);
+      try {
+        const fetchedModels = await getModels(currentBrandId); // Use the getModels prop
+        const modelsWithLabels = fetchedModels.map((m) => ({
+          ...m,
+          label:
+            m.wallapopModeloId ??
+            (m.cochesNetModeloId
+              ? `Model ${m.cochesNetModeloId}`
+              : "Unknown Model"),
+        }));
+        setModels(modelsWithLabels);
+      } catch (error) {
+        console.error("Failed to fetch models:", error);
+        setModels([]); // Clear on error
+      } finally {
+        setIsLoadingModels(false);
+      }
+    },
+    [getModels],
+  );
 
   useEffect(() => {
     // This effect handles changes to selectedBrandId *after* the initial setup.
@@ -206,28 +240,31 @@ export default function Sidebar({
     setSelectedModelId(modelIdProp);
   }, [modelIdProp]);
 
-
   // --- Handlers ---
   const handleBrandSelect = (value: string | null) => {
-      setSelectedBrandId(value);
-      // Reset model when brand changes
-      setSelectedModelId(null);
-      setSelectedModelParam(null);
-      // Find the corresponding brand object to get the wallapopId for the param
-      const selectedBrandObject = brands.find(b => b.cochesNetId.toString() === value);
-      setSelectedBrandParam(selectedBrandObject?.wallapopId ?? null); // Or label, depending on what `brandProp` was
+    setSelectedBrandId(value);
+    // Reset model when brand changes
+    setSelectedModelId(null);
+    setSelectedModelParam(null);
+    // Find the corresponding brand object to get the wallapopId for the param
+    const selectedBrandObject = brands.find(
+      (b) => b.cochesNetId.toString() === value,
+    );
+    setSelectedBrandParam(selectedBrandObject?.wallapopId ?? null); // Or label, depending on what `brandProp` was
 
-      // Model loading is handled by the useEffect hook watching selectedBrandId
-      if (!value) {
-        setModels([]); // Explicitly clear models if brand is cleared
-      }
+    // Model loading is handled by the useEffect hook watching selectedBrandId
+    if (!value) {
+      setModels([]); // Explicitly clear models if brand is cleared
+    }
   };
 
   const handleModelSelect = (value: string | null) => {
-      setSelectedModelId(value);
-      // Find the corresponding model object to get the wallapopModeloId for the param
-      const selectedModelObject = models.find(m => m.cochesNetModeloId.toString() === value);
-      setSelectedModelParam(selectedModelObject?.wallapopModeloId ?? null);
+    setSelectedModelId(value);
+    // Find the corresponding model object to get the wallapopModeloId for the param
+    const selectedModelObject = models.find(
+      (m) => m.cochesNetModeloId.toString() === value,
+    );
+    setSelectedModelParam(selectedModelObject?.wallapopModeloId ?? null);
   };
 
   const clearAll = () => {
@@ -258,12 +295,26 @@ export default function Sidebar({
     if (selectedPriceTo) params.append("priceTo", selectedPriceTo);
     if (selectedKmFrom) params.append("kmFrom", selectedKmFrom);
     if (selectedKmTo) params.append("kmTo", selectedKmTo);
-    if (selectedTransmission) params.append("transmision", selectedTransmission); // Ensure param name is correct
+    if (selectedTransmission)
+      params.append("transmision", selectedTransmission); // Ensure param name is correct
     if (searchText) params.append("searchText", searchText);
 
     // Add the potentially different brand/model params if they exist
     if (selectedBrandParam) params.append("brand", selectedBrandParam);
     if (selectedModelParam) params.append("model", selectedModelParam);
+
+    posthog.capture("search_filters_applied", {
+      brand: selectedBrandParam || null,
+      model: selectedModelParam || null,
+      year_from: selectedYearFrom || null,
+      year_to: selectedYearTo || null,
+      price_from: selectedPriceFrom || null,
+      price_to: selectedPriceTo || null,
+      km_from: selectedKmFrom || null,
+      km_to: selectedKmTo || null,
+      transmission: selectedTransmission || null,
+      search_text: searchText || null,
+    });
 
     router.push("/search?" + params.toString());
     // router.refresh(); // Consider if refresh is truly needed - push often triggers layout reload
@@ -296,34 +347,55 @@ export default function Sidebar({
         brandParam: selectedBrandParam,
         modelParam: selectedModelParam,
       });
-      toast.success(`Búsqueda ${saveSearchName ? `"${saveSearchName}" ` : ""}guardada con éxito!`);
+      posthog.capture("search_saved", {
+        name: saveSearchName || null,
+        brand: selectedBrandParam || null,
+        model: selectedModelParam || null,
+        year_from: selectedYearFrom || null,
+        year_to: selectedYearTo || null,
+        price_from: selectedPriceFrom || null,
+        price_to: selectedPriceTo || null,
+        km_from: selectedKmFrom || null,
+        km_to: selectedKmTo || null,
+        transmission: selectedTransmission || null,
+        search_text: searchText || null,
+      });
+      toast.success(
+        `Búsqueda ${saveSearchName ? `"${saveSearchName}" ` : ""}guardada con éxito!`,
+      );
       setIsSaveSearchDialogOpen(false);
       setSaveSearchName(""); // Restablecer nombre para la próxima vez
     } catch (error) {
       console.error("Error al guardar la búsqueda:", error);
-      toast.error("Error al guardar la búsqueda. Consulta la consola para más detalles.");
+      posthog.captureException(
+        error instanceof Error ? error : new Error("Failed to save search"),
+      );
+      toast.error(
+        "Error al guardar la búsqueda. Consulta la consola para más detalles.",
+      );
       // Opcionalmente mantener el diálogo abierto en caso de error o cerrarlo
       // setIsSaveSearchDialogOpen(false);
     }
   };
 
   // --- Prepare Options for Dropdowns ---
-  const brandOptions: FilterOption[] = brands.map(b => ({
-      value: b.cochesNetId.toString(),
-      label: b.label
+  const brandOptions: FilterOption[] = brands.map((b) => ({
+    value: b.cochesNetId.toString(),
+    label: b.label,
   }));
 
-  const modelOptions: FilterOption[] = models.map(m => ({
-      value: m.cochesNetModeloId.toString(), // Value for selection
-      label: m.label || 'Unnamed Model' // Display label, with a fallback
+  const modelOptions: FilterOption[] = models.map((m) => ({
+    value: m.cochesNetModeloId.toString(), // Value for selection
+    label: m.label || "Unnamed Model", // Display label, with a fallback
   }));
-
 
   return (
     <div className="panel-glass space-y-6 rounded-2xl border-white/70 p-4 pb-20">
       <div className="flex items-center space-x-2">
         <Filter className="text-cyan-600" />
-        <h2 className="text-lg font-semibold text-slate-900">Filtros de busqueda</h2>
+        <h2 className="text-lg font-semibold text-slate-900">
+          Filtros de busqueda
+        </h2>
       </div>
 
       <div className="space-y-4">
@@ -353,85 +425,88 @@ export default function Sidebar({
         />
 
         {/* Year Dropdowns */}
-         <div className="py-3"> {/* Keep grouping div if needed for spacing */}
-            <Label className="mb-1 block text-sm font-medium text-slate-700">
-                Antigüedad
-            </Label>
-            <div className="pt-2 space-y-3"> {/* Add spacing between year dropdowns */}
-                <FilterDropdown
-                    label="" // No separate label above needed if grouped
-                    triggerLabel="Año desde..."
-                    selectedValue={selectedYearFrom}
-                    options={yearOptions}
-                    onSelect={setSelectedYearFrom} // Directly set state
-                    allowClear={true}
-                    clearLabel="Año desde..." // Placeholder acts as clear label
-                />
-                <FilterDropdown
-                    label="" // No separate label above needed if grouped
-                    triggerLabel="Año hasta..."
-                    selectedValue={selectedYearTo}
-                    options={yearOptions}
-                    onSelect={setSelectedYearTo} // Directly set state
-                    allowClear={true}
-                    clearLabel="Año hasta..." // Placeholder acts as clear label
-                />
-            </div>
+        <div className="py-3">
+          {" "}
+          {/* Keep grouping div if needed for spacing */}
+          <Label className="mb-1 block text-sm font-medium text-slate-700">
+            Antigüedad
+          </Label>
+          <div className="space-y-3 pt-2">
+            {" "}
+            {/* Add spacing between year dropdowns */}
+            <FilterDropdown
+              label="" // No separate label above needed if grouped
+              triggerLabel="Año desde..."
+              selectedValue={selectedYearFrom}
+              options={yearOptions}
+              onSelect={setSelectedYearFrom} // Directly set state
+              allowClear={true}
+              clearLabel="Año desde..." // Placeholder acts as clear label
+            />
+            <FilterDropdown
+              label="" // No separate label above needed if grouped
+              triggerLabel="Año hasta..."
+              selectedValue={selectedYearTo}
+              options={yearOptions}
+              onSelect={setSelectedYearTo} // Directly set state
+              allowClear={true}
+              clearLabel="Año hasta..." // Placeholder acts as clear label
+            />
+          </div>
         </div>
 
         {/* Price Dropdowns */}
         <div className="py-3">
-             <Label className="mb-1 block text-sm font-medium text-slate-700">
-                Precio
-            </Label>
-            <div className="pt-2 space-y-3">
-                <FilterDropdown
-                    label=""
-                    triggerLabel="Precio desde..."
-                    selectedValue={selectedPriceFrom}
-                    options={priceOptions}
-                    onSelect={setSelectedPriceFrom}
-                    allowClear={true}
-                    clearLabel="Precio desde..."
-                />
-                 <FilterDropdown
-                    label=""
-                    triggerLabel="Precio hasta..."
-                    selectedValue={selectedPriceTo}
-                    options={priceOptions}
-                    onSelect={setSelectedPriceTo}
-                    allowClear={true}
-                    clearLabel="Precio hasta..."
-                />
-            </div>
+          <Label className="mb-1 block text-sm font-medium text-slate-700">
+            Precio
+          </Label>
+          <div className="space-y-3 pt-2">
+            <FilterDropdown
+              label=""
+              triggerLabel="Precio desde..."
+              selectedValue={selectedPriceFrom}
+              options={priceOptions}
+              onSelect={setSelectedPriceFrom}
+              allowClear={true}
+              clearLabel="Precio desde..."
+            />
+            <FilterDropdown
+              label=""
+              triggerLabel="Precio hasta..."
+              selectedValue={selectedPriceTo}
+              options={priceOptions}
+              onSelect={setSelectedPriceTo}
+              allowClear={true}
+              clearLabel="Precio hasta..."
+            />
+          </div>
         </div>
-
 
         {/* Kilometer Dropdowns */}
         <div className="py-3">
-             <Label className="mb-1 block text-sm font-medium text-slate-700">
-                Kilometraje
-            </Label>
-             <div className="pt-2 space-y-3">
-                <FilterDropdown
-                    label=""
-                    triggerLabel="Km desde..."
-                    selectedValue={selectedKmFrom}
-                    options={kmOptions}
-                    onSelect={setSelectedKmFrom}
-                    allowClear={true}
-                    clearLabel="Km desde..."
-                />
-                <FilterDropdown
-                    label=""
-                    triggerLabel="Km hasta..."
-                    selectedValue={selectedKmTo}
-                    options={kmOptions}
-                    onSelect={setSelectedKmTo}
-                    allowClear={true}
-                    clearLabel="Km hasta..."
-                />
-            </div>
+          <Label className="mb-1 block text-sm font-medium text-slate-700">
+            Kilometraje
+          </Label>
+          <div className="space-y-3 pt-2">
+            <FilterDropdown
+              label=""
+              triggerLabel="Km desde..."
+              selectedValue={selectedKmFrom}
+              options={kmOptions}
+              onSelect={setSelectedKmFrom}
+              allowClear={true}
+              clearLabel="Km desde..."
+            />
+            <FilterDropdown
+              label=""
+              triggerLabel="Km hasta..."
+              selectedValue={selectedKmTo}
+              options={kmOptions}
+              onSelect={setSelectedKmTo}
+              allowClear={true}
+              clearLabel="Km hasta..."
+            />
+          </div>
         </div>
 
         {/* Transmission Dropdown */}
@@ -447,7 +522,10 @@ export default function Sidebar({
 
         {/* Search Text Input */}
         <div className="w-full max-w-sm items-center pt-3">
-          <Label className="mb-1 block text-sm font-medium text-slate-700" htmlFor="searchText">
+          <Label
+            className="mb-1 block text-sm font-medium text-slate-700"
+            htmlFor="searchText"
+          >
             Palabras clave
           </Label>
           <Input
@@ -468,22 +546,34 @@ export default function Sidebar({
         Buscar
       </Button>
       {session && (
-        <Button onClick={handleOpenSaveSearchDialog} className="mt-2 h-11 w-full rounded-xl" variant="outline">
+        <Button
+          onClick={handleOpenSaveSearchDialog}
+          className="mt-2 h-11 w-full rounded-xl"
+          variant="outline"
+        >
           <Save className="mr-2 h-4 w-4" />
           Guardar Búsqueda
         </Button>
       )}
-      <Button onClick={clearAll} className="mt-2 h-11 w-full rounded-xl" variant="secondary">
+      <Button
+        onClick={clearAll}
+        className="mt-2 h-11 w-full rounded-xl"
+        variant="secondary"
+      >
         Limpiar filtros
       </Button>
 
       {/* Save Search Dialog */}
-      <Dialog open={isSaveSearchDialogOpen} onOpenChange={setIsSaveSearchDialogOpen}>
+      <Dialog
+        open={isSaveSearchDialogOpen}
+        onOpenChange={setIsSaveSearchDialogOpen}
+      >
         <DialogContent>
           <DialogHeader>
             <DialogTitle>Guardar Búsqueda</DialogTitle>
             <DialogDescription>
-              Introduce un nombre para esta búsqueda para encontrarla fácilmente más tarde. (Opcional)
+              Introduce un nombre para esta búsqueda para encontrarla fácilmente
+              más tarde. (Opcional)
             </DialogDescription>
           </DialogHeader>
           <div className="grid gap-4 py-4">
