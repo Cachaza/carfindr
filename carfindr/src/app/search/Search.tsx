@@ -43,6 +43,7 @@ async function getModelsInitial(brandId: string | null) {
 
 export default function Search({ initialBrands }: SearchProps) {
   const searchParams = useSearchParams();
+  const [footerLift, setFooterLift] = useState(0);
 
   const priceFrom = searchParams.get("priceFrom") ?? null;
   const priceTo = searchParams.get("priceTo") ?? null;
@@ -93,31 +94,57 @@ export default function Search({ initialBrands }: SearchProps) {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [brandId]); // Dependency array
 
+  useEffect(() => {
+    const handleFooterOverlap = () => {
+      const footer = document.getElementById("site-footer");
+      if (!footer) {
+        setFooterLift(0);
+        return;
+      }
+
+      const footerRect = footer.getBoundingClientRect();
+      const overlap = Math.max(0, window.innerHeight - footerRect.top);
+      setFooterLift(overlap);
+    };
+
+    handleFooterOverlap();
+    window.addEventListener("scroll", handleFooterOverlap, { passive: true });
+    window.addEventListener("resize", handleFooterOverlap);
+
+    return () => {
+      window.removeEventListener("scroll", handleFooterOverlap);
+      window.removeEventListener("resize", handleFooterOverlap);
+    };
+  }, []);
+
   return (
     <div className="flex min-h-screen w-full flex-col md:flex-row">
-      {/* Fixed position sidebar for desktop */}
-      <div className="hide-scrollbar z-20 hidden md:fixed md:left-6 md:top-32 md:block md:h-[calc(100vh-9rem)] md:w-80 md:overflow-y-auto">
-        <Sidebar
-          brandIdProp={brandId}
-          modelIdProp={searchParams.get("modelId") ?? null}
-          priceFrom={priceFrom}
-          priceTo={priceTo}
-          yearFrom={yearFrom}
-          yearTo={yearTo}
-          kmFrom={kmFrom}
-          kmTo={kmTo}
-          searchTextProp={searchText}
-          //getBrands={getBrands}
-          getModels={getModels}
-          brandProp={brand}
-          modelProp={model}
-          initialBrands={initialBrands}
-          initialModels={initialModels}
-          transmission={transmision}
-        />
-      </div>
+      {/* Fixed sidebar for desktop with footer-aware lift */}
+      <aside
+        className="hide-scrollbar z-20 hidden md:fixed md:left-6 md:top-32 md:block md:h-[calc(100vh-9rem)] md:w-80 md:overflow-y-auto"
+        style={{ transform: footerLift > 0 ? `translateY(-${footerLift}px)` : undefined }}
+      >
+          <Sidebar
+            brandIdProp={brandId}
+            modelIdProp={searchParams.get("modelId") ?? null}
+            priceFrom={priceFrom}
+            priceTo={priceTo}
+            yearFrom={yearFrom}
+            yearTo={yearTo}
+            kmFrom={kmFrom}
+            kmTo={kmTo}
+            searchTextProp={searchText}
+            //getBrands={getBrands}
+            getModels={getModels}
+            brandProp={brand}
+            modelProp={model}
+            initialBrands={initialBrands}
+            initialModels={initialModels}
+            transmission={transmision}
+          />
+      </aside>
 
-      {/* Main content with left margin to accommodate sidebar on desktop */}
+      {/* Main content */}
       <div className="mt-2 w-full flex-grow md:ml-[22rem] md:px-3">
         {isLoading ? (
           <div className="flex h-64 items-center justify-center">
