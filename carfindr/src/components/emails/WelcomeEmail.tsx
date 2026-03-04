@@ -13,7 +13,7 @@ export const WelcomeEmail = ({ userName }: Readonly<WelcomeEmailProps>) => (
     <head>
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>¡Bienvenido a CarFindr!</title>
+      <title>¡Bienvenido a MotorFindr!</title>
       <style>
         {`
           body {
@@ -80,20 +80,20 @@ export const WelcomeEmail = ({ userName }: Readonly<WelcomeEmailProps>) => (
     <body>
       <div className="container">
         <div className="header">
-          <h1>¡Bienvenido a CarFindr!</h1>
+          <h1>¡Bienvenido a MotorFindr!</h1>
         </div>
         <div className="content">
           <p>Hola {userName},</p>
-          <p>¡Gracias por registrarte en CarFindr! Estamos emocionados de tenerte con nosotros.</p>
-          <p>CarFindr te ayuda a encontrar las mejores ofertas de coches de segunda mano en diferentes plataformas, todo en un solo lugar. Esperamos que disfrutes de la experiencia y encuentres el coche de tus sueños.</p>
+          <p>¡Gracias por registrarte en MotorFindr! Estamos emocionados de tenerte con nosotros.</p>
+          <p>MotorFindr te ayuda a encontrar las mejores ofertas de coches de segunda mano en diferentes plataformas, todo en un solo lugar. Esperamos que disfrutes de la experiencia y encuentres el coche de tus sueños.</p>
           <div className="button-container">
             <a href={env.NEXT_PUBLIC_APP_URL} className="button">Explorar coches ahora</a>
           </div>
           <p>Si tienes alguna pregunta, no dudes en contactarnos.</p>
-          <p>¡Saludos,<br />El equipo de CarFindr</p>
+          <p>¡Saludos,<br />El equipo de MotorFindr</p>
         </div>
         <div className="footer">
-          <p>&copy; {new Date().getFullYear()} CarFindr. Todos los derechos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} MotorFindr. Todos los derechos reservados.</p>
         </div>
       </div>
     </body>

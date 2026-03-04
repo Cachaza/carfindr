@@ -2,7 +2,7 @@ version: '3'
 
 services:
   encuentra-tu-coche:
-    image: git.cachaza.cc/cachaza/carfindr:latest
+    image: git.cachaza.cc/cachaza/motorfindr:latest
     labels:
       - "com.centurylinklabs.watchtower.enable=true"
     ports:
@@ -10,8 +10,8 @@ services:
     environment:
       REDIS_URL: "redis://redis:6379"
       DATABASE_URL: "postgresql://postgres:passwordkjfhnlkjfaskjfnwpifnewipufnwijnbsdljnsafkljsf@db:5432/carfindr"
-      NEXTAUTH_URL: "https://carfindr.cachaza.cc"
-      AUTH_TRUST_HOST: "https://carfindr.cachaza.cc"
+      NEXTAUTH_URL: "https://motorfindr.cachaza.cc"
+      AUTH_TRUST_HOST: "https://motorfindr.cachaza.cc"
     networks:
       - app-network
     restart: always

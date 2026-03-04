@@ -41,8 +41,8 @@ func NewScheduler(
 	return &Scheduler{
 		dbClient:      dbClient,
 		searchClients: searchClients,
-		carHasher:     hasher.NewCarHasher(),                                                                         // Inicializar el hasher
-		notifier:      notifier.NewEmailNotifier("re_9tBGLCQS_9hyQrxNj5noja189viy8V4mM", "send@carfindr.cachaza.cc"), // Inicializar el notificador
+		carHasher:     hasher.NewCarHasher(),                                                                           // Inicializar el hasher
+		notifier:      notifier.NewEmailNotifier("re_9tBGLCQS_9hyQrxNj5noja189viy8V4mM", "send@motorfindr.cachaza.cc"), // Inicializar el notificador
 		savedSearches: initialSavedSearches,
 		currentIndex:  0,
 		interval:      interval,

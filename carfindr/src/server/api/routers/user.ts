@@ -89,9 +89,9 @@ export const userRouter = createTRPCRouter({
         
         const resend = new Resend(env.RESEND_API_KEY);
         await resend.emails.send({
-          from: 'CarFindr Compliance <send@carfindr.cachaza.cc>',
+          from: 'MotorFindr Compliance <send@motorfindr.cachaza.cc>',
           to: userEmail,
-          subject: 'Tu Informe de Datos de CarFindr',
+          subject: 'Tu Informe de Datos de MotorFindr',
           react: UserDataReportEmail({
             userName: userName,
             userData: {

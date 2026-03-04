@@ -52,9 +52,9 @@ export const auth = betterAuth({
           const resend = new Resend(env.RESEND_API_KEY);
           try {
             await resend.emails.send({
-              from: "CarFindr <send@carfindr.cachaza.cc>",
+              from: "MotorFindr <send@motorfindr.cachaza.cc>",
               to: user.email,
-              subject: "Bienvenido a CarFindr!",
+              subject: "Bienvenido a MotorFindr!",
               react: WelcomeEmail({ userName: user.name ?? "nuevo usuario" }),
             });
             logger.info("Welcome email sent to:", user.email);

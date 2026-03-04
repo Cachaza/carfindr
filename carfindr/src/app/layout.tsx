@@ -19,7 +19,7 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "CarFindr | Agregador de coches de segunda mano",
+  title: "MotorFindr | Agregador de coches de segunda mano",
   description: "Busca coches de segunda mano en todas las paginas de España",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };

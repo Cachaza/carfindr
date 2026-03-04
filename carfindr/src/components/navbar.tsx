@@ -33,12 +33,12 @@ export function Navbar({ session }: NavbarProps) {
         <Link href="/" className="group flex items-center gap-3">
           <Image
             src="/favicon.ico"
-            alt="CarFindr logo"
+            alt="MotorFindr logo"
             width={28}
             height={28}
             className="rounded-md"
           />
-          <span className="text-lg font-semibold text-slate-900">CarFindr</span>
+          <span className="text-lg font-semibold text-slate-900">MotorFindr</span>
         </Link>
 
         {session?.user ? (

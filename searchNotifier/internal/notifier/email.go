@@ -52,11 +52,11 @@ func (n *EmailNotifier) SendNotificationEmail(ctx context.Context, recipient *mo
 
 ¡Tenemos buenas noticias! Hemos encontrado %d nuevos coches que coinciden con %s.
 
-Visita CarFindr para ver todos los detalles y explorar tus nuevas opciones:
-https://carfindr.cachaza.cc
+Visita MotorFindr para ver todos los detalles y explorar tus nuevas opciones:
+https://motorfindr.cachaza.cc
 
 Saludos cordiales,
-El equipo de CarFindr`, userName, newCarsCount, searchName)
+El equipo de MotorFindr`, userName, newCarsCount, searchName)
 
 	// Versión HTML con estilos hermosos
 	htmlBody := fmt.Sprintf(`<!DOCTYPE html>
@@ -75,7 +75,7 @@ El equipo de CarFindr`, userName, newCarsCount, searchName)
                     <tr>
                         <td style="padding: 40px 32px; text-align: center;">
                             <h1 style="margin: 0; color: #f8fafc; font-size: 28px; font-weight: 700; line-height: 1.2;">
-                                🚗 CarFindr
+                                🚗 MotorFindr
                             </h1>
                             <p style="margin: 8px 0 0 0; color: #e2e8f0; font-size: 16px; opacity: 0.9;">
                                 Tu buscador de coches inteligente
@@ -113,7 +113,7 @@ El equipo de CarFindr`, userName, newCarsCount, searchName)
 
                             <!-- Call to Action -->
                             <div style="text-align: center; margin-bottom: 32px;">
-                                <a href="https://carfindr.cachaza.cc" 
+                                <a href="https://motorfindr.cachaza.cc" 
                                    style="display: inline-block; background-color: #3b82f6; color: #ffffff; text-decoration: none; padding: 16px 32px; border-radius: 12px; font-weight: 600; font-size: 16px; transition: all 0.2s; box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.3);">
                                     🔍 Ver coches nuevos
                                 </a>
@@ -131,7 +131,7 @@ El equipo de CarFindr`, userName, newCarsCount, searchName)
                                 Saludos cordiales,
                             </p>
                             <p style="margin: 0; color: #3b82f6; font-size: 16px; font-weight: 600;">
-                                El equipo de CarFindr
+                                El equipo de MotorFindr
                             </p>
                         </td>
                     </tr>
@@ -142,10 +142,10 @@ El equipo de CarFindr`, userName, newCarsCount, searchName)
                     <tr>
                         <td style="padding: 32px; text-align: center;">
                             <p style="margin: 0 0 8px 0; color: #94a3b8; font-size: 12px;">
-                                © 2025 CarFindr. Todos los derechos reservados.
+                                © 2025 MotorFindr. Todos los derechos reservados.
                             </p>
                             <p style="margin: 0; color: #94a3b8; font-size: 12px;">
-                                <a href="https://carfindr.cachaza.cc" style="color: #3b82f6; text-decoration: none;">carfindr.cachaza.cc</a>
+                                <a href="https://motorfindr.cachaza.cc" style="color: #3b82f6; text-decoration: none;">motorfindr.cachaza.cc</a>
                             </p>
                         </td>
                     </tr>
@@ -157,7 +157,7 @@ El equipo de CarFindr`, userName, newCarsCount, searchName)
 </html>`, userName, newCarsCount, searchName)
 
 	params := &resend.SendEmailRequest{
-		From:    "CarFindr <" + n.fromAddress + ">",
+		From:    "MotorFindr <" + n.fromAddress + ">",
 		To:      []string{recipient.Email},
 		Html:    htmlBody,
 		Subject: subject,

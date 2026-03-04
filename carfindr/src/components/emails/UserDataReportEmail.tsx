@@ -53,7 +53,7 @@ export const UserDataReportEmail = ({
     <head>
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Tu Informe de Datos de CarFindr</title>
+      <title>Tu Informe de Datos de MotorFindr</title>
       <style>
         {`
           body {
@@ -130,11 +130,11 @@ export const UserDataReportEmail = ({
     <body>
       <div className="container">
         <div className="header">
-          <h1>Tu Informe de Datos de CarFindr</h1>
+          <h1>Tu Informe de Datos de MotorFindr</h1>
         </div>
         <div className="content">
           <p>Hola {userName ?? 'usuario'},</p>
-          <p>Has solicitado una copia de los datos que CarFindr tiene sobre ti. A continuación, encontrarás la información que hemos recopilado:</p>
+          <p>Has solicitado una copia de los datos que MotorFindr tiene sobre ti. A continuación, encontrarás la información que hemos recopilado:</p>
 
           <div className="data-section">
             <h2>Información de Usuario</h2>
@@ -189,11 +189,11 @@ export const UserDataReportEmail = ({
           )}
 
           <p>Si tienes alguna pregunta sobre tus datos o deseas ejercer otros derechos de privacidad, por favor, contáctanos respondiendo a este correo.</p>
-          <p>Gracias por usar CarFindr.</p>
-          <p>Atentamente,<br />El equipo de CarFindr</p>
+          <p>Gracias por usar MotorFindr.</p>
+          <p>Atentamente,<br />El equipo de MotorFindr</p>
         </div>
         <div className="footer">
-          <p>&copy; {new Date().getFullYear()} CarFindr. Todos los derechos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} MotorFindr. Todos los derechos reservados.</p>
         </div>
       </div>
     </body>
