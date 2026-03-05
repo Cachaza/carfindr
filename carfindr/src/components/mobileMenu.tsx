@@ -9,16 +9,6 @@ import { useRouter } from "next/navigation";
 import { api } from "@/trpc/react";
 import { toast } from "sonner";
 
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogDescription,
-  DialogFooter,
-  DialogClose,
-} from "@/components/ui/dialog";
-
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -159,10 +149,7 @@ export default function MobileFilterDrawer({
   const { data: session } = authClient.useSession();
   const saveSearchMutation = api.savedSearch.saveSearch.useMutation();
 
-  // Drawer state
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  const [isSaveSearchDialogOpen, setIsSaveSearchDialogOpen] = useState(false);
-  const [saveSearchName, setSaveSearchName] = useState("");
 
   // Filter states (same as Sidebar)
   const [selectedBrandId, setSelectedBrandId] = useState<string | null>(
@@ -310,20 +297,15 @@ export default function MobileFilterDrawer({
     router.push("/search?" + params.toString());
   };
 
-  const handleOpenSaveSearchDialog = () => {
+  const handleSaveSearch = async () => {
     if (!session) {
       toast.error("Necesitas iniciar sesión para guardar búsquedas.");
       return;
     }
-    setIsSaveSearchDialogOpen(true);
-  };
-
-  const handleConfirmSaveSearch = async () => {
-    if (!session) return;
 
     try {
       await saveSearchMutation.mutateAsync({
-        name: saveSearchName || undefined, // Pasar undefined si no se da nombre
+        name: undefined, // Let the backend handle naming automatically
         brandId: selectedBrandId,
         modelId: selectedModelId,
         yearFrom: selectedYearFrom ? parseInt(selectedYearFrom) : null,
@@ -337,16 +319,11 @@ export default function MobileFilterDrawer({
         brandParam: selectedBrandParam,
         modelParam: selectedModelParam,
       });
-      toast.success(
-        `Búsqueda ${
-          saveSearchName ? `"${saveSearchName}" ` : ""
-        }guardada con éxito!`
-      );
-      setIsSaveSearchDialogOpen(false);
-      setSaveSearchName("");
+      toast.success("Búsqueda guardada con éxito!");
+      setIsDrawerOpen(false); // Close the menu when saved successfully
     } catch (error) {
       console.error("Error al guardar la búsqueda:", error);
-      toast.error("Error al guardar la búsqueda. Consulta la consola para más detalles.");
+      toast.error("Error al guardar la búsqueda.");
     }
   };
 
@@ -603,12 +580,13 @@ export default function MobileFilterDrawer({
               <div className="flex gap-3">
                 {session && (
                   <Button
-                    onClick={handleOpenSaveSearchDialog}
-                    className="h-11 flex-1 rounded-xl border-slate-300 bg-white text-slate-700 hover:bg-slate-50"
+                    onClick={handleSaveSearch}
+                    disabled={saveSearchMutation.isPending}
+                    className="h-11 flex-1 rounded-xl border-slate-300 bg-white text-slate-700 hover:bg-slate-50 disabled:opacity-70"
                     variant="outline"
                   >
                     <Save className="mr-2 h-4 w-4" />
-                    Guardar
+                    {saveSearchMutation.isPending ? "Guardando..." : "Guardar"}
                   </Button>
                 )}
                 <Button 
@@ -641,41 +619,6 @@ export default function MobileFilterDrawer({
 
       {/* Render the Full Screen Overlay via Portal so it breaks out of any sticky/absolute containers */}
       {mounted && typeof document !== "undefined" && createPortal(overlayContent, document.body)}
-
-      {/* Save Search Dialog */}
-      <Dialog
-        open={isSaveSearchDialogOpen}
-        onOpenChange={setIsSaveSearchDialogOpen}
-      >
-        <DialogContent>
-          <DialogHeader>
-            <DialogTitle>Guardar Búsqueda</DialogTitle>
-            <DialogDescription>
-              Introduce un nombre para esta búsqueda para encontrarla fácilmente más tarde. (Opcional)
-            </DialogDescription>
-          </DialogHeader>
-          <div className="grid gap-4 py-4">
-            <div className="grid grid-cols-4 items-center gap-4">
-              <Label htmlFor="searchName" className="text-right">
-                Nombre
-              </Label>
-              <Input
-                id="searchName"
-                value={saveSearchName}
-                onChange={(e) => setSaveSearchName(e.target.value)}
-                className="col-span-3"
-                placeholder="Ej: Mi Audi Soñado"
-              />
-            </div>
-          </div>
-          <DialogFooter>
-            <DialogClose asChild>
-              <Button variant="outline">Cancelar</Button>
-            </DialogClose>
-            <Button onClick={handleConfirmSaveSearch}>Guardar</Button>
-          </DialogFooter>
-        </DialogContent>
-      </Dialog>
     </>
   );
 }
