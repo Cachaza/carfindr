@@ -182,155 +182,202 @@ export default function UserProfilePage() {
   };
 
   return (
-    <div className="container mx-auto p-4">
-      <Card className="mb-8">
-        <CardHeader>
-          <CardTitle>Perfil:</CardTitle>
-          <CardDescription>
-            Aqui puedes ver tus ajustes de cuenta y busquedas guardadas.
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          {session?.user && (
-            <div className="flex items-center justify-between">
-              <div>
-                <p>
-                  <strong>Nombre:</strong> {session.user.name ?? "N/A"}
-                </p>
-                <p>
-                  <strong>Email:</strong> {session.user.email ?? "N/A"}
-                </p>
-              </div>
-              {session.user.image && (
-                <img
-                  src={session.user.image}
-                  alt="User avatar"
-                  className="ml-4 h-20 w-20 rounded-full object-cover"
-                />
-              )}
-            </div>
-          )}
-        </CardContent>
-        <CardFooter className="flex flex-col space-y-2 p-6 pt-0 md:flex-row md:space-x-2 md:space-y-0">
-          <Button
-            variant="outline"
-            className="w-full md:w-auto"
-            onClick={() => requestDataReportMutation.mutate()}
-            disabled={requestDataReportMutation.isPending}
-          >
-            <Download className="mr-2 h-4 w-4" />
-            {requestDataReportMutation.isPending
-              ? "Solicitando..."
-              : "Solicitar Informe de Datos"}
-          </Button>
-          <AlertDialog>
-            <AlertDialogTrigger asChild>
-              <Button variant="destructive" className="w-full md:w-auto">
-                <Trash2 className="mr-2 h-4 w-4" /> Eliminar Cuenta
-              </Button>
-            </AlertDialogTrigger>
-            <AlertDialogContent>
-              <AlertDialogHeader>
-                <AlertDialogTitle>
-                  ¿Estás absolutamente seguro?
-                </AlertDialogTitle>
-                <AlertDialogDescription>
-                  Esta acción no se puede deshacer. Esto eliminará
-                  permanentemente tu cuenta y todos tus datos asociados,
-                  incluidas las búsquedas guardadas.
-                </AlertDialogDescription>
-              </AlertDialogHeader>
-              <AlertDialogFooter>
-                <AlertDialogCancel>Cancelar</AlertDialogCancel>
-                <AlertDialogAction
-                  onClick={() => {
-                    deleteAccountMutation.mutate();
-                  }}
-                  className="bg-red-600 hover:bg-red-700"
-                >
-                  Sí, eliminar mi cuenta
-                </AlertDialogAction>
-              </AlertDialogFooter>
-            </AlertDialogContent>
-          </AlertDialog>
-        </CardFooter>
-      </Card>
+    <div className="container mx-auto max-w-5xl px-4 py-8 space-y-8">
+      <div>
+        <h1 className="text-3xl font-bold tracking-tight">Tu Perfil</h1>
+        <p className="text-muted-foreground mt-2">
+          Gestiona tus datos personales y tus búsquedas guardadas.
+        </p>
+      </div>
 
-      <h2 className="mb-4 text-2xl font-semibold">Búsquedas guardadas:</h2>
-      {savedSearches && savedSearches.length > 0 ? (
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {savedSearches.map((search) => (
-            <AlertDialog key={`alert-${search.id}`}>
-              <Card className="relative hover:shadow-lg">
-                <div
-                  className="cursor-pointer p-4"
-                  onClick={(e) => handleSearchClick(search, e)}
-                >
-                  <CardHeader className="p-0 pb-2">
-                    <CardTitle className="text-lg">
-                      {search.name ||
-                        `Búsqueda del ${new Date(search.createdAt).toLocaleDateString()}`}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="p-0">
-                    <p className="text-sm text-gray-600">
-                      {search.brandParam && `Marca: ${search.brandParam}`}
-                      {search.modelParam && `, Modelo: ${search.modelParam}`}
-                    </p>
-                    <p className="text-xs text-gray-500">
-                      Guardada el: {new Date(search.createdAt).toLocaleString()}
-                    </p>
-                  </CardContent>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="md:col-span-1 space-y-6">
+          <Card className="border-border/50 shadow-sm overflow-hidden">
+            <div className="h-24 bg-gradient-to-r from-blue-600/20 to-indigo-600/20" />
+            <CardContent className="px-6 pb-6 pt-0 relative">
+              <div className="flex flex-col items-center">
+                <div className="rounded-full bg-background p-1 -mt-12 mb-4 border shadow-sm">
+                  {session?.user?.image ? (
+                    <img
+                      src={session.user.image}
+                      alt="User avatar"
+                      className="h-20 w-20 rounded-full object-cover"
+                    />
+                  ) : (
+                    <div className="h-20 w-20 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-700 text-2xl font-bold">
+                      {session?.user?.name?.[0]?.toUpperCase() || session?.user?.email?.[0]?.toUpperCase() || "U"}
+                    </div>
+                  )}
                 </div>
+                <h3 className="font-semibold text-xl mb-1">{session?.user?.name ?? "Usuario"}</h3>
+                <p className="text-sm text-muted-foreground mb-6">{session?.user?.email ?? "N/A"}</p>
+                
+                <div className="w-full h-px bg-border/50 mb-6" />
+                
+                <div className="w-full flex justify-between items-center text-sm mb-2">
+                  <span className="text-muted-foreground">Estado de la cuenta</span>
+                  <span className="font-medium text-green-600 inline-flex items-center">
+                    <span className="w-2 h-2 rounded-full bg-green-500 mr-2"></span>
+                    Activa
+                  </span>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="border-border/50 shadow-sm">
+            <CardHeader className="pb-3">
+              <CardTitle className="text-base font-medium">Gestión de Datos</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <Button
+                variant="outline"
+                className="w-full justify-start"
+                onClick={() => requestDataReportMutation.mutate()}
+                disabled={requestDataReportMutation.isPending}
+              >
+                <Download className="mr-2 h-4 w-4 text-muted-foreground" />
+                {requestDataReportMutation.isPending
+                  ? "Solicitando..."
+                  : "Descargar Datos"}
+              </Button>
+              
+              <AlertDialog>
                 <AlertDialogTrigger asChild>
-                  <Button
-                    variant="ghost"
-                    size="icon"
-                    className="delete-button-class absolute right-2 top-2"
-                    onClick={(e) => {
-                      e.stopPropagation(); // Prevent card click
-                    }}
-                  >
-                    <Trash2 className="h-4 w-4 text-red-500" />
+                  <Button variant="ghost" className="w-full justify-start text-red-600 hover:text-red-700 hover:bg-red-50">
+                    <Trash2 className="mr-2 h-4 w-4" /> Eliminar Cuenta
                   </Button>
                 </AlertDialogTrigger>
                 <AlertDialogContent>
-                  {" "}
-                  {/* This is for deleting a single search */}
                   <AlertDialogHeader>
-                    <AlertDialogTitle>
-                      ¿Eliminar esta búsqueda guardada?
-                    </AlertDialogTitle>
+                    <AlertDialogTitle>¿Eliminar cuenta permanentemente?</AlertDialogTitle>
                     <AlertDialogDescription>
-                      Esta acción no se puede deshacer. Esto eliminará
-                      permanentemente tu búsqueda guardada: <br />
-                      <strong>
-                        {search.name ||
-                          `Búsqueda del ${new Date(search.createdAt).toLocaleDateString()}`}
-                      </strong>
-                      .
+                      Esta acción no se puede deshacer. Se eliminarán permanentemente tus datos y alertas de correo asociadas.
                     </AlertDialogDescription>
                   </AlertDialogHeader>
                   <AlertDialogFooter>
                     <AlertDialogCancel>Cancelar</AlertDialogCancel>
                     <AlertDialogAction
-                      onClick={() => {
-                        deleteSearchMutation.mutate({ id: search.id });
-                      }}
-                      className="bg-red-600 hover:bg-red-700"
+                      onClick={() => deleteAccountMutation.mutate()}
+                      className="bg-red-600 hover:bg-red-700 text-white"
                     >
-                      Eliminar
+                      Sí, eliminar
                     </AlertDialogAction>
                   </AlertDialogFooter>
                 </AlertDialogContent>
-              </Card>
-            </AlertDialog>
-          ))}
+              </AlertDialog>
+            </CardContent>
+          </Card>
         </div>
-      ) : (
-        <p>Aún no tienes búsquedas guardadas.</p>
-      )}
-      {/* Removed the single AlertDialog from here as it's now per item */}
+
+        <div className="md:col-span-2 space-y-6">
+          <div className="flex items-center justify-between">
+            <h2 className="text-xl font-semibold">Tus Búsquedas Guardadas</h2>
+            <span className="text-sm text-muted-foreground bg-muted px-2.5 py-0.5 rounded-full">
+              {savedSearches?.length || 0} {(savedSearches?.length === 1) ? 'búsqueda' : 'búsquedas'}
+            </span>
+          </div>
+          
+          {savedSearches && savedSearches.length > 0 ? (
+            <div className="grid grid-cols-1 gap-4">
+              {savedSearches.map((search) => (
+                <AlertDialog key={`alert-${search.id}`}>
+                  <Card className="border-border/50 shadow-sm overflow-hidden group">
+                    <div
+                      className="cursor-pointer block transition-colors hover:bg-muted/30"
+                      onClick={(e) => handleSearchClick(search, e)}
+                    >
+                      <div className="p-5 flex items-start justify-between">
+                        <div className="space-y-1">
+                          <h3 className="font-medium text-lg text-foreground group-hover:text-blue-600 transition-colors">
+                            {search.name ||
+                              `${search.brandParam || 'Vehículos'} ${search.modelParam || ''}`.trim() || `Búsqueda Guardada`}
+                          </h3>
+                          <div className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
+                            {search.brandParam && (
+                              <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-50 text-blue-700">
+                                {search.brandParam}
+                              </span>
+                            )}
+                            {search.modelParam && (
+                              <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-indigo-50 text-indigo-700">
+                                {search.modelParam}
+                              </span>
+                            )}
+                            {(search.priceFrom || search.priceTo) && (
+                              <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-50 text-green-700">
+                                {search.priceFrom ? `${search.priceFrom}€` : '0€'} - {search.priceTo ? `${search.priceTo}€` : 'Max'}
+                              </span>
+                            )}
+                            {(search.yearFrom || search.yearTo) && (
+                              <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-orange-50 text-orange-700">
+                                {search.yearFrom || 'Min'} - {search.yearTo || 'Max'}
+                              </span>
+                            )}
+                          </div>
+                          <p className="text-xs text-muted-foreground/70 mt-2">
+                            Guardada el {new Date(search.createdAt).toLocaleDateString('es-ES', { day: 'numeric', month: 'short', year: 'numeric' })}
+                          </p>
+                        </div>
+                        
+                        <div className="flex flex-col items-end justify-between h-full space-y-4">
+                          <AlertDialogTrigger asChild>
+                            <Button
+                              variant="ghost"
+                              size="icon"
+                              className="delete-button-class h-8 w-8 text-muted-foreground hover:bg-red-50 hover:text-red-600 transition-colors"
+                              onClick={(e) => e.stopPropagation()}
+                            >
+                              <span className="sr-only">Eliminar</span>
+                              <Trash2 className="h-4 w-4" />
+                            </Button>
+                          </AlertDialogTrigger>
+                          <Button variant="ghost" size="sm" className="hidden group-hover:flex h-8 text-xs font-medium text-blue-600 hover:text-blue-700 hover:bg-blue-50">
+                            Ver resultados
+                          </Button>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <AlertDialogContent>
+                      <AlertDialogHeader>
+                        <AlertDialogTitle>¿Eliminar búsqueda?</AlertDialogTitle>
+                        <AlertDialogDescription>
+                          Ya no te notificaremos cuando haya nuevos resultados para <strong>{search.name || `${search.brandParam || ''} ${search.modelParam || ''}`.trim() || 'esta búsqueda'}</strong>.
+                        </AlertDialogDescription>
+                      </AlertDialogHeader>
+                      <AlertDialogFooter>
+                        <AlertDialogCancel>Mantener</AlertDialogCancel>
+                        <AlertDialogAction
+                          onClick={() => deleteSearchMutation.mutate({ id: search.id })}
+                          className="bg-red-600 hover:bg-red-700 text-white"
+                        >
+                          Eliminar
+                        </AlertDialogAction>
+                      </AlertDialogFooter>
+                    </AlertDialogContent>
+                  </Card>
+                </AlertDialog>
+              ))}
+            </div>
+          ) : (
+            <div className="flex flex-col items-center justify-center p-8 text-center bg-muted/20 rounded-lg border border-dashed border-border/60">
+              <div className="h-12 w-12 rounded-full bg-indigo-50 flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-medium text-foreground mb-1">No tienes búsquedas</h3>
+              <p className="text-sm text-muted-foreground max-w-sm mb-4">
+                Guarda tus búsquedas para recibir notificaciones por correo electrónico cuando haya nuevos vehículos.
+              </p>
+              <Button onClick={() => router.push('/search')} variant="default">
+                Explorar coches
+              </Button>
+            </div>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
