@@ -54,6 +54,34 @@ type Modelo = {
   cochesComModeloId: string | null;
 };
 
+const INVALID_SOURCE_VALUES = new Set([
+  "",
+  "none",
+  "null",
+  "undefined",
+  "nan",
+  "n/a",
+]);
+
+const normalizeNullableValue = (value: string | null | undefined) => {
+  if (!value) return null;
+
+  const trimmed = value.trim();
+  if (!trimmed) return null;
+  if (INVALID_SOURCE_VALUES.has(trimmed.toLowerCase())) return null;
+
+  return trimmed;
+};
+
+const getModelDisplayLabel = (model: Modelo) => {
+  return (
+    normalizeNullableValue(model.label) ??
+    normalizeNullableValue(model.wallapopModeloId) ??
+    normalizeNullableValue(model.milanunciosModeloId) ??
+    `Model ${model.cochesNetModeloId}`
+  );
+};
+
 type Props = {
   getModels: (brandId: string) => Promise<Modelo[]>;
   brandIdProp: string | null;
@@ -177,11 +205,7 @@ export default function MobileFilterDrawer({
     if (initialModels && initialModels.length > 0) {
       const modelsWithLabels = initialModels.map((m) => ({
         ...m,
-        label:
-          m.wallapopModeloId ??
-          (m.cochesNetModeloId
-            ? `Model ${m.cochesNetModeloId}`
-            : "Modelo Desconocido"),
+        label: getModelDisplayLabel(m),
       }));
       setModels(modelsWithLabels);
     } else {
@@ -202,11 +226,7 @@ export default function MobileFilterDrawer({
         const fetchedModels = await getModels(currentBrandId);
         const modelsWithLabels = fetchedModels.map((m) => ({
           ...m,
-          label:
-            m.wallapopModeloId ??
-            (m.cochesNetModeloId
-            ? `Model ${m.cochesNetModeloId}`
-            : "Modelo Desconocido"),
+          label: getModelDisplayLabel(m),
         }));
         setModels(modelsWithLabels);
       } catch (error) {
@@ -238,7 +258,7 @@ export default function MobileFilterDrawer({
     const selectedBrandObject = brands.find(
       (b) => b.cochesNetId.toString() === value
     );
-    setSelectedBrandParam(selectedBrandObject?.wallapopId ?? null);
+    setSelectedBrandParam(normalizeNullableValue(selectedBrandObject?.wallapopId));
     if (!value) {
       setModels([]);
     }
@@ -249,7 +269,9 @@ export default function MobileFilterDrawer({
     const selectedModelObject = models.find(
       (m) => m.cochesNetModeloId.toString() === value
     );
-    setSelectedModelParam(selectedModelObject?.wallapopModeloId ?? null);
+    setSelectedModelParam(
+      normalizeNullableValue(selectedModelObject?.wallapopModeloId)
+    );
   };
 
   const clearAll = () => {
@@ -336,7 +358,7 @@ export default function MobileFilterDrawer({
 
   const modelOptions: FilterOption[] = models.map((m) => ({
     value: m.cochesNetModeloId.toString(),
-    label: m.label || "Modelo sin nombre",
+    label: getModelDisplayLabel(m),
   }));
 
   return (

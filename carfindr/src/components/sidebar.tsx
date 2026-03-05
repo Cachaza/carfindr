@@ -49,6 +49,34 @@ type Modelo = {
   cochesComModeloId: string | null;
 };
 
+const INVALID_SOURCE_VALUES = new Set([
+  "",
+  "none",
+  "null",
+  "undefined",
+  "nan",
+  "n/a",
+]);
+
+const normalizeNullableValue = (value: string | null | undefined) => {
+  if (!value) return null;
+
+  const trimmed = value.trim();
+  if (!trimmed) return null;
+  if (INVALID_SOURCE_VALUES.has(trimmed.toLowerCase())) return null;
+
+  return trimmed;
+};
+
+const getModelDisplayLabel = (model: Modelo) => {
+  return (
+    normalizeNullableValue(model.label) ??
+    normalizeNullableValue(model.wallapopModeloId) ??
+    normalizeNullableValue(model.milanunciosModeloId) ??
+    `Model ${model.cochesNetModeloId}`
+  );
+};
+
 type Props = {
   // getBrands: () => Promise<Marca[]>; // Included via initialBrands
   getModels: (brandId: string) => Promise<Modelo[]>; // Prop for fetching models remains
@@ -178,11 +206,7 @@ export default function Sidebar({
     if (initialModels && initialModels.length > 0) {
       const modelsWithLabels = initialModels.map((m) => ({
         ...m,
-        label:
-          m.wallapopModeloId ??
-          (m.cochesNetModeloId
-            ? `Model ${m.cochesNetModeloId}`
-            : "Unknown Model"),
+        label: getModelDisplayLabel(m),
       }));
       setModels(modelsWithLabels);
     } else {
@@ -204,11 +228,7 @@ export default function Sidebar({
         const fetchedModels = await getModels(currentBrandId); // Use the getModels prop
         const modelsWithLabels = fetchedModels.map((m) => ({
           ...m,
-          label:
-            m.wallapopModeloId ??
-            (m.cochesNetModeloId
-              ? `Model ${m.cochesNetModeloId}`
-              : "Unknown Model"),
+          label: getModelDisplayLabel(m),
         }));
         setModels(modelsWithLabels);
       } catch (error) {
@@ -250,7 +270,7 @@ export default function Sidebar({
     const selectedBrandObject = brands.find(
       (b) => b.cochesNetId.toString() === value,
     );
-    setSelectedBrandParam(selectedBrandObject?.wallapopId ?? null); // Or label, depending on what `brandProp` was
+    setSelectedBrandParam(normalizeNullableValue(selectedBrandObject?.wallapopId)); // Or label, depending on what `brandProp` was
 
     // Model loading is handled by the useEffect hook watching selectedBrandId
     if (!value) {
@@ -264,7 +284,9 @@ export default function Sidebar({
     const selectedModelObject = models.find(
       (m) => m.cochesNetModeloId.toString() === value,
     );
-    setSelectedModelParam(selectedModelObject?.wallapopModeloId ?? null);
+    setSelectedModelParam(
+      normalizeNullableValue(selectedModelObject?.wallapopModeloId),
+    );
   };
 
   const clearAll = () => {
@@ -386,7 +408,7 @@ export default function Sidebar({
 
   const modelOptions: FilterOption[] = models.map((m) => ({
     value: m.cochesNetModeloId.toString(), // Value for selection
-    label: m.label || "Unnamed Model", // Display label, with a fallback
+    label: getModelDisplayLabel(m), // Display label, with source-aware fallback
   }));
 
   return (

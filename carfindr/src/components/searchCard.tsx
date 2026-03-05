@@ -93,6 +93,34 @@ type Modelo = {
   wallapopModeloId: string | null;
   cochesComMarcaId: string | null;
   cochesComModeloId: string | null;
+  displayLabel?: string;
+};
+
+const INVALID_SOURCE_VALUES = new Set([
+  "",
+  "none",
+  "null",
+  "undefined",
+  "nan",
+  "n/a",
+]);
+
+const normalizeNullableValue = (value: string | null | undefined) => {
+  if (!value) return null;
+
+  const trimmed = value.trim();
+  if (!trimmed) return null;
+  if (INVALID_SOURCE_VALUES.has(trimmed.toLowerCase())) return null;
+
+  return trimmed;
+};
+
+const getModelDisplayLabel = (model: Modelo) => {
+  return (
+    normalizeNullableValue(model.wallapopModeloId) ??
+    normalizeNullableValue(model.milanunciosModeloId) ??
+    `Model ${model.cochesNetModeloId}`
+  );
 };
 
 type Props = {
@@ -153,7 +181,7 @@ const SearchCard: React.FC<Props> = ({ brands, getModels }) => {
     async (newBrandId: string, brandLabel: string, wallapopId: string) => {
       updateField("brandId", newBrandId);
       updateField("selectedBrand", brandLabel);
-      updateField("selectedBrandW", wallapopId);
+      updateField("selectedBrandW", normalizeNullableValue(wallapopId) || "");
 
       // Reset model selections
       updateField("selectedModel", "");
@@ -164,7 +192,12 @@ const SearchCard: React.FC<Props> = ({ brands, getModels }) => {
       if (newBrandId && newBrandId !== "All") {
         try {
           const brandModels = await getModels(newBrandId);
-          setModels(brandModels);
+          setModels(
+            brandModels.map((model) => ({
+              ...model,
+              displayLabel: getModelDisplayLabel(model),
+            })),
+          );
         } catch (error) {
           console.error("Failed to load models:", error);
           setModels([]);
@@ -360,7 +393,7 @@ const SearchCard: React.FC<Props> = ({ brands, getModels }) => {
                     handleBrandChange(
                       item.cochesNetId.toString(),
                       item.label,
-                      item.wallapopId || "",
+                      normalizeNullableValue(item.wallapopId) || "",
                     );
                   }
                 }}
@@ -375,15 +408,18 @@ const SearchCard: React.FC<Props> = ({ brands, getModels }) => {
                 items={models}
                 displayValue={formState.selectedModel}
                 valueKey="cochesNetModeloId"
-                labelKey="wallapopModeloId"
+                labelKey="displayLabel"
                 onSelect={(value, item) => {
                   if (value === "All") {
                     updateField("selectedModel", "All");
                     updateField("selectedModelW", "");
                     updateField("selectedModelId", "");
                   } else {
-                    updateField("selectedModel", item.wallapopModeloId || "");
-                    updateField("selectedModelW", item.wallapopModeloId || "");
+                    updateField("selectedModel", getModelDisplayLabel(item));
+                    updateField(
+                      "selectedModelW",
+                      normalizeNullableValue(item.wallapopModeloId) || "",
+                    );
                     updateField(
                       "selectedModelId",
                       item.cochesNetModeloId?.toString() || "",
