@@ -72,13 +72,13 @@ const MilanunciosCard: React.FC<MilanunciosCardProps> = ({ car }) => {
 
   return (
     <a
-      className="group block px-1 py-2"
+      className="group block"
       href={`https://www.milanuncios.com${car.url}`}
       target="_blank"
       rel="noreferrer"
     >
-      <Card className="overflow-hidden rounded-2xl border-slate-200/80 bg-white/90 transition-all duration-200 group-hover:-translate-y-0.5 group-hover:shadow-xl group-hover:shadow-cyan-900/10 md:flex md:w-full md:flex-row">
-        <div className="md:w-1/3">
+      <Card className="flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200/80 bg-white transition-all duration-200 group-hover:-translate-y-1 group-hover:shadow-xl group-hover:shadow-cyan-900/10">
+        <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
           <img
             alt="Car Image"
             src={
@@ -86,46 +86,60 @@ const MilanunciosCard: React.FC<MilanunciosCardProps> = ({ car }) => {
                 ? "https://" + car.photo[0] + "?rule=detail_640x480"
                 : "https://via.placeholder.com/640x480"
             }
-            style={{
-              objectFit: "cover",
-            }}
-            className="h-52 w-full md:h-full"
+            className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
+          <div className="absolute right-3 top-3 rounded-full bg-white/90 px-2 py-1 shadow-sm backdrop-blur-sm">
+            <img
+              src="https://www.milanuncios.com/prensa//wp-content/uploads/2020/11/M-Icon-Round.png"
+              alt="Milanuncios"
+              className="h-4 object-contain"
+            />
+          </div>
         </div>
-        <div className="flex flex-col justify-between md:w-2/3">
-          <CardHeader>
-            <div className="flex items-center justify-between">
-              <CardTitle className="text-xl text-slate-900">
-                {getAttributeValue("year")} {car.title}
-              </CardTitle>
-              <img
-                src="https://www.milanuncios.com/prensa//wp-content/uploads/2020/11/M-Icon-Round.png"
-                alt="milanuncios logo"
-                className="h-10"
-              />
-            </div>
+        <div className="flex flex-1 flex-col">
+          <CardHeader className="p-4 pb-2">
+            <CardTitle className="line-clamp-2 text-lg font-bold leading-tight text-slate-900">
+              {car.title}
+            </CardTitle>
           </CardHeader>
-          <CardContent>
-            <div className="flex flex-col space-y-4">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center space-x-2">
-                  <Badge variant="secondary" className="rounded-full bg-cyan-50 text-cyan-700">{car.price.cash.label}</Badge>
-                  <Badge variant="default" className="rounded-full bg-slate-800 text-white">
-                    {getAttributeValue("kilometers")}
-                  </Badge>
-                </div>
+          <CardContent className="flex flex-1 flex-col gap-4 p-4 pt-2">
+            <div className="flex flex-wrap items-center gap-2">
+              <Badge variant="secondary" className="rounded-md bg-cyan-50 px-2.5 py-0.5 text-base font-bold text-cyan-700">
+                {car.price.cash.label}
+              </Badge>
+              {getAttributeValue("kilometers") && (
+                <Badge variant="default" className="rounded-md bg-slate-100 px-2.5 py-1 text-sm font-medium text-slate-700 hover:bg-slate-200">
+                  {getAttributeValue("kilometers")}
+                </Badge>
+              )}
+              {getAttributeValue("year") && (
+                <Badge variant="default" className="rounded-md bg-slate-100 px-2.5 py-1 text-sm font-medium text-slate-700 hover:bg-slate-200">
+                  {getAttributeValue("year")}
+                </Badge>
+              )}
+            </div>
+
+            <div className="mt-auto grid grid-cols-2 gap-x-2 gap-y-2 text-sm font-medium text-slate-600">
+              <div className="flex items-center gap-1.5 opacity-80">
+                <span className="truncate">
+                  {capitalizeFirstLetter(getAttributeValue("transmission") ?? "")}
+                </span>
               </div>
-              <div className="grid grid-cols-2 gap-x-2 gap-y-1 text-sm text-slate-600">
-                <p>
-                  {capitalizeFirstLetter(
-                    getAttributeValue("transmission") ?? "",
-                  )}
-                </p>
-                <p>{car.location.province.name}</p>
-                <p>Hace {differenceInDays(new Date(), date)} dias</p>
-                <p>{capitalizeFirstLetter(getAttributeValue("fuel") ?? "")}</p>
+              <div className="flex items-center gap-1.5 opacity-80">
+                <span className="truncate">
+                  {capitalizeFirstLetter(getAttributeValue("fuel") ?? "")}
+                </span>
               </div>
-              <p className="text-sm text-slate-600">{car.description.slice(0, 100)}...</p>
+              <div className="flex items-center gap-1.5 opacity-80">
+                <span className="truncate">{car.location.province.name}</span>
+              </div>
+              <div className="flex items-center gap-1.5 opacity-80">
+                <span className="truncate">Hace {differenceInDays(new Date(), date)} d</span>
+              </div>
+            </div>
+
+            <div className="mt-2 w-full rounded-xl bg-slate-900 py-3 text-center text-sm font-medium text-white transition-colors group-hover:bg-cyan-600">
+              Ver coche
             </div>
           </CardContent>
         </div>

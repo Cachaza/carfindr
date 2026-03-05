@@ -58,6 +58,7 @@ const searchSchema = z.object({
 
 export async function cochesNetSearch(input: z.infer<typeof searchSchema>) {
   const parsedInput = searchSchema.parse(input);
+  const normalizedPage = Math.max(1, parsedInput.page);
 
   const headers = {
     'authority': 'web.gw.coches.net',
@@ -85,7 +86,7 @@ export async function cochesNetSearch(input: z.infer<typeof searchSchema>) {
 
   const jsonData = {
     pagination: {
-      page: parsedInput.page,
+      page: normalizedPage,
       size: 30,
     },
     sort: {

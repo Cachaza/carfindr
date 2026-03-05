@@ -90,15 +90,15 @@ const CochesNetCard: React.FC<CarCardProps> = ({ car }) => {
 
   return (
     <a
-      className="group block px-1 py-2"
+      className="group block"
       href={"https://coches.net" + car.url}
       target="_blank"
       rel="noreferrer"
     >
-      <Card className="overflow-hidden rounded-2xl border-slate-200/80 bg-white/90 transition-all duration-200 group-hover:-translate-y-0.5 group-hover:shadow-xl group-hover:shadow-cyan-900/10 md:flex md:w-full md:flex-row">
-        <div className="md:w-1/3">
+      <Card className="flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200/80 bg-white transition-all duration-200 group-hover:-translate-y-1 group-hover:shadow-xl group-hover:shadow-cyan-900/10">
+        <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
           <img
-            className="h-52 w-full object-cover md:h-full"
+            className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             alt="Car Image"
             src={
               car.resources && car.resources.length > 0
@@ -106,38 +106,52 @@ const CochesNetCard: React.FC<CarCardProps> = ({ car }) => {
                 : "https://via.placeholder.com/300x200"
             }
           />
-        </div>
-        <div className="flex flex-col justify-between md:w-2/3">
-          <CardHeader>
-            <div className="flex items-center justify-between">
-              <CardTitle className="text-xl text-slate-900">
-                {car.year} {car.title}
-              </CardTitle>
-              <img
+          <div className="absolute right-3 top-3 rounded-full bg-white/90 px-2 py-1 shadow-sm backdrop-blur-sm">
+             <img
                 src="https://autoperformance.es/wp-content/uploads/2022/01/coches_net_logo.png"
-                alt=""
-                className="h-4"
+                alt="Coches.net"
+                className="h-3 object-contain"
               />
-            </div>
+          </div>
+        </div>
+        <div className="flex flex-1 flex-col">
+          <CardHeader className="p-4 pb-2">
+            <CardTitle className="line-clamp-2 text-lg font-bold leading-tight text-slate-900">
+              {car.title}
+            </CardTitle>
           </CardHeader>
-          <CardContent>
-            <div className="flex flex-col space-y-4">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center space-x-2">
-                  <Badge variant="secondary" className="rounded-full bg-cyan-50 text-cyan-700">
-                    {car.price.amount.toLocaleString()} €
-                  </Badge>
-                  <Badge variant="default" className="rounded-full bg-slate-800 text-white">
-                    {car.km?.toLocaleString()} km
-                  </Badge>
-                </div>
+          <CardContent className="flex flex-1 flex-col gap-4 p-4 pt-2">
+            <div className="flex flex-wrap items-center gap-2">
+              <Badge variant="secondary" className="rounded-md bg-cyan-50 px-2.5 py-0.5 text-base font-bold text-cyan-700">
+                {car.price.amount.toLocaleString()} €
+              </Badge>
+              <Badge variant="default" className="rounded-md bg-slate-100 px-2.5 py-1 text-sm font-medium text-slate-700 hover:bg-slate-200">
+                {car.km?.toLocaleString()} km
+              </Badge>
+              {car.year && (
+                <Badge variant="default" className="rounded-md bg-slate-100 px-2.5 py-1 text-sm font-medium text-slate-700 hover:bg-slate-200">
+                  {car.year}
+                </Badge>
+              )}
+            </div>
+            
+            <div className="mt-auto grid grid-cols-2 gap-x-2 gap-y-2 text-sm font-medium text-slate-600">
+              <div className="flex items-center gap-1.5 opacity-80">
+                 <span className="truncate">{transmissioType(car.transmissionTypeId)}</span>
               </div>
-              <div className="grid grid-cols-2 gap-x-2 gap-y-1 text-sm text-slate-600">
-                <p>{transmissioType(car.transmissionTypeId)}</p>
-                <p>{car.location.mainProvince}</p>
-                <p>Hace {differenceInDays(new Date(), date)} dias</p>
-                <p>{car.fuelType}</p>
+              <div className="flex items-center gap-1.5 opacity-80">
+                <span className="truncate">{car.fuelType}</span>
               </div>
+              <div className="flex items-center gap-1.5 opacity-80">
+                <span className="truncate">{car.location.mainProvince}</span>
+              </div>
+              <div className="flex items-center gap-1.5 opacity-80">
+                <span className="truncate">Hace {differenceInDays(new Date(), date)} d</span>
+              </div>
+            </div>
+            
+            <div className="mt-2 w-full rounded-xl bg-slate-900 py-3 text-center text-sm font-medium text-white transition-colors group-hover:bg-cyan-600">
+              Ver coche
             </div>
           </CardContent>
         </div>

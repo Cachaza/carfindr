@@ -341,171 +341,194 @@ const SearchCard: React.FC<Props> = ({ brands, getModels }) => {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <div className="grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-4">
-          {/* Brand Dropdown */}
-          <ComboBox
-            field="brand"
-            placeholder="Marca..."
-            items={brands}
-            displayValue={formState.selectedBrand}
-            valueKey="cochesNetId"
-            labelKey="label"
-            onSelect={(_, item) => {
-              if (item === "All") {
-                handleBrandChange("All", "All", "");
-              } else {
-                handleBrandChange(
-                  item.cochesNetId.toString(),
-                  item.label,
-                  item.wallapopId || "",
-                );
-              }
-            }}
-          />
+        <div className="flex flex-col gap-4">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:gap-4">
+            {/* Brand Dropdown */}
+            <div>
+              <Label className="mb-1 block text-sm font-medium text-slate-700">Marca</Label>
+              <ComboBox
+                field="brand"
+                placeholder="Cualquier marca"
+                items={brands}
+                displayValue={formState.selectedBrand}
+                valueKey="cochesNetId"
+                labelKey="label"
+                onSelect={(_, item) => {
+                  if (item === "All") {
+                    handleBrandChange("All", "All", "");
+                  } else {
+                    handleBrandChange(
+                      item.cochesNetId.toString(),
+                      item.label,
+                      item.wallapopId || "",
+                    );
+                  }
+                }}
+              />
+            </div>
+            {/* Model Dropdown */}
+            <div>
+              <Label className="mb-1 block text-sm font-medium text-slate-700">Modelo</Label>
+              <ComboBox
+                field="model"
+                placeholder="Cualquier modelo"
+                items={models}
+                displayValue={formState.selectedModel}
+                valueKey="cochesNetModeloId"
+                labelKey="wallapopModeloId"
+                onSelect={(value, item) => {
+                  if (value === "All") {
+                    updateField("selectedModel", "All");
+                    updateField("selectedModelW", "");
+                    updateField("selectedModelId", "");
+                  } else {
+                    updateField("selectedModel", item.wallapopModeloId || "");
+                    updateField("selectedModelW", item.wallapopModeloId || "");
+                    updateField(
+                      "selectedModelId",
+                      item.cochesNetModeloId?.toString() || "",
+                    );
+                  }
+                }}
+              />
+            </div>
+          </div>
 
-          {/* Model Dropdown */}
-          <ComboBox
-            field="model"
-            placeholder="Modelo..."
-            items={models}
-            displayValue={formState.selectedModel}
-            valueKey="cochesNetModeloId"
-            labelKey="wallapopModeloId"
-            onSelect={(value, item) => {
-              if (value === "All") {
-                updateField("selectedModel", "All");
-                updateField("selectedModelW", "");
-                updateField("selectedModelId", "");
-              } else {
-                updateField("selectedModel", item.wallapopModeloId || "");
-                updateField("selectedModelW", item.wallapopModeloId || "");
-                updateField(
-                  "selectedModelId",
-                  item.cochesNetModeloId?.toString() || "",
-                );
-              }
-            }}
-          />
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:gap-4">
+            {/* Year From Dropdown */}
+            <div>
+              <Label className="mb-1 block text-sm font-medium text-slate-700">Año min</Label>
+              <ComboBox
+                field="yearFrom"
+                placeholder="Min"
+                items={yearOptions}
+                displayValue={
+                  yearOptions.find((y) => y.value === formState.selectedYearFrom)?.label ?? ""
+                }
+                onSelect={(value) => updateField("selectedYearFrom", value)}
+                valueKey="value"
+                labelKey="label"
+              />
+            </div>
+            {/* Year To Dropdown */}
+            <div>
+              <Label className="mb-1 block text-sm font-medium text-slate-700">Año max</Label>
+              <ComboBox
+                field="yearTo"
+                placeholder="Max"
+                items={yearOptions}
+                displayValue={
+                  yearOptions.find((y) => y.value === formState.selectedYearTo)?.label ?? ""
+                }
+                onSelect={(value) => updateField("selectedYearTo", value)}
+                valueKey="value"
+                labelKey="label"
+              />
+            </div>
 
-          {/* Year From Dropdown */}
-          <ComboBox
-            field="yearFrom"
-            placeholder="Año desde..."
-            items={yearOptions} // Use yearOptions
-            displayValue={
-              yearOptions.find((y) => y.value === formState.selectedYearFrom)
-                ?.label ?? ""
-            }
-            onSelect={(value) => updateField("selectedYearFrom", value)}
-            valueKey="value"
-            labelKey="label"
-          />
+            {/* Price From Dropdown */}
+            <div>
+              <Label className="mb-1 block text-sm font-medium text-slate-700">Precio min</Label>
+              <ComboBox
+                field="priceFrom"
+                placeholder="Min"
+                items={priceOptions}
+                displayValue={
+                  priceOptions.find((p) => p.value === formState.selectedPriceFrom)?.label ?? ""
+                }
+                onSelect={(value) => updateField("selectedPriceFrom", value)}
+                valueKey="value"
+                labelKey="label"
+              />
+            </div>
+            {/* Price To Dropdown */}
+            <div>
+              <Label className="mb-1 block text-sm font-medium text-slate-700">Precio max</Label>
+              <ComboBox
+                field="priceTo"
+                placeholder="Max"
+                items={priceOptions}
+                displayValue={
+                  priceOptions.find((p) => p.value === formState.selectedPriceTo)?.label ?? ""
+                }
+                onSelect={(value) => updateField("selectedPriceTo", value)}
+                valueKey="value"
+                labelKey="label"
+              />
+            </div>
+          </div>
 
-          {/* Year To Dropdown */}
-          <ComboBox
-            field="yearTo"
-            placeholder="Año hasta..."
-            items={yearOptions} // Use yearOptions
-            displayValue={
-              yearOptions.find((y) => y.value === formState.selectedYearTo)
-                ?.label ?? ""
-            }
-            onSelect={(value) => updateField("selectedYearTo", value)}
-            valueKey="value"
-            labelKey="label"
-          />
-
-          {/* Price From Dropdown */}
-          <ComboBox
-            field="priceFrom"
-            placeholder="Precio desde..."
-            items={priceOptions} // Use priceOptions
-            displayValue={
-              priceOptions.find((p) => p.value === formState.selectedPriceFrom)
-                ?.label ?? ""
-            }
-            onSelect={(value) => updateField("selectedPriceFrom", value)}
-            valueKey="value"
-            labelKey="label"
-          />
-
-          {/* Price To Dropdown */}
-          <ComboBox
-            field="priceTo"
-            placeholder="Precio hasta..."
-            items={priceOptions} // Use priceOptions
-            displayValue={
-              priceOptions.find((p) => p.value === formState.selectedPriceTo)
-                ?.label ?? ""
-            }
-            onSelect={(value) => updateField("selectedPriceTo", value)}
-            valueKey="value"
-            labelKey="label"
-          />
-
-          {/* Km From Dropdown */}
-          <ComboBox
-            field="kmFrom"
-            placeholder="Km desde..."
-            items={kmOptions} // Use kmOptions
-            displayValue={
-              kmOptions.find((k) => k.value === formState.selectedKmFrom)
-                ?.label ?? ""
-            }
-            onSelect={(value) => updateField("selectedKmFrom", value)}
-            valueKey="value"
-            labelKey="label"
-          />
-
-          {/* Km To Dropdown */}
-          <ComboBox
-            field="kmTo"
-            placeholder="Km hasta..."
-            items={kmOptions} // Use kmOptions
-            displayValue={
-              kmOptions.find((k) => k.value === formState.selectedKmTo)
-                ?.label ?? ""
-            }
-            onSelect={(value) => updateField("selectedKmTo", value)}
-            valueKey="value"
-            labelKey="label"
-          />
-          <ComboBox
-            field="transmision"
-            placeholder="Transmisión..."
-            items={transmissionOptions} // Use transmissionOptions
-            displayValue={
-              transmissionOptions.find((t) => t.value === formState.transmision)
-                ?.label ?? ""
-            }
-            onSelect={(value) => updateField("transmision", value)}
-            valueKey="value"
-            labelKey="label"
-          />
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:gap-4">
+            {/* Km From Dropdown */}
+            <div>
+              <Label className="mb-1 block text-sm font-medium text-slate-700">Km min</Label>
+              <ComboBox
+                field="kmFrom"
+                placeholder="Min"
+                items={kmOptions}
+                displayValue={
+                  kmOptions.find((k) => k.value === formState.selectedKmFrom)?.label ?? ""
+                }
+                onSelect={(value) => updateField("selectedKmFrom", value)}
+                valueKey="value"
+                labelKey="label"
+              />
+            </div>
+            {/* Km To Dropdown */}
+            <div>
+              <Label className="mb-1 block text-sm font-medium text-slate-700">Km max</Label>
+              <ComboBox
+                field="kmTo"
+                placeholder="Max"
+                items={kmOptions}
+                displayValue={
+                  kmOptions.find((k) => k.value === formState.selectedKmTo)?.label ?? ""
+                }
+                onSelect={(value) => updateField("selectedKmTo", value)}
+                valueKey="value"
+                labelKey="label"
+              />
+            </div>
+            {/* Transmission Dropdown */}
+            <div className="col-span-2">
+              <Label className="mb-1 block text-sm font-medium text-slate-700">Transmisión</Label>
+              <ComboBox
+                field="transmision"
+                placeholder="Cualquiera"
+                items={transmissionOptions}
+                displayValue={
+                  transmissionOptions.find((t) => t.value === formState.transmision)?.label ?? ""
+                }
+                onSelect={(value) => updateField("transmision", value)}
+                valueKey="value"
+                labelKey="label"
+              />
+            </div>
+          </div>
         </div>
 
         {/* Search Text Input */}
-        <div className="mt-4">
-          <Label htmlFor="searchText" className="text-slate-700">
+        <div className="mt-6">
+          <Label htmlFor="searchText" className="text-sm font-medium text-slate-700">
             Palabras clave
           </Label>
           <Input
             id="searchText"
-            placeholder="Escribe palabras clave para incluir en la busqueda..."
+            placeholder="Ej. techo solar, sensores, cámara..."
             value={formState.searchText}
             onChange={(e) => updateField("searchText", e.target.value)}
-            className="mt-1 h-11 rounded-xl border-slate-300/80 bg-white/80"
+            className="mt-1.5 h-11 rounded-xl border-slate-300 focus:border-cyan-500 focus:ring-cyan-500 bg-white/80"
           />
         </div>
       </CardContent>
 
-      <CardFooter>
+      <CardFooter className="pt-2">
         <Button
-          className="h-11 w-full rounded-xl bg-cyan-600 text-white shadow-md shadow-cyan-900/20 hover:bg-cyan-500"
+          className="h-12 w-full rounded-xl bg-cyan-600 text-lg font-semibold text-white shadow-md shadow-cyan-900/20 transition-all hover:bg-cyan-500 hover:shadow-cyan-900/30 active:scale-[0.98]"
           onClick={handleSearch}
         >
-          <Search className="mr-2 h-4 w-4" />
-          Buscar
+          <Search className="mr-2 h-5 w-5" />
+          Buscar vehículos
         </Button>
       </CardFooter>
     </Card>

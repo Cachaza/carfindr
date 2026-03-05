@@ -91,7 +91,7 @@ export default function CochesNetCars({
   searchTextProp,
   transmissionTypeId
 }: SearchParams) {
-  const [page, setPage] = useState(0);
+  const [page, setPage] = useState(1);
   const [cochesNetCars, setCochesNetCars] = useState<Car[]>([]);
   const [noMore, setNoMore] = useState(false);
   const [loading, setLoading] = useState(true)
@@ -99,7 +99,7 @@ export default function CochesNetCars({
   const [total, setTotal] = useState(0);
 
   useEffect(() => {
-    setPage(0);
+    setPage(1);
     setCochesNetCars([]);
   }, [
     brandIdProp,
@@ -169,7 +169,7 @@ export default function CochesNetCars({
         page: currentPage,
       });
       
-      if (currentPage === 0) {
+      if (currentPage === 1) {
         setCochesNetCars(results.items || []);
       } else {
         setCochesNetCars(prevCars => [...prevCars, ...(results.items || [])]);
@@ -186,9 +186,9 @@ export default function CochesNetCars({
   };
 
   useEffect(() => {
-    setPage(0);
+    setPage(1);
     setCochesNetCars([]);
-    fetchCars(0);
+    fetchCars(1);
   }, [
     brandIdProp,
     modelId,
@@ -238,19 +238,21 @@ export default function CochesNetCars({
             Loading.....
           </div>
         ) : error ? (
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center p-8 bg-red-50 text-red-500 rounded-xl">
             <p>Error: {error}</p>
           </div>
         ) : (
-          <div>
-            {cochesNetCars.map((car) => (
-            <CochesNetCard car={car} key={car.id} />
-          ))}
-          <div className="mt-3 text-black">
-          <Button className="rounded-xl" variant="outline" onClick={handleShowMore} disabled={noMore}>
-            Mostrar mas
-          </Button>
-        </div>
+          <div className="flex flex-col gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+              {cochesNetCars.map((car) => (
+                <CochesNetCard car={car} key={car.id} />
+              ))}
+            </div>
+            <div className="mt-4 flex justify-center">
+              <Button className="rounded-xl h-11 px-8" variant="outline" onClick={handleShowMore} disabled={noMore}>
+                Mostrar mas
+              </Button>
+            </div>
           </div>
         )}
         

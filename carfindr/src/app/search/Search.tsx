@@ -157,7 +157,7 @@ export default function Search({ initialBrands }: SearchProps) {
             <PlatformBanner />
 
             {/* --- Results Container --- */}
-            <div className="mx-auto mt-4 flex w-full max-w-5xl flex-col items-center justify-start gap-6">
+            <div className="mx-auto mt-4 px-2 sm:px-4 md:px-0 flex w-full max-w-6xl flex-col items-center justify-start gap-6">
 
               {/* --- Coches.net Results --- */}
               <div

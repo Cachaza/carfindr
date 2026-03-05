@@ -211,26 +211,30 @@ export default function WallapopCars({
         </CollapsibleTrigger>
       </div>
       <CollapsibleContent>
-        <p className="mb-2 text-sm text-slate-600">Resultados mostrados: {wallapopCars.length}</p>
-        {wallapopCars.map((car) => (
-          // Ensure WallapopCard uses the correct prop
-          <WallapopCard car={car} key={car.id} />
-        ))}
-        {/* Button logic */}
-        {hasMoreResults && wallapopCars.length > 0 && (
-            <div className="mt-4 text-black">
-              <Button className="rounded-xl" variant="outline" onClick={handleShowMore} disabled={isLoading}>
-                {isLoading ? "Cargando..." : "Mostrar más"}
-              </Button>
-            </div>
-        )}
+        <p className="mb-4 text-sm text-slate-600">Resultados mostrados: {wallapopCars.length}</p>
+        <div className="flex flex-col gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+            {wallapopCars.map((car) => (
+              // Ensure WallapopCard uses the correct prop
+              <WallapopCard car={car} key={car.id} />
+            ))}
+          </div>
+          {/* Button logic */}
+          {hasMoreResults && wallapopCars.length > 0 && (
+              <div className="mt-4 flex justify-center">
+                <Button className="rounded-xl h-11 px-8" variant="outline" onClick={handleShowMore} disabled={isLoading}>
+                    {isLoading ? "Cargando..." : "Mostrar más"}
+                </Button>
+              </div>
+          )}
+        </div>
         {/* Messages */}
         {!hasMoreResults && wallapopCars.length > 0 && !isLoading && (
-            <p className="text-gray-500 mt-4">No hay más resultados.</p>
+            <p className="text-slate-500 text-center mt-4">No hay más resultados.</p>
         )}
          {wallapopCars.length === 0 && !isLoading && (
-             <p className="text-gray-500 mt-4">No se encontraron resultados para esta búsqueda.</p>
-          )}
+             <p className="text-slate-500 text-center mt-4">No se encontraron resultados para esta búsqueda.</p>
+         )}
       </CollapsibleContent>
     </Collapsible>
   );

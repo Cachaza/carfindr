@@ -199,17 +199,21 @@ export default function MilanunciosCars({
         </CollapsibleTrigger>
       </div>
       <CollapsibleContent>
-        <p className="mb-2 text-sm text-slate-600">
+        <p className="mb-4 text-sm text-slate-600">
           Resultados totales:{" "}
           {totalResults}
         </p>
-        {milanunciosCars.map((car) => (
-          <MilanunciosCard car={car} key={car.id} />
-        ))}
-        <div className="mt-3 text-black">
-          <Button className="rounded-xl" variant="outline" onClick={handleShowMore} disabled={noMore}>
-            Mostrar mas
-          </Button>
+        <div className="flex flex-col gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+            {milanunciosCars.map((car) => (
+              <MilanunciosCard car={car} key={car.id} />
+            ))}
+          </div>
+          <div className="mt-4 flex justify-center">
+            <Button className="rounded-xl h-11 px-8" variant="outline" onClick={handleShowMore} disabled={noMore}>
+              Mostrar mas
+            </Button>
+          </div>
         </div>
       </CollapsibleContent>
     </Collapsible>
