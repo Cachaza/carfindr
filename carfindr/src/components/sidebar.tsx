@@ -390,15 +390,15 @@ export default function Sidebar({
   }));
 
   return (
-    <div className="panel-glass space-y-6 rounded-2xl border-white/70 p-4 pb-20">
+    <div className="panel-glass space-y-6 rounded-2xl border-white/70 p-5 shadow-sm pb-8">
       <div className="flex items-center space-x-2">
-        <Filter className="text-cyan-600" />
-        <h2 className="text-lg font-semibold text-slate-900">
+        <Filter className="text-cyan-600 h-5 w-5" />
+        <h2 className="text-xl font-bold text-slate-900">
           Filtros de busqueda
         </h2>
       </div>
 
-      <div className="space-y-4">
+      <div className="space-y-5">
         {/* Brand Dropdown */}
         <FilterDropdown
           label="Marca"
@@ -425,86 +425,82 @@ export default function Sidebar({
         />
 
         {/* Year Dropdowns */}
-        <div className="py-3">
-          {" "}
-          {/* Keep grouping div if needed for spacing */}
-          <Label className="mb-1 block text-sm font-medium text-slate-700">
+        <div className="pt-2">
+          <Label className="mb-2 block text-sm font-semibold text-slate-800">
             Antigüedad
           </Label>
-          <div className="space-y-3 pt-2">
-            {" "}
-            {/* Add spacing between year dropdowns */}
+          <div className="space-y-3 pt-1">
             <FilterDropdown
-              label="" // No separate label above needed if grouped
-              triggerLabel="Año desde..."
+              label=""
+              triggerLabel="Desde..."
               selectedValue={selectedYearFrom}
               options={yearOptions}
-              onSelect={setSelectedYearFrom} // Directly set state
+              onSelect={setSelectedYearFrom}
               allowClear={true}
-              clearLabel="Año desde..." // Placeholder acts as clear label
+              clearLabel="Cualquiera"
             />
             <FilterDropdown
-              label="" // No separate label above needed if grouped
-              triggerLabel="Año hasta..."
+              label=""
+              triggerLabel="Hasta..."
               selectedValue={selectedYearTo}
               options={yearOptions}
-              onSelect={setSelectedYearTo} // Directly set state
+              onSelect={setSelectedYearTo}
               allowClear={true}
-              clearLabel="Año hasta..." // Placeholder acts as clear label
+              clearLabel="Cualquiera"
             />
           </div>
         </div>
 
         {/* Price Dropdowns */}
-        <div className="py-3">
-          <Label className="mb-1 block text-sm font-medium text-slate-700">
+        <div className="pt-2">
+          <Label className="mb-2 block text-sm font-semibold text-slate-800">
             Precio
           </Label>
-          <div className="space-y-3 pt-2">
+          <div className="space-y-3 pt-1">
             <FilterDropdown
               label=""
-              triggerLabel="Precio desde..."
+              triggerLabel="Desde..."
               selectedValue={selectedPriceFrom}
               options={priceOptions}
               onSelect={setSelectedPriceFrom}
               allowClear={true}
-              clearLabel="Precio desde..."
+              clearLabel="Cualquiera"
             />
             <FilterDropdown
               label=""
-              triggerLabel="Precio hasta..."
+              triggerLabel="Hasta..."
               selectedValue={selectedPriceTo}
               options={priceOptions}
               onSelect={setSelectedPriceTo}
               allowClear={true}
-              clearLabel="Precio hasta..."
+              clearLabel="Cualquiera"
             />
           </div>
         </div>
 
         {/* Kilometer Dropdowns */}
-        <div className="py-3">
-          <Label className="mb-1 block text-sm font-medium text-slate-700">
+        <div className="pt-2">
+          <Label className="mb-2 block text-sm font-semibold text-slate-800">
             Kilometraje
           </Label>
-          <div className="space-y-3 pt-2">
+          <div className="space-y-3 pt-1">
             <FilterDropdown
               label=""
-              triggerLabel="Km desde..."
+              triggerLabel="Desde..."
               selectedValue={selectedKmFrom}
               options={kmOptions}
               onSelect={setSelectedKmFrom}
               allowClear={true}
-              clearLabel="Km desde..."
+              clearLabel="Cualquiera"
             />
             <FilterDropdown
               label=""
-              triggerLabel="Km hasta..."
+              triggerLabel="Hasta..."
               selectedValue={selectedKmTo}
               options={kmOptions}
               onSelect={setSelectedKmTo}
               allowClear={true}
-              clearLabel="Km hasta..."
+              clearLabel="Cualquiera"
             />
           </div>
         </div>
@@ -533,35 +529,37 @@ export default function Sidebar({
             placeholder="Ej: 'techo solar', 'garantia'..."
             value={searchText}
             onChange={(e) => setSearchText(e.target.value)}
-            className="mt-1 h-11 rounded-xl border-slate-300/80 bg-white/80"
+            className="mt-1.5 h-11 rounded-xl border-slate-300/80 bg-white/80 shadow-sm"
           />
         </div>
       </div>
 
       {/* Action Buttons */}
-      <Button
-        onClick={handleSearch}
-        className="mt-6 h-11 w-full rounded-xl bg-cyan-600 text-white shadow-md shadow-cyan-900/20 hover:bg-cyan-500"
-      >
-        Buscar
-      </Button>
-      {session && (
+      <div className="mt-6">
         <Button
-          onClick={handleOpenSaveSearchDialog}
-          className="mt-2 h-11 w-full rounded-xl"
-          variant="outline"
+          onClick={handleSearch}
+          className="h-12 w-full rounded-xl bg-cyan-600 font-semibold text-white shadow-md shadow-cyan-900/20 hover:bg-cyan-500 transition-all active:scale-[0.98]"
         >
-          <Save className="mr-2 h-4 w-4" />
-          Guardar Búsqueda
+          Buscar vehículos
         </Button>
-      )}
-      <Button
-        onClick={clearAll}
-        className="mt-2 h-11 w-full rounded-xl"
-        variant="secondary"
-      >
-        Limpiar filtros
-      </Button>
+        {session && (
+          <Button
+            onClick={handleOpenSaveSearchDialog}
+            className="mt-3 h-11 w-full rounded-xl border-slate-300 bg-white hover:bg-slate-50 text-slate-700"
+            variant="outline"
+          >
+            <Save className="mr-2 h-4 w-4" />
+            Guardar Búsqueda
+          </Button>
+        )}
+        <Button
+          onClick={clearAll}
+          className="mt-3 h-11 w-full rounded-xl"
+          variant="secondary"
+        >
+          Limpiar filtros
+        </Button>
+      </div>
 
       {/* Save Search Dialog */}
       <Dialog
