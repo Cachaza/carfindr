@@ -94,7 +94,16 @@ interface SearchParams {
   model: string | null;
   brand: string | null;
   transmission: string | null;
+  fuel: string | null;
+  orderBy: string | null;
 }
+
+const mapOrderByToMilanunciosSort = (orderBy: string | null) => {
+  if (orderBy === "newest") return "date_desc";
+  if (orderBy === "price_asc") return "price_asc";
+  if (orderBy === "price_desc") return "price_desc";
+  return "random";
+};
 
 export default function MilanunciosCars({
   yearFrom,
@@ -107,8 +116,9 @@ export default function MilanunciosCars({
   model,
   brand,
   transmission,
+  fuel,
+  orderBy,
 }: SearchParams) {
-  const [offset, setOffset] = useState(0);
   const [milanunciosCars, setMilanunciosCars] = useState<milanunciosCar[]>([]);
   const [noMore, setNoMore] = useState(false);
   const [isOpen, setIsOpen] = useState(true);
@@ -118,7 +128,7 @@ export default function MilanunciosCars({
   const [isLoading, setIsLoading] = useState(false);
 
 
-  const fetchCars = async () => {
+  const fetchCars = async (currentOffset: number) => {
     setIsLoading(true);
     try {
       const result = await milanunciosSearch({
@@ -130,12 +140,13 @@ export default function MilanunciosCars({
         priceTo: priceTo,
         yearFrom: yearFrom,
         yearTo: yearTo,
-        fuel: null,
+        fuel: fuel,
         transmission: transmission ?? null,
         doors: null,
         sellerType: null,
         text: searchTextProp ?? "",
-        offset: offset,
+        sort: mapOrderByToMilanunciosSort(orderBy),
+        offset: currentOffset,
       });
 
       if (result.ads.length === 0) {
@@ -160,7 +171,7 @@ export default function MilanunciosCars({
     setCursor(0);
     setMilanunciosCars([]);
     setNoMore(false);
-    void fetchCars();
+    void fetchCars(0);
   }, [
     brand,
     model,
@@ -171,12 +182,15 @@ export default function MilanunciosCars({
     yearFrom,
     yearTo,
     searchTextProp,
-    transmission
+    transmission,
+    fuel,
+    orderBy,
   ]);
 
   const handleShowMore = () => {
-    setCursor((prevCursor) => prevCursor + 30);
-    void fetchCars();
+    const nextCursor = cursor + 30;
+    setCursor(nextCursor);
+    void fetchCars(nextCursor);
   };
 
   return (

@@ -94,10 +94,12 @@ interface SearchParams {
   model: string | null;
   brand: string | null;
   gearbox: string | null;
+  fuel: string | null;
+  orderBy: string | null;
 }
 
 export default function WallapopCars({
-  yearFrom, yearTo, priceFrom, priceTo, kmFrom, kmTo, searchTextProp, model, brand, gearbox
+  yearFrom, yearTo, priceFrom, priceTo, kmFrom, kmTo, searchTextProp, model, brand, gearbox, fuel, orderBy
 }: SearchParams) {
   const [nextPageUrl, setNextPageUrl] = useState<string | null>(null); // URL for the *next* request
   const [wallapopCars, setWallapopCars] = useState<wallapopCar[]>([]);
@@ -125,7 +127,7 @@ export default function WallapopCars({
         model: isNewSearch ? model : null,
         latitude: isNewSearch ? "40.41956" : null,
         longitude: isNewSearch ? "-3.69196" : null,
-        orderBy: isNewSearch ? "most_relevance" : null,
+        orderBy: isNewSearch ? (orderBy ?? "most_relevance") : null,
         minSalePrice: isNewSearch ? priceFrom : null,
         maxSalePrice: isNewSearch ? priceTo : null,
         minKm: isNewSearch ? kmFrom : null,
@@ -134,6 +136,7 @@ export default function WallapopCars({
         maxYear: isNewSearch ? yearTo : null,
         keywords: isNewSearch ? searchTextProp : undefined,
         gearBox: isNewSearch ? gearbox : null,
+        fuel: isNewSearch ? fuel : null,
         nextPageUrl: urlForThisFetch,
       });
 
@@ -184,7 +187,7 @@ export default function WallapopCars({
     setHasMoreResults(true); // Assume there might be results initially
     void fetchData(true);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [brand, model, priceFrom, priceTo, kmFrom, kmTo, yearFrom, yearTo, searchTextProp, gearbox]);
+  }, [brand, model, priceFrom, priceTo, kmFrom, kmTo, yearFrom, yearTo, searchTextProp, gearbox, fuel, orderBy]);
 
   // Handler for "Show More"
   const handleShowMore = () => {

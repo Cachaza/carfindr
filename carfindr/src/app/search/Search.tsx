@@ -56,6 +56,8 @@ export default function Search({ initialBrands }: SearchProps) {
   const searchText = searchParams.get("searchText") ?? "";
   const brandId = searchParams.get("brandId") ?? null;
   const transmision = searchParams.get("transmision") ?? null;
+  const fuel = searchParams.get("fuel") ?? null;
+  const orderBy = searchParams.get("orderBy") ?? null;
 
   const [initialModels, setInitialModels] = useState<Modelo[]>([]);
   const [isLoading, setIsLoading] = useState(true); // Start as true
@@ -121,7 +123,7 @@ export default function Search({ initialBrands }: SearchProps) {
     <div className="flex min-h-screen w-full flex-col md:flex-row">
       {/* Fixed sidebar for desktop with footer-aware lift */}
       <aside
-        className="hide-scrollbar z-20 hidden md:fixed md:left-6 md:top-32 md:block md:h-[calc(100vh-9rem)] md:w-80 md:overflow-y-auto"
+        className="hide-scrollbar z-20 hidden md:fixed md:left-6 md:top-32 md:block md:h-[calc(100vh-9rem)] md:w-72 md:overflow-y-auto"
         style={{ transform: footerLift > 0 ? `translateY(-${footerLift}px)` : undefined }}
       >
           <Sidebar
@@ -141,11 +143,13 @@ export default function Search({ initialBrands }: SearchProps) {
             initialBrands={initialBrands}
             initialModels={initialModels}
             transmission={transmision}
+            fuel={fuel}
+            orderBy={orderBy}
           />
       </aside>
 
       {/* Main content */}
-      <div className="mt-2 w-full flex-grow md:ml-[22rem] md:px-3">
+      <div className="mt-2 w-full flex-grow md:ml-[20rem] md:px-4">
         {isLoading ? (
           <div className="flex h-64 items-center justify-center">
             <div className="h-12 w-12 animate-spin rounded-full border-b-2 border-t-2 border-cyan-600"></div>
@@ -174,11 +178,13 @@ export default function Search({ initialBrands }: SearchProps) {
                 initialBrands={initialBrands}
                 initialModels={initialModels}
                 transmission={transmision}
+                fuel={fuel}
+                orderBy={orderBy}
               />
             </div>
             
             {/* --- Results Container --- */}
-            <div className="mx-auto mt-4 px-2 sm:px-4 md:px-0 flex w-full max-w-6xl flex-col items-center justify-start gap-6">
+            <div className="mx-auto mt-4 px-2 sm:px-4 md:px-0 flex w-full 2xl:max-w-[1600px] flex-col items-center justify-start gap-6">
 
               {/* --- Coches.net Results --- */}
               <div
@@ -199,6 +205,8 @@ export default function Search({ initialBrands }: SearchProps) {
                   kmTo={kmTo}
                   searchTextProp={searchText}
                   transmissionTypeId={cochesNetTransmissionTypeId}
+                  fuel={fuel}
+                  orderBy={orderBy}
                 />
               </div>
 
@@ -221,6 +229,8 @@ export default function Search({ initialBrands }: SearchProps) {
                   model={model}
                   brand={brand}
                   gearbox={transmision}
+                  fuel={fuel}
+                  orderBy={orderBy}
                 />
               </div>
 
@@ -243,6 +253,8 @@ export default function Search({ initialBrands }: SearchProps) {
                   model={model}
                   brand={brand}
                   transmission={transmision}
+                  fuel={fuel}
+                  orderBy={orderBy}
                 />
               </div>
             </div>

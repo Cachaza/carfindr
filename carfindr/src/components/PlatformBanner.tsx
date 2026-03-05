@@ -16,7 +16,7 @@ const PlatformBanner: React.FC = () => {
   };
 
   return (
-    <div className="sticky top-20 z-10 mx-auto mb-6 w-full max-w-5xl rounded-2xl border border-white/70 bg-white/80 p-2 shadow-lg shadow-slate-900/5 backdrop-blur-md">
+    <div className="sticky top-20 z-10 mx-auto mb-6 w-full max-w-[1200px] rounded-2xl border border-white/70 bg-white/80 p-2 shadow-lg shadow-slate-900/5 backdrop-blur-md">
       <nav className="flex items-center justify-around gap-2">
         <a
           href="#cochesnet-results"

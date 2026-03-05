@@ -77,7 +77,17 @@ interface SearchParams {
   kmTo: string | null;
   searchTextProp: string | undefined;
   transmissionTypeId: number | null;
+  fuel: string | null;
+  orderBy: string | null;
 }
+
+const COCHES_NET_FUEL_MAP: Record<string, number[]> = {
+  diesel: [1],
+  gasoline: [2],
+  electric: [3],
+  hybrid: [4, 5],
+  other: [6, 7, 8, 9],
+};
 
 export default function CochesNetCars({
   brandIdProp,
@@ -89,7 +99,9 @@ export default function CochesNetCars({
   kmFrom,
   kmTo,
   searchTextProp,
-  transmissionTypeId
+  transmissionTypeId,
+  fuel,
+  orderBy,
 }: SearchParams) {
   const [page, setPage] = useState(1);
   const [cochesNetCars, setCochesNetCars] = useState<Car[]>([]);
@@ -112,6 +124,8 @@ export default function CochesNetCars({
     kmTo,
     searchTextProp,
     transmissionTypeId,
+    fuel,
+    orderBy,
   ]);
 
   const fetchCars = async (currentPage: number) => {
@@ -131,7 +145,7 @@ export default function CochesNetCars({
         drivenWheelsIds: [],
         environmentalLabels: [],
         equipments: [],
-        fuelTypeIds: [],
+        fuelTypeIds: fuel ? (COCHES_NET_FUEL_MAP[fuel] ?? []) : [],
         hasPhoto: null,
         hasStock: null,
         hasWarranty: null,
@@ -166,13 +180,14 @@ export default function CochesNetCars({
           from: yearFrom,
           to: yearTo,
         },
+        orderBy,
         page: currentPage,
       });
-      
+
       if (currentPage === 1) {
         setCochesNetCars(results.items || []);
       } else {
-        setCochesNetCars(prevCars => [...prevCars, ...(results.items || [])]);
+        setCochesNetCars((prevCars) => [...prevCars, ...(results.items || [])]);
       }
       
       setTotal(results.meta.totalResults);
@@ -200,6 +215,8 @@ export default function CochesNetCars({
     kmTo,
     searchTextProp,
     transmissionTypeId,
+    fuel,
+    orderBy,
   ]);
 
   
