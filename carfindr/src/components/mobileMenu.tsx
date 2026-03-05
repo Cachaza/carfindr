@@ -87,6 +87,8 @@ type Props = {
   initialBrands: Marca[];
   initialModels: Modelo[];
   transmission: string | null;
+  fuel: string | null;
+  orderBy: string | null;
 };
 
 // Same constants as in Sidebar
@@ -128,6 +130,20 @@ const transmissionOptions: FilterOption[] = [
   { value: "automatic", label: "Automático" },
 ];
 
+const fuelOptions: FilterOption[] = [
+  { value: "diesel", label: "Diésel" },
+  { value: "gasoline", label: "Gasolina" },
+  { value: "hybrid", label: "Híbrido" },
+  { value: "electric", label: "Eléctrico" },
+  { value: "other", label: "Otros" },
+];
+
+const orderByOptions: FilterOption[] = [
+  { value: "newest", label: "Mas reciente" },
+  { value: "price_asc", label: "Precio: menor a mayor" },
+  { value: "price_desc", label: "Precio: mayor a menor" },
+];
+
 export default function MobileFilterDrawer({
   getModels,
   brandIdProp,
@@ -144,6 +160,8 @@ export default function MobileFilterDrawer({
   initialBrands,
   initialModels,
   transmission,
+  fuel,
+  orderBy,
 }: Props) {
   const router = useRouter();
   const { data: session } = authClient.useSession();
@@ -173,6 +191,8 @@ export default function MobileFilterDrawer({
   const [selectedTransmission, setSelectedTransmission] = useState<
     string | null
   >(transmission);
+  const [selectedFuel, setSelectedFuel] = useState<string | null>(fuel);
+  const [selectedOrderBy, setSelectedOrderBy] = useState<string | null>(orderBy);
   const [searchText, setSearchText] = useState(searchTextProp ?? "");
 
   const [brands] = useState<Marca[]>(initialBrands);
@@ -237,6 +257,12 @@ export default function MobileFilterDrawer({
     setSelectedModelId(modelIdProp);
   }, [modelIdProp]);
 
+  useEffect(() => {
+    setSelectedTransmission(transmission);
+    setSelectedFuel(fuel);
+    setSelectedOrderBy(orderBy);
+  }, [transmission, fuel, orderBy]);
+
   const handleBrandSelect = (value: string | null) => {
     setSelectedBrandId(value);
     setSelectedModelId(null);
@@ -270,6 +296,8 @@ export default function MobileFilterDrawer({
     setSelectedKmFrom(null);
     setSelectedKmTo(null);
     setSelectedTransmission(null);
+    setSelectedFuel(null);
+    setSelectedOrderBy(null);
     setSearchText("");
     setSelectedBrandParam(null);
     setSelectedModelParam(null);
@@ -289,6 +317,8 @@ export default function MobileFilterDrawer({
     if (selectedKmTo) params.append("kmTo", selectedKmTo);
     if (selectedTransmission)
       params.append("transmision", selectedTransmission);
+    if (selectedFuel) params.append("fuel", selectedFuel);
+    if (selectedOrderBy) params.append("orderBy", selectedOrderBy);
     if (searchText) params.append("searchText", searchText);
     if (selectedBrandParam) params.append("brand", selectedBrandParam);
     if (selectedModelParam) params.append("model", selectedModelParam);
@@ -538,6 +568,46 @@ export default function MobileFilterDrawer({
               >
                 <NativeSelectOption value="">Todas</NativeSelectOption>
                 {transmissionOptions.map((opt) => (
+                  <NativeSelectOption key={opt.value} value={opt.value}>
+                    {opt.label}
+                  </NativeSelectOption>
+                ))}
+              </NativeSelect>
+            </div>
+
+            <div>
+              <Label className="mb-2 block text-sm font-semibold text-slate-800">
+                Combustible
+              </Label>
+              <NativeSelect
+                value={selectedFuel || ""}
+                onChange={(e) =>
+                  setSelectedFuel(e.target.value === "" ? null : e.target.value)
+                }
+                className="w-full h-11"
+              >
+                <NativeSelectOption value="">Todos</NativeSelectOption>
+                {fuelOptions.map((opt) => (
+                  <NativeSelectOption key={opt.value} value={opt.value}>
+                    {opt.label}
+                  </NativeSelectOption>
+                ))}
+              </NativeSelect>
+            </div>
+
+            <div>
+              <Label className="mb-2 block text-sm font-semibold text-slate-800">
+                Ordenar por
+              </Label>
+              <NativeSelect
+                value={selectedOrderBy || ""}
+                onChange={(e) =>
+                  setSelectedOrderBy(e.target.value === "" ? null : e.target.value)
+                }
+                className="w-full h-11"
+              >
+                <NativeSelectOption value="">Por relevancia</NativeSelectOption>
+                {orderByOptions.map((opt) => (
                   <NativeSelectOption key={opt.value} value={opt.value}>
                     {opt.label}
                   </NativeSelectOption>

@@ -94,6 +94,8 @@ type Props = {
   initialBrands: Marca[];
   initialModels: Modelo[];
   transmission: string | null;
+  fuel: string | null;
+  orderBy: string | null;
 };
 
 // --- Constants ---
@@ -135,6 +137,20 @@ const transmissionOptions: FilterOption[] = [
   { value: "automatic", label: "Automático" },
 ];
 
+const fuelOptions: FilterOption[] = [
+  { value: "diesel", label: "Diésel" },
+  { value: "gasoline", label: "Gasolina" },
+  { value: "hybrid", label: "Híbrido" },
+  { value: "electric", label: "Eléctrico" },
+  { value: "other", label: "Otros" },
+];
+
+const orderByOptions: FilterOption[] = [
+  { value: "newest", label: "Mas reciente" },
+  { value: "price_asc", label: "Precio: menor a mayor" },
+  { value: "price_desc", label: "Precio: mayor a menor" },
+];
+
 export default function Sidebar({
   // getBrands, // No longer needed as prop if initialBrands covers it
   getModels,
@@ -152,6 +168,8 @@ export default function Sidebar({
   initialBrands,
   initialModels,
   transmission,
+  fuel,
+  orderBy,
 }: Props) {
   const router = useRouter();
   const { data: session } = authClient.useSession();
@@ -182,6 +200,8 @@ export default function Sidebar({
   const [selectedTransmission, setSelectedTransmission] = useState<
     string | null
   >(transmission);
+  const [selectedFuel, setSelectedFuel] = useState<string | null>(fuel);
+  const [selectedOrderBy, setSelectedOrderBy] = useState<string | null>(orderBy);
   const [searchText, setSearchText] = useState(searchTextProp ?? "");
 
   // State for fetched/dependent data
@@ -260,6 +280,12 @@ export default function Sidebar({
     setSelectedModelId(modelIdProp);
   }, [modelIdProp]);
 
+  useEffect(() => {
+    setSelectedTransmission(transmission);
+    setSelectedFuel(fuel);
+    setSelectedOrderBy(orderBy);
+  }, [transmission, fuel, orderBy]);
+
   // --- Handlers ---
   const handleBrandSelect = (value: string | null) => {
     setSelectedBrandId(value);
@@ -299,6 +325,8 @@ export default function Sidebar({
     setSelectedKmFrom(null);
     setSelectedKmTo(null);
     setSelectedTransmission(null);
+    setSelectedFuel(null);
+    setSelectedOrderBy(null);
     setSearchText("");
     setSelectedBrandParam(null);
     setSelectedModelParam(null);
@@ -319,6 +347,8 @@ export default function Sidebar({
     if (selectedKmTo) params.append("kmTo", selectedKmTo);
     if (selectedTransmission)
       params.append("transmision", selectedTransmission); // Ensure param name is correct
+    if (selectedFuel) params.append("fuel", selectedFuel);
+    if (selectedOrderBy) params.append("orderBy", selectedOrderBy);
     if (searchText) params.append("searchText", searchText);
 
     // Add the potentially different brand/model params if they exist
@@ -335,6 +365,8 @@ export default function Sidebar({
       km_from: selectedKmFrom || null,
       km_to: selectedKmTo || null,
       transmission: selectedTransmission || null,
+      fuel: selectedFuel || null,
+      order_by: selectedOrderBy || null,
       search_text: searchText || null,
     });
 
@@ -380,6 +412,8 @@ export default function Sidebar({
         km_from: selectedKmFrom || null,
         km_to: selectedKmTo || null,
         transmission: selectedTransmission || null,
+        fuel: selectedFuel || null,
+        order_by: selectedOrderBy || null,
         search_text: searchText || null,
       });
       toast.success(
@@ -536,6 +570,26 @@ export default function Sidebar({
           onSelect={setSelectedTransmission}
           allowClear={true}
           clearLabel="Todas" // Explicit label for the "clear" state
+        />
+
+        <FilterDropdown
+          label="Combustible"
+          triggerLabel="Seleccionar combustible..."
+          selectedValue={selectedFuel}
+          options={fuelOptions}
+          onSelect={setSelectedFuel}
+          allowClear={true}
+          clearLabel="Todos"
+        />
+
+        <FilterDropdown
+          label="Ordenar por"
+          triggerLabel="Seleccionar orden..."
+          selectedValue={selectedOrderBy}
+          options={orderByOptions}
+          onSelect={setSelectedOrderBy}
+          allowClear={true}
+          clearLabel="Por relevancia"
         />
 
         {/* Search Text Input */}

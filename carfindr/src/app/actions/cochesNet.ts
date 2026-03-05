@@ -53,6 +53,7 @@ const searchSchema = z.object({
     from: z.string().nullable(),
     to: z.string().nullable(),
   }),
+  orderBy: z.string().nullable().optional(),
   page: z.number(),
 });
 
@@ -144,6 +145,14 @@ export async function cochesNetSearch(input: z.infer<typeof searchSchema>) {
       },
     },
   };
+
+  if (parsedInput.orderBy === 'newest') {
+    jsonData.sort = { order: 'desc', term: 'creationDate' };
+  } else if (parsedInput.orderBy === 'price_asc') {
+    jsonData.sort = { order: 'asc', term: 'price' };
+  } else if (parsedInput.orderBy === 'price_desc') {
+    jsonData.sort = { order: 'desc', term: 'price' };
+  }
 
   // Update jsonData with search parameters
   for (const key in parsedInput) {

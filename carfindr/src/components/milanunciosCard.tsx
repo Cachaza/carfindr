@@ -48,6 +48,8 @@ interface MilanunciosCar {
   title: string;
   description: string;
   publicationDate: string;
+  sortDate?: string;
+  updateDate?: string;
   url: string;
   photo: string[];
 }
@@ -61,7 +63,8 @@ function capitalizeFirstLetter(string: string) {
 }
 
 const MilanunciosCard: React.FC<MilanunciosCardProps> = ({ car }) => {
-  const date = new Date(car.publicationDate);
+  const publishedDate = new Date(car.publicationDate);
+  const updatedDate = new Date(car.updateDate || car.sortDate || car.publicationDate);
 
   const getAttributeValue = (attributeKey: string): string | undefined => {
     const attribute = car.attributes.find(
@@ -134,7 +137,14 @@ const MilanunciosCard: React.FC<MilanunciosCardProps> = ({ car }) => {
                 <span className="truncate">{car.location.province.name}</span>
               </div>
               <div className="flex items-center gap-1.5 opacity-80">
-                <span className="truncate">Hace {differenceInDays(new Date(), date)} d</span>
+                <span className="truncate">
+                  Publicado hace {differenceInDays(new Date(), publishedDate)} d
+                </span>
+              </div>
+              <div className="flex items-center gap-1.5 opacity-80 col-span-2">
+                <span className="truncate">
+                  Actualizado hace {differenceInDays(new Date(), updatedDate)} d
+                </span>
               </div>
             </div>
 

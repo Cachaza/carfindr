@@ -75,6 +75,22 @@ const transmissionOptions: FilterOption[] = [
   // { value: "", label: "Ambos" } // This matches the old `transmisiones` structure
 ];
 
+const fuelOptions: FilterOption[] = [
+  { value: "", label: "Cualquiera" },
+  { value: "diesel", label: "Diésel" },
+  { value: "gasoline", label: "Gasolina" },
+  { value: "hybrid", label: "Híbrido" },
+  { value: "electric", label: "Eléctrico" },
+  { value: "other", label: "Otros" },
+];
+
+const orderByOptions: FilterOption[] = [
+  { value: "", label: "Por relevancia" },
+  { value: "newest", label: "Mas reciente" },
+  { value: "price_asc", label: "Precio: menor a mayor" },
+  { value: "price_desc", label: "Precio: mayor a menor" },
+];
+
 // Types
 type Marca = {
   label: string;
@@ -138,7 +154,9 @@ type FormField =
   | "priceTo"
   | "kmFrom"
   | "kmTo"
-  | "transmision";
+  | "transmision"
+  | "fuel"
+  | "orderBy";
 
 // `transmissionOptions` is now defined above, replacing `transmisiones`
 
@@ -161,6 +179,8 @@ const SearchCard: React.FC<Props> = ({ brands, getModels }) => {
     selectedKmTo: "",
     searchText: "",
     transmision: "",
+    fuel: "",
+    orderBy: "",
   });
 
   // Single state for managing dropdown open states
@@ -344,6 +364,12 @@ const SearchCard: React.FC<Props> = ({ brands, getModels }) => {
     if (formState.transmision) {
       params.append("transmision", formState.transmision);
     }
+    if (formState.fuel) {
+      params.append("fuel", formState.fuel);
+    }
+    if (formState.orderBy) {
+      params.append("orderBy", formState.orderBy);
+    }
 
     posthog.capture("search_submitted", {
       brand: formState.selectedBrand || null,
@@ -355,6 +381,8 @@ const SearchCard: React.FC<Props> = ({ brands, getModels }) => {
       km_from: formState.selectedKmFrom || null,
       km_to: formState.selectedKmTo || null,
       transmission: formState.transmision || null,
+      fuel: formState.fuel || null,
+      order_by: formState.orderBy || null,
       search_text: formState.searchText || null,
     });
 
@@ -536,6 +564,37 @@ const SearchCard: React.FC<Props> = ({ brands, getModels }) => {
                   transmissionOptions.find((t) => t.value === formState.transmision)?.label ?? ""
                 }
                 onSelect={(value) => updateField("transmision", value)}
+                valueKey="value"
+                labelKey="label"
+              />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:gap-4">
+            <div>
+              <Label className="mb-1 block text-sm font-medium text-slate-700">Combustible</Label>
+              <ComboBox
+                field="fuel"
+                placeholder="Cualquiera"
+                items={fuelOptions}
+                displayValue={
+                  fuelOptions.find((f) => f.value === formState.fuel)?.label ?? ""
+                }
+                onSelect={(value) => updateField("fuel", value)}
+                valueKey="value"
+                labelKey="label"
+              />
+            </div>
+            <div>
+              <Label className="mb-1 block text-sm font-medium text-slate-700">Ordenar por</Label>
+              <ComboBox
+                field="orderBy"
+                placeholder="Por relevancia"
+                items={orderByOptions}
+                displayValue={
+                  orderByOptions.find((o) => o.value === formState.orderBy)?.label ?? ""
+                }
+                onSelect={(value) => updateField("orderBy", value)}
                 valueKey="value"
                 labelKey="label"
               />

@@ -17,7 +17,26 @@ const searchSchema = z.object({
   keywords: z.string().nullable().optional(),
   nextPageUrl: z.string().nullable().optional(),
   gearBox: z.string().nullable().optional(),
+  fuel: z.string().nullable().optional(),
 });
+
+function mapFuelToWallapopEngine(fuel: string | null | undefined): string | null {
+  if (!fuel) return null;
+  if (fuel === 'diesel') return 'gasoil';
+  if (fuel === 'gasoline') return 'gasoline';
+  if (fuel === 'electric' || fuel === 'hybrid') return 'electric-hybrid';
+  if (fuel === 'other') return 'others';
+  return null;
+}
+
+function mapOrderByToWallapop(orderBy: string | null | undefined): string | null {
+  if (!orderBy) return null;
+  if (orderBy === 'newest') return 'newest';
+  if (orderBy === 'price_asc') return 'price_low_to_high';
+  if (orderBy === 'price_desc') return 'price_high_to_low';
+  if (orderBy === 'most_relevance') return 'most_relevance';
+  return null;
+}
 
 interface WallapopApiResponse {
   data?: {
@@ -151,6 +170,7 @@ export async function wallapopSearch(input: z.infer<typeof searchSchema>): Promi
     brand: 'brand', model: 'model', minSalePrice: 'min_sale_price', maxSalePrice: 'max_sale_price',
     minKm: 'min_km', maxKm: 'max_km', minYear: 'min_year', maxYear: 'max_year',
     latitude: 'latitude', longitude: 'longitude', orderBy: 'order_by', keywords: 'keywords', gearBox: 'gearbox',
+    fuel: 'engine',
   };
 
   let accumulatedCars: any[] = [];
@@ -175,7 +195,15 @@ export async function wallapopSearch(input: z.infer<typeof searchSchema>): Promi
         if (key !== 'nextPageUrl' && value !== null && value !== undefined && key in initialParamMappings) {
           const paramKey = initialParamMappings[key];
           if (paramKey) {
-            params[paramKey] = value.toString();
+            if (key === 'fuel') {
+              const mappedFuel = mapFuelToWallapopEngine(value.toString());
+              if (mappedFuel) params[paramKey] = mappedFuel;
+            } else if (key === 'orderBy') {
+              const mappedOrder = mapOrderByToWallapop(value.toString());
+              if (mappedOrder) params[paramKey] = mappedOrder;
+            } else {
+              params[paramKey] = value.toString();
+            }
           }
         }
       }

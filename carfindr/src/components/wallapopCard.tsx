@@ -44,7 +44,8 @@ interface CarCardProps {
 }
 
 const WallapopCard: React.FC<CarCardProps> = ({ car }) => {
-  const date = new Date(car.content.creation_date);
+  const createdDate = new Date(car.content.creation_date);
+  const updatedDate = new Date(car.content.modification_date);
 
   function tipoTransmision(tipo: string) {
     if (tipo === "manual") {
@@ -118,7 +119,14 @@ const WallapopCard: React.FC<CarCardProps> = ({ car }) => {
                 <span className="truncate">{car.content.location.city}</span>
               </div>
               <div className="flex items-center gap-1.5 opacity-80">
-                <span className="truncate">Hace {differenceInDays(new Date(), date)} d</span>
+                <span className="truncate">
+                  Publicado hace {differenceInDays(new Date(), createdDate)} d
+                </span>
+              </div>
+              <div className="flex items-center gap-1.5 opacity-80 col-span-2">
+                <span className="truncate">
+                  Actualizado hace {differenceInDays(new Date(), updatedDate)} d
+                </span>
               </div>
             </div>
 

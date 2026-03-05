@@ -113,6 +113,7 @@ const searchSchema = z.object({
     fuel: z.string().nullable(),
     doors: z.string().nullable(),
     text: z.string().nullable(),
+    sort: z.string().nullable().optional(),
     offset: z.number(),
 });
 
@@ -177,7 +178,7 @@ export async function milanunciosSearch(inputObject: z.infer<typeof searchSchema
         category: '13',
         transaction: 'supply',
         limit: '30',
-        sort: 'random',
+        sort: input.sort ?? 'random',
     };
 
     if (input.brand) {

@@ -86,7 +86,7 @@ function transmissioType(type: number) {
 }
 
 const CochesNetCard: React.FC<CarCardProps> = ({ car }) => {
-  const date = new Date(car.publishedDate);
+  const publishedDate = new Date(car.publishedDate || car.creationDate);
 
   return (
     <a
@@ -146,7 +146,9 @@ const CochesNetCard: React.FC<CarCardProps> = ({ car }) => {
                 <span className="truncate">{car.location.mainProvince}</span>
               </div>
               <div className="flex items-center gap-1.5 opacity-80">
-                <span className="truncate">Hace {differenceInDays(new Date(), date)} d</span>
+                <span className="truncate">
+                  Publicado hace {differenceInDays(new Date(), publishedDate)} d
+                </span>
               </div>
             </div>
             
