@@ -130,6 +130,7 @@ redis_data/
 .dockerignore
 
 # Python (for PoC)
+PoC/
 __pycache__/
 *.py[cod]
 *$py.class

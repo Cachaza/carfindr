@@ -139,7 +139,7 @@ const fuelOptions: FilterOption[] = [
 ];
 
 const orderByOptions: FilterOption[] = [
-  { value: "newest", label: "Mas reciente" },
+  { value: "newest", label: "Mas recientes (segun plataforma)" },
   { value: "price_asc", label: "Precio: menor a mayor" },
   { value: "price_desc", label: "Precio: mayor a menor" },
 ];
@@ -613,6 +613,9 @@ export default function MobileFilterDrawer({
                   </NativeSelectOption>
                 ))}
               </NativeSelect>
+              <p className="mt-1 text-xs text-slate-500">
+                Recientes depende del criterio de cada portal.
+              </p>
             </div>
 
             <div>

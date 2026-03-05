@@ -146,7 +146,7 @@ const fuelOptions: FilterOption[] = [
 ];
 
 const orderByOptions: FilterOption[] = [
-  { value: "newest", label: "Mas reciente" },
+  { value: "newest", label: "Mas recientes (segun plataforma)" },
   { value: "price_asc", label: "Precio: menor a mayor" },
   { value: "price_desc", label: "Precio: mayor a menor" },
 ];
@@ -591,6 +591,9 @@ export default function Sidebar({
           allowClear={true}
           clearLabel="Por relevancia"
         />
+        <p className="-mt-1 text-xs text-slate-500">
+          El orden de recientes lo decide cada portal.
+        </p>
 
         {/* Search Text Input */}
         <div className="w-full max-w-sm items-center pt-3">
