@@ -1,22 +1,13 @@
 "use client";
 
-import { Filter, Save } from "lucide-react";
-import { useState, useEffect, useCallback } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Filter, Save, X, Search, RotateCcw } from "lucide-react";
+import { useState, useEffect, useCallback, useRef } from "react";
+import { createPortal } from "react-dom";
 import { authClient } from "@/lib/auth-client";
 import { useRouter } from "next/navigation";
 import { api } from "@/trpc/react";
 import { toast } from "sonner";
-
-import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerDescription,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "@/components/ui/drawer";
 
 import {
   Dialog,
@@ -31,7 +22,15 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { FilterDropdown, type FilterOption } from "@/components/FilterDropdown";
+import {
+  NativeSelect,
+  NativeSelectOption,
+} from "@/components/ui/native-select";
+
+export type FilterOption = {
+  value: string;
+  label: string;
+};
 
 // Import the same types from your sidebar
 type Marca = {
@@ -361,193 +360,287 @@ export default function MobileFilterDrawer({
     label: getModelDisplayLabel(m),
   }));
 
-  return (
-    <>
-      <Drawer open={isDrawerOpen} onOpenChange={setIsDrawerOpen}>
-        <DrawerTrigger asChild>
-          <Button
-            variant="outline"
-            size="sm"
-            className="flex h-11 w-full items-center justify-center gap-2 rounded-xl border-slate-300/80 bg-white/85 text-slate-700"
-          >
-            <Filter className="h-4 w-4" />
-            Filtros
-          </Button>
-        </DrawerTrigger>
-        <DrawerContent className="max-h-[90vh] rounded-t-2xl border-white/70 bg-slate-50/95">
-          <DrawerHeader className="text-left">
-            <DrawerTitle className="flex items-center gap-2">
-              <Filter className="text-cyan-600" />
-              Filtros de búsqueda
-            </DrawerTitle>
-            <DrawerDescription>
-              Personaliza tu búsqueda con los filtros disponibles
-            </DrawerDescription>
-          </DrawerHeader>
+  const [mounted, setMounted] = useState(false);
 
-          <div className="p-4 overflow-y-auto flex-1">
-            <div className="space-y-4">
-              {/* Brand Dropdown */}
-              <FilterDropdown
-                label="Marca"
-                triggerLabel="Seleccionar marca..."
-                selectedValue={selectedBrandId}
-                options={brandOptions}
-                onSelect={handleBrandSelect}
-                searchPlaceholder="Buscar marca..."
-                allowClear={true}
-                clearLabel="Todas las marcas"
-              />
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
-              {/* Model Dropdown */}
-              <FilterDropdown
-                label="Modelo"
-                triggerLabel="Seleccionar modelo..."
-                selectedValue={selectedModelId}
-                options={modelOptions}
-                onSelect={handleModelSelect}
-                searchPlaceholder="Buscar modelo..."
-                allowClear={true}
-                clearLabel="Todos los modelos"
+  // Toggle internal body scroll lock when filters overlay is open
+  useEffect(() => {
+    if (isDrawerOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isDrawerOpen]);
+
+  const overlayContent = (
+    <AnimatePresence>
+      {isDrawerOpen && (
+        <motion.div 
+          initial={{ y: "100%", opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: "100%", opacity: 0 }}
+          transition={{ type: "spring", stiffness: 300, damping: 30 }}
+          className="fixed inset-0 z-[100] flex flex-col bg-slate-50 overscroll-contain"
+        >
+          {/* Header */}
+          <div className="flex flex-shrink-0 items-center justify-between border-b border-slate-200 bg-white px-4 py-4 pt-6 shadow-sm">
+        <div className="flex items-center gap-2">
+          <Filter className="h-5 w-5 text-cyan-600" />
+          <h2 className="text-xl font-bold text-slate-900">Filtros</h2>
+        </div>
+        <Button
+          variant="ghost"
+          size="icon"
+          className="rounded-full text-slate-500 hover:bg-slate-100"
+          onClick={() => setIsDrawerOpen(false)}
+        >
+          <X className="h-6 w-6" />
+        </Button>
+      </div>
+
+      {/* Scrollable Filters Content */}
+      <div className="flex-1 overflow-y-auto px-4 py-6 scroll-smooth">
+        <div className="space-y-6 pb-24">
+          {/* Brand & Model Group */}
+          <div className="space-y-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <div className="flex flex-col gap-2">
+              <Label className="text-sm font-semibold text-slate-800">
+                Marca
+              </Label>
+              <NativeSelect 
+                value={selectedBrandId || ""}
+                onChange={(e) => handleBrandSelect(e.target.value === "" ? null : e.target.value)}
+                className="w-full h-11"
+              >
+                <NativeSelectOption value="">Todas las marcas</NativeSelectOption>
+                {brandOptions.map((opt) => (
+                  <NativeSelectOption key={opt.value} value={opt.value}>
+                    {opt.label}
+                  </NativeSelectOption>
+                ))}
+              </NativeSelect>
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <Label className="text-sm font-semibold text-slate-800">
+                Modelo
+              </Label>
+              <NativeSelect 
+                value={selectedModelId || ""}
+                onChange={(e) => handleModelSelect(e.target.value === "" ? null : e.target.value)}
                 disabled={!selectedBrandId || isLoadingModels}
-              />
-
-              {/* Year Dropdowns */}
-              <div className="py-3">
-                <Label className="mb-1 block text-sm font-medium text-slate-700">
-                  Antigüedad
-                </Label>
-                <div className="pt-2 space-y-3">
-                  <FilterDropdown
-                    label=""
-                    triggerLabel="Año desde..."
-                    selectedValue={selectedYearFrom}
-                    options={yearOptions}
-                    onSelect={setSelectedYearFrom}
-                    allowClear={true}
-                    clearLabel="Año desde..."
-                  />
-                  <FilterDropdown
-                    label=""
-                    triggerLabel="Año hasta..."
-                    selectedValue={selectedYearTo}
-                    options={yearOptions}
-                    onSelect={setSelectedYearTo}
-                    allowClear={true}
-                    clearLabel="Año hasta..."
-                  />
-                </div>
-              </div>
-
-              {/* Price Dropdowns */}
-              <div className="py-3">
-                <Label className="mb-1 block text-sm font-medium text-slate-700">
-                  Precio
-                </Label>
-                <div className="pt-2 space-y-3">
-                  <FilterDropdown
-                    label=""
-                    triggerLabel="Precio desde..."
-                    selectedValue={selectedPriceFrom}
-                    options={priceOptions}
-                    onSelect={setSelectedPriceFrom}
-                    allowClear={true}
-                    clearLabel="Precio desde..."
-                  />
-                  <FilterDropdown
-                    label=""
-                    triggerLabel="Precio hasta..."
-                    selectedValue={selectedPriceTo}
-                    options={priceOptions}
-                    onSelect={setSelectedPriceTo}
-                    allowClear={true}
-                    clearLabel="Precio hasta..."
-                  />
-                </div>
-              </div>
-
-              {/* Kilometer Dropdowns */}
-              <div className="py-3">
-                <Label className="mb-1 block text-sm font-medium text-slate-700">
-                  Kilometraje
-                </Label>
-                <div className="pt-2 space-y-3">
-                  <FilterDropdown
-                    label=""
-                    triggerLabel="Km desde..."
-                    selectedValue={selectedKmFrom}
-                    options={kmOptions}
-                    onSelect={setSelectedKmFrom}
-                    allowClear={true}
-                    clearLabel="Km desde..."
-                  />
-                  <FilterDropdown
-                    label=""
-                    triggerLabel="Km hasta..."
-                    selectedValue={selectedKmTo}
-                    options={kmOptions}
-                    onSelect={setSelectedKmTo}
-                    allowClear={true}
-                    clearLabel="Km hasta..."
-                  />
-                </div>
-              </div>
-
-              {/* Transmission Dropdown */}
-              <FilterDropdown
-                label="Transmisión"
-                triggerLabel="Seleccionar transmisión..."
-                selectedValue={selectedTransmission}
-                options={transmissionOptions}
-                onSelect={setSelectedTransmission}
-                allowClear={true}
-                clearLabel="Todas"
-              />
-
-              {/* Search Text Input */}
-              <div className="w-full items-center pt-3">
-                <Label
-                  className="mb-1 block text-sm font-medium text-slate-700"
-                  htmlFor="searchText"
-                >
-                  Palabras clave
-                </Label>
-                <Input
-                  id="searchText"
-                  placeholder="Ej: 'techo solar', 'garantia'..."
-                  value={searchText}
-                  onChange={(e) => setSearchText(e.target.value)}
-                  className="mt-1 h-11 rounded-xl border-slate-300/80 bg-white/80"
-                />
-              </div>
+                className="w-full h-11"
+              >
+                <NativeSelectOption value="">
+                  {isLoadingModels 
+                    ? "Cargando..." 
+                    : !selectedBrandId 
+                      ? "Selecciona marca..." 
+                      : "Todos los modelos"}
+                </NativeSelectOption>
+                {modelOptions.map((opt) => (
+                  <NativeSelectOption key={opt.value} value={opt.value}>
+                    {opt.label}
+                  </NativeSelectOption>
+                ))}
+              </NativeSelect>
             </div>
           </div>
 
-          <DrawerFooter className="pt-6">
-            <Button onClick={handleSearch} className="h-11 w-full rounded-xl bg-cyan-600 text-white shadow-md shadow-cyan-900/20 hover:bg-cyan-500">
-              Buscar
-            </Button>
-            {session && (
-              <Button
-                onClick={handleOpenSaveSearchDialog}
-                className="h-11 w-full rounded-xl"
-                variant="outline"
+          {/* Time & Price Group */}
+          <div className="grid grid-cols-2 gap-4">
+            <div className="space-y-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+              <Label className="block text-sm font-semibold text-slate-800">
+                Antigüedad
+              </Label>
+              <NativeSelect 
+                value={selectedYearFrom || ""}
+                onChange={(e) => setSelectedYearFrom(e.target.value === "" ? null : e.target.value)}
+                className="w-full h-11"
               >
-                <Save className="mr-2 h-4 w-4" />
-                Guardar Búsqueda
+                <NativeSelectOption value="">Desde</NativeSelectOption>
+                {yearOptions.map((opt) => (
+                  <NativeSelectOption key={opt.value} value={opt.value}>
+                    {opt.label}
+                  </NativeSelectOption>
+                ))}
+              </NativeSelect>
+              <NativeSelect 
+                value={selectedYearTo || ""}
+                onChange={(e) => setSelectedYearTo(e.target.value === "" ? null : e.target.value)}
+                className="w-full h-11"
+              >
+                <NativeSelectOption value="">Hasta</NativeSelectOption>
+                {yearOptions.map((opt) => (
+                  <NativeSelectOption key={opt.value} value={opt.value}>
+                    {opt.label}
+                  </NativeSelectOption>
+                ))}
+              </NativeSelect>
+            </div>
+
+            <div className="space-y-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+              <Label className="block text-sm font-semibold text-slate-800">
+                Precio
+              </Label>
+              <NativeSelect 
+                value={selectedPriceFrom || ""}
+                onChange={(e) => setSelectedPriceFrom(e.target.value === "" ? null : e.target.value)}
+                className="w-full h-11"
+              >
+                <NativeSelectOption value="">Desde</NativeSelectOption>
+                {priceOptions.map((opt) => (
+                  <NativeSelectOption key={opt.value} value={opt.value}>
+                    {opt.label}
+                  </NativeSelectOption>
+                ))}
+              </NativeSelect>
+              <NativeSelect 
+                value={selectedPriceTo || ""}
+                onChange={(e) => setSelectedPriceTo(e.target.value === "" ? null : e.target.value)}
+                className="w-full h-11"
+              >
+                <NativeSelectOption value="">Hasta</NativeSelectOption>
+                {priceOptions.map((opt) => (
+                  <NativeSelectOption key={opt.value} value={opt.value}>
+                    {opt.label}
+                  </NativeSelectOption>
+                ))}
+              </NativeSelect>
+            </div>
+          </div>
+
+          {/* Features Group */}
+          <div className="space-y-5 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <div>
+              <Label className="mb-3 block text-sm font-semibold text-slate-800">
+                Kilometraje
+              </Label>
+              <div className="grid grid-cols-2 gap-3">
+                <NativeSelect 
+                  value={selectedKmFrom || ""}
+                  onChange={(e) => setSelectedKmFrom(e.target.value === "" ? null : e.target.value)}
+                  className="w-full h-11"
+                >
+                  <NativeSelectOption value="">Desde</NativeSelectOption>
+                  {kmOptions.map((opt) => (
+                    <NativeSelectOption key={opt.value} value={opt.value}>
+                      {opt.label}
+                    </NativeSelectOption>
+                  ))}
+                </NativeSelect>
+                <NativeSelect 
+                  value={selectedKmTo || ""}
+                  onChange={(e) => setSelectedKmTo(e.target.value === "" ? null : e.target.value)}
+                  className="w-full h-11"
+                >
+                  <NativeSelectOption value="">Hasta</NativeSelectOption>
+                  {kmOptions.map((opt) => (
+                    <NativeSelectOption key={opt.value} value={opt.value}>
+                      {opt.label}
+                    </NativeSelectOption>
+                  ))}
+                </NativeSelect>
+              </div>
+            </div>
+
+            <div>
+              <Label className="mb-2 block text-sm font-semibold text-slate-800">
+                Transmisión
+              </Label>
+              <NativeSelect 
+                value={selectedTransmission || ""}
+                onChange={(e) => setSelectedTransmission(e.target.value === "" ? null : e.target.value)}
+                className="w-full h-11"
+              >
+                <NativeSelectOption value="">Todas</NativeSelectOption>
+                {transmissionOptions.map((opt) => (
+                  <NativeSelectOption key={opt.value} value={opt.value}>
+                    {opt.label}
+                  </NativeSelectOption>
+                ))}
+              </NativeSelect>
+            </div>
+
+            <div>
+              <Label
+                className="mb-2 block text-sm font-semibold text-slate-800"
+                htmlFor="searchText"
+              >
+                Palabras clave
+              </Label>
+              <Input
+                id="searchText"
+                placeholder="Ej: 'techo solar', 'garantia'..."
+                value={searchText}
+                onChange={(e) => setSearchText(e.target.value)}
+                className="h-11 rounded-xl border-slate-300 bg-slate-50 focus:border-cyan-500 focus:ring-cyan-500"
+              />
+            </div>
+          </div>
+            </div>
+          </div>
+
+          {/* Sticky Bottom Actions */}
+          <div className="border-t border-slate-200 bg-white px-4 py-4 pb-8 shadow-[0_-4px_16px_rgba(0,0,0,0.05)]">
+            <div className="flex flex-col gap-3">
+              <Button 
+                onClick={() => {
+                  handleSearch();
+                  setIsDrawerOpen(false);
+                }} 
+                className="h-12 w-full rounded-xl bg-cyan-600 font-semibold text-white shadow-md shadow-cyan-900/20 transition-all hover:bg-cyan-500 active:scale-[0.98]"
+              >
+                <Search className="mr-2 h-5 w-5" />
+                Aplicar filtros
               </Button>
-            )}
-            <Button onClick={clearAll} className="h-11 w-full rounded-xl" variant="secondary">
-              Limpiar filtros
-            </Button>
-            <DrawerClose asChild>
-              <Button variant="outline" className="h-11 w-full rounded-xl">
-                Cerrar
-              </Button>
-            </DrawerClose>
-          </DrawerFooter>
-        </DrawerContent>
-      </Drawer>
+              <div className="flex gap-3">
+                {session && (
+                  <Button
+                    onClick={handleOpenSaveSearchDialog}
+                    className="h-11 flex-1 rounded-xl border-slate-300 bg-white text-slate-700 hover:bg-slate-50"
+                    variant="outline"
+                  >
+                    <Save className="mr-2 h-4 w-4" />
+                    Guardar
+                  </Button>
+                )}
+                <Button 
+                  onClick={clearAll} 
+                  className="h-11 flex-1 rounded-xl border-slate-200 text-slate-600" 
+                  variant="outline"
+                >
+                  <RotateCcw className="mr-2 h-4 w-4 text-slate-400" />
+                  Limpiar
+                </Button>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  );
+
+  return (
+    <>
+      <Button
+        onClick={() => setIsDrawerOpen(true)}
+        variant="outline"
+        size="sm"
+        className="flex h-11 w-full items-center justify-center gap-2 rounded-xl border-slate-300/80 bg-white text-slate-700 shadow-sm"
+      >
+        <Filter className="h-4 w-4" />
+        Filtros de búsqueda
+      </Button>
+
+      {/* Render the Full Screen Overlay via Portal so it breaks out of any sticky/absolute containers */}
+      {mounted && typeof document !== "undefined" && createPortal(overlayContent, document.body)}
 
       {/* Save Search Dialog */}
       <Dialog

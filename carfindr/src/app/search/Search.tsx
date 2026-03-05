@@ -156,6 +156,27 @@ export default function Search({ initialBrands }: SearchProps) {
             {/* --- Platform Banner --- */}
             <PlatformBanner />
 
+            {/* [NEW] Mobile Filter Button (Top) */}
+            <div className="md:hidden w-full relative z-40 bg-slate-50/90 p-3 rounded-2xl shadow-sm border border-slate-200/60 mb-2 mt-4 mx-2">
+              <MobileFilterDrawer
+                brandIdProp={brandId}
+                modelIdProp={searchParams.get("modelId") ?? null}
+                priceFrom={priceFrom}
+                priceTo={priceTo}
+                yearFrom={yearFrom}
+                yearTo={yearTo}
+                kmFrom={kmFrom}
+                kmTo={kmTo}
+                searchTextProp={searchText}
+                getModels={getModels}
+                brandProp={brand}
+                modelProp={model}
+                initialBrands={initialBrands}
+                initialModels={initialModels}
+                transmission={transmision}
+              />
+            </div>
+            
             {/* --- Results Container --- */}
             <div className="mx-auto mt-4 px-2 sm:px-4 md:px-0 flex w-full max-w-6xl flex-col items-center justify-start gap-6">
 
@@ -228,28 +249,6 @@ export default function Search({ initialBrands }: SearchProps) {
           </>
         )}
       </div>
-
-      {/* Mobile menu, displayed only on mobile */}
-       {/* Conditionally render MobileMenu outside the main content flow, maybe fixed at bottom? */}
-       <div className="fixed bottom-0 left-0 right-0 z-30 border-t border-white/60 bg-white/85 p-2 shadow-lg backdrop-blur-md md:hidden">
-        <MobileFilterDrawer
-          brandIdProp={brandId}
-          modelIdProp={searchParams.get("modelId") ?? null}
-          priceFrom={priceFrom}
-          priceTo={priceTo}
-          yearFrom={yearFrom}
-          yearTo={yearTo}
-          kmFrom={kmFrom}
-          kmTo={kmTo}
-          searchTextProp={searchText}
-          getModels={getModels}
-          brandProp={brand}
-          modelProp={model}
-          initialBrands={initialBrands}
-          initialModels={initialModels}
-          transmission={transmision}
-        />
-       </div>
     </div>
   );
 }
