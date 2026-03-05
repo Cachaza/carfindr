@@ -233,7 +233,7 @@ export default function CochesNetCars({
       </div>
       <CollapsibleContent>
         <p className="mb-2 text-sm text-slate-600">Resultados totales: {total}</p>
-        {loading ? (
+        {loading && cochesNetCars.length === 0 ? (
           <div className="flex justify-center items-center">
             Loading.....
           </div>
@@ -249,8 +249,8 @@ export default function CochesNetCars({
               ))}
             </div>
             <div className="mt-4 flex justify-center">
-              <Button className="rounded-xl h-11 px-8" variant="outline" onClick={handleShowMore} disabled={noMore}>
-                Mostrar mas
+              <Button className="rounded-xl h-11 px-8" variant="outline" onClick={handleShowMore} disabled={noMore || loading}>
+                {loading ? "Cargando..." : "Mostrar mas"}
               </Button>
             </div>
           </div>
