@@ -178,7 +178,7 @@ export async function milanunciosSearch(inputObject: z.infer<typeof searchSchema
         category: '13',
         transaction: 'supply',
         limit: '30',
-        sort: input.sort ?? 'random',
+        sort: input.sort ?? 'relevance',
     };
 
     if (input.brand) {

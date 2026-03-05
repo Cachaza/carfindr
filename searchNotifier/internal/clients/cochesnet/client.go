@@ -190,8 +190,7 @@ func buildCochesNetPayload(params *searcher.UnifiedSearchRequest, page int) (*Co
 	payload := &CochesNetRequestPayload{}
 	payload.Pagination.Page = page
 	payload.Pagination.Size = 30
-	payload.Sort.Order = "desc"
-	payload.Sort.Term = "year" // Es como cocjhes net ordena por mas reciente
+	payload.Sort.Order, payload.Sort.Term = mapOrderByToCochesNet(params.OrderBy)
 	payload.Filters.OfferTypeIDs = []int{0, 1, 2, 3, 4, 5}
 	payload.Filters.ContractID = intPtr(0)
 	payload.Filters.SellerTypeID = intPtr(0)
@@ -270,6 +269,23 @@ func buildCochesNetPayload(params *searcher.UnifiedSearchRequest, page int) (*Co
 	log.Printf("[%s] Built payload: %+v", sourceName, payload)
 
 	return payload, nil
+}
+
+func mapOrderByToCochesNet(orderBy *string) (string, string) {
+	if orderBy == nil || *orderBy == "" {
+		return "desc", "relevance"
+	}
+
+	switch *orderBy {
+	case "newest":
+		return "desc", "creationDate"
+	case "price_asc":
+		return "asc", "price"
+	case "price_desc":
+		return "desc", "price"
+	default:
+		return "desc", "relevance"
+	}
 }
 
 func setCochesNetHeaders(req *http.Request) {

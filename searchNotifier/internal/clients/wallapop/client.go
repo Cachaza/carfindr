@@ -325,12 +325,28 @@ func buildInitialWallapopParams(params *searcher.UnifiedSearchRequest) url.Value
 		q.Set("gearbox", *params.GearBox)
 	}
 
-	orderBy := "newest" // otra opcion es most_relevance con esto es lo mas nuevo
-	if params.OrderBy != nil {
-		orderBy = *params.OrderBy
-	}
+	orderBy := mapOrderByToWallapop(params.OrderBy)
 	q.Set("order_by", orderBy)
 	return q
+}
+
+func mapOrderByToWallapop(orderBy *string) string {
+	if orderBy == nil || *orderBy == "" {
+		return "newest"
+	}
+
+	switch *orderBy {
+	case "newest":
+		return "newest"
+	case "price_asc":
+		return "price_low_to_high"
+	case "price_desc":
+		return "price_high_to_low"
+	case "most_relevance":
+		return "most_relevance"
+	default:
+		return "newest"
+	}
 }
 func setWallapopHeaders(req *http.Request) { /* ... como antes ... */
 	req.Header.Set("Accept", "application/json, text/plain, */*")

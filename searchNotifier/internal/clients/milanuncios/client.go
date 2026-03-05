@@ -203,7 +203,7 @@ func buildMilanunciosParams(params *searcher.UnifiedSearchRequest, offset int) u
 	q.Set("category", "13")
 	q.Set("transaction", "supply")
 	q.Set("limit", "30")
-	q.Set("sort", "date_desc") // Keep consistent sort order
+	q.Set("sort", mapOrderByToMilanunciosSort(params.OrderBy))
 	q.Set("offset", strconv.Itoa(offset))
 
 	if params.Brand != nil {
@@ -246,6 +246,23 @@ func buildMilanunciosParams(params *searcher.UnifiedSearchRequest, offset int) u
 		q.Set("text", *params.Keywords)
 	}
 	return q
+}
+
+func mapOrderByToMilanunciosSort(orderBy *string) string {
+	if orderBy == nil || *orderBy == "" {
+		return "relevance"
+	}
+
+	switch *orderBy {
+	case "newest":
+		return "newest"
+	case "price_asc":
+		return "cheap"
+	case "price_desc":
+		return "expensive"
+	default:
+		return "relevance"
+	}
 }
 
 func setMilanunciosHeaders(req *http.Request) {

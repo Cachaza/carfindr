@@ -99,10 +99,10 @@ interface SearchParams {
 }
 
 const mapOrderByToMilanunciosSort = (orderBy: string | null) => {
-  if (orderBy === "newest") return "date_desc";
-  if (orderBy === "price_asc") return "price_asc";
-  if (orderBy === "price_desc") return "price_desc";
-  return "random";
+  if (orderBy === "newest") return "newest";
+  if (orderBy === "price_asc") return "cheap";
+  if (orderBy === "price_desc") return "expensive";
+  return "relevance";
 };
 
 export default function MilanunciosCars({
