@@ -14,7 +14,7 @@ import {
   CardFooter,
 } from "@/components/ui/card";
 import { useEffect } from "react";
-import { Trash2, Download } from "lucide-react";
+import { Trash2 } from "lucide-react";
 import { toast } from "sonner";
 import {
   AlertDialog,
@@ -97,20 +97,6 @@ export default function UserProfilePage() {
     onError: (error) => {
       posthog.captureException(new Error(error.message));
       toast.error(error.message || "Error al eliminar la cuenta.");
-    },
-  });
-
-  const requestDataReportMutation = api.user.requestDataReport.useMutation({
-    onSuccess: (data) => {
-      posthog.capture("data_report_requested");
-      toast.success(
-        data.message ||
-          "Informe de datos solicitado. Revisa tu correo electronico.",
-      );
-    },
-    onError: (error) => {
-      posthog.captureException(new Error(error.message));
-      toast.error(error.message || "Error al solicitar el informe de datos.");
     },
   });
 
@@ -230,18 +216,6 @@ export default function UserProfilePage() {
               <CardTitle className="text-base font-medium">Gestión de Datos</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              <Button
-                variant="outline"
-                className="w-full justify-start"
-                onClick={() => requestDataReportMutation.mutate()}
-                disabled={requestDataReportMutation.isPending}
-              >
-                <Download className="mr-2 h-4 w-4 text-muted-foreground" />
-                {requestDataReportMutation.isPending
-                  ? "Solicitando..."
-                  : "Descargar Datos"}
-              </Button>
-              
               <AlertDialog>
                 <AlertDialogTrigger asChild>
                   <Button variant="ghost" className="w-full justify-start text-red-600 hover:text-red-700 hover:bg-red-50">
